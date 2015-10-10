@@ -1,0 +1,863 @@
+-------------------------------------------------------------------------------
+Test set: cc.mallet.pipe.tests.TestSpacePipe
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec <<< FAILURE!
+testSpacePipe(cc.mallet.pipe.tests.TestSpacePipe)  Time elapsed: 0.072 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<name: array:0
+[input: TokenSequence edu.umass.cs.mallet.base.types.TokenSequence@1f6226
+Token#0:f feature(r@1_&_e@2_&_e@3)=1.0 feature(<START2>@-3_&_<START1>@-2_&_<START0>@-1)=1.0 feature(f_&_r@1_&_e@2)=1.0 feature(<START1>@-2_&_<START0>@-1_&_f)=1.0 feature(f_&_r@1)=1.0 feature(<START0>@-1_&_f)=1.0 feature(r@1)=1.0 feature(f)=1.0
+Token#1:r feature(e@1_&_e@2_&_s@3)=1.0 feature(<START1>@-3_&_<START0>@-2_&_f@-1)=1.0 feature(r_&_e@1_&_e@2)=1.0 feature(<START0>@-2_&_f@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(f@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0
+Token#2:e feature(e@1_&_s@2_&_o@3)=1.0 feature(<START0>@-3_&_f@-2_&_r@-1)=1.0 feature(e_&_e@1_&_s@2)=1.0 feature(f@-2_&_r@-1_&_e)=1.0 feature(e_&_e@1)=1.0 feature(r@-1_&_e)=1.0 feature(e@1)=1.0 feature(e)=1.0
+Token#3:e feature(s@1_&_o@2_&_f@3)=1.0 feature(f@-3_&_r@-2_&_e@-1)=1.0 feature(e_&_s@1_&_o@2)=1.0 feature(r@-2_&_e@-1_&_e)=1.0 feature(e_&_s@1)=1.0 feature(e@-1_&_e)=1.0 feature(s@1)=1.0 feature(e)=1.0
+Token#4:s feature(o@1_&_f@2_&_t@3)=1.0 feature(r@-3_&_e@-2_&_e@-1)=1.0 feature(s_&_o@1_&_f@2)=1.0 feature(e@-2_&_e@-1_&_s)=1.0 feature(s_&_o@1)=1.0 feature(e@-1_&_s)=1.0 feature(o@1)=1.0 feature(s)=1.0
+Token#5:o feature(f@1_&_t@2_&_w@3)=1.0 feature(e@-3_&_e@-2_&_s@-1)=1.0 feature(o_&_f@1_&_t@2)=1.0 feature(e@-2_&_s@-1_&_o)=1.0 feature(o_&_f@1)=1.0 feature(s@-1_&_o)=1.0 feature(f@1)=1.0 feature(o)=1.0
+Token#6:f feature(t@1_&_w@2_&_a@3)=1.0 feature(e@-3_&_s@-2_&_o@-1)=1.0 feature(f_&_t@1_&_w@2)=1.0 feature(s@-2_&_o@-1_&_f)=1.0 feature(f_&_t@1)=1.0 feature(o@-1_&_f)=1.0 feature(t@1)=1.0 feature(f)=1.0
+Token#7:t feature(w@1_&_a@2_&_r@3)=1.0 feature(s@-3_&_o@-2_&_f@-1)=1.0 feature(t_&_w@1_&_a@2)=1.0 feature(o@-2_&_f@-1_&_t)=1.0 feature(t_&_w@1)=1.0 feature(f@-1_&_t)=1.0 feature(w@1)=1.0 feature(t)=1.0
+Token#8:w feature(a@1_&_r@2_&_e@3)=1.0 feature(o@-3_&_f@-2_&_t@-1)=1.0 feature(w_&_a@1_&_r@2)=1.0 feature(f@-2_&_t@-1_&_w)=1.0 feature(w_&_a@1)=1.0 feature(t@-1_&_w)=1.0 feature(a@1)=1.0 feature(w)=1.0
+Token#9:a feature(r@1_&_e@2_&_i@3)=1.0 feature(f@-3_&_t@-2_&_w@-1)=1.0 feature(a_&_r@1_&_e@2)=1.0 feature(t@-2_&_w@-1_&_a)=1.0 feature(a_&_r@1)=1.0 feature(w@-1_&_a)=1.0 feature(r@1)=1.0 feature(a)=1.0
+Token#10:r feature(e@1_&_i@2_&_s@3)=1.0 feature(t@-3_&_w@-2_&_a@-1)=1.0 feature(r_&_e@1_&_i@2)=1.0 feature(w@-2_&_a@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(a@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0
+Token#11:e feature(i@1_&_s@2_&_a@3)=1.0 feature(w@-3_&_a@-2_&_r@-1)=1.0 feature(e_&_i@1_&_s@2)=1.0 feature(a@-2_&_r@-1_&_e)=1.0 feature(e_&_i@1)=1.0 feature(r@-1_&_e)=1.0 feature(i@1)=1.0 feature(e)=1.0
+Token#12:i feature(s@1_&_a@2_&_m@3)=1.0 feature(a@-3_&_r@-2_&_e@-1)=1.0 feature(i_&_s@1_&_a@2)=1.0 feature(r@-2_&_e@-1_&_i)=1.0 feature(i_&_s@1)=1.0 feature(e@-1_&_i)=1.0 feature(s@1)=1.0 feature(i)=1.0
+Token#13:s feature(a@1_&_m@2_&_a@3)=1.0 feature(r@-3_&_e@-2_&_i@-1)=1.0 feature(s_&_a@1_&_m@2)=1.0 feature(e@-2_&_i@-1_&_s)=1.0 feature(s_&_a@1)=1.0 feature(i@-1_&_s)=1.0 feature(a@1)=1.0 feature(s)=1.0
+Token#14:a feature(m@1_&_a@2_&_t@3)=1.0 feature(e@-3_&_i@-2_&_s@-1)=1.0 feature(a_&_m@1_&_a@2)=1.0 feature(i@-2_&_s@-1_&_a)=1.0 feature(a_&_m@1)=1.0 feature(s@-1_&_a)=1.0 feature(m@1)=1.0 feature(a)=1.0
+Token#15:m feature(a@1_&_t@2_&_t@3)=1.0 feature(i@-3_&_s@-2_&_a@-1)=1.0 feature(m_&_a@1_&_t@2)=1.0 feature(s@-2_&_a@-1_&_m)=1.0 feature(m_&_a@1)=1.0 feature(a@-1_&_m)=1.0 feature(a@1)=1.0 feature(m)=1.0
+Token#16:a feature(t@1_&_t@2_&_e@3)=1.0 feature(s@-3_&_a@-2_&_m@-1)=1.0 feature(a_&_t@1_&_t@2)=1.0 feature(a@-2_&_m@-1_&_a)=1.0 feature(a_&_t@1)=1.0 feature(m@-1_&_a)=1.0 feature(t@1)=1.0 feature(a)=1.0
+Token#17:t feature(t@1_&_e@2_&_r@3)=1.0 feature(a@-3_&_m@-2_&_a@-1)=1.0 feature(t_&_t@1_&_e@2)=1.0 feature(m@-2_&_a@-1_&_t)=1.0 feature(t_&_t@1)=1.0 feature(a@-1_&_t)=1.0 feature(t@1)=1.0 feature(t)=1.0
+Token#18:t feature(e@1_&_r@2_&_o@3)=1.0 feature(m@-3_&_a@-2_&_t@-1)=1.0 feature(t_&_e@1_&_r@2)=1.0 feature(a@-2_&_t@-1_&_t)=1.0 feature(t_&_e@1)=1.0 feature(t@-1_&_t)=1.0 feature(e@1)=1.0 feature(t)=1.0
+Token#19:e feature(r@1_&_o@2_&_f@3)=1.0 feature(a@-3_&_t@-2_&_t@-1)=1.0 feature(e_&_r@1_&_o@2)=1.0 feature(t@-2_&_t@-1_&_e)=1.0 feature(e_&_r@1)=1.0 feature(t@-1_&_e)=1.0 feature(r@1)=1.0 feature(e)=1.0
+Token#20:r feature(o@1_&_f@2_&_t@3)=1.0 feature(t@-3_&_t@-2_&_e@-1)=1.0 feature(r_&_o@1_&_f@2)=1.0 feature(t@-2_&_e@-1_&_r)=1.0 feature(r_&_o@1)=1.0 feature(e@-1_&_r)=1.0 feature(o@1)=1.0 feature(r)=1.0
+Token#21:o feature(f@1_&_t@2_&_h@3)=1.0 feature(t@-3_&_e@-2_&_r@-1)=1.0 feature(o_&_f@1_&_t@2)=1.0 feature(e@-2_&_r@-1_&_o)=1.0 feature(o_&_f@1)=1.0 feature(r@-1_&_o)=1.0 feature(f@1)=1.0 feature(o)=1.0
+Token#22:f feature(t@1_&_h@2_&_e@3)=1.0 feature(e@-3_&_r@-2_&_o@-1)=1.0 feature(f_&_t@1_&_h@2)=1.0 feature(r@-2_&_o@-1_&_f)=1.0 feature(f_&_t@1)=1.0 feature(o@-1_&_f)=1.0 feature(t@1)=1.0 feature(f)=1.0
+Token#23:t feature(h@1_&_e@2_&_u@3)=1.0 feature(r@-3_&_o@-2_&_f@-1)=1.0 feature(t_&_h@1_&_e@2)=1.0 feature(o@-2_&_f@-1_&_t)=1.0 feature(t_&_h@1)=1.0 feature(f@-1_&_t)=1.0 feature(h@1)=1.0 feature(t)=1.0
+Token#24:h feature(e@1_&_u@2_&_s@3)=1.0 feature(o@-3_&_f@-2_&_t@-1)=1.0 feature(h_&_e@1_&_u@2)=1.0 feature(f@-2_&_t@-1_&_h)=1.0 feature(h_&_e@1)=1.0 feature(t@-1_&_h)=1.0 feature(e@1)=1.0 feature(h)=1.0
+Token#25:e feature(u@1_&_s@2_&_e@3)=1.0 feature(f@-3_&_t@-2_&_h@-1)=1.0 feature(e_&_u@1_&_s@2)=1.0 feature(t@-2_&_h@-1_&_e)=1.0 feature(e_&_u@1)=1.0 feature(h@-1_&_e)=1.0 feature(u@1)=1.0 feature(e)=1.0
+Token#26:u feature(s@1_&_e@2_&_r@3)=1.0 feature(t@-3_&_h@-2_&_e@-1)=1.0 feature(u_&_s@1_&_e@2)=1.0 feature(h@-2_&_e@-1_&_u)=1.0 feature(u_&_s@1)=1.0 feature(e@-1_&_u)=1.0 feature(s@1)=1.0 feature(u)=1.0
+Token#27:s feature(e@1_&_r@2_&_s@3)=1.0 feature(h@-3_&_e@-2_&_u@-1)=1.0 feature(s_&_e@1_&_r@2)=1.0 feature(e@-2_&_u@-1_&_s)=1.0 feature(s_&_e@1)=1.0 feature(u@-1_&_s)=1.0 feature(e@1)=1.0 feature(s)=1.0
+Token#28:e feature(r@1_&_s@2_&_'@3)=1.0 feature(e@-3_&_u@-2_&_s@-1)=1.0 feature(e_&_r@1_&_s@2)=1.0 feature(u@-2_&_s@-1_&_e)=1.0 feature(e_&_r@1)=1.0 feature(s@-1_&_e)=1.0 feature(r@1)=1.0 feature(e)=1.0
+Token#29:r feature(s@1_&_'@2_&_f@3)=1.0 feature(u@-3_&_s@-2_&_e@-1)=1.0 feature(r_&_s@1_&_'@2)=1.0 feature(s@-2_&_e@-1_&_r)=1.0 feature(r_&_s@1)=1.0 feature(e@-1_&_r)=1.0 feature(s@1)=1.0 feature(r)=1.0
+Token#30:s feature('@1_&_f@2_&_r@3)=1.0 feature(s@-3_&_e@-2_&_r@-1)=1.0 feature(s_&_'@1_&_f@2)=1.0 feature(e@-2_&_r@-1_&_s)=1.0 feature(s_&_'@1)=1.0 feature(r@-1_&_s)=1.0 feature('@1)=1.0 feature(s)=1.0
+Token#31:' feature(f@1_&_r@2_&_e@3)=1.0 feature(e@-3_&_r@-2_&_s@-1)=1.0 feature('_&_f@1_&_r@2)=1.0 feature(r@-2_&_s@-1_&_')=1.0 feature('_&_f@1)=1.0 feature(s@-1_&_')=1.0 feature(f@1)=1.0 feature(')=1.0
+Token#32:f feature(r@1_&_e@2_&_e@3)=1.0 feature(r@-3_&_s@-2_&_'@-1)=1.0 feature(f_&_r@1_&_e@2)=1.0 feature(s@-2_&_'@-1_&_f)=1.0 feature(f_&_r@1)=1.0 feature('@-1_&_f)=1.0 feature(r@1)=1.0 feature(f)=1.0
+Token#33:r feature(e@1_&_e@2_&_d@3)=1.0 feature(s@-3_&_'@-2_&_f@-1)=1.0 feature(r_&_e@1_&_e@2)=1.0 feature('@-2_&_f@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(f@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0
+Token#34:e feature(e@1_&_d@2_&_o@3)=1.0 feature('@-3_&_f@-2_&_r@-1)=1.0 feature(e_&_e@1_&_d@2)=1.0 feature(f@-2_&_r@-1_&_e)=1.0 feature(e_&_e@1)=1.0 feature(r@-1_&_e)=1.0 feature(e@1)=1.0 feature(e)=1.0
+Token#35:e feature(d@1_&_o@2_&_m@3)=1.0 feature(f@-3_&_r@-2_&_e@-1)=1.0 feature(e_&_d@1_&_o@2)=1.0 feature(r@-2_&_e@-1_&_e)=1.0 feature(e_&_d@1)=1.0 feature(e@-1_&_e)=1.0 feature(d@1)=1.0 feature(e)=1.0
+Token#36:d feature(o@1_&_m@2_&_t@3)=1.0 feature(r@-3_&_e@-2_&_e@-1)=1.0 feature(d_&_o@1_&_m@2)=1.0 feature(e@-2_&_e@-1_&_d)=1.0 feature(d_&_o@1)=1.0 feature(e@-1_&_d)=1.0 feature(o@1)=1.0 feature(d)=1.0
+Token#37:o feature(m@1_&_t@2_&_o@3)=1.0 feature(e@-3_&_e@-2_&_d@-1)=1.0 feature(o_&_m@1_&_t@2)=1.0 feature(e@-2_&_d@-1_&_o)=1.0 feature(o_&_m@1)=1.0 feature(d@-1_&_o)=1.0 feature(m@1)=1.0 feature(o)=1.0
+Token#38:m feature(t@1_&_o@2_&_r@3)=1.0 feature(e@-3_&_d@-2_&_o@-1)=1.0 feature(m_&_t@1_&_o@2)=1.0 feature(d@-2_&_o@-1_&_m)=1.0 feature(m_&_t@1)=1.0 feature(o@-1_&_m)=1.0 feature(t@1)=1.0 feature(m)=1.0
+Token#39:t feature(o@1_&_r@2_&_u@3)=1.0 feature(d@-3_&_o@-2_&_m@-1)=1.0 feature(t_&_o@1_&_r@2)=1.0 feature(o@-2_&_m@-1_&_t)=1.0 feature(t_&_o@1)=1.0 feature(m@-1_&_t)=1.0 feature(o@1)=1.0 feature(t)=1.0
+Token#40:o feature(r@1_&_u@2_&_n@3)=1.0 feature(o@-3_&_m@-2_&_t@-1)=1.0 feature(o_&_r@1_&_u@2)=1.0 feature(m@-2_&_t@-1_&_o)=1.0 feature(o_&_r@1)=1.0 feature(t@-1_&_o)=1.0 feature(r@1)=1.0 feature(o)=1.0
+Token#41:r feature(u@1_&_n@2_&_,@3)=1.0 feature(m@-3_&_t@-2_&_o@-1)=1.0 feature(r_&_u@1_&_n@2)=1.0 feature(t@-2_&_o@-1_&_r)=1.0 feature(r_&_u@1)=1.0 feature(o@-1_&_r)=1.0 feature(u@1)=1.0 feature(r)=1.0
+Token#42:u feature(n@1_&_,@2_&_c@3)=1.0 feature(t@-3_&_o@-2_&_r@-1)=1.0 feature(u_&_n@1_&_,@2)=1.0 feature(o@-2_&_r@-1_&_u)=1.0 feature(u_&_n@1)=1.0 feature(r@-1_&_u)=1.0 feature(n@1)=1.0 feature(u)=1.0
+Token#43:n feature(,@1_&_c@2_&_o@3)=1.0 feature(o@-3_&_r@-2_&_u@-1)=1.0 feature(n_&_,@1_&_c@2)=1.0 feature(r@-2_&_u@-1_&_n)=1.0 feature(n_&_,@1)=1.0 feature(u@-1_&_n)=1.0 feature(,@1)=1.0 feature(n)=1.0
+Token#44:, feature(c@1_&_o@2_&_p@3)=1.0 feature(r@-3_&_u@-2_&_n@-1)=1.0 feature(,_&_c@1_&_o@2)=1.0 feature(u@-2_&_n@-1_&_,)=1.0 feature(,_&_c@1)=1.0 feature(n@-1_&_,)=1.0 feature(c@1)=1.0 feature(,)=1.0
+Token#45:c feature(o@1_&_p@2_&_y@3)=1.0 feature(u@-3_&_n@-2_&_,@-1)=1.0 feature(c_&_o@1_&_p@2)=1.0 feature(n@-2_&_,@-1_&_c)=1.0 feature(c_&_o@1)=1.0 feature(,@-1_&_c)=1.0 feature(o@1)=1.0 feature(c)=1.0
+Token#46:o feature(p@1_&_y@2_&_,@3)=1.0 feature(n@-3_&_,@-2_&_c@-1)=1.0 feature(o_&_p@1_&_y@2)=1.0 feature(,@-2_&_c@-1_&_o)=1.0 feature(o_&_p@1)=1.0 feature(c@-1_&_o)=1.0 feature(p@1)=1.0 feature(o)=1.0
+Token#47:p feature(y@1_&_,@2_&_d@3)=1.0 feature(,@-3_&_c@-2_&_o@-1)=1.0 feature(p_&_y@1_&_,@2)=1.0 feature(c@-2_&_o@-1_&_p)=1.0 feature(p_&_y@1)=1.0 feature(o@-1_&_p)=1.0 feature(y@1)=1.0 feature(p)=1.0
+Token#48:y feature(,@1_&_d@2_&_i@3)=1.0 feature(c@-3_&_o@-2_&_p@-1)=1.0 feature(y_&_,@1_&_d@2)=1.0 feature(o@-2_&_p@-1_&_y)=1.0 feature(y_&_,@1)=1.0 feature(p@-1_&_y)=1.0 feature(,@1)=1.0 feature(y)=1.0
+Token#49:, feature(d@1_&_i@2_&_s@3)=1.0 feature(o@-3_&_p@-2_&_y@-1)=1.0 feature(,_&_d@1_&_i@2)=1.0 feature(p@-2_&_y@-1_&_,)=1.0 feature(,_&_d@1)=1.0 feature(y@-1_&_,)=1.0 feature(d@1)=1.0 feature(,)=1.0
+Token#50:d feature(i@1_&_s@2_&_t@3)=1.0 feature(p@-3_&_y@-2_&_,@-1)=1.0 feature(d_&_i@1_&_s@2)=1.0 feature(y@-2_&_,@-1_&_d)=1.0 feature(d_&_i@1)=1.0 feature(,@-1_&_d)=1.0 feature(i@1)=1.0 feature(d)=1.0
+Token#51:i feature(s@1_&_t@2_&_r@3)=1.0 feature(y@-3_&_,@-2_&_d@-1)=1.0 feature(i_&_s@1_&_t@2)=1.0 feature(,@-2_&_d@-1_&_i)=1.0 feature(i_&_s@1)=1.0 feature(d@-1_&_i)=1.0 feature(s@1)=1.0 feature(i)=1.0
+Token#52:s feature(t@1_&_r@2_&_i@3)=1.0 feature(,@-3_&_d@-2_&_i@-1)=1.0 feature(s_&_t@1_&_r@2)=1.0 feature(d@-2_&_i@-1_&_s)=1.0 feature(s_&_t@1)=1.0 feature(i@-1_&_s)=1.0 feature(t@1)=1.0 feature(s)=1.0
+Token#53:t feature(r@1_&_i@2_&_b@3)=1.0 feature(d@-3_&_i@-2_&_s@-1)=1.0 feature(t_&_r@1_&_i@2)=1.0 feature(i@-2_&_s@-1_&_t)=1.0 feature(t_&_r@1)=1.0 feature(s@-1_&_t)=1.0 feature(r@1)=1.0 feature(t)=1.0
+Token#54:r feature(i@1_&_b@2_&_u@3)=1.0 feature(i@-3_&_s@-2_&_t@-1)=1.0 feature(r_&_i@1_&_b@2)=1.0 feature(s@-2_&_t@-1_&_r)=1.0 feature(r_&_i@1)=1.0 feature(t@-1_&_r)=1.0 feature(i@1)=1.0 feature(r)=1.0
+Token#55:i feature(b@1_&_u@2_&_t@3)=1.0 feature(s@-3_&_t@-2_&_r@-1)=1.0 feature(i_&_b@1_&_u@2)=1.0 feature(t@-2_&_r@-1_&_i)=1.0 feature(i_&_b@1)=1.0 feature(r@-1_&_i)=1.0 feature(b@1)=1.0 feature(i)=1.0
+Token#56:b feature(u@1_&_t@2_&_e@3)=1.0 feature(t@-3_&_r@-2_&_i@-1)=1.0 feature(b_&_u@1_&_t@2)=1.0 feature(r@-2_&_i@-1_&_b)=1.0 feature(b_&_u@1)=1.0 feature(i@-1_&_b)=1.0 feature(u@1)=1.0 feature(b)=1.0
+Token#57:u feature(t@1_&_e@2_&_,@3)=1.0 feature(r@-3_&_i@-2_&_b@-1)=1.0 feature(u_&_t@1_&_e@2)=1.0 feature(i@-2_&_b@-1_&_u)=1.0 feature(u_&_t@1)=1.0 feature(b@-1_&_u)=1.0 feature(t@1)=1.0 feature(u)=1.0
+Token#58:t feature(e@1_&_,@2_&_s@3)=1.0 feature(i@-3_&_b@-2_&_u@-1)=1.0 feature(t_&_e@1_&_,@2)=1.0 feature(b@-2_&_u@-1_&_t)=1.0 feature(t_&_e@1)=1.0 feature(u@-1_&_t)=1.0 feature(e@1)=1.0 feature(t)=1.0
+Token#59:e feature(,@1_&_s@2_&_t@3)=1.0 feature(b@-3_&_u@-2_&_t@-1)=1.0 feature(e_&_,@1_&_s@2)=1.0 feature(u@-2_&_t@-1_&_e)=1.0 feature(e_&_,@1)=1.0 feature(t@-1_&_e)=1.0 feature(,@1)=1.0 feature(e)=1.0
+Token#60:, feature(s@1_&_t@2_&_u@3)=1.0 feature(u@-3_&_t@-2_&_e@-1)=1.0 feature(,_&_s@1_&_t@2)=1.0 feature(t@-2_&_e@-1_&_,)=1.0 feature(,_&_s@1)=1.0 feature(e@-1_&_,)=1.0 feature(s@1)=1.0 feature(,)=1.0
+Token#61:s feature(t@1_&_u@2_&_d@3)=1.0 feature(t@-3_&_e@-2_&_,@-1)=1.0 feature(s_&_t@1_&_u@2)=1.0 feature(e@-2_&_,@-1_&_s)=1.0 feature(s_&_t@1)=1.0 feature(,@-1_&_s)=1.0 feature(t@1)=1.0 feature(s)=1.0
+Token#62:t feature(u@1_&_d@2_&_y@3)=1.0 feature(e@-3_&_,@-2_&_s@-1)=1.0 feature(t_&_u@1_&_d@2)=1.0 feature(,@-2_&_s@-1_&_t)=1.0 feature(t_&_u@1)=1.0 feature(s@-1_&_t)=1.0 feature(u@1)=1.0 feature(t)=1.0
+Token#63:u feature(d@1_&_y@2_&_,@3)=1.0 feature(,@-3_&_s@-2_&_t@-1)=1.0 feature(u_&_d@1_&_y@2)=1.0 feature(s@-2_&_t@-1_&_u)=1.0 feature(u_&_d@1)=1.0 feature(t@-1_&_u)=1.0 feature(d@1)=1.0 feature(u)=1.0
+Token#64:d feature(y@1_&_,@2_&_c@3)=1.0 feature(s@-3_&_t@-2_&_u@-1)=1.0 feature(d_&_y@1_&_,@2)=1.0 feature(t@-2_&_u@-1_&_d)=1.0 feature(d_&_y@1)=1.0 feature(u@-1_&_d)=1.0 feature(y@1)=1.0 feature(d)=1.0
+Token#65:y feature(,@1_&_c@2_&_h@3)=1.0 feature(t@-3_&_u@-2_&_d@-1)=1.0 feature(y_&_,@1_&_c@2)=1.0 feature(u@-2_&_d@-1_&_y)=1.0 feature(y_&_,@1)=1.0 feature(d@-1_&_y)=1.0 feature(,@1)=1.0 feature(y)=1.0
+Token#66:, feature(c@1_&_h@2_&_a@3)=1.0 feature(u@-3_&_d@-2_&_y@-1)=1.0 feature(,_&_c@1_&_h@2)=1.0 feature(d@-2_&_y@-1_&_,)=1.0 feature(,_&_c@1)=1.0 feature(y@-1_&_,)=1.0 feature(c@1)=1.0 feature(,)=1.0
+Token#67:c feature(h@1_&_a@2_&_n@3)=1.0 feature(d@-3_&_y@-2_&_,@-1)=1.0 feature(c_&_h@1_&_a@2)=1.0 feature(y@-2_&_,@-1_&_c)=1.0 feature(c_&_h@1)=1.0 feature(,@-1_&_c)=1.0 feature(h@1)=1.0 feature(c)=1.0
+Token#68:h feature(a@1_&_n@2_&_g@3)=1.0 feature(y@-3_&_,@-2_&_c@-1)=1.0 feature(h_&_a@1_&_n@2)=1.0 feature(,@-2_&_c@-1_&_h)=1.0 feature(h_&_a@1)=1.0 feature(c@-1_&_h)=1.0 feature(a@1)=1.0 feature(h)=1.0
+Token#69:a feature(n@1_&_g@2_&_e@3)=1.0 feature(,@-3_&_c@-2_&_h@-1)=1.0 feature(a_&_n@1_&_g@2)=1.0 feature(c@-2_&_h@-1_&_a)=1.0 feature(a_&_n@1)=1.0 feature(h@-1_&_a)=1.0 feature(n@1)=1.0 feature(a)=1.0
+Token#70:n feature(g@1_&_e@2_&_a@3)=1.0 feature(c@-3_&_h@-2_&_a@-1)=1.0 feature(n_&_g@1_&_e@2)=1.0 feature(h@-2_&_a@-1_&_n)=1.0 feature(n_&_g@1)=1.0 feature(a@-1_&_n)=1.0 feature(g@1)=1.0 feature(n)=1.0
+Token#71:g feature(e@1_&_a@2_&_n@3)=1.0 feature(h@-3_&_a@-2_&_n@-1)=1.0 feature(g_&_e@1_&_a@2)=1.0 feature(a@-2_&_n@-1_&_g)=1.0 feature(g_&_e@1)=1.0 feature(n@-1_&_g)=1.0 feature(e@1)=1.0 feature(g)=1.0
+Token#72:e feature(a@1_&_n@2_&_d@3)=1.0 feature(a@-3_&_n@-2_&_g@-1)=1.0 feature(e_&_a@1_&_n@2)=1.0 feature(n@-2_&_g@-1_&_e)=1.0 feature(e_&_a@1)=1.0 feature(g@-1_&_e)=1.0 feature(a@1)=1.0 feature(e)=1.0
+Token#73:a feature(n@1_&_d@2_&_i@3)=1.0 feature(n@-3_&_g@-2_&_e@-1)=1.0 feature(a_&_n@1_&_d@2)=1.0 feature(g@-2_&_e@-1_&_a)=1.0 feature(a_&_n@1)=1.0 feature(e@-1_&_a)=1.0 feature(n@1)=1.0 feature(a)=1.0
+Token#74:n feature(d@1_&_i@2_&_m@3)=1.0 feature(g@-3_&_e@-2_&_a@-1)=1.0 feature(n_&_d@1_&_i@2)=1.0 feature(e@-2_&_a@-1_&_n)=1.0 feature(n_&_d@1)=1.0 feature(a@-1_&_n)=1.0 feature(d@1)=1.0 feature(n)=1.0
+Token#75:d feature(i@1_&_m@2_&_p@3)=1.0 feature(e@-3_&_a@-2_&_n@-1)=1.0 feature(d_&_i@1_&_m@2)=1.0 feature(a@-2_&_n@-1_&_d)=1.0 feature(d_&_i@1)=1.0 feature(n@-1_&_d)=1.0 feature(i@1)=1.0 feature(d)=1.0
+Token#76:i feature(m@1_&_p@2_&_r@3)=1.0 feature(a@-3_&_n@-2_&_d@-1)=1.0 feature(i_&_m@1_&_p@2)=1.0 feature(n@-2_&_d@-1_&_i)=1.0 feature(i_&_m@1)=1.0 feature(d@-1_&_i)=1.0 feature(m@1)=1.0 feature(i)=1.0
+Token#77:m feature(p@1_&_r@2_&_o@3)=1.0 feature(n@-3_&_d@-2_&_i@-1)=1.0 feature(m_&_p@1_&_r@2)=1.0 feature(d@-2_&_i@-1_&_m)=1.0 feature(m_&_p@1)=1.0 feature(i@-1_&_m)=1.0 feature(p@1)=1.0 feature(m)=1.0
+Token#78:p feature(r@1_&_o@2_&_v@3)=1.0 feature(d@-3_&_i@-2_&_m@-1)=1.0 feature(p_&_r@1_&_o@2)=1.0 feature(i@-2_&_m@-1_&_p)=1.0 feature(p_&_r@1)=1.0 feature(m@-1_&_p)=1.0 feature(r@1)=1.0 feature(p)=1.0
+Token#79:r feature(o@1_&_v@2_&_e@3)=1.0 feature(i@-3_&_m@-2_&_p@-1)=1.0 feature(r_&_o@1_&_v@2)=1.0 feature(m@-2_&_p@-1_&_r)=1.0 feature(r_&_o@1)=1.0 feature(p@-1_&_r)=1.0 feature(o@1)=1.0 feature(r)=1.0
+Token#80:o feature(v@1_&_e@2_&_t@3)=1.0 feature(m@-3_&_p@-2_&_r@-1)=1.0 feature(o_&_v@1_&_e@2)=1.0 feature(p@-2_&_r@-1_&_o)=1.0 feature(o_&_v@1)=1.0 feature(r@-1_&_o)=1.0 feature(v@1)=1.0 feature(o)=1.0
+Token#81:v feature(e@1_&_t@2_&_h@3)=1.0 feature(p@-3_&_r@-2_&_o@-1)=1.0 feature(v_&_e@1_&_t@2)=1.0 feature(r@-2_&_o@-1_&_v)=1.0 feature(v_&_e@1)=1.0 feature(o@-1_&_v)=1.0 feature(e@1)=1.0 feature(v)=1.0
+Token#82:e feature(t@1_&_h@2_&_e@3)=1.0 feature(r@-3_&_o@-2_&_v@-1)=1.0 feature(e_&_t@1_&_h@2)=1.0 feature(o@-2_&_v@-1_&_e)=1.0 feature(e_&_t@1)=1.0 feature(v@-1_&_e)=1.0 feature(t@1)=1.0 feature(e)=1.0
+Token#83:t feature(h@1_&_e@2_&_s@3)=1.0 feature(o@-3_&_v@-2_&_e@-1)=1.0 feature(t_&_h@1_&_e@2)=1.0 feature(v@-2_&_e@-1_&_t)=1.0 feature(t_&_h@1)=1.0 feature(e@-1_&_t)=1.0 feature(h@1)=1.0 feature(t)=1.0
+Token#84:h feature(e@1_&_s@2_&_o@3)=1.0 feature(v@-3_&_e@-2_&_t@-1)=1.0 feature(h_&_e@1_&_s@2)=1.0 feature(e@-2_&_t@-1_&_h)=1.0 feature(h_&_e@1)=1.0 feature(t@-1_&_h)=1.0 feature(e@1)=1.0 feature(h)=1.0
+Token#85:e feature(s@1_&_o@2_&_f@3)=1.0 feature(e@-3_&_t@-2_&_h@-1)=1.0 feature(e_&_s@1_&_o@2)=1.0 feature(t@-2_&_h@-1_&_e)=1.0 feature(e_&_s@1)=1.0 feature(h@-1_&_e)=1.0 feature(s@1)=1.0 feature(e)=1.0
+Token#86:s feature(o@1_&_f@2_&_t@3)=1.0 feature(t@-3_&_h@-2_&_e@-1)=1.0 feature(s_&_o@1_&_f@2)=1.0 feature(h@-2_&_e@-1_&_s)=1.0 feature(s_&_o@1)=1.0 feature(e@-1_&_s)=1.0 feature(o@1)=1.0 feature(s)=1.0
+Token#87:o feature(f@1_&_t@2_&_w@3)=1.0 feature(h@-3_&_e@-2_&_s@-1)=1.0 feature(o_&_f@1_&_t@2)=1.0 feature(e@-2_&_s@-1_&_o)=1.0 feature(o_&_f@1)=1.0 feature(s@-1_&_o)=1.0 feature(f@1)=1.0 feature(o)=1.0
+Token#88:f feature(t@1_&_w@2_&_a@3)=1.0 feature(e@-3_&_s@-2_&_o@-1)=1.0 feature(f_&_t@1_&_w@2)=1.0 feature(s@-2_&_o@-1_&_f)=1.0 feature(f_&_t@1)=1.0 feature(o@-1_&_f)=1.0 feature(t@1)=1.0 feature(f)=1.0
+Token#89:t feature(w@1_&_a@2_&_r@3)=1.0 feature(s@-3_&_o@-2_&_f@-1)=1.0 feature(t_&_w@1_&_a@2)=1.0 feature(o@-2_&_f@-1_&_t)=1.0 feature(t_&_w@1)=1.0 feature(f@-1_&_t)=1.0 feature(w@1)=1.0 feature(t)=1.0
+Token#90:w feature(a@1_&_r@2_&_e@3)=1.0 feature(o@-3_&_f@-2_&_t@-1)=1.0 feature(w_&_a@1_&_r@2)=1.0 feature(f@-2_&_t@-1_&_w)=1.0 feature(w_&_a@1)=1.0 feature(t@-1_&_w)=1.0 feature(a@1)=1.0 feature(w)=1.0
+Token#91:a feature(r@1_&_e@2_&_.@3)=1.0 feature(f@-3_&_t@-2_&_w@-1)=1.0 feature(a_&_r@1_&_e@2)=1.0 feature(t@-2_&_w@-1_&_a)=1.0 feature(a_&_r@1)=1.0 feature(w@-1_&_a)=1.0 feature(r@1)=1.0 feature(a)=1.0
+Token#92:r feature(e@1_&_.@2_&_m@3)=1.0 feature(t@-3_&_w@-2_&_a@-1)=1.0 feature(r_&_e@1_&_.@2)=1.0 feature(w@-2_&_a@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(a@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0
+Token#93:e feature(.@1_&_m@2_&_o@3)=1.0 feature(w@-3_&_a@-2_&_r@-1)=1.0 feature(e_&_.@1_&_m@2)=1.0 feature(a@-2_&_r@-1_&_e)=1.0 feature(e_&_.@1)=1.0 feature(r@-1_&_e)=1.0 feature(.@1)=1.0 feature(e)=1.0
+Token#94:. feature(m@1_&_o@2_&_r@3)=1.0 feature(a@-3_&_r@-2_&_e@-1)=1.0 feature(._&_m@1_&_o@2)=1.0 feature(r@-2_&_e@-1_&_.)=1.0 feature(._&_m@1)=1.0 feature(e@-1_&_.)=1.0 feature(m@1)=1.0 feature(.)=1.0
+Token#95:m feature(o@1_&_r@2_&_e@3)=1.0 feature(r@-3_&_e@-2_&_.@-1)=1.0 feature(m_&_o@1_&_r@2)=1.0 feature(e@-2_&_.@-1_&_m)=1.0 feature(m_&_o@1)=1.0 feature(.@-1_&_m)=1.0 feature(o@1)=1.0 feature(m)=1.0
+Token#96:o feature(r@1_&_e@2_&_p@3)=1.0 feature(e@-3_&_.@-2_&_m@-1)=1.0 feature(o_&_r@1_&_e@2)=1.0 feature(.@-2_&_m@-1_&_o)=1.0 feature(o_&_r@1)=1.0 feature(m@-1_&_o)=1.0 feature(r@1)=1.0 feature(o)=1.0
+Token#97:r feature(e@1_&_p@2_&_r@3)=1.0 feature(.@-3_&_m@-2_&_o@-1)=1.0 feature(r_&_e@1_&_p@2)=1.0 feature(m@-2_&_o@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(o@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0
+Token#98:e feature(p@1_&_r@2_&_e@3)=1.0 feature(m@-3_&_o@-2_&_r@-1)=1.0 feature(e_&_p@1_&_r@2)=1.0 feature(o@-2_&_r@-1_&_e)=1.0 feature(e_&_p@1)=1.0 feature(r@-1_&_e)=1.0 feature(p@1)=1.0 feature(e)=1.0
+Token#99:p feature(r@1_&_e@2_&_c@3)=1.0 feature(o@-3_&_r@-2_&_e@-1)=1.0 feature(p_&_r@1_&_e@2)=1.0 feature(r@-2_&_e@-1_&_p)=1.0 feature(p_&_r@1)=1.0 feature(e@-1_&_p)=1.0 feature(r@1)=1.0 feature(p)=1.0
+Token#100:r feature(e@1_&_c@2_&_i@3)=1.0 feature(r@-3_&_e@-2_&_p@-1)=1.0 feature(r_&_e@1_&_c@2)=1.0 feature(e@-2_&_p@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(p@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0
+Token#101:e feature(c@1_&_i@2_&_s@3)=1.0 feature(e@-3_&_p@-2_&_r@-1)=1.0 feature(e_&_c@1_&_i@2)=1.0 feature(p@-2_&_r@-1_&_e)=1.0 feature(e_&_c@1)=1.0 feature(r@-1_&_e)=1.0 feature(c@1)=1.0 feature(e)=1.0
+Token#102:c feature(i@1_&_s@2_&_e@3)=1.0 feature(p@-3_&_r@-2_&_e@-1)=1.0 feature(c_&_i@1_&_s@2)=1.0 feature(r@-2_&_e@-1_&_c)=1.0 feature(c_&_i@1)=1.0 feature(e@-1_&_c)=1.0 feature(i@1)=1.0 feature(c)=1.0
+Token#103:i feature(s@1_&_e@2_&_l@3)=1.0 feature(r@-3_&_e@-2_&_c@-1)=1.0 feature(i_&_s@1_&_e@2)=1.0 feature(e@-2_&_c@-1_&_i)=1.0 feature(i_&_s@1)=1.0 feature(c@-1_&_i)=1.0 feature(s@1)=1.0 feature(i)=1.0
+Token#104:s feature(e@1_&_l@2_&_y@3)=1.0 feature(e@-3_&_c@-2_&_i@-1)=1.0 feature(s_&_e@1_&_l@2)=1.0 feature(c@-2_&_i@-1_&_s)=1.0 feature(s_&_e@1)=1.0 feature(i@-1_&_s)=1.0 feature(e@1)=1.0 feature(s)=1.0
+Token#105:e feature(l@1_&_y@2_&_,@3)=1.0 feature(c@-3_&_i@-2_&_s@-1)=1.0 feature(e_&_l@1_&_y@2)=1.0 feature(i@-2_&_s@-1_&_e)=1.0 feature(e_&_l@1)=1.0 feature(s@-1_&_e)=1.0 feature(l@1)=1.0 feature(e)=1.0
+Token#106:l feature(y@1_&_,@2_&_i@3)=1.0 feature(i@-3_&_s@-2_&_e@-1)=1.0 feature(l_&_y@1_&_,@2)=1.0 feature(s@-2_&_e@-1_&_l)=1.0 feature(l_&_y@1)=1.0 feature(e@-1_&_l)=1.0 feature(y@1)=1.0 feature(l)=1.0
+Token#107:y feature(,@1_&_i@2_&_t@3)=1.0 feature(s@-3_&_e@-2_&_l@-1)=1.0 feature(y_&_,@1_&_i@2)=1.0 feature(e@-2_&_l@-1_&_y)=1.0 feature(y_&_,@1)=1.0 feature(l@-1_&_y)=1.0 feature(,@1)=1.0 feature(y)=1.0
+Token#108:, feature(i@1_&_t@2_&_r@3)=1.0 feature(e@-3_&_l@-2_&_y@-1)=1.0 feature(,_&_i@1_&_t@2)=1.0 feature(l@-2_&_y@-1_&_,)=1.0 feature(,_&_i@1)=1.0 feature(y@-1_&_,)=1.0 feature(i@1)=1.0 feature(,)=1.0
+Token#109:i feature(t@1_&_r@2_&_e@3)=1.0 feature(l@-3_&_y@-2_&_,@-1)=1.0 feature(i_&_t@1_&_r@2)=1.0 feature(y@-2_&_,@-1_&_i)=1.0 feature(i_&_t@1)=1.0 feature(,@-1_&_i)=1.0 feature(t@1)=1.0 feature(i)=1.0
+Token#110:t feature(r@1_&_e@2_&_f@3)=1.0 feature(y@-3_&_,@-2_&_i@-1)=1.0 feature(t_&_r@1_&_e@2)=1.0 feature(,@-2_&_i@-1_&_t)=1.0 feature(t_&_r@1)=1.0 feature(i@-1_&_t)=1.0 feature(r@1)=1.0 feature(t)=1.0
+Token#111:r feature(e@1_&_f@2_&_e@3)=1.0 feature(,@-3_&_i@-2_&_t@-1)=1.0 feature(r_&_e@1_&_f@2)=1.0 feature(i@-2_&_t@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(t@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0
+Token#112:e feature(f@1_&_e@2_&_r@3)=1.0 feature(i@-3_&_t@-2_&_r@-1)=1.0 feature(e_&_f@1_&_e@2)=1.0 feature(t@-2_&_r@-1_&_e)=1.0 feature(e_&_f@1)=1.0 feature(r@-1_&_e)=1.0 feature(f@1)=1.0 feature(e)=1.0
+Token#113:f feature(e@1_&_r@2_&_s@3)=1.0 feature(t@-3_&_r@-2_&_e@-1)=1.0 feature(f_&_e@1_&_r@2)=1.0 feature(r@-2_&_e@-1_&_f)=1.0 feature(f_&_e@1)=1.0 feature(e@-1_&_f)=1.0 feature(e@1)=1.0 feature(f)=1.0
+Token#114:e feature(r@1_&_s@2_&_t@3)=1.0 feature(r@-3_&_e@-2_&_f@-1)=1.0 feature(e_&_r@1_&_s@2)=1.0 feature(e@-2_&_f@-1_&_e)=1.0 feature(e_&_r@1)=1.0 feature(f@-1_&_e)=1.0 feature(r@1)=1.0 feature(e)=1.0
+Token#115:r feature(s@1_&_t@2_&_o@3)=1.0 feature(e@-3_&_f@-2_&_e@-1)=1.0 feature(r_&_s@1_&_t@2)=1.0 feature(f@-2_&_e@-1_&_r)=1.0 feature(r_&_s@1)=1.0 feature(e@-1_&_r)=1.0 feature(s@1)=1.0 feature(r)=1.0
+Token#116:s feature(t@1_&_o@2_&_f@3)=1.0 feature(f@-3_&_e@-2_&_r@-1)=1.0 feature(s_&_t@1_&_o@2)=1.0 feature(e@-2_&_r@-1_&_s)=1.0 feature(s_&_t@1)=1.0 feature(r@-1_&_s)=1.0 feature(t@1)=1.0 feature(s)=1.0
+Token#117:t feature(o@1_&_f@2_&_o@3)=1.0 feature(e@-3_&_r@-2_&_s@-1)=1.0 feature(t_&_o@1_&_f@2)=1.0 feature(r@-2_&_s@-1_&_t)=1.0 feature(t_&_o@1)=1.0 feature(s@-1_&_t)=1.0 feature(o@1)=1.0 feature(t)=1.0
+Token#118:o feature(f@1_&_o@2_&_u@3)=1.0 feature(r@-3_&_s@-2_&_t@-1)=1.0 feature(o_&_f@1_&_o@2)=1.0 feature(s@-2_&_t@-1_&_o)=1.0 feature(o_&_f@1)=1.0 feature(t@-1_&_o)=1.0 feature(f@1)=1.0 feature(o)=1.0
+Token#119:f feature(o@1_&_u@2_&_r@3)=1.0 feature(s@-3_&_t@-2_&_o@-1)=1.0 feature(f_&_o@1_&_u@2)=1.0 feature(t@-2_&_o@-1_&_f)=1.0 feature(f_&_o@1)=1.0 feature(o@-1_&_f)=1.0 feature(o@1)=1.0 feature(f)=1.0
+Token#120:o feature(u@1_&_r@2_&_k@3)=1.0 feature(t@-3_&_o@-2_&_f@-1)=1.0 feature(o_&_u@1_&_r@2)=1.0 feature(o@-2_&_f@-1_&_o)=1.0 feature(o_&_u@1)=1.0 feature(f@-1_&_o)=1.0 feature(u@1)=1.0 feature(o)=1.0
+Token#121:u feature(r@1_&_k@2_&_i@3)=1.0 feature(o@-3_&_f@-2_&_o@-1)=1.0 feature(u_&_r@1_&_k@2)=1.0 feature(f@-2_&_o@-1_&_u)=1.0 feature(u_&_r@1)=1.0 feature(o@-1_&_u)=1.0 feature(r@1)=1.0 feature(u)=1.0
+Token#122:r feature(k@1_&_i@2_&_n@3)=1.0 feature(f@-3_&_o@-2_&_u@-1)=1.0 feature(r_&_k@1_&_i@2)=1.0 feature(o@-2_&_u@-1_&_r)=1.0 feature(r_&_k@1)=1.0 feature(u@-1_&_r)=1.0 feature(k@1)=1.0 feature(r)=1.0
+Token#123:k feature(i@1_&_n@2_&_d@3)=1.0 feature(o@-3_&_u@-2_&_r@-1)=1.0 feature(k_&_i@1_&_n@2)=1.0 feature(u@-2_&_r@-1_&_k)=1.0 feature(k_&_i@1)=1.0 feature(r@-1_&_k)=1.0 feature(i@1)=1.0 feature(k)=1.0
+Token#124:i feature(n@1_&_d@2_&_s@3)=1.0 feature(u@-3_&_r@-2_&_k@-1)=1.0 feature(i_&_n@1_&_d@2)=1.0 feature(r@-2_&_k@-1_&_i)=1.0 feature(i_&_n@1)=1.0 feature(k@-1_&_i)=1.0 feature(n@1)=1.0 feature(i)=1.0
+Token#125:n feature(d@1_&_s@2_&_o@3)=1.0 feature(r@-3_&_k@-2_&_i@-1)=1.0 feature(n_&_d@1_&_s@2)=1.0 feature(k@-2_&_i@-1_&_n)=1.0 feature(n_&_d@1)=1.0 feature(i@-1_&_n)=1.0 feature(d@1)=1.0 feature(n)=1.0
+Token#126:d feature(s@1_&_o@2_&_f@3)=1.0 feature(k@-3_&_i@-2_&_n@-1)=1.0 feature(d_&_s@1_&_o@2)=1.0 feature(i@-2_&_n@-1_&_d)=1.0 feature(d_&_s@1)=1.0 feature(n@-1_&_d)=1.0 feature(s@1)=1.0 feature(d)=1.0
+Token#127:s feature(o@1_&_f@2_&_f@3)=1.0 feature(i@-3_&_n@-2_&_d@-1)=1.0 feature(s_&_o@1_&_f@2)=1.0 feature(n@-2_&_d@-1_&_s)=1.0 feature(s_&_o@1)=1.0 feature(d@-1_&_s)=1.0 feature(o@1)=1.0 feature(s)=1.0
+Token#128:o feature(f@1_&_f@2_&_r@3)=1.0 feature(n@-3_&_d@-2_&_s@-1)=1.0 feature(o_&_f@1_&_f@2)=1.0 feature(d@-2_&_s@-1_&_o)=1.0 feature(o_&_f@1)=1.0 feature(s@-1_&_o)=1.0 feature(f@1)=1.0 feature(o)=1.0
+Token#129:f feature(f@1_&_r@2_&_e@3)=1.0 feature(d@-3_&_s@-2_&_o@-1)=1.0 feature(f_&_f@1_&_r@2)=1.0 feature(s@-2_&_o@-1_&_f)=1.0 feature(f_&_f@1)=1.0 feature(o@-1_&_f)=1.0 feature(f@1)=1.0 feature(f)=1.0
+Token#130:f feature(r@1_&_e@2_&_e@3)=1.0 feature(s@-3_&_o@-2_&_f@-1)=1.0 feature(f_&_r@1_&_e@2)=1.0 feature(o@-2_&_f@-1_&_f)=1.0 feature(f_&_r@1)=1.0 feature(f@-1_&_f)=1.0 feature(r@1)=1.0 feature(f)=1.0
+Token#131:r feature(e@1_&_e@2_&_d@3)=1.0 feature(o@-3_&_f@-2_&_f@-1)=1.0 feature(r_&_e@1_&_e@2)=1.0 feature(f@-2_&_f@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(f@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0
+Token#132:e feature(e@1_&_d@2_&_o@3)=1.0 feature(f@-3_&_f@-2_&_r@-1)=1.0 feature(e_&_e@1_&_d@2)=1.0 feature(f@-2_&_r@-1_&_e)=1.0 feature(e_&_e@1)=1.0 feature(r@-1_&_e)=1.0 feature(e@1)=1.0 feature(e)=1.0
+Token#133:e feature(d@1_&_o@2_&_m@3)=1.0 feature(f@-3_&_r@-2_&_e@-1)=1.0 feature(e_&_d@1_&_o@2)=1.0 feature(r@-2_&_e@-1_&_e)=1.0 feature(e_&_d@1)=1.0 feature(e@-1_&_e)=1.0 feature(d@1)=1.0 feature(e)=1.0
+Token#134:d feature(o@1_&_m@2_&_,@3)=1.0 feature(r@-3_&_e@-2_&_e@-1)=1.0 feature(d_&_o@1_&_m@2)=1.0 feature(e@-2_&_e@-1_&_d)=1.0 feature(d_&_o@1)=1.0 feature(e@-1_&_d)=1.0 feature(o@1)=1.0 feature(d)=1.0
+Token#135:o feature(m@1_&_,@2_&_f@3)=1.0 feature(e@-3_&_e@-2_&_d@-1)=1.0 feature(o_&_m@1_&_,@2)=1.0 feature(e@-2_&_d@-1_&_o)=1.0 feature(o_&_m@1)=1.0 feature(d@-1_&_o)=1.0 feature(m@1)=1.0 feature(o)=1.0
+Token#136:m feature(,@1_&_f@2_&_o@3)=1.0 feature(e@-3_&_d@-2_&_o@-1)=1.0 feature(m_&_,@1_&_f@2)=1.0 feature(d@-2_&_o@-1_&_m)=1.0 feature(m_&_,@1)=1.0 feature(o@-1_&_m)=1.0 feature(,@1)=1.0 feature(m)=1.0
+Token#137:, feature(f@1_&_o@2_&_r@3)=1.0 feature(d@-3_&_o@-2_&_m@-1)=1.0 feature(,_&_f@1_&_o@2)=1.0 feature(o@-2_&_m@-1_&_,)=1.0 feature(,_&_f@1)=1.0 feature(m@-1_&_,)=1.0 feature(f@1)=1.0 feature(,)=1.0
+Token#138:f feature(o@1_&_r@2_&_t@3)=1.0 feature(o@-3_&_m@-2_&_,@-1)=1.0 feature(f_&_o@1_&_r@2)=1.0 feature(m@-2_&_,@-1_&_f)=1.0 feature(f_&_o@1)=1.0 feature(,@-1_&_f)=1.0 feature(o@1)=1.0 feature(f)=1.0
+Token#139:o feature(r@1_&_t@2_&_h@3)=1.0 feature(m@-3_&_,@-2_&_f@-1)=1.0 feature(o_&_r@1_&_t@2)=1.0 feature(,@-2_&_f@-1_&_o)=1.0 feature(o_&_r@1)=1.0 feature(f@-1_&_o)=1.0 feature(r@1)=1.0 feature(o)=1.0
+Token#140:r feature(t@1_&_h@2_&_e@3)=1.0 feature(,@-3_&_f@-2_&_o@-1)=1.0 feature(r_&_t@1_&_h@2)=1.0 feature(f@-2_&_o@-1_&_r)=1.0 feature(r_&_t@1)=1.0 feature(o@-1_&_r)=1.0 feature(t@1)=1.0 feature(r)=1.0
+Token#141:t feature(h@1_&_e@2_&_u@3)=1.0 feature(f@-3_&_o@-2_&_r@-1)=1.0 feature(t_&_h@1_&_e@2)=1.0 feature(o@-2_&_r@-1_&_t)=1.0 feature(t_&_h@1)=1.0 feature(r@-1_&_t)=1.0 feature(h@1)=1.0 feature(t)=1.0
+Token#142:h feature(e@1_&_u@2_&_s@3)=1.0 feature(o@-3_&_r@-2_&_t@-1)=1.0 feature(h_&_e@1_&_u@2)=1.0 feature(r@-2_&_t@-1_&_h)=1.0 feature(h_&_e@1)=1.0 feature(t@-1_&_h)=1.0 feature(e@1)=1.0 feature(h)=1.0
+Token#143:e feature(u@1_&_s@2_&_e@3)=1.0 feature(r@-3_&_t@-2_&_h@-1)=1.0 feature(e_&_u@1_&_s@2)=1.0 feature(t@-2_&_h@-1_&_e)=1.0 feature(e_&_u@1)=1.0 feature(h@-1_&_e)=1.0 feature(u@1)=1.0 feature(e)=1.0
+Token#144:u feature(s@1_&_e@2_&_r@3)=1.0 feature(t@-3_&_h@-2_&_e@-1)=1.0 feature(u_&_s@1_&_e@2)=1.0 feature(h@-2_&_e@-1_&_u)=1.0 feature(u_&_s@1)=1.0 feature(e@-1_&_u)=1.0 feature(s@1)=1.0 feature(u)=1.0
+Token#145:s feature(e@1_&_r@2_&_s@3)=1.0 feature(h@-3_&_e@-2_&_u@-1)=1.0 feature(s_&_e@1_&_r@2)=1.0 feature(e@-2_&_u@-1_&_s)=1.0 feature(s_&_e@1)=1.0 feature(u@-1_&_s)=1.0 feature(e@1)=1.0 feature(s)=1.0
+Token#146:e feature(r@1_&_s@2_&_o@3)=1.0 feature(e@-3_&_u@-2_&_s@-1)=1.0 feature(e_&_r@1_&_s@2)=1.0 feature(u@-2_&_s@-1_&_e)=1.0 feature(e_&_r@1)=1.0 feature(s@-1_&_e)=1.0 feature(r@1)=1.0 feature(e)=1.0
+Token#147:r feature(s@1_&_o@2_&_f@3)=1.0 feature(u@-3_&_s@-2_&_e@-1)=1.0 feature(r_&_s@1_&_o@2)=1.0 feature(s@-2_&_e@-1_&_r)=1.0 feature(r_&_s@1)=1.0 feature(e@-1_&_r)=1.0 feature(s@1)=1.0 feature(r)=1.0
+Token#148:s feature(o@1_&_f@2_&_t@3)=1.0 feature(s@-3_&_e@-2_&_r@-1)=1.0 feature(s_&_o@1_&_f@2)=1.0 feature(e@-2_&_r@-1_&_s)=1.0 feature(s_&_o@1)=1.0 feature(r@-1_&_s)=1.0 feature(o@1)=1.0 feature(s)=1.0
+Token#149:o feature(f@1_&_t@2_&_h@3)=1.0 feature(e@-3_&_r@-2_&_s@-1)=1.0 feature(o_&_f@1_&_t@2)=1.0 feature(r@-2_&_s@-1_&_o)=1.0 feature(o_&_f@1)=1.0 feature(s@-1_&_o)=1.0 feature(f@1)=1.0 feature(o)=1.0
+Token#150:f feature(t@1_&_h@2_&_e@3)=1.0 feature(r@-3_&_s@-2_&_o@-1)=1.0 feature(f_&_t@1_&_h@2)=1.0 feature(s@-2_&_o@-1_&_f)=1.0 feature(f_&_t@1)=1.0 feature(o@-1_&_f)=1.0 feature(t@1)=1.0 feature(f)=1.0
+Token#151:t feature(h@1_&_e@2_&_s@3)=1.0 feature(s@-3_&_o@-2_&_f@-1)=1.0 feature(t_&_h@1_&_e@2)=1.0 feature(o@-2_&_f@-1_&_t)=1.0 feature(t_&_h@1)=1.0 feature(f@-1_&_t)=1.0 feature(h@1)=1.0 feature(t)=1.0
+Token#152:h feature(e@1_&_s@2_&_o@3)=1.0 feature(o@-3_&_f@-2_&_t@-1)=1.0 feature(h_&_e@1_&_s@2)=1.0 feature(f@-2_&_t@-1_&_h)=1.0 feature(h_&_e@1)=1.0 feature(t@-1_&_h)=1.0 feature(e@1)=1.0 feature(h)=1.0
+Token#153:e feature(s@1_&_o@2_&_f@3)=1.0 feature(f@-3_&_t@-2_&_h@-1)=1.0 feature(e_&_s@1_&_o@2)=1.0 feature(t@-2_&_h@-1_&_e)=1.0 feature(e_&_s@1)=1.0 feature(h@-1_&_e)=1.0 feature(s@1)=1.0 feature(e)=1.0
+Token#154:s feature(o@1_&_f@2_&_t@3)=1.0 feature(t@-3_&_h@-2_&_e@-1)=1.0 feature(s_&_o@1_&_f@2)=1.0 feature(h@-2_&_e@-1_&_s)=1.0 feature(s_&_o@1)=1.0 feature(e@-1_&_s)=1.0 feature(o@1)=1.0 feature(s)=1.0
+Token#155:o feature(f@1_&_t@2_&_w@3)=1.0 feature(h@-3_&_e@-2_&_s@-1)=1.0 feature(o_&_f@1_&_t@2)=1.0 feature(e@-2_&_s@-1_&_o)=1.0 feature(o_&_f@1)=1.0 feature(s@-1_&_o)=1.0 feature(f@1)=1.0 feature(o)=1.0
+Token#156:f feature(t@1_&_w@2_&_a@3)=1.0 feature(e@-3_&_s@-2_&_o@-1)=1.0 feature(f_&_t@1_&_w@2)=1.0 feature(s@-2_&_o@-1_&_f)=1.0 feature(f_&_t@1)=1.0 feature(o@-1_&_f)=1.0 feature(t@1)=1.0 feature(f)=1.0
+Token#157:t feature(w@1_&_a@2_&_r@3)=1.0 feature(s@-3_&_o@-2_&_f@-1)=1.0 feature(t_&_w@1_&_a@2)=1.0 feature(o@-2_&_f@-1_&_t)=1.0 feature(t_&_w@1)=1.0 feature(f@-1_&_t)=1.0 feature(w@1)=1.0 feature(t)=1.0
+Token#158:w feature(a@1_&_r@2_&_e@3)=1.0 feature(o@-3_&_f@-2_&_t@-1)=1.0 feature(w_&_a@1_&_r@2)=1.0 feature(f@-2_&_t@-1_&_w)=1.0 feature(w_&_a@1)=1.0 feature(t@-1_&_w)=1.0 feature(a@1)=1.0 feature(w)=1.0
+Token#159:a feature(r@1_&_e@2_&_.@3)=1.0 feature(f@-3_&_t@-2_&_w@-1)=1.0 feature(a_&_r@1_&_e@2)=1.0 feature(t@-2_&_w@-1_&_a)=1.0 feature(a_&_r@1)=1.0 feature(w@-1_&_a)=1.0 feature(r@1)=1.0 feature(a)=1.0
+Token#160:r feature(e@1_&_.@2_&_<END0>@3)=1.0 feature(t@-3_&_w@-2_&_a@-1)=1.0 feature(r_&_e@1_&_.@2)=1.0 feature(w@-2_&_a@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(a@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0
+Token#161:e feature(.@1_&_<END0>@2_&_<END1>@3)=1.0 feature(w@-3_&_a@-2_&_r@-1)=1.0 feature(e_&_.@1_&_<END0>@2)=1.0 feature(a@-2_&_r@-1_&_e)=1.0 feature(e_&_.@1)=1.0 feature(r@-1_&_e)=1.0 feature(.@1)=1.0 feature(e)=1.0
+Token#162:. feature(<END0>@1_&_<END1>@2_&_<END2>@3)=1.0 feature(a@-3_&_r@-2_&_e@-1)=1.0 feature(._&_<END0>@1_&_<END1>@2)=1.0 feature(r@-2_&_e@-1_&_.)=1.0 feature(._&_<END0>@1)=1.0 feature(e@-1_&_.)=1.0 feature(<END0>@1)=1.0 feature(.)=1.0
+
+target: start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+start (0)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+
+name: array:1
+input: TokenSequence edu.umass.cs.mallet.base.types.TokenSequence@58f9d3
+Token#0:t feature(h@1_&_e@2_&_f@3)=1.0 feature(<START2>@-3_&_<START1>@-2_&_<START0>@-1)=1.0 feature(t_&_h@1_&_e@2)=1.0 feature(<START1>@-2_&_<START0>@-1_&_t)=1.0 feature(t_&_h@1)=1.0 feature(<START0>@-1_&_t)=1.0 feature(h@1)=1.0 feature(t)=1.0
+Token#1:h feature(e@1_&_f@2_&_r@3)=1.0 feature(<START1>@-3_&_<START0>@-2_&_t@-1)=1.0 feature(h_&_e@1_&_f@2)=1.0 feature(<START0>@-2_&_t@-1_&_h)=1.0 feature(h_&_e@1)=1.0 feature(t@-1_&_h)=1.0 feature(e@1)=1.0 feature(h)=1.0
+Token#2:e feature(f@1_&_r@2_&_e@3)=1.0 feature(<START0>@-3_&_t@-2_&_h@-1)=1.0 feature(e_&_f@1_&_r@2)=1.0 feature(t@-2_&_h@-1_&_e)=1.0 feature(e_&_f@1)=1.0 feature(h@-1_&_e)=1.0 feature(f@1)=1.0 feature(e)=1.0
+Token#3:f feature(r@1_&_e@2_&_e@3)=1.0 feature(t@-3_&_h@-2_&_e@-1)=1.0 feature(f_&_r@1_&_e@2)=1.0 feature(h@-2_&_e@-1_&_f)=1.0 feature(f_&_r@1)=1.0 feature(e@-1_&_f)=1.0 feature(r@1)=1.0 feature(f)=1.0
+Token#4:r feature(e@1_&_e@2_&_d@3)=1.0 feature(h@-3_&_e@-2_&_f@-1)=1.0 feature(r_&_e@1_&_e@2)=1.0 feature(e@-2_&_f@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(f@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0
+Token#5:e feature(e@1_&_d@2_&_o@3)=1.0 feature(e@-3_&_f@-2_&_r@-1)=1.0 feature(e_&_e@1_&_d@2)=1.0 feature(f@-2_&_r@-1_&_e)=1.0 feature(e_&_e@1)=1.0 feature(r@-1_&_e)=1.0 feature(e@1)=1.0 feature(e)=1.0
+Token#6:e feature(d@1_&_o@2_&_m@3)=1.0 feature(f@-3_&_r@-2_&_e@-1)=1.0 feature(e_&_d@1_&_o@2)=1.0 feature(r@-2_&_e@-1_&_e)=1.0 feature(e_&_d@1)=1.0 feature(e@-1_&_e)=1.0 feature(d@1)=1.0 feature(e)=1.0
+Token#7:d feature(o@1_&_m@2_&_t@3)=1.0 feature(r@-3_&_e@-2_&_e@-1)=1.0 feature(d_&_o@1_&_m@2)=1.0 feature(e@-2_&_e@-1_&_d)=1.0 feature(d_&_o@1)=1.0 feature(e@-1_&_d)=1.0 feature(o@1)=1.0 feature(d)=1.0
+Token#8:o feature(m@1_&_t@2_&_o@3)=1.0 feature(e@-3_&_e@-2_&_d@-1)=1.0 feature(o_&_m@1_&_t@2)=1.0 feature(e@-2_&_d@-1_&_o)=1.0 feature(o_&_m@1)=1.0 feature(d@-1_&_o)=1.0 feature(m@1)=1.0 feature(o)=1.0
+Token#9:m feature(t@1_&_o@2_&_r@3)=1.0 feature(e@-3_&_d@-2_&_o@-1)=1.0 feature(m_&_t@1_&_o@2)=1.0 feature(d@-2_&_o@-1_&_m)=1.0 feature(m_&_t@1)=1.0 feature(o@-1_&_m)=1.0 feature(t@1)=1.0 feature(m)=1.0
+Token#10:t feature(o@1_&_r@2_&_u@3)=1.0 feature(d@-3_&_o@-2_&_m@-1)=1.0 feature(t_&_o@1_&_r@2)=1.0 feature(o@-2_&_m@-1_&_t)=1.0 feature(t_&_o@1)=1.0 feature(m@-1_&_t)=1.0 feature(o@1)=1.0 feature(t)=1.0
+Token#11:o feature(r@1_&_u@2_&_n@3)=1.0 feature(o@-3_&_m@-2_&_t@-1)=1.0 feature(o_&_r@1_&_u@2)=1.0 feature(m@-2_&_t@-1_&_o)=1.0 feature(o_&_r@1)=1.0 feature(t@-1_&_o)=1.0 feature(r@1)=1.0 feature(o)=1.0
+Token#12:r feature(u@1_&_n@2_&_t@3)=1.0 feature(m@-3_&_t@-2_&_o@-1)=1.0 feature(r_&_u@1_&_n@2)=1.0 feature(t@-2_&_o@-1_&_r)=1.0 feature(r_&_u@1)=1.0 feature(o@-1_&_r)=1.0 feature(u@1)=1.0 feature(r)=1.0
+Token#13:u feature(n@1_&_t@2_&_h@3)=1.0 feature(t@-3_&_o@-2_&_r@-1)=1.0 feature(u_&_n@1_&_t@2)=1.0 feature(o@-2_&_r@-1_&_u)=1.0 feature(u_&_n@1)=1.0 feature(r@-1_&_u)=1.0 feature(n@1)=1.0 feature(u)=1.0
+Token#14:n feature(t@1_&_h@2_&_e@3)=1.0 feature(o@-3_&_r@-2_&_u@-1)=1.0 feature(n_&_t@1_&_h@2)=1.0 feature(r@-2_&_u@-1_&_n)=1.0 feature(n_&_t@1)=1.0 feature(u@-1_&_n)=1.0 feature(t@1)=1.0 feature(n)=1.0
+Token#15:t feature(h@1_&_e@2_&_p@3)=1.0 feature(r@-3_&_u@-2_&_n@-1)=1.0 feature(t_&_h@1_&_e@2)=1.0 feature(u@-2_&_n@-1_&_t)=1.0 feature(t_&_h@1)=1.0 feature(n@-1_&_t)=1.0 feature(h@1)=1.0 feature(t)=1.0
+Token#16:h feature(e@1_&_p@2_&_r@3)=1.0 feature(u@-3_&_n@-2_&_t@-1)=1.0 feature(h_&_e@1_&_p@2)=1.0 feature(n@-2_&_t@-1_&_h)=1.0 feature(h_&_e@1)=1.0 feature(t@-1_&_h)=1.0 feature(e@1)=1.0 feature(h)=1.0
+Token#17:e feature(p@1_&_r@2_&_o@3)=1.0 feature(n@-3_&_t@-2_&_h@-1)=1.0 feature(e_&_p@1_&_r@2)=1.0 feature(t@-2_&_h@-1_&_e)=1.0 feature(e_&_p@1)=1.0 feature(h@-1_&_e)=1.0 feature(p@1)=1.0 feature(e)=1.0
+Token#18:p feature(r@1_&_o@2_&_g@3)=1.0 feature(t@-3_&_h@-2_&_e@-1)=1.0 feature(p_&_r@1_&_o@2)=1.0 feature(h@-2_&_e@-1_&_p)=1.0 feature(p_&_r@1)=1.0 feature(e@-1_&_p)=1.0 feature(r@1)=1.0 feature(p)=1.0
+Token#19:r feature(o@1_&_g@2_&_r@3)=1.0 feature(h@-3_&_e@-2_&_p@-1)=1.0 feature(r_&_o@1_&_g@2)=1.0 feature(e@-2_&_p@-1_&_r)=1.0 feature(r_&_o@1)=1.0 feature(p@-1_&_r)=1.0 feature(o@1)=1.0 feature(r)=1.0
+Token#20:o feature(g@1_&_r@2_&_a@3)=1.0 feature(e@-3_&_p@-2_&_r@-1)=1.0 feature(o_&_g@1_&_r@2)=1.0 feature(p@-2_&_r@-1_&_o)=1.0 feature(o_&_g@1)=1.0 feature(r@-1_&_o)=1.0 feature(g@1)=1.0 feature(o)=1.0
+Token#21:g feature(r@1_&_a@2_&_m@3)=1.0 feature(p@-3_&_r@-2_&_o@-1)=1.0 feature(g_&_r@1_&_a@2)=1.0 feature(r@-2_&_o@-1_&_g)=1.0 feature(g_&_r@1)=1.0 feature(o@-1_&_g)=1.0 feature(r@1)=1.0 feature(g)=1.0
+Token#22:r feature(a@1_&_m@2_&_,@3)=1.0 feature(r@-3_&_o@-2_&_g@-1)=1.0 feature(r_&_a@1_&_m@2)=1.0 feature(o@-2_&_g@-1_&_r)=1.0 feature(r_&_a@1)=1.0 feature(g@-1_&_r)=1.0 feature(a@1)=1.0 feature(r)=1.0
+Token#23:a feature(m@1_&_,@2_&_f@3)=1.0 feature(o@-3_&_g@-2_&_r@-1)=1.0 feature(a_&_m@1_&_,@2)=1.0 feature(g@-2_&_r@-1_&_a)=1.0 feature(a_&_m@1)=1.0 feature(r@-1_&_a)=1.0 feature(m@1)=1.0 feature(a)=1.0
+Token#24:m feature(,@1_&_f@2_&_o@3)=1.0 feature(g@-3_&_r@-2_&_a@-1)=1.0 feature(m_&_,@1_&_f@2)=1.0 feature(r@-2_&_a@-1_&_m)=1.0 feature(m_&_,@1)=1.0 feature(a@-1_&_m)=1.0 feature(,@1)=1.0 feature(m)=1.0
+Token#25:, feature(f@1_&_o@2_&_r@3)=1.0 feature(r@-3_&_a@-2_&_m@-1)=1.0 feature(,_&_f@1_&_o@2)=1.0 feature(a@-2_&_m@-1_&_,)=1.0 feature(,_&_f@1)=1.0 feature(m@-1_&_,)=1.0 feature(f@1)=1.0 feature(,)=1.0
+Token#26:f feature(o@1_&_r@2_&_a@3)=1.0 feature(a@-3_&_m@-2_&_,@-1)=1.0 feature(f_&_o@1_&_r@2)=1.0 feature(m@-2_&_,@-1_&_f)=1.0 feature(f_&_o@1)=1.0 feature(,@-1_&_f)=1.0 feature(o@1)=1.0 feature(f)=1.0
+Token#27:o feature(r@1_&_a@2_&_n@3)=1.0 feature(m@-3_&_,@-2_&_f@-1)=1.0 feature(o_&_r@1_&_a@2)=1.0 feature(,@-2_&_f@-1_&_o)=1.0 feature(o_&_r@1)=1.0 feature(f@-1_&_o)=1.0 feature(r@1)=1.0 feature(o)=1.0
+Token#28:r feature(a@1_&_n@2_&_y@3)=1.0 feature(,@-3_&_f@-2_&_o@-1)=1.0 feature(r_&_a@1_&_n@2)=1.0 feature(f@-2_&_o@-1_&_r)=1.0 feature(r_&_a@1)=1.0 feature(o@-1_&_r)=1.0 feature(a@1)=1.0 feature(r)=1.0
+Token#29:a feature(n@1_&_y@2_&_p@3)=1.0 feature(f@-3_&_o@-2_&_r@-1)=1.0 feature(a_&_n@1_&_y@2)=1.0 feature(o@-2_&_r@-1_&_a)=1.0 feature(a_&_n@1)=1.0 feature(r@-1_&_a)=1.0 feature(n@1)=1.0 feature(a)=1.0
+Token#30:n feature(y@1_&_p@2_&_u@3)=1.0 feature(o@-3_&_r@-2_&_a@-1)=1.0 feature(n_&_y@1_&_p@2)=1.0 feature(r@-2_&_a@-1_&_n)=1.0 feature(n_&_y@1)=1.0 feature(a@-1_&_n)=1.0 feature(y@1)=1.0 feature(n)=1.0
+Token#31:y feature(p@1_&_u@2_&_r@3)=1.0 feature(r@-3_&_a@-2_&_n@-1)=1.0 feature(y_&_p@1_&_u@2)=1.0 feature(a@-2_&_n@-1_&_y)=1.0 feature(y_&_p@1)=1.0 feature(n@-1_&_y)=1.0 feature(p@1)=1.0 feature(y)=1.0
+Token#32:p feature(u@1_&_r@2_&_p@3)=1.0 feature(a@-3_&_n@-2_&_y@-1)=1.0 feature(p_&_u@1_&_r@2)=1.0 feature(n@-2_&_y@-1_&_p)=1.0 feature(p_&_u@1)=1.0 feature(y@-1_&_p)=1.0 feature(u@1)=1.0 feature(p)=1.0
+Token#33:u feature(r@1_&_p@2_&_o@3)=1.0 feature(n@-3_&_y@-2_&_p@-1)=1.0 feature(u_&_r@1_&_p@2)=1.0 feature(y@-2_&_p@-1_&_u)=1.0 feature(u_&_r@1)=1.0 feature(p@-1_&_u)=1.0 feature(r@1)=1.0 feature(u)=1.0
+Token#34:r feature(p@1_&_o@2_&_s@3)=1.0 feature(y@-3_&_p@-2_&_u@-1)=1.0 feature(r_&_p@1_&_o@2)=1.0 feature(p@-2_&_u@-1_&_r)=1.0 feature(r_&_p@1)=1.0 feature(u@-1_&_r)=1.0 feature(p@1)=1.0 feature(r)=1.0
+Token#35:p feature(o@1_&_s@2_&_e@3)=1.0 feature(p@-3_&_u@-2_&_r@-1)=1.0 feature(p_&_o@1_&_s@2)=1.0 feature(u@-2_&_r@-1_&_p)=1.0 feature(p_&_o@1)=1.0 feature(r@-1_&_p)=1.0 feature(o@1)=1.0 feature(p)=1.0
+Token#36:o feature(s@1_&_e@2_&_.@3)=1.0 feature(u@-3_&_r@-2_&_p@-1)=1.0 feature(o_&_s@1_&_e@2)=1.0 feature(r@-2_&_p@-1_&_o)=1.0 feature(o_&_s@1)=1.0 feature(p@-1_&_o)=1.0 feature(s@1)=1.0 feature(o)=1.0
+Token#37:s feature(e@1_&_.@2_&_<END0>@3)=1.0 feature(r@-3_&_p@-2_&_o@-1)=1.0 feature(s_&_e@1_&_.@2)=1.0 feature(p@-2_&_o@-1_&_s)=1.0 feature(s_&_e@1)=1.0 feature(o@-1_&_s)=1.0 feature(e@1)=1.0 feature(s)=1.0
+Token#38:e feature(.@1_&_<END0>@2_&_<END1>@3)=1.0 feature(p@-3_&_o@-2_&_s@-1)=1.0 feature(e_&_.@1_&_<END0>@2)=1.0 feature(o@-2_&_s@-1_&_e)=1.0 feature(e_&_.@1)=1.0 feature(s@-1_&_e)=1.0 feature(.@1)=1.0 feature(e)=1.0
+Token#39:. feature(<END0>@1_&_<END1>@2_&_<END2>@3)=1.0 feature(o@-3_&_s@-2_&_e@-1)=1.0 feature(._&_<END0>@1_&_<END1>@2)=1.0 feature(s@-2_&_e@-1_&_.)=1.0 feature(._&_<END0>@1)=1.0 feature(e@-1_&_.)=1.0 feature(<END0>@1)=1.0 feature(.)=1.0
+
+target: start (0)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+start (0)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+notstart (1)
+]
+> but was:<name: array:0
+[target: 0: start (0)
+1: notstart (1)
+2: notstart (1)
+3: notstart (1)
+4: start (0)
+5: notstart (1)
+6: notstart (1)
+7: notstart (1)
+8: notstart (1)
+9: notstart (1)
+10: notstart (1)
+11: notstart (1)
+12: start (0)
+13: notstart (1)
+14: start (0)
+15: start (0)
+16: notstart (1)
+17: notstart (1)
+18: notstart (1)
+19: notstart (1)
+20: notstart (1)
+21: start (0)
+22: notstart (1)
+23: start (0)
+24: notstart (1)
+25: notstart (1)
+26: start (0)
+27: notstart (1)
+28: notstart (1)
+29: notstart (1)
+30: notstart (1)
+31: notstart (1)
+32: start (0)
+33: notstart (1)
+34: notstart (1)
+35: notstart (1)
+36: notstart (1)
+37: notstart (1)
+38: notstart (1)
+39: start (0)
+40: notstart (1)
+41: start (0)
+42: notstart (1)
+43: notstart (1)
+44: notstart (1)
+45: start (0)
+46: notstart (1)
+47: notstart (1)
+48: notstart (1)
+49: notstart (1)
+50: start (0)
+51: notstart (1)
+52: notstart (1)
+53: notstart (1)
+54: notstart (1)
+55: notstart (1)
+56: notstart (1)
+57: notstart (1)
+58: notstart (1)
+59: notstart (1)
+60: notstart (1)
+61: start (0)
+62: notstart (1)
+63: notstart (1)
+64: notstart (1)
+65: notstart (1)
+66: notstart (1)
+67: start (0)
+68: notstart (1)
+69: notstart (1)
+70: notstart (1)
+71: notstart (1)
+72: notstart (1)
+73: start (0)
+74: notstart (1)
+75: notstart (1)
+76: start (0)
+77: notstart (1)
+78: notstart (1)
+79: notstart (1)
+80: notstart (1)
+81: notstart (1)
+82: notstart (1)
+83: start (0)
+84: notstart (1)
+85: notstart (1)
+86: start (0)
+87: notstart (1)
+88: notstart (1)
+89: notstart (1)
+90: notstart (1)
+91: notstart (1)
+92: notstart (1)
+93: notstart (1)
+94: notstart (1)
+95: start (0)
+96: notstart (1)
+97: notstart (1)
+98: notstart (1)
+99: start (0)
+100: notstart (1)
+101: notstart (1)
+102: notstart (1)
+103: notstart (1)
+104: notstart (1)
+105: notstart (1)
+106: notstart (1)
+107: notstart (1)
+108: notstart (1)
+109: start (0)
+110: notstart (1)
+111: start (0)
+112: notstart (1)
+113: notstart (1)
+114: notstart (1)
+115: notstart (1)
+116: notstart (1)
+117: start (0)
+118: notstart (1)
+119: start (0)
+120: notstart (1)
+121: notstart (1)
+122: notstart (1)
+123: start (0)
+124: notstart (1)
+125: notstart (1)
+126: notstart (1)
+127: notstart (1)
+128: start (0)
+129: notstart (1)
+130: start (0)
+131: notstart (1)
+132: notstart (1)
+133: notstart (1)
+134: notstart (1)
+135: notstart (1)
+136: notstart (1)
+137: notstart (1)
+138: start (0)
+139: notstart (1)
+140: notstart (1)
+141: start (0)
+142: notstart (1)
+143: notstart (1)
+144: start (0)
+145: notstart (1)
+146: notstart (1)
+147: notstart (1)
+148: notstart (1)
+149: start (0)
+150: notstart (1)
+151: start (0)
+152: notstart (1)
+153: notstart (1)
+154: start (0)
+155: notstart (1)
+156: notstart (1)
+157: notstart (1)
+158: notstart (1)
+159: notstart (1)
+160: notstart (1)
+161: notstart (1)
+162: notstart (1)
+
+input: TokenSequence [f feature(r@1_&_e@2_&_e@3)=1.0 feature(<START2>@-3_&_<START1>@-2_&_<START0>@-1)=1.0 feature(f_&_r@1_&_e@2)=1.0 feature(<START1>@-2_&_<START0>@-1_&_f)=1.0 feature(f_&_r@1)=1.0 feature(<START0>@-1_&_f)=1.0 feature(r@1)=1.0 feature(f)=1.0  span[0..1], r feature(e@1_&_e@2_&_s@3)=1.0 feature(<START1>@-3_&_<START0>@-2_&_f@-1)=1.0 feature(r_&_e@1_&_e@2)=1.0 feature(<START0>@-2_&_f@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(f@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0  span[1..2], e feature(e@1_&_s@2_&_o@3)=1.0 feature(<START0>@-3_&_f@-2_&_r@-1)=1.0 feature(e_&_e@1_&_s@2)=1.0 feature(f@-2_&_r@-1_&_e)=1.0 feature(e_&_e@1)=1.0 feature(r@-1_&_e)=1.0 feature(e@1)=1.0 feature(e)=1.0  span[2..3], e feature(s@1_&_o@2_&_f@3)=1.0 feature(f@-3_&_r@-2_&_e@-1)=1.0 feature(e_&_s@1_&_o@2)=1.0 feature(r@-2_&_e@-1_&_e)=1.0 feature(e_&_s@1)=1.0 feature(e@-1_&_e)=1.0 feature(s@1)=1.0 feature(e)=1.0  span[3..4], s feature(o@1_&_f@2_&_t@3)=1.0 feature(r@-3_&_e@-2_&_e@-1)=1.0 feature(s_&_o@1_&_f@2)=1.0 feature(e@-2_&_e@-1_&_s)=1.0 feature(s_&_o@1)=1.0 feature(e@-1_&_s)=1.0 feature(o@1)=1.0 feature(s)=1.0  span[5..6], o feature(f@1_&_t@2_&_w@3)=1.0 feature(e@-3_&_e@-2_&_s@-1)=1.0 feature(o_&_f@1_&_t@2)=1.0 feature(e@-2_&_s@-1_&_o)=1.0 feature(o_&_f@1)=1.0 feature(s@-1_&_o)=1.0 feature(f@1)=1.0 feature(o)=1.0  span[6..7], f feature(t@1_&_w@2_&_a@3)=1.0 feature(e@-3_&_s@-2_&_o@-1)=1.0 feature(f_&_t@1_&_w@2)=1.0 feature(s@-2_&_o@-1_&_f)=1.0 feature(f_&_t@1)=1.0 feature(o@-1_&_f)=1.0 feature(t@1)=1.0 feature(f)=1.0  span[7..8], t feature(w@1_&_a@2_&_r@3)=1.0 feature(s@-3_&_o@-2_&_f@-1)=1.0 feature(t_&_w@1_&_a@2)=1.0 feature(o@-2_&_f@-1_&_t)=1.0 feature(t_&_w@1)=1.0 feature(f@-1_&_t)=1.0 feature(w@1)=1.0 feature(t)=1.0  span[8..9], w feature(a@1_&_r@2_&_e@3)=1.0 feature(o@-3_&_f@-2_&_t@-1)=1.0 feature(w_&_a@1_&_r@2)=1.0 feature(f@-2_&_t@-1_&_w)=1.0 feature(w_&_a@1)=1.0 feature(t@-1_&_w)=1.0 feature(a@1)=1.0 feature(w)=1.0  span[9..10], a feature(r@1_&_e@2_&_i@3)=1.0 feature(f@-3_&_t@-2_&_w@-1)=1.0 feature(a_&_r@1_&_e@2)=1.0 feature(t@-2_&_w@-1_&_a)=1.0 feature(a_&_r@1)=1.0 feature(w@-1_&_a)=1.0 feature(r@1)=1.0 feature(a)=1.0  span[10..11], r feature(e@1_&_i@2_&_s@3)=1.0 feature(t@-3_&_w@-2_&_a@-1)=1.0 feature(r_&_e@1_&_i@2)=1.0 feature(w@-2_&_a@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(a@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0  span[11..12], e feature(i@1_&_s@2_&_a@3)=1.0 feature(w@-3_&_a@-2_&_r@-1)=1.0 feature(e_&_i@1_&_s@2)=1.0 feature(a@-2_&_r@-1_&_e)=1.0 feature(e_&_i@1)=1.0 feature(r@-1_&_e)=1.0 feature(i@1)=1.0 feature(e)=1.0  span[12..13], i feature(s@1_&_a@2_&_m@3)=1.0 feature(a@-3_&_r@-2_&_e@-1)=1.0 feature(i_&_s@1_&_a@2)=1.0 feature(r@-2_&_e@-1_&_i)=1.0 feature(i_&_s@1)=1.0 feature(e@-1_&_i)=1.0 feature(s@1)=1.0 feature(i)=1.0  span[14..15], s feature(a@1_&_m@2_&_a@3)=1.0 feature(r@-3_&_e@-2_&_i@-1)=1.0 feature(s_&_a@1_&_m@2)=1.0 feature(e@-2_&_i@-1_&_s)=1.0 feature(s_&_a@1)=1.0 feature(i@-1_&_s)=1.0 feature(a@1)=1.0 feature(s)=1.0  span[15..16], a feature(m@1_&_a@2_&_t@3)=1.0 feature(e@-3_&_i@-2_&_s@-1)=1.0 feature(a_&_m@1_&_a@2)=1.0 feature(i@-2_&_s@-1_&_a)=1.0 feature(a_&_m@1)=1.0 feature(s@-1_&_a)=1.0 feature(m@1)=1.0 feature(a)=1.0  span[17..18], m feature(a@1_&_t@2_&_t@3)=1.0 feature(i@-3_&_s@-2_&_a@-1)=1.0 feature(m_&_a@1_&_t@2)=1.0 feature(s@-2_&_a@-1_&_m)=1.0 feature(m_&_a@1)=1.0 feature(a@-1_&_m)=1.0 feature(a@1)=1.0 feature(m)=1.0  span[19..20], a feature(t@1_&_t@2_&_e@3)=1.0 feature(s@-3_&_a@-2_&_m@-1)=1.0 feature(a_&_t@1_&_t@2)=1.0 feature(a@-2_&_m@-1_&_a)=1.0 feature(a_&_t@1)=1.0 feature(m@-1_&_a)=1.0 feature(t@1)=1.0 feature(a)=1.0  span[20..21], t feature(t@1_&_e@2_&_r@3)=1.0 feature(a@-3_&_m@-2_&_a@-1)=1.0 feature(t_&_t@1_&_e@2)=1.0 feature(m@-2_&_a@-1_&_t)=1.0 feature(t_&_t@1)=1.0 feature(a@-1_&_t)=1.0 feature(t@1)=1.0 feature(t)=1.0  span[21..22], t feature(e@1_&_r@2_&_o@3)=1.0 feature(m@-3_&_a@-2_&_t@-1)=1.0 feature(t_&_e@1_&_r@2)=1.0 feature(a@-2_&_t@-1_&_t)=1.0 feature(t_&_e@1)=1.0 feature(t@-1_&_t)=1.0 feature(e@1)=1.0 feature(t)=1.0  span[22..23], e feature(r@1_&_o@2_&_f@3)=1.0 feature(a@-3_&_t@-2_&_t@-1)=1.0 feature(e_&_r@1_&_o@2)=1.0 feature(t@-2_&_t@-1_&_e)=1.0 feature(e_&_r@1)=1.0 feature(t@-1_&_e)=1.0 feature(r@1)=1.0 feature(e)=1.0  span[23..24], r feature(o@1_&_f@2_&_t@3)=1.0 feature(t@-3_&_t@-2_&_e@-1)=1.0 feature(r_&_o@1_&_f@2)=1.0 feature(t@-2_&_e@-1_&_r)=1.0 feature(r_&_o@1)=1.0 feature(e@-1_&_r)=1.0 feature(o@1)=1.0 feature(r)=1.0  span[24..25], o feature(f@1_&_t@2_&_h@3)=1.0 feature(t@-3_&_e@-2_&_r@-1)=1.0 feature(o_&_f@1_&_t@2)=1.0 feature(e@-2_&_r@-1_&_o)=1.0 feature(o_&_f@1)=1.0 feature(r@-1_&_o)=1.0 feature(f@1)=1.0 feature(o)=1.0  span[26..27], f feature(t@1_&_h@2_&_e@3)=1.0 feature(e@-3_&_r@-2_&_o@-1)=1.0 feature(f_&_t@1_&_h@2)=1.0 feature(r@-2_&_o@-1_&_f)=1.0 feature(f_&_t@1)=1.0 feature(o@-1_&_f)=1.0 feature(t@1)=1.0 feature(f)=1.0  span[27..28], t feature(h@1_&_e@2_&_u@3)=1.0 feature(r@-3_&_o@-2_&_f@-1)=1.0 feature(t_&_h@1_&_e@2)=1.0 feature(o@-2_&_f@-1_&_t)=1.0 feature(t_&_h@1)=1.0 feature(f@-1_&_t)=1.0 feature(h@1)=1.0 feature(t)=1.0  span[29..30], h feature(e@1_&_u@2_&_s@3)=1.0 feature(o@-3_&_f@-2_&_t@-1)=1.0 feature(h_&_e@1_&_u@2)=1.0 feature(f@-2_&_t@-1_&_h)=1.0 feature(h_&_e@1)=1.0 feature(t@-1_&_h)=1.0 feature(e@1)=1.0 feature(h)=1.0  span[30..31], e feature(u@1_&_s@2_&_e@3)=1.0 feature(f@-3_&_t@-2_&_h@-1)=1.0 feature(e_&_u@1_&_s@2)=1.0 feature(t@-2_&_h@-1_&_e)=1.0 feature(e_&_u@1)=1.0 feature(h@-1_&_e)=1.0 feature(u@1)=1.0 feature(e)=1.0  span[31..32], u feature(s@1_&_e@2_&_r@3)=1.0 feature(t@-3_&_h@-2_&_e@-1)=1.0 feature(u_&_s@1_&_e@2)=1.0 feature(h@-2_&_e@-1_&_u)=1.0 feature(u_&_s@1)=1.0 feature(e@-1_&_u)=1.0 feature(s@1)=1.0 feature(u)=1.0  span[33..34], s feature(e@1_&_r@2_&_s@3)=1.0 feature(h@-3_&_e@-2_&_u@-1)=1.0 feature(s_&_e@1_&_r@2)=1.0 feature(e@-2_&_u@-1_&_s)=1.0 feature(s_&_e@1)=1.0 feature(u@-1_&_s)=1.0 feature(e@1)=1.0 feature(s)=1.0  span[34..35], e feature(r@1_&_s@2_&_'@3)=1.0 feature(e@-3_&_u@-2_&_s@-1)=1.0 feature(e_&_r@1_&_s@2)=1.0 feature(u@-2_&_s@-1_&_e)=1.0 feature(e_&_r@1)=1.0 feature(s@-1_&_e)=1.0 feature(r@1)=1.0 feature(e)=1.0  span[35..36], r feature(s@1_&_'@2_&_f@3)=1.0 feature(u@-3_&_s@-2_&_e@-1)=1.0 feature(r_&_s@1_&_'@2)=1.0 feature(s@-2_&_e@-1_&_r)=1.0 feature(r_&_s@1)=1.0 feature(e@-1_&_r)=1.0 feature(s@1)=1.0 feature(r)=1.0  span[36..37], s feature('@1_&_f@2_&_r@3)=1.0 feature(s@-3_&_e@-2_&_r@-1)=1.0 feature(s_&_'@1_&_f@2)=1.0 feature(e@-2_&_r@-1_&_s)=1.0 feature(s_&_'@1)=1.0 feature(r@-1_&_s)=1.0 feature('@1)=1.0 feature(s)=1.0  span[37..38], ' feature(f@1_&_r@2_&_e@3)=1.0 feature(e@-3_&_r@-2_&_s@-1)=1.0 feature('_&_f@1_&_r@2)=1.0 feature(r@-2_&_s@-1_&_')=1.0 feature('_&_f@1)=1.0 feature(s@-1_&_')=1.0 feature(f@1)=1.0 feature(')=1.0  span[38..39], f feature(r@1_&_e@2_&_e@3)=1.0 feature(r@-3_&_s@-2_&_'@-1)=1.0 feature(f_&_r@1_&_e@2)=1.0 feature(s@-2_&_'@-1_&_f)=1.0 feature(f_&_r@1)=1.0 feature('@-1_&_f)=1.0 feature(r@1)=1.0 feature(f)=1.0  span[40..41], r feature(e@1_&_e@2_&_d@3)=1.0 feature(s@-3_&_'@-2_&_f@-1)=1.0 feature(r_&_e@1_&_e@2)=1.0 feature('@-2_&_f@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(f@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0  span[41..42], e feature(e@1_&_d@2_&_o@3)=1.0 feature('@-3_&_f@-2_&_r@-1)=1.0 feature(e_&_e@1_&_d@2)=1.0 feature(f@-2_&_r@-1_&_e)=1.0 feature(e_&_e@1)=1.0 feature(r@-1_&_e)=1.0 feature(e@1)=1.0 feature(e)=1.0  span[42..43], e feature(d@1_&_o@2_&_m@3)=1.0 feature(f@-3_&_r@-2_&_e@-1)=1.0 feature(e_&_d@1_&_o@2)=1.0 feature(r@-2_&_e@-1_&_e)=1.0 feature(e_&_d@1)=1.0 feature(e@-1_&_e)=1.0 feature(d@1)=1.0 feature(e)=1.0  span[43..44], d feature(o@1_&_m@2_&_t@3)=1.0 feature(r@-3_&_e@-2_&_e@-1)=1.0 feature(d_&_o@1_&_m@2)=1.0 feature(e@-2_&_e@-1_&_d)=1.0 feature(d_&_o@1)=1.0 feature(e@-1_&_d)=1.0 feature(o@1)=1.0 feature(d)=1.0  span[44..45], o feature(m@1_&_t@2_&_o@3)=1.0 feature(e@-3_&_e@-2_&_d@-1)=1.0 feature(o_&_m@1_&_t@2)=1.0 feature(e@-2_&_d@-1_&_o)=1.0 feature(o_&_m@1)=1.0 feature(d@-1_&_o)=1.0 feature(m@1)=1.0 feature(o)=1.0  span[45..46], m feature(t@1_&_o@2_&_r@3)=1.0 feature(e@-3_&_d@-2_&_o@-1)=1.0 feature(m_&_t@1_&_o@2)=1.0 feature(d@-2_&_o@-1_&_m)=1.0 feature(m_&_t@1)=1.0 feature(o@-1_&_m)=1.0 feature(t@1)=1.0 feature(m)=1.0  span[46..47], t feature(o@1_&_r@2_&_u@3)=1.0 feature(d@-3_&_o@-2_&_m@-1)=1.0 feature(t_&_o@1_&_r@2)=1.0 feature(o@-2_&_m@-1_&_t)=1.0 feature(t_&_o@1)=1.0 feature(m@-1_&_t)=1.0 feature(o@1)=1.0 feature(t)=1.0  span[48..49], o feature(r@1_&_u@2_&_n@3)=1.0 feature(o@-3_&_m@-2_&_t@-1)=1.0 feature(o_&_r@1_&_u@2)=1.0 feature(m@-2_&_t@-1_&_o)=1.0 feature(o_&_r@1)=1.0 feature(t@-1_&_o)=1.0 feature(r@1)=1.0 feature(o)=1.0  span[49..50], r feature(u@1_&_n@2_&_,@3)=1.0 feature(m@-3_&_t@-2_&_o@-1)=1.0 feature(r_&_u@1_&_n@2)=1.0 feature(t@-2_&_o@-1_&_r)=1.0 feature(r_&_u@1)=1.0 feature(o@-1_&_r)=1.0 feature(u@1)=1.0 feature(r)=1.0  span[51..52], u feature(n@1_&_,@2_&_c@3)=1.0 feature(t@-3_&_o@-2_&_r@-1)=1.0 feature(u_&_n@1_&_,@2)=1.0 feature(o@-2_&_r@-1_&_u)=1.0 feature(u_&_n@1)=1.0 feature(r@-1_&_u)=1.0 feature(n@1)=1.0 feature(u)=1.0  span[52..53], n feature(,@1_&_c@2_&_o@3)=1.0 feature(o@-3_&_r@-2_&_u@-1)=1.0 feature(n_&_,@1_&_c@2)=1.0 feature(r@-2_&_u@-1_&_n)=1.0 feature(n_&_,@1)=1.0 feature(u@-1_&_n)=1.0 feature(,@1)=1.0 feature(n)=1.0  span[53..54], , feature(c@1_&_o@2_&_p@3)=1.0 feature(r@-3_&_u@-2_&_n@-1)=1.0 feature(,_&_c@1_&_o@2)=1.0 feature(u@-2_&_n@-1_&_,)=1.0 feature(,_&_c@1)=1.0 feature(n@-1_&_,)=1.0 feature(c@1)=1.0 feature(,)=1.0  span[54..55], c feature(o@1_&_p@2_&_y@3)=1.0 feature(u@-3_&_n@-2_&_,@-1)=1.0 feature(c_&_o@1_&_p@2)=1.0 feature(n@-2_&_,@-1_&_c)=1.0 feature(c_&_o@1)=1.0 feature(,@-1_&_c)=1.0 feature(o@1)=1.0 feature(c)=1.0  span[56..57], o feature(p@1_&_y@2_&_,@3)=1.0 feature(n@-3_&_,@-2_&_c@-1)=1.0 feature(o_&_p@1_&_y@2)=1.0 feature(,@-2_&_c@-1_&_o)=1.0 feature(o_&_p@1)=1.0 feature(c@-1_&_o)=1.0 feature(p@1)=1.0 feature(o)=1.0  span[57..58], p feature(y@1_&_,@2_&_d@3)=1.0 feature(,@-3_&_c@-2_&_o@-1)=1.0 feature(p_&_y@1_&_,@2)=1.0 feature(c@-2_&_o@-1_&_p)=1.0 feature(p_&_y@1)=1.0 feature(o@-1_&_p)=1.0 feature(y@1)=1.0 feature(p)=1.0  span[58..59], y feature(,@1_&_d@2_&_i@3)=1.0 feature(c@-3_&_o@-2_&_p@-1)=1.0 feature(y_&_,@1_&_d@2)=1.0 feature(o@-2_&_p@-1_&_y)=1.0 feature(y_&_,@1)=1.0 feature(p@-1_&_y)=1.0 feature(,@1)=1.0 feature(y)=1.0  span[59..60], , feature(d@1_&_i@2_&_s@3)=1.0 feature(o@-3_&_p@-2_&_y@-1)=1.0 feature(,_&_d@1_&_i@2)=1.0 feature(p@-2_&_y@-1_&_,)=1.0 feature(,_&_d@1)=1.0 feature(y@-1_&_,)=1.0 feature(d@1)=1.0 feature(,)=1.0  span[60..61], d feature(i@1_&_s@2_&_t@3)=1.0 feature(p@-3_&_y@-2_&_,@-1)=1.0 feature(d_&_i@1_&_s@2)=1.0 feature(y@-2_&_,@-1_&_d)=1.0 feature(d_&_i@1)=1.0 feature(,@-1_&_d)=1.0 feature(i@1)=1.0 feature(d)=1.0  span[62..63], i feature(s@1_&_t@2_&_r@3)=1.0 feature(y@-3_&_,@-2_&_d@-1)=1.0 feature(i_&_s@1_&_t@2)=1.0 feature(,@-2_&_d@-1_&_i)=1.0 feature(i_&_s@1)=1.0 feature(d@-1_&_i)=1.0 feature(s@1)=1.0 feature(i)=1.0  span[63..64], s feature(t@1_&_r@2_&_i@3)=1.0 feature(,@-3_&_d@-2_&_i@-1)=1.0 feature(s_&_t@1_&_r@2)=1.0 feature(d@-2_&_i@-1_&_s)=1.0 feature(s_&_t@1)=1.0 feature(i@-1_&_s)=1.0 feature(t@1)=1.0 feature(s)=1.0  span[64..65], t feature(r@1_&_i@2_&_b@3)=1.0 feature(d@-3_&_i@-2_&_s@-1)=1.0 feature(t_&_r@1_&_i@2)=1.0 feature(i@-2_&_s@-1_&_t)=1.0 feature(t_&_r@1)=1.0 feature(s@-1_&_t)=1.0 feature(r@1)=1.0 feature(t)=1.0  span[65..66], r feature(i@1_&_b@2_&_u@3)=1.0 feature(i@-3_&_s@-2_&_t@-1)=1.0 feature(r_&_i@1_&_b@2)=1.0 feature(s@-2_&_t@-1_&_r)=1.0 feature(r_&_i@1)=1.0 feature(t@-1_&_r)=1.0 feature(i@1)=1.0 feature(r)=1.0  span[66..67], i feature(b@1_&_u@2_&_t@3)=1.0 feature(s@-3_&_t@-2_&_r@-1)=1.0 feature(i_&_b@1_&_u@2)=1.0 feature(t@-2_&_r@-1_&_i)=1.0 feature(i_&_b@1)=1.0 feature(r@-1_&_i)=1.0 feature(b@1)=1.0 feature(i)=1.0  span[67..68], b feature(u@1_&_t@2_&_e@3)=1.0 feature(t@-3_&_r@-2_&_i@-1)=1.0 feature(b_&_u@1_&_t@2)=1.0 feature(r@-2_&_i@-1_&_b)=1.0 feature(b_&_u@1)=1.0 feature(i@-1_&_b)=1.0 feature(u@1)=1.0 feature(b)=1.0  span[68..69], u feature(t@1_&_e@2_&_,@3)=1.0 feature(r@-3_&_i@-2_&_b@-1)=1.0 feature(u_&_t@1_&_e@2)=1.0 feature(i@-2_&_b@-1_&_u)=1.0 feature(u_&_t@1)=1.0 feature(b@-1_&_u)=1.0 feature(t@1)=1.0 feature(u)=1.0  span[69..70], t feature(e@1_&_,@2_&_s@3)=1.0 feature(i@-3_&_b@-2_&_u@-1)=1.0 feature(t_&_e@1_&_,@2)=1.0 feature(b@-2_&_u@-1_&_t)=1.0 feature(t_&_e@1)=1.0 feature(u@-1_&_t)=1.0 feature(e@1)=1.0 feature(t)=1.0  span[70..71], e feature(,@1_&_s@2_&_t@3)=1.0 feature(b@-3_&_u@-2_&_t@-1)=1.0 feature(e_&_,@1_&_s@2)=1.0 feature(u@-2_&_t@-1_&_e)=1.0 feature(e_&_,@1)=1.0 feature(t@-1_&_e)=1.0 feature(,@1)=1.0 feature(e)=1.0  span[71..72], , feature(s@1_&_t@2_&_u@3)=1.0 feature(u@-3_&_t@-2_&_e@-1)=1.0 feature(,_&_s@1_&_t@2)=1.0 feature(t@-2_&_e@-1_&_,)=1.0 feature(,_&_s@1)=1.0 feature(e@-1_&_,)=1.0 feature(s@1)=1.0 feature(,)=1.0  span[72..73], s feature(t@1_&_u@2_&_d@3)=1.0 feature(t@-3_&_e@-2_&_,@-1)=1.0 feature(s_&_t@1_&_u@2)=1.0 feature(e@-2_&_,@-1_&_s)=1.0 feature(s_&_t@1)=1.0 feature(,@-1_&_s)=1.0 feature(t@1)=1.0 feature(s)=1.0  span[74..75], t feature(u@1_&_d@2_&_y@3)=1.0 feature(e@-3_&_,@-2_&_s@-1)=1.0 feature(t_&_u@1_&_d@2)=1.0 feature(,@-2_&_s@-1_&_t)=1.0 feature(t_&_u@1)=1.0 feature(s@-1_&_t)=1.0 feature(u@1)=1.0 feature(t)=1.0  span[75..76], u feature(d@1_&_y@2_&_,@3)=1.0 feature(,@-3_&_s@-2_&_t@-1)=1.0 feature(u_&_d@1_&_y@2)=1.0 feature(s@-2_&_t@-1_&_u)=1.0 feature(u_&_d@1)=1.0 feature(t@-1_&_u)=1.0 feature(d@1)=1.0 feature(u)=1.0  span[76..77], d feature(y@1_&_,@2_&_c@3)=1.0 feature(s@-3_&_t@-2_&_u@-1)=1.0 feature(d_&_y@1_&_,@2)=1.0 feature(t@-2_&_u@-1_&_d)=1.0 feature(d_&_y@1)=1.0 feature(u@-1_&_d)=1.0 feature(y@1)=1.0 feature(d)=1.0  span[77..78], y feature(,@1_&_c@2_&_h@3)=1.0 feature(t@-3_&_u@-2_&_d@-1)=1.0 feature(y_&_,@1_&_c@2)=1.0 feature(u@-2_&_d@-1_&_y)=1.0 feature(y_&_,@1)=1.0 feature(d@-1_&_y)=1.0 feature(,@1)=1.0 feature(y)=1.0  span[78..79], , feature(c@1_&_h@2_&_a@3)=1.0 feature(u@-3_&_d@-2_&_y@-1)=1.0 feature(,_&_c@1_&_h@2)=1.0 feature(d@-2_&_y@-1_&_,)=1.0 feature(,_&_c@1)=1.0 feature(y@-1_&_,)=1.0 feature(c@1)=1.0 feature(,)=1.0  span[79..80], c feature(h@1_&_a@2_&_n@3)=1.0 feature(d@-3_&_y@-2_&_,@-1)=1.0 feature(c_&_h@1_&_a@2)=1.0 feature(y@-2_&_,@-1_&_c)=1.0 feature(c_&_h@1)=1.0 feature(,@-1_&_c)=1.0 feature(h@1)=1.0 feature(c)=1.0  span[81..82], h feature(a@1_&_n@2_&_g@3)=1.0 feature(y@-3_&_,@-2_&_c@-1)=1.0 feature(h_&_a@1_&_n@2)=1.0 feature(,@-2_&_c@-1_&_h)=1.0 feature(h_&_a@1)=1.0 feature(c@-1_&_h)=1.0 feature(a@1)=1.0 feature(h)=1.0  span[82..83], a feature(n@1_&_g@2_&_e@3)=1.0 feature(,@-3_&_c@-2_&_h@-1)=1.0 feature(a_&_n@1_&_g@2)=1.0 feature(c@-2_&_h@-1_&_a)=1.0 feature(a_&_n@1)=1.0 feature(h@-1_&_a)=1.0 feature(n@1)=1.0 feature(a)=1.0  span[83..84], n feature(g@1_&_e@2_&_a@3)=1.0 feature(c@-3_&_h@-2_&_a@-1)=1.0 feature(n_&_g@1_&_e@2)=1.0 feature(h@-2_&_a@-1_&_n)=1.0 feature(n_&_g@1)=1.0 feature(a@-1_&_n)=1.0 feature(g@1)=1.0 feature(n)=1.0  span[84..85], g feature(e@1_&_a@2_&_n@3)=1.0 feature(h@-3_&_a@-2_&_n@-1)=1.0 feature(g_&_e@1_&_a@2)=1.0 feature(a@-2_&_n@-1_&_g)=1.0 feature(g_&_e@1)=1.0 feature(n@-1_&_g)=1.0 feature(e@1)=1.0 feature(g)=1.0  span[85..86], e feature(a@1_&_n@2_&_d@3)=1.0 feature(a@-3_&_n@-2_&_g@-1)=1.0 feature(e_&_a@1_&_n@2)=1.0 feature(n@-2_&_g@-1_&_e)=1.0 feature(e_&_a@1)=1.0 feature(g@-1_&_e)=1.0 feature(a@1)=1.0 feature(e)=1.0  span[86..87], a feature(n@1_&_d@2_&_i@3)=1.0 feature(n@-3_&_g@-2_&_e@-1)=1.0 feature(a_&_n@1_&_d@2)=1.0 feature(g@-2_&_e@-1_&_a)=1.0 feature(a_&_n@1)=1.0 feature(e@-1_&_a)=1.0 feature(n@1)=1.0 feature(a)=1.0  span[88..89], n feature(d@1_&_i@2_&_m@3)=1.0 feature(g@-3_&_e@-2_&_a@-1)=1.0 feature(n_&_d@1_&_i@2)=1.0 feature(e@-2_&_a@-1_&_n)=1.0 feature(n_&_d@1)=1.0 feature(a@-1_&_n)=1.0 feature(d@1)=1.0 feature(n)=1.0  span[89..90], d feature(i@1_&_m@2_&_p@3)=1.0 feature(e@-3_&_a@-2_&_n@-1)=1.0 feature(d_&_i@1_&_m@2)=1.0 feature(a@-2_&_n@-1_&_d)=1.0 feature(d_&_i@1)=1.0 feature(n@-1_&_d)=1.0 feature(i@1)=1.0 feature(d)=1.0  span[90..91], i feature(m@1_&_p@2_&_r@3)=1.0 feature(a@-3_&_n@-2_&_d@-1)=1.0 feature(i_&_m@1_&_p@2)=1.0 feature(n@-2_&_d@-1_&_i)=1.0 feature(i_&_m@1)=1.0 feature(d@-1_&_i)=1.0 feature(m@1)=1.0 feature(i)=1.0  span[92..93], m feature(p@1_&_r@2_&_o@3)=1.0 feature(n@-3_&_d@-2_&_i@-1)=1.0 feature(m_&_p@1_&_r@2)=1.0 feature(d@-2_&_i@-1_&_m)=1.0 feature(m_&_p@1)=1.0 feature(i@-1_&_m)=1.0 feature(p@1)=1.0 feature(m)=1.0  span[93..94], p feature(r@1_&_o@2_&_v@3)=1.0 feature(d@-3_&_i@-2_&_m@-1)=1.0 feature(p_&_r@1_&_o@2)=1.0 feature(i@-2_&_m@-1_&_p)=1.0 feature(p_&_r@1)=1.0 feature(m@-1_&_p)=1.0 feature(r@1)=1.0 feature(p)=1.0  span[94..95], r feature(o@1_&_v@2_&_e@3)=1.0 feature(i@-3_&_m@-2_&_p@-1)=1.0 feature(r_&_o@1_&_v@2)=1.0 feature(m@-2_&_p@-1_&_r)=1.0 feature(r_&_o@1)=1.0 feature(p@-1_&_r)=1.0 feature(o@1)=1.0 feature(r)=1.0  span[95..96], o feature(v@1_&_e@2_&_t@3)=1.0 feature(m@-3_&_p@-2_&_r@-1)=1.0 feature(o_&_v@1_&_e@2)=1.0 feature(p@-2_&_r@-1_&_o)=1.0 feature(o_&_v@1)=1.0 feature(r@-1_&_o)=1.0 feature(v@1)=1.0 feature(o)=1.0  span[96..97], v feature(e@1_&_t@2_&_h@3)=1.0 feature(p@-3_&_r@-2_&_o@-1)=1.0 feature(v_&_e@1_&_t@2)=1.0 feature(r@-2_&_o@-1_&_v)=1.0 feature(v_&_e@1)=1.0 feature(o@-1_&_v)=1.0 feature(e@1)=1.0 feature(v)=1.0  span[97..98], e feature(t@1_&_h@2_&_e@3)=1.0 feature(r@-3_&_o@-2_&_v@-1)=1.0 feature(e_&_t@1_&_h@2)=1.0 feature(o@-2_&_v@-1_&_e)=1.0 feature(e_&_t@1)=1.0 feature(v@-1_&_e)=1.0 feature(t@1)=1.0 feature(e)=1.0  span[98..99], t feature(h@1_&_e@2_&_s@3)=1.0 feature(o@-3_&_v@-2_&_e@-1)=1.0 feature(t_&_h@1_&_e@2)=1.0 feature(v@-2_&_e@-1_&_t)=1.0 feature(t_&_h@1)=1.0 feature(e@-1_&_t)=1.0 feature(h@1)=1.0 feature(t)=1.0  span[100..101], h feature(e@1_&_s@2_&_o@3)=1.0 feature(v@-3_&_e@-2_&_t@-1)=1.0 feature(h_&_e@1_&_s@2)=1.0 feature(e@-2_&_t@-1_&_h)=1.0 feature(h_&_e@1)=1.0 feature(t@-1_&_h)=1.0 feature(e@1)=1.0 feature(h)=1.0  span[101..102], e feature(s@1_&_o@2_&_f@3)=1.0 feature(e@-3_&_t@-2_&_h@-1)=1.0 feature(e_&_s@1_&_o@2)=1.0 feature(t@-2_&_h@-1_&_e)=1.0 feature(e_&_s@1)=1.0 feature(h@-1_&_e)=1.0 feature(s@1)=1.0 feature(e)=1.0  span[102..103], s feature(o@1_&_f@2_&_t@3)=1.0 feature(t@-3_&_h@-2_&_e@-1)=1.0 feature(s_&_o@1_&_f@2)=1.0 feature(h@-2_&_e@-1_&_s)=1.0 feature(s_&_o@1)=1.0 feature(e@-1_&_s)=1.0 feature(o@1)=1.0 feature(s)=1.0  span[104..105], o feature(f@1_&_t@2_&_w@3)=1.0 feature(h@-3_&_e@-2_&_s@-1)=1.0 feature(o_&_f@1_&_t@2)=1.0 feature(e@-2_&_s@-1_&_o)=1.0 feature(o_&_f@1)=1.0 feature(s@-1_&_o)=1.0 feature(f@1)=1.0 feature(o)=1.0  span[105..106], f feature(t@1_&_w@2_&_a@3)=1.0 feature(e@-3_&_s@-2_&_o@-1)=1.0 feature(f_&_t@1_&_w@2)=1.0 feature(s@-2_&_o@-1_&_f)=1.0 feature(f_&_t@1)=1.0 feature(o@-1_&_f)=1.0 feature(t@1)=1.0 feature(f)=1.0  span[106..107], t feature(w@1_&_a@2_&_r@3)=1.0 feature(s@-3_&_o@-2_&_f@-1)=1.0 feature(t_&_w@1_&_a@2)=1.0 feature(o@-2_&_f@-1_&_t)=1.0 feature(t_&_w@1)=1.0 feature(f@-1_&_t)=1.0 feature(w@1)=1.0 feature(t)=1.0  span[107..108], w feature(a@1_&_r@2_&_e@3)=1.0 feature(o@-3_&_f@-2_&_t@-1)=1.0 feature(w_&_a@1_&_r@2)=1.0 feature(f@-2_&_t@-1_&_w)=1.0 feature(w_&_a@1)=1.0 feature(t@-1_&_w)=1.0 feature(a@1)=1.0 feature(w)=1.0  span[108..109], a feature(r@1_&_e@2_&_.@3)=1.0 feature(f@-3_&_t@-2_&_w@-1)=1.0 feature(a_&_r@1_&_e@2)=1.0 feature(t@-2_&_w@-1_&_a)=1.0 feature(a_&_r@1)=1.0 feature(w@-1_&_a)=1.0 feature(r@1)=1.0 feature(a)=1.0  span[109..110], r feature(e@1_&_.@2_&_m@3)=1.0 feature(t@-3_&_w@-2_&_a@-1)=1.0 feature(r_&_e@1_&_.@2)=1.0 feature(w@-2_&_a@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(a@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0  span[110..111], e feature(.@1_&_m@2_&_o@3)=1.0 feature(w@-3_&_a@-2_&_r@-1)=1.0 feature(e_&_.@1_&_m@2)=1.0 feature(a@-2_&_r@-1_&_e)=1.0 feature(e_&_.@1)=1.0 feature(r@-1_&_e)=1.0 feature(.@1)=1.0 feature(e)=1.0  span[111..112], . feature(m@1_&_o@2_&_r@3)=1.0 feature(a@-3_&_r@-2_&_e@-1)=1.0 feature(._&_m@1_&_o@2)=1.0 feature(r@-2_&_e@-1_&_.)=1.0 feature(._&_m@1)=1.0 feature(e@-1_&_.)=1.0 feature(m@1)=1.0 feature(.)=1.0  span[112..113], m feature(o@1_&_r@2_&_e@3)=1.0 feature(r@-3_&_e@-2_&_.@-1)=1.0 feature(m_&_o@1_&_r@2)=1.0 feature(e@-2_&_.@-1_&_m)=1.0 feature(m_&_o@1)=1.0 feature(.@-1_&_m)=1.0 feature(o@1)=1.0 feature(m)=1.0  span[114..115], o feature(r@1_&_e@2_&_p@3)=1.0 feature(e@-3_&_.@-2_&_m@-1)=1.0 feature(o_&_r@1_&_e@2)=1.0 feature(.@-2_&_m@-1_&_o)=1.0 feature(o_&_r@1)=1.0 feature(m@-1_&_o)=1.0 feature(r@1)=1.0 feature(o)=1.0  span[115..116], r feature(e@1_&_p@2_&_r@3)=1.0 feature(.@-3_&_m@-2_&_o@-1)=1.0 feature(r_&_e@1_&_p@2)=1.0 feature(m@-2_&_o@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(o@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0  span[116..117], e feature(p@1_&_r@2_&_e@3)=1.0 feature(m@-3_&_o@-2_&_r@-1)=1.0 feature(e_&_p@1_&_r@2)=1.0 feature(o@-2_&_r@-1_&_e)=1.0 feature(e_&_p@1)=1.0 feature(r@-1_&_e)=1.0 feature(p@1)=1.0 feature(e)=1.0  span[117..118], p feature(r@1_&_e@2_&_c@3)=1.0 feature(o@-3_&_r@-2_&_e@-1)=1.0 feature(p_&_r@1_&_e@2)=1.0 feature(r@-2_&_e@-1_&_p)=1.0 feature(p_&_r@1)=1.0 feature(e@-1_&_p)=1.0 feature(r@1)=1.0 feature(p)=1.0  span[119..120], r feature(e@1_&_c@2_&_i@3)=1.0 feature(r@-3_&_e@-2_&_p@-1)=1.0 feature(r_&_e@1_&_c@2)=1.0 feature(e@-2_&_p@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(p@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0  span[120..121], e feature(c@1_&_i@2_&_s@3)=1.0 feature(e@-3_&_p@-2_&_r@-1)=1.0 feature(e_&_c@1_&_i@2)=1.0 feature(p@-2_&_r@-1_&_e)=1.0 feature(e_&_c@1)=1.0 feature(r@-1_&_e)=1.0 feature(c@1)=1.0 feature(e)=1.0  span[121..122], c feature(i@1_&_s@2_&_e@3)=1.0 feature(p@-3_&_r@-2_&_e@-1)=1.0 feature(c_&_i@1_&_s@2)=1.0 feature(r@-2_&_e@-1_&_c)=1.0 feature(c_&_i@1)=1.0 feature(e@-1_&_c)=1.0 feature(i@1)=1.0 feature(c)=1.0  span[122..123], i feature(s@1_&_e@2_&_l@3)=1.0 feature(r@-3_&_e@-2_&_c@-1)=1.0 feature(i_&_s@1_&_e@2)=1.0 feature(e@-2_&_c@-1_&_i)=1.0 feature(i_&_s@1)=1.0 feature(c@-1_&_i)=1.0 feature(s@1)=1.0 feature(i)=1.0  span[123..124], s feature(e@1_&_l@2_&_y@3)=1.0 feature(e@-3_&_c@-2_&_i@-1)=1.0 feature(s_&_e@1_&_l@2)=1.0 feature(c@-2_&_i@-1_&_s)=1.0 feature(s_&_e@1)=1.0 feature(i@-1_&_s)=1.0 feature(e@1)=1.0 feature(s)=1.0  span[124..125], e feature(l@1_&_y@2_&_,@3)=1.0 feature(c@-3_&_i@-2_&_s@-1)=1.0 feature(e_&_l@1_&_y@2)=1.0 feature(i@-2_&_s@-1_&_e)=1.0 feature(e_&_l@1)=1.0 feature(s@-1_&_e)=1.0 feature(l@1)=1.0 feature(e)=1.0  span[125..126], l feature(y@1_&_,@2_&_i@3)=1.0 feature(i@-3_&_s@-2_&_e@-1)=1.0 feature(l_&_y@1_&_,@2)=1.0 feature(s@-2_&_e@-1_&_l)=1.0 feature(l_&_y@1)=1.0 feature(e@-1_&_l)=1.0 feature(y@1)=1.0 feature(l)=1.0  span[126..127], y feature(,@1_&_i@2_&_t@3)=1.0 feature(s@-3_&_e@-2_&_l@-1)=1.0 feature(y_&_,@1_&_i@2)=1.0 feature(e@-2_&_l@-1_&_y)=1.0 feature(y_&_,@1)=1.0 feature(l@-1_&_y)=1.0 feature(,@1)=1.0 feature(y)=1.0  span[127..128], , feature(i@1_&_t@2_&_r@3)=1.0 feature(e@-3_&_l@-2_&_y@-1)=1.0 feature(,_&_i@1_&_t@2)=1.0 feature(l@-2_&_y@-1_&_,)=1.0 feature(,_&_i@1)=1.0 feature(y@-1_&_,)=1.0 feature(i@1)=1.0 feature(,)=1.0  span[128..129], i feature(t@1_&_r@2_&_e@3)=1.0 feature(l@-3_&_y@-2_&_,@-1)=1.0 feature(i_&_t@1_&_r@2)=1.0 feature(y@-2_&_,@-1_&_i)=1.0 feature(i_&_t@1)=1.0 feature(,@-1_&_i)=1.0 feature(t@1)=1.0 feature(i)=1.0  span[130..131], t feature(r@1_&_e@2_&_f@3)=1.0 feature(y@-3_&_,@-2_&_i@-1)=1.0 feature(t_&_r@1_&_e@2)=1.0 feature(,@-2_&_i@-1_&_t)=1.0 feature(t_&_r@1)=1.0 feature(i@-1_&_t)=1.0 feature(r@1)=1.0 feature(t)=1.0  span[131..132], r feature(e@1_&_f@2_&_e@3)=1.0 feature(,@-3_&_i@-2_&_t@-1)=1.0 feature(r_&_e@1_&_f@2)=1.0 feature(i@-2_&_t@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(t@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0  span[133..134], e feature(f@1_&_e@2_&_r@3)=1.0 feature(i@-3_&_t@-2_&_r@-1)=1.0 feature(e_&_f@1_&_e@2)=1.0 feature(t@-2_&_r@-1_&_e)=1.0 feature(e_&_f@1)=1.0 feature(r@-1_&_e)=1.0 feature(f@1)=1.0 feature(e)=1.0  span[134..135], f feature(e@1_&_r@2_&_s@3)=1.0 feature(t@-3_&_r@-2_&_e@-1)=1.0 feature(f_&_e@1_&_r@2)=1.0 feature(r@-2_&_e@-1_&_f)=1.0 feature(f_&_e@1)=1.0 feature(e@-1_&_f)=1.0 feature(e@1)=1.0 feature(f)=1.0  span[135..136], e feature(r@1_&_s@2_&_t@3)=1.0 feature(r@-3_&_e@-2_&_f@-1)=1.0 feature(e_&_r@1_&_s@2)=1.0 feature(e@-2_&_f@-1_&_e)=1.0 feature(e_&_r@1)=1.0 feature(f@-1_&_e)=1.0 feature(r@1)=1.0 feature(e)=1.0  span[136..137], r feature(s@1_&_t@2_&_o@3)=1.0 feature(e@-3_&_f@-2_&_e@-1)=1.0 feature(r_&_s@1_&_t@2)=1.0 feature(f@-2_&_e@-1_&_r)=1.0 feature(r_&_s@1)=1.0 feature(e@-1_&_r)=1.0 feature(s@1)=1.0 feature(r)=1.0  span[137..138], s feature(t@1_&_o@2_&_f@3)=1.0 feature(f@-3_&_e@-2_&_r@-1)=1.0 feature(s_&_t@1_&_o@2)=1.0 feature(e@-2_&_r@-1_&_s)=1.0 feature(s_&_t@1)=1.0 feature(r@-1_&_s)=1.0 feature(t@1)=1.0 feature(s)=1.0  span[138..139], t feature(o@1_&_f@2_&_o@3)=1.0 feature(e@-3_&_r@-2_&_s@-1)=1.0 feature(t_&_o@1_&_f@2)=1.0 feature(r@-2_&_s@-1_&_t)=1.0 feature(t_&_o@1)=1.0 feature(s@-1_&_t)=1.0 feature(o@1)=1.0 feature(t)=1.0  span[140..141], o feature(f@1_&_o@2_&_u@3)=1.0 feature(r@-3_&_s@-2_&_t@-1)=1.0 feature(o_&_f@1_&_o@2)=1.0 feature(s@-2_&_t@-1_&_o)=1.0 feature(o_&_f@1)=1.0 feature(t@-1_&_o)=1.0 feature(f@1)=1.0 feature(o)=1.0  span[141..142], f feature(o@1_&_u@2_&_r@3)=1.0 feature(s@-3_&_t@-2_&_o@-1)=1.0 feature(f_&_o@1_&_u@2)=1.0 feature(t@-2_&_o@-1_&_f)=1.0 feature(f_&_o@1)=1.0 feature(o@-1_&_f)=1.0 feature(o@1)=1.0 feature(f)=1.0  span[143..144], o feature(u@1_&_r@2_&_k@3)=1.0 feature(t@-3_&_o@-2_&_f@-1)=1.0 feature(o_&_u@1_&_r@2)=1.0 feature(o@-2_&_f@-1_&_o)=1.0 feature(o_&_u@1)=1.0 feature(f@-1_&_o)=1.0 feature(u@1)=1.0 feature(o)=1.0  span[144..145], u feature(r@1_&_k@2_&_i@3)=1.0 feature(o@-3_&_f@-2_&_o@-1)=1.0 feature(u_&_r@1_&_k@2)=1.0 feature(f@-2_&_o@-1_&_u)=1.0 feature(u_&_r@1)=1.0 feature(o@-1_&_u)=1.0 feature(r@1)=1.0 feature(u)=1.0  span[145..146], r feature(k@1_&_i@2_&_n@3)=1.0 feature(f@-3_&_o@-2_&_u@-1)=1.0 feature(r_&_k@1_&_i@2)=1.0 feature(o@-2_&_u@-1_&_r)=1.0 feature(r_&_k@1)=1.0 feature(u@-1_&_r)=1.0 feature(k@1)=1.0 feature(r)=1.0  span[146..147], k feature(i@1_&_n@2_&_d@3)=1.0 feature(o@-3_&_u@-2_&_r@-1)=1.0 feature(k_&_i@1_&_n@2)=1.0 feature(u@-2_&_r@-1_&_k)=1.0 feature(k_&_i@1)=1.0 feature(r@-1_&_k)=1.0 feature(i@1)=1.0 feature(k)=1.0  span[148..149], i feature(n@1_&_d@2_&_s@3)=1.0 feature(u@-3_&_r@-2_&_k@-1)=1.0 feature(i_&_n@1_&_d@2)=1.0 feature(r@-2_&_k@-1_&_i)=1.0 feature(i_&_n@1)=1.0 feature(k@-1_&_i)=1.0 feature(n@1)=1.0 feature(i)=1.0  span[149..150], n feature(d@1_&_s@2_&_o@3)=1.0 feature(r@-3_&_k@-2_&_i@-1)=1.0 feature(n_&_d@1_&_s@2)=1.0 feature(k@-2_&_i@-1_&_n)=1.0 feature(n_&_d@1)=1.0 feature(i@-1_&_n)=1.0 feature(d@1)=1.0 feature(n)=1.0  span[150..151], d feature(s@1_&_o@2_&_f@3)=1.0 feature(k@-3_&_i@-2_&_n@-1)=1.0 feature(d_&_s@1_&_o@2)=1.0 feature(i@-2_&_n@-1_&_d)=1.0 feature(d_&_s@1)=1.0 feature(n@-1_&_d)=1.0 feature(s@1)=1.0 feature(d)=1.0  span[151..152], s feature(o@1_&_f@2_&_f@3)=1.0 feature(i@-3_&_n@-2_&_d@-1)=1.0 feature(s_&_o@1_&_f@2)=1.0 feature(n@-2_&_d@-1_&_s)=1.0 feature(s_&_o@1)=1.0 feature(d@-1_&_s)=1.0 feature(o@1)=1.0 feature(s)=1.0  span[152..153], o feature(f@1_&_f@2_&_r@3)=1.0 feature(n@-3_&_d@-2_&_s@-1)=1.0 feature(o_&_f@1_&_f@2)=1.0 feature(d@-2_&_s@-1_&_o)=1.0 feature(o_&_f@1)=1.0 feature(s@-1_&_o)=1.0 feature(f@1)=1.0 feature(o)=1.0  span[154..155], f feature(f@1_&_r@2_&_e@3)=1.0 feature(d@-3_&_s@-2_&_o@-1)=1.0 feature(f_&_f@1_&_r@2)=1.0 feature(s@-2_&_o@-1_&_f)=1.0 feature(f_&_f@1)=1.0 feature(o@-1_&_f)=1.0 feature(f@1)=1.0 feature(f)=1.0  span[155..156], f feature(r@1_&_e@2_&_e@3)=1.0 feature(s@-3_&_o@-2_&_f@-1)=1.0 feature(f_&_r@1_&_e@2)=1.0 feature(o@-2_&_f@-1_&_f)=1.0 feature(f_&_r@1)=1.0 feature(f@-1_&_f)=1.0 feature(r@1)=1.0 feature(f)=1.0  span[157..158], r feature(e@1_&_e@2_&_d@3)=1.0 feature(o@-3_&_f@-2_&_f@-1)=1.0 feature(r_&_e@1_&_e@2)=1.0 feature(f@-2_&_f@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(f@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0  span[158..159], e feature(e@1_&_d@2_&_o@3)=1.0 feature(f@-3_&_f@-2_&_r@-1)=1.0 feature(e_&_e@1_&_d@2)=1.0 feature(f@-2_&_r@-1_&_e)=1.0 feature(e_&_e@1)=1.0 feature(r@-1_&_e)=1.0 feature(e@1)=1.0 feature(e)=1.0  span[159..160], e feature(d@1_&_o@2_&_m@3)=1.0 feature(f@-3_&_r@-2_&_e@-1)=1.0 feature(e_&_d@1_&_o@2)=1.0 feature(r@-2_&_e@-1_&_e)=1.0 feature(e_&_d@1)=1.0 feature(e@-1_&_e)=1.0 feature(d@1)=1.0 feature(e)=1.0  span[160..161], d feature(o@1_&_m@2_&_,@3)=1.0 feature(r@-3_&_e@-2_&_e@-1)=1.0 feature(d_&_o@1_&_m@2)=1.0 feature(e@-2_&_e@-1_&_d)=1.0 feature(d_&_o@1)=1.0 feature(e@-1_&_d)=1.0 feature(o@1)=1.0 feature(d)=1.0  span[161..162], o feature(m@1_&_,@2_&_f@3)=1.0 feature(e@-3_&_e@-2_&_d@-1)=1.0 feature(o_&_m@1_&_,@2)=1.0 feature(e@-2_&_d@-1_&_o)=1.0 feature(o_&_m@1)=1.0 feature(d@-1_&_o)=1.0 feature(m@1)=1.0 feature(o)=1.0  span[162..163], m feature(,@1_&_f@2_&_o@3)=1.0 feature(e@-3_&_d@-2_&_o@-1)=1.0 feature(m_&_,@1_&_f@2)=1.0 feature(d@-2_&_o@-1_&_m)=1.0 feature(m_&_,@1)=1.0 feature(o@-1_&_m)=1.0 feature(,@1)=1.0 feature(m)=1.0  span[163..164], , feature(f@1_&_o@2_&_r@3)=1.0 feature(d@-3_&_o@-2_&_m@-1)=1.0 feature(,_&_f@1_&_o@2)=1.0 feature(o@-2_&_m@-1_&_,)=1.0 feature(,_&_f@1)=1.0 feature(m@-1_&_,)=1.0 feature(f@1)=1.0 feature(,)=1.0  span[164..165], f feature(o@1_&_r@2_&_t@3)=1.0 feature(o@-3_&_m@-2_&_,@-1)=1.0 feature(f_&_o@1_&_r@2)=1.0 feature(m@-2_&_,@-1_&_f)=1.0 feature(f_&_o@1)=1.0 feature(,@-1_&_f)=1.0 feature(o@1)=1.0 feature(f)=1.0  span[166..167], o feature(r@1_&_t@2_&_h@3)=1.0 feature(m@-3_&_,@-2_&_f@-1)=1.0 feature(o_&_r@1_&_t@2)=1.0 feature(,@-2_&_f@-1_&_o)=1.0 feature(o_&_r@1)=1.0 feature(f@-1_&_o)=1.0 feature(r@1)=1.0 feature(o)=1.0  span[167..168], r feature(t@1_&_h@2_&_e@3)=1.0 feature(,@-3_&_f@-2_&_o@-1)=1.0 feature(r_&_t@1_&_h@2)=1.0 feature(f@-2_&_o@-1_&_r)=1.0 feature(r_&_t@1)=1.0 feature(o@-1_&_r)=1.0 feature(t@1)=1.0 feature(r)=1.0  span[168..169], t feature(h@1_&_e@2_&_u@3)=1.0 feature(f@-3_&_o@-2_&_r@-1)=1.0 feature(t_&_h@1_&_e@2)=1.0 feature(o@-2_&_r@-1_&_t)=1.0 feature(t_&_h@1)=1.0 feature(r@-1_&_t)=1.0 feature(h@1)=1.0 feature(t)=1.0  span[170..171], h feature(e@1_&_u@2_&_s@3)=1.0 feature(o@-3_&_r@-2_&_t@-1)=1.0 feature(h_&_e@1_&_u@2)=1.0 feature(r@-2_&_t@-1_&_h)=1.0 feature(h_&_e@1)=1.0 feature(t@-1_&_h)=1.0 feature(e@1)=1.0 feature(h)=1.0  span[171..172], e feature(u@1_&_s@2_&_e@3)=1.0 feature(r@-3_&_t@-2_&_h@-1)=1.0 feature(e_&_u@1_&_s@2)=1.0 feature(t@-2_&_h@-1_&_e)=1.0 feature(e_&_u@1)=1.0 feature(h@-1_&_e)=1.0 feature(u@1)=1.0 feature(e)=1.0  span[172..173], u feature(s@1_&_e@2_&_r@3)=1.0 feature(t@-3_&_h@-2_&_e@-1)=1.0 feature(u_&_s@1_&_e@2)=1.0 feature(h@-2_&_e@-1_&_u)=1.0 feature(u_&_s@1)=1.0 feature(e@-1_&_u)=1.0 feature(s@1)=1.0 feature(u)=1.0  span[174..175], s feature(e@1_&_r@2_&_s@3)=1.0 feature(h@-3_&_e@-2_&_u@-1)=1.0 feature(s_&_e@1_&_r@2)=1.0 feature(e@-2_&_u@-1_&_s)=1.0 feature(s_&_e@1)=1.0 feature(u@-1_&_s)=1.0 feature(e@1)=1.0 feature(s)=1.0  span[175..176], e feature(r@1_&_s@2_&_o@3)=1.0 feature(e@-3_&_u@-2_&_s@-1)=1.0 feature(e_&_r@1_&_s@2)=1.0 feature(u@-2_&_s@-1_&_e)=1.0 feature(e_&_r@1)=1.0 feature(s@-1_&_e)=1.0 feature(r@1)=1.0 feature(e)=1.0  span[176..177], r feature(s@1_&_o@2_&_f@3)=1.0 feature(u@-3_&_s@-2_&_e@-1)=1.0 feature(r_&_s@1_&_o@2)=1.0 feature(s@-2_&_e@-1_&_r)=1.0 feature(r_&_s@1)=1.0 feature(e@-1_&_r)=1.0 feature(s@1)=1.0 feature(r)=1.0  span[177..178], s feature(o@1_&_f@2_&_t@3)=1.0 feature(s@-3_&_e@-2_&_r@-1)=1.0 feature(s_&_o@1_&_f@2)=1.0 feature(e@-2_&_r@-1_&_s)=1.0 feature(s_&_o@1)=1.0 feature(r@-1_&_s)=1.0 feature(o@1)=1.0 feature(s)=1.0  span[178..179], o feature(f@1_&_t@2_&_h@3)=1.0 feature(e@-3_&_r@-2_&_s@-1)=1.0 feature(o_&_f@1_&_t@2)=1.0 feature(r@-2_&_s@-1_&_o)=1.0 feature(o_&_f@1)=1.0 feature(s@-1_&_o)=1.0 feature(f@1)=1.0 feature(o)=1.0  span[180..181], f feature(t@1_&_h@2_&_e@3)=1.0 feature(r@-3_&_s@-2_&_o@-1)=1.0 feature(f_&_t@1_&_h@2)=1.0 feature(s@-2_&_o@-1_&_f)=1.0 feature(f_&_t@1)=1.0 feature(o@-1_&_f)=1.0 feature(t@1)=1.0 feature(f)=1.0  span[181..182], t feature(h@1_&_e@2_&_s@3)=1.0 feature(s@-3_&_o@-2_&_f@-1)=1.0 feature(t_&_h@1_&_e@2)=1.0 feature(o@-2_&_f@-1_&_t)=1.0 feature(t_&_h@1)=1.0 feature(f@-1_&_t)=1.0 feature(h@1)=1.0 feature(t)=1.0  span[183..184], h feature(e@1_&_s@2_&_o@3)=1.0 feature(o@-3_&_f@-2_&_t@-1)=1.0 feature(h_&_e@1_&_s@2)=1.0 feature(f@-2_&_t@-1_&_h)=1.0 feature(h_&_e@1)=1.0 feature(t@-1_&_h)=1.0 feature(e@1)=1.0 feature(h)=1.0  span[184..185], e feature(s@1_&_o@2_&_f@3)=1.0 feature(f@-3_&_t@-2_&_h@-1)=1.0 feature(e_&_s@1_&_o@2)=1.0 feature(t@-2_&_h@-1_&_e)=1.0 feature(e_&_s@1)=1.0 feature(h@-1_&_e)=1.0 feature(s@1)=1.0 feature(e)=1.0  span[185..186], s feature(o@1_&_f@2_&_t@3)=1.0 feature(t@-3_&_h@-2_&_e@-1)=1.0 feature(s_&_o@1_&_f@2)=1.0 feature(h@-2_&_e@-1_&_s)=1.0 feature(s_&_o@1)=1.0 feature(e@-1_&_s)=1.0 feature(o@1)=1.0 feature(s)=1.0  span[187..188], o feature(f@1_&_t@2_&_w@3)=1.0 feature(h@-3_&_e@-2_&_s@-1)=1.0 feature(o_&_f@1_&_t@2)=1.0 feature(e@-2_&_s@-1_&_o)=1.0 feature(o_&_f@1)=1.0 feature(s@-1_&_o)=1.0 feature(f@1)=1.0 feature(o)=1.0  span[188..189], f feature(t@1_&_w@2_&_a@3)=1.0 feature(e@-3_&_s@-2_&_o@-1)=1.0 feature(f_&_t@1_&_w@2)=1.0 feature(s@-2_&_o@-1_&_f)=1.0 feature(f_&_t@1)=1.0 feature(o@-1_&_f)=1.0 feature(t@1)=1.0 feature(f)=1.0  span[189..190], t feature(w@1_&_a@2_&_r@3)=1.0 feature(s@-3_&_o@-2_&_f@-1)=1.0 feature(t_&_w@1_&_a@2)=1.0 feature(o@-2_&_f@-1_&_t)=1.0 feature(t_&_w@1)=1.0 feature(f@-1_&_t)=1.0 feature(w@1)=1.0 feature(t)=1.0  span[190..191], w feature(a@1_&_r@2_&_e@3)=1.0 feature(o@-3_&_f@-2_&_t@-1)=1.0 feature(w_&_a@1_&_r@2)=1.0 feature(f@-2_&_t@-1_&_w)=1.0 feature(w_&_a@1)=1.0 feature(t@-1_&_w)=1.0 feature(a@1)=1.0 feature(w)=1.0  span[191..192], a feature(r@1_&_e@2_&_.@3)=1.0 feature(f@-3_&_t@-2_&_w@-1)=1.0 feature(a_&_r@1_&_e@2)=1.0 feature(t@-2_&_w@-1_&_a)=1.0 feature(a_&_r@1)=1.0 feature(w@-1_&_a)=1.0 feature(r@1)=1.0 feature(a)=1.0  span[192..193], r feature(e@1_&_.@2_&_<END0>@3)=1.0 feature(t@-3_&_w@-2_&_a@-1)=1.0 feature(r_&_e@1_&_.@2)=1.0 feature(w@-2_&_a@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(a@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0  span[193..194], e feature(.@1_&_<END0>@2_&_<END1>@3)=1.0 feature(w@-3_&_a@-2_&_r@-1)=1.0 feature(e_&_.@1_&_<END0>@2)=1.0 feature(a@-2_&_r@-1_&_e)=1.0 feature(e_&_.@1)=1.0 feature(r@-1_&_e)=1.0 feature(.@1)=1.0 feature(e)=1.0  span[194..195], . feature(<END0>@1_&_<END1>@2_&_<END2>@3)=1.0 feature(a@-3_&_r@-2_&_e@-1)=1.0 feature(._&_<END0>@1_&_<END1>@2)=1.0 feature(r@-2_&_e@-1_&_.)=1.0 feature(._&_<END0>@1)=1.0 feature(e@-1_&_.)=1.0 feature(<END0>@1)=1.0 feature(.)=1.0  span[195..196]]
+Token#0:f feature(r@1_&_e@2_&_e@3)=1.0 feature(<START2>@-3_&_<START1>@-2_&_<START0>@-1)=1.0 feature(f_&_r@1_&_e@2)=1.0 feature(<START1>@-2_&_<START0>@-1_&_f)=1.0 feature(f_&_r@1)=1.0 feature(<START0>@-1_&_f)=1.0 feature(r@1)=1.0 feature(f)=1.0  span[0..1]
+Token#1:r feature(e@1_&_e@2_&_s@3)=1.0 feature(<START1>@-3_&_<START0>@-2_&_f@-1)=1.0 feature(r_&_e@1_&_e@2)=1.0 feature(<START0>@-2_&_f@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(f@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0  span[1..2]
+Token#2:e feature(e@1_&_s@2_&_o@3)=1.0 feature(<START0>@-3_&_f@-2_&_r@-1)=1.0 feature(e_&_e@1_&_s@2)=1.0 feature(f@-2_&_r@-1_&_e)=1.0 feature(e_&_e@1)=1.0 feature(r@-1_&_e)=1.0 feature(e@1)=1.0 feature(e)=1.0  span[2..3]
+Token#3:e feature(s@1_&_o@2_&_f@3)=1.0 feature(f@-3_&_r@-2_&_e@-1)=1.0 feature(e_&_s@1_&_o@2)=1.0 feature(r@-2_&_e@-1_&_e)=1.0 feature(e_&_s@1)=1.0 feature(e@-1_&_e)=1.0 feature(s@1)=1.0 feature(e)=1.0  span[3..4]
+Token#4:s feature(o@1_&_f@2_&_t@3)=1.0 feature(r@-3_&_e@-2_&_e@-1)=1.0 feature(s_&_o@1_&_f@2)=1.0 feature(e@-2_&_e@-1_&_s)=1.0 feature(s_&_o@1)=1.0 feature(e@-1_&_s)=1.0 feature(o@1)=1.0 feature(s)=1.0  span[5..6]
+Token#5:o feature(f@1_&_t@2_&_w@3)=1.0 feature(e@-3_&_e@-2_&_s@-1)=1.0 feature(o_&_f@1_&_t@2)=1.0 feature(e@-2_&_s@-1_&_o)=1.0 feature(o_&_f@1)=1.0 feature(s@-1_&_o)=1.0 feature(f@1)=1.0 feature(o)=1.0  span[6..7]
+Token#6:f feature(t@1_&_w@2_&_a@3)=1.0 feature(e@-3_&_s@-2_&_o@-1)=1.0 feature(f_&_t@1_&_w@2)=1.0 feature(s@-2_&_o@-1_&_f)=1.0 feature(f_&_t@1)=1.0 feature(o@-1_&_f)=1.0 feature(t@1)=1.0 feature(f)=1.0  span[7..8]
+Token#7:t feature(w@1_&_a@2_&_r@3)=1.0 feature(s@-3_&_o@-2_&_f@-1)=1.0 feature(t_&_w@1_&_a@2)=1.0 feature(o@-2_&_f@-1_&_t)=1.0 feature(t_&_w@1)=1.0 feature(f@-1_&_t)=1.0 feature(w@1)=1.0 feature(t)=1.0  span[8..9]
+Token#8:w feature(a@1_&_r@2_&_e@3)=1.0 feature(o@-3_&_f@-2_&_t@-1)=1.0 feature(w_&_a@1_&_r@2)=1.0 feature(f@-2_&_t@-1_&_w)=1.0 feature(w_&_a@1)=1.0 feature(t@-1_&_w)=1.0 feature(a@1)=1.0 feature(w)=1.0  span[9..10]
+Token#9:a feature(r@1_&_e@2_&_i@3)=1.0 feature(f@-3_&_t@-2_&_w@-1)=1.0 feature(a_&_r@1_&_e@2)=1.0 feature(t@-2_&_w@-1_&_a)=1.0 feature(a_&_r@1)=1.0 feature(w@-1_&_a)=1.0 feature(r@1)=1.0 feature(a)=1.0  span[10..11]
+Token#10:r feature(e@1_&_i@2_&_s@3)=1.0 feature(t@-3_&_w@-2_&_a@-1)=1.0 feature(r_&_e@1_&_i@2)=1.0 feature(w@-2_&_a@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(a@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0  span[11..12]
+Token#11:e feature(i@1_&_s@2_&_a@3)=1.0 feature(w@-3_&_a@-2_&_r@-1)=1.0 feature(e_&_i@1_&_s@2)=1.0 feature(a@-2_&_r@-1_&_e)=1.0 feature(e_&_i@1)=1.0 feature(r@-1_&_e)=1.0 feature(i@1)=1.0 feature(e)=1.0  span[12..13]
+Token#12:i feature(s@1_&_a@2_&_m@3)=1.0 feature(a@-3_&_r@-2_&_e@-1)=1.0 feature(i_&_s@1_&_a@2)=1.0 feature(r@-2_&_e@-1_&_i)=1.0 feature(i_&_s@1)=1.0 feature(e@-1_&_i)=1.0 feature(s@1)=1.0 feature(i)=1.0  span[14..15]
+Token#13:s feature(a@1_&_m@2_&_a@3)=1.0 feature(r@-3_&_e@-2_&_i@-1)=1.0 feature(s_&_a@1_&_m@2)=1.0 feature(e@-2_&_i@-1_&_s)=1.0 feature(s_&_a@1)=1.0 feature(i@-1_&_s)=1.0 feature(a@1)=1.0 feature(s)=1.0  span[15..16]
+Token#14:a feature(m@1_&_a@2_&_t@3)=1.0 feature(e@-3_&_i@-2_&_s@-1)=1.0 feature(a_&_m@1_&_a@2)=1.0 feature(i@-2_&_s@-1_&_a)=1.0 feature(a_&_m@1)=1.0 feature(s@-1_&_a)=1.0 feature(m@1)=1.0 feature(a)=1.0  span[17..18]
+Token#15:m feature(a@1_&_t@2_&_t@3)=1.0 feature(i@-3_&_s@-2_&_a@-1)=1.0 feature(m_&_a@1_&_t@2)=1.0 feature(s@-2_&_a@-1_&_m)=1.0 feature(m_&_a@1)=1.0 feature(a@-1_&_m)=1.0 feature(a@1)=1.0 feature(m)=1.0  span[19..20]
+Token#16:a feature(t@1_&_t@2_&_e@3)=1.0 feature(s@-3_&_a@-2_&_m@-1)=1.0 feature(a_&_t@1_&_t@2)=1.0 feature(a@-2_&_m@-1_&_a)=1.0 feature(a_&_t@1)=1.0 feature(m@-1_&_a)=1.0 feature(t@1)=1.0 feature(a)=1.0  span[20..21]
+Token#17:t feature(t@1_&_e@2_&_r@3)=1.0 feature(a@-3_&_m@-2_&_a@-1)=1.0 feature(t_&_t@1_&_e@2)=1.0 feature(m@-2_&_a@-1_&_t)=1.0 feature(t_&_t@1)=1.0 feature(a@-1_&_t)=1.0 feature(t@1)=1.0 feature(t)=1.0  span[21..22]
+Token#18:t feature(e@1_&_r@2_&_o@3)=1.0 feature(m@-3_&_a@-2_&_t@-1)=1.0 feature(t_&_e@1_&_r@2)=1.0 feature(a@-2_&_t@-1_&_t)=1.0 feature(t_&_e@1)=1.0 feature(t@-1_&_t)=1.0 feature(e@1)=1.0 feature(t)=1.0  span[22..23]
+Token#19:e feature(r@1_&_o@2_&_f@3)=1.0 feature(a@-3_&_t@-2_&_t@-1)=1.0 feature(e_&_r@1_&_o@2)=1.0 feature(t@-2_&_t@-1_&_e)=1.0 feature(e_&_r@1)=1.0 feature(t@-1_&_e)=1.0 feature(r@1)=1.0 feature(e)=1.0  span[23..24]
+Token#20:r feature(o@1_&_f@2_&_t@3)=1.0 feature(t@-3_&_t@-2_&_e@-1)=1.0 feature(r_&_o@1_&_f@2)=1.0 feature(t@-2_&_e@-1_&_r)=1.0 feature(r_&_o@1)=1.0 feature(e@-1_&_r)=1.0 feature(o@1)=1.0 feature(r)=1.0  span[24..25]
+Token#21:o feature(f@1_&_t@2_&_h@3)=1.0 feature(t@-3_&_e@-2_&_r@-1)=1.0 feature(o_&_f@1_&_t@2)=1.0 feature(e@-2_&_r@-1_&_o)=1.0 feature(o_&_f@1)=1.0 feature(r@-1_&_o)=1.0 feature(f@1)=1.0 feature(o)=1.0  span[26..27]
+Token#22:f feature(t@1_&_h@2_&_e@3)=1.0 feature(e@-3_&_r@-2_&_o@-1)=1.0 feature(f_&_t@1_&_h@2)=1.0 feature(r@-2_&_o@-1_&_f)=1.0 feature(f_&_t@1)=1.0 feature(o@-1_&_f)=1.0 feature(t@1)=1.0 feature(f)=1.0  span[27..28]
+Token#23:t feature(h@1_&_e@2_&_u@3)=1.0 feature(r@-3_&_o@-2_&_f@-1)=1.0 feature(t_&_h@1_&_e@2)=1.0 feature(o@-2_&_f@-1_&_t)=1.0 feature(t_&_h@1)=1.0 feature(f@-1_&_t)=1.0 feature(h@1)=1.0 feature(t)=1.0  span[29..30]
+Token#24:h feature(e@1_&_u@2_&_s@3)=1.0 feature(o@-3_&_f@-2_&_t@-1)=1.0 feature(h_&_e@1_&_u@2)=1.0 feature(f@-2_&_t@-1_&_h)=1.0 feature(h_&_e@1)=1.0 feature(t@-1_&_h)=1.0 feature(e@1)=1.0 feature(h)=1.0  span[30..31]
+Token#25:e feature(u@1_&_s@2_&_e@3)=1.0 feature(f@-3_&_t@-2_&_h@-1)=1.0 feature(e_&_u@1_&_s@2)=1.0 feature(t@-2_&_h@-1_&_e)=1.0 feature(e_&_u@1)=1.0 feature(h@-1_&_e)=1.0 feature(u@1)=1.0 feature(e)=1.0  span[31..32]
+Token#26:u feature(s@1_&_e@2_&_r@3)=1.0 feature(t@-3_&_h@-2_&_e@-1)=1.0 feature(u_&_s@1_&_e@2)=1.0 feature(h@-2_&_e@-1_&_u)=1.0 feature(u_&_s@1)=1.0 feature(e@-1_&_u)=1.0 feature(s@1)=1.0 feature(u)=1.0  span[33..34]
+Token#27:s feature(e@1_&_r@2_&_s@3)=1.0 feature(h@-3_&_e@-2_&_u@-1)=1.0 feature(s_&_e@1_&_r@2)=1.0 feature(e@-2_&_u@-1_&_s)=1.0 feature(s_&_e@1)=1.0 feature(u@-1_&_s)=1.0 feature(e@1)=1.0 feature(s)=1.0  span[34..35]
+Token#28:e feature(r@1_&_s@2_&_'@3)=1.0 feature(e@-3_&_u@-2_&_s@-1)=1.0 feature(e_&_r@1_&_s@2)=1.0 feature(u@-2_&_s@-1_&_e)=1.0 feature(e_&_r@1)=1.0 feature(s@-1_&_e)=1.0 feature(r@1)=1.0 feature(e)=1.0  span[35..36]
+Token#29:r feature(s@1_&_'@2_&_f@3)=1.0 feature(u@-3_&_s@-2_&_e@-1)=1.0 feature(r_&_s@1_&_'@2)=1.0 feature(s@-2_&_e@-1_&_r)=1.0 feature(r_&_s@1)=1.0 feature(e@-1_&_r)=1.0 feature(s@1)=1.0 feature(r)=1.0  span[36..37]
+Token#30:s feature('@1_&_f@2_&_r@3)=1.0 feature(s@-3_&_e@-2_&_r@-1)=1.0 feature(s_&_'@1_&_f@2)=1.0 feature(e@-2_&_r@-1_&_s)=1.0 feature(s_&_'@1)=1.0 feature(r@-1_&_s)=1.0 feature('@1)=1.0 feature(s)=1.0  span[37..38]
+Token#31:' feature(f@1_&_r@2_&_e@3)=1.0 feature(e@-3_&_r@-2_&_s@-1)=1.0 feature('_&_f@1_&_r@2)=1.0 feature(r@-2_&_s@-1_&_')=1.0 feature('_&_f@1)=1.0 feature(s@-1_&_')=1.0 feature(f@1)=1.0 feature(')=1.0  span[38..39]
+Token#32:f feature(r@1_&_e@2_&_e@3)=1.0 feature(r@-3_&_s@-2_&_'@-1)=1.0 feature(f_&_r@1_&_e@2)=1.0 feature(s@-2_&_'@-1_&_f)=1.0 feature(f_&_r@1)=1.0 feature('@-1_&_f)=1.0 feature(r@1)=1.0 feature(f)=1.0  span[40..41]
+Token#33:r feature(e@1_&_e@2_&_d@3)=1.0 feature(s@-3_&_'@-2_&_f@-1)=1.0 feature(r_&_e@1_&_e@2)=1.0 feature('@-2_&_f@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(f@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0  span[41..42]
+Token#34:e feature(e@1_&_d@2_&_o@3)=1.0 feature('@-3_&_f@-2_&_r@-1)=1.0 feature(e_&_e@1_&_d@2)=1.0 feature(f@-2_&_r@-1_&_e)=1.0 feature(e_&_e@1)=1.0 feature(r@-1_&_e)=1.0 feature(e@1)=1.0 feature(e)=1.0  span[42..43]
+Token#35:e feature(d@1_&_o@2_&_m@3)=1.0 feature(f@-3_&_r@-2_&_e@-1)=1.0 feature(e_&_d@1_&_o@2)=1.0 feature(r@-2_&_e@-1_&_e)=1.0 feature(e_&_d@1)=1.0 feature(e@-1_&_e)=1.0 feature(d@1)=1.0 feature(e)=1.0  span[43..44]
+Token#36:d feature(o@1_&_m@2_&_t@3)=1.0 feature(r@-3_&_e@-2_&_e@-1)=1.0 feature(d_&_o@1_&_m@2)=1.0 feature(e@-2_&_e@-1_&_d)=1.0 feature(d_&_o@1)=1.0 feature(e@-1_&_d)=1.0 feature(o@1)=1.0 feature(d)=1.0  span[44..45]
+Token#37:o feature(m@1_&_t@2_&_o@3)=1.0 feature(e@-3_&_e@-2_&_d@-1)=1.0 feature(o_&_m@1_&_t@2)=1.0 feature(e@-2_&_d@-1_&_o)=1.0 feature(o_&_m@1)=1.0 feature(d@-1_&_o)=1.0 feature(m@1)=1.0 feature(o)=1.0  span[45..46]
+Token#38:m feature(t@1_&_o@2_&_r@3)=1.0 feature(e@-3_&_d@-2_&_o@-1)=1.0 feature(m_&_t@1_&_o@2)=1.0 feature(d@-2_&_o@-1_&_m)=1.0 feature(m_&_t@1)=1.0 feature(o@-1_&_m)=1.0 feature(t@1)=1.0 feature(m)=1.0  span[46..47]
+Token#39:t feature(o@1_&_r@2_&_u@3)=1.0 feature(d@-3_&_o@-2_&_m@-1)=1.0 feature(t_&_o@1_&_r@2)=1.0 feature(o@-2_&_m@-1_&_t)=1.0 feature(t_&_o@1)=1.0 feature(m@-1_&_t)=1.0 feature(o@1)=1.0 feature(t)=1.0  span[48..49]
+Token#40:o feature(r@1_&_u@2_&_n@3)=1.0 feature(o@-3_&_m@-2_&_t@-1)=1.0 feature(o_&_r@1_&_u@2)=1.0 feature(m@-2_&_t@-1_&_o)=1.0 feature(o_&_r@1)=1.0 feature(t@-1_&_o)=1.0 feature(r@1)=1.0 feature(o)=1.0  span[49..50]
+Token#41:r feature(u@1_&_n@2_&_,@3)=1.0 feature(m@-3_&_t@-2_&_o@-1)=1.0 feature(r_&_u@1_&_n@2)=1.0 feature(t@-2_&_o@-1_&_r)=1.0 feature(r_&_u@1)=1.0 feature(o@-1_&_r)=1.0 feature(u@1)=1.0 feature(r)=1.0  span[51..52]
+Token#42:u feature(n@1_&_,@2_&_c@3)=1.0 feature(t@-3_&_o@-2_&_r@-1)=1.0 feature(u_&_n@1_&_,@2)=1.0 feature(o@-2_&_r@-1_&_u)=1.0 feature(u_&_n@1)=1.0 feature(r@-1_&_u)=1.0 feature(n@1)=1.0 feature(u)=1.0  span[52..53]
+Token#43:n feature(,@1_&_c@2_&_o@3)=1.0 feature(o@-3_&_r@-2_&_u@-1)=1.0 feature(n_&_,@1_&_c@2)=1.0 feature(r@-2_&_u@-1_&_n)=1.0 feature(n_&_,@1)=1.0 feature(u@-1_&_n)=1.0 feature(,@1)=1.0 feature(n)=1.0  span[53..54]
+Token#44:, feature(c@1_&_o@2_&_p@3)=1.0 feature(r@-3_&_u@-2_&_n@-1)=1.0 feature(,_&_c@1_&_o@2)=1.0 feature(u@-2_&_n@-1_&_,)=1.0 feature(,_&_c@1)=1.0 feature(n@-1_&_,)=1.0 feature(c@1)=1.0 feature(,)=1.0  span[54..55]
+Token#45:c feature(o@1_&_p@2_&_y@3)=1.0 feature(u@-3_&_n@-2_&_,@-1)=1.0 feature(c_&_o@1_&_p@2)=1.0 feature(n@-2_&_,@-1_&_c)=1.0 feature(c_&_o@1)=1.0 feature(,@-1_&_c)=1.0 feature(o@1)=1.0 feature(c)=1.0  span[56..57]
+Token#46:o feature(p@1_&_y@2_&_,@3)=1.0 feature(n@-3_&_,@-2_&_c@-1)=1.0 feature(o_&_p@1_&_y@2)=1.0 feature(,@-2_&_c@-1_&_o)=1.0 feature(o_&_p@1)=1.0 feature(c@-1_&_o)=1.0 feature(p@1)=1.0 feature(o)=1.0  span[57..58]
+Token#47:p feature(y@1_&_,@2_&_d@3)=1.0 feature(,@-3_&_c@-2_&_o@-1)=1.0 feature(p_&_y@1_&_,@2)=1.0 feature(c@-2_&_o@-1_&_p)=1.0 feature(p_&_y@1)=1.0 feature(o@-1_&_p)=1.0 feature(y@1)=1.0 feature(p)=1.0  span[58..59]
+Token#48:y feature(,@1_&_d@2_&_i@3)=1.0 feature(c@-3_&_o@-2_&_p@-1)=1.0 feature(y_&_,@1_&_d@2)=1.0 feature(o@-2_&_p@-1_&_y)=1.0 feature(y_&_,@1)=1.0 feature(p@-1_&_y)=1.0 feature(,@1)=1.0 feature(y)=1.0  span[59..60]
+Token#49:, feature(d@1_&_i@2_&_s@3)=1.0 feature(o@-3_&_p@-2_&_y@-1)=1.0 feature(,_&_d@1_&_i@2)=1.0 feature(p@-2_&_y@-1_&_,)=1.0 feature(,_&_d@1)=1.0 feature(y@-1_&_,)=1.0 feature(d@1)=1.0 feature(,)=1.0  span[60..61]
+Token#50:d feature(i@1_&_s@2_&_t@3)=1.0 feature(p@-3_&_y@-2_&_,@-1)=1.0 feature(d_&_i@1_&_s@2)=1.0 feature(y@-2_&_,@-1_&_d)=1.0 feature(d_&_i@1)=1.0 feature(,@-1_&_d)=1.0 feature(i@1)=1.0 feature(d)=1.0  span[62..63]
+Token#51:i feature(s@1_&_t@2_&_r@3)=1.0 feature(y@-3_&_,@-2_&_d@-1)=1.0 feature(i_&_s@1_&_t@2)=1.0 feature(,@-2_&_d@-1_&_i)=1.0 feature(i_&_s@1)=1.0 feature(d@-1_&_i)=1.0 feature(s@1)=1.0 feature(i)=1.0  span[63..64]
+Token#52:s feature(t@1_&_r@2_&_i@3)=1.0 feature(,@-3_&_d@-2_&_i@-1)=1.0 feature(s_&_t@1_&_r@2)=1.0 feature(d@-2_&_i@-1_&_s)=1.0 feature(s_&_t@1)=1.0 feature(i@-1_&_s)=1.0 feature(t@1)=1.0 feature(s)=1.0  span[64..65]
+Token#53:t feature(r@1_&_i@2_&_b@3)=1.0 feature(d@-3_&_i@-2_&_s@-1)=1.0 feature(t_&_r@1_&_i@2)=1.0 feature(i@-2_&_s@-1_&_t)=1.0 feature(t_&_r@1)=1.0 feature(s@-1_&_t)=1.0 feature(r@1)=1.0 feature(t)=1.0  span[65..66]
+Token#54:r feature(i@1_&_b@2_&_u@3)=1.0 feature(i@-3_&_s@-2_&_t@-1)=1.0 feature(r_&_i@1_&_b@2)=1.0 feature(s@-2_&_t@-1_&_r)=1.0 feature(r_&_i@1)=1.0 feature(t@-1_&_r)=1.0 feature(i@1)=1.0 feature(r)=1.0  span[66..67]
+Token#55:i feature(b@1_&_u@2_&_t@3)=1.0 feature(s@-3_&_t@-2_&_r@-1)=1.0 feature(i_&_b@1_&_u@2)=1.0 feature(t@-2_&_r@-1_&_i)=1.0 feature(i_&_b@1)=1.0 feature(r@-1_&_i)=1.0 feature(b@1)=1.0 feature(i)=1.0  span[67..68]
+Token#56:b feature(u@1_&_t@2_&_e@3)=1.0 feature(t@-3_&_r@-2_&_i@-1)=1.0 feature(b_&_u@1_&_t@2)=1.0 feature(r@-2_&_i@-1_&_b)=1.0 feature(b_&_u@1)=1.0 feature(i@-1_&_b)=1.0 feature(u@1)=1.0 feature(b)=1.0  span[68..69]
+Token#57:u feature(t@1_&_e@2_&_,@3)=1.0 feature(r@-3_&_i@-2_&_b@-1)=1.0 feature(u_&_t@1_&_e@2)=1.0 feature(i@-2_&_b@-1_&_u)=1.0 feature(u_&_t@1)=1.0 feature(b@-1_&_u)=1.0 feature(t@1)=1.0 feature(u)=1.0  span[69..70]
+Token#58:t feature(e@1_&_,@2_&_s@3)=1.0 feature(i@-3_&_b@-2_&_u@-1)=1.0 feature(t_&_e@1_&_,@2)=1.0 feature(b@-2_&_u@-1_&_t)=1.0 feature(t_&_e@1)=1.0 feature(u@-1_&_t)=1.0 feature(e@1)=1.0 feature(t)=1.0  span[70..71]
+Token#59:e feature(,@1_&_s@2_&_t@3)=1.0 feature(b@-3_&_u@-2_&_t@-1)=1.0 feature(e_&_,@1_&_s@2)=1.0 feature(u@-2_&_t@-1_&_e)=1.0 feature(e_&_,@1)=1.0 feature(t@-1_&_e)=1.0 feature(,@1)=1.0 feature(e)=1.0  span[71..72]
+Token#60:, feature(s@1_&_t@2_&_u@3)=1.0 feature(u@-3_&_t@-2_&_e@-1)=1.0 feature(,_&_s@1_&_t@2)=1.0 feature(t@-2_&_e@-1_&_,)=1.0 feature(,_&_s@1)=1.0 feature(e@-1_&_,)=1.0 feature(s@1)=1.0 feature(,)=1.0  span[72..73]
+Token#61:s feature(t@1_&_u@2_&_d@3)=1.0 feature(t@-3_&_e@-2_&_,@-1)=1.0 feature(s_&_t@1_&_u@2)=1.0 feature(e@-2_&_,@-1_&_s)=1.0 feature(s_&_t@1)=1.0 feature(,@-1_&_s)=1.0 feature(t@1)=1.0 feature(s)=1.0  span[74..75]
+Token#62:t feature(u@1_&_d@2_&_y@3)=1.0 feature(e@-3_&_,@-2_&_s@-1)=1.0 feature(t_&_u@1_&_d@2)=1.0 feature(,@-2_&_s@-1_&_t)=1.0 feature(t_&_u@1)=1.0 feature(s@-1_&_t)=1.0 feature(u@1)=1.0 feature(t)=1.0  span[75..76]
+Token#63:u feature(d@1_&_y@2_&_,@3)=1.0 feature(,@-3_&_s@-2_&_t@-1)=1.0 feature(u_&_d@1_&_y@2)=1.0 feature(s@-2_&_t@-1_&_u)=1.0 feature(u_&_d@1)=1.0 feature(t@-1_&_u)=1.0 feature(d@1)=1.0 feature(u)=1.0  span[76..77]
+Token#64:d feature(y@1_&_,@2_&_c@3)=1.0 feature(s@-3_&_t@-2_&_u@-1)=1.0 feature(d_&_y@1_&_,@2)=1.0 feature(t@-2_&_u@-1_&_d)=1.0 feature(d_&_y@1)=1.0 feature(u@-1_&_d)=1.0 feature(y@1)=1.0 feature(d)=1.0  span[77..78]
+Token#65:y feature(,@1_&_c@2_&_h@3)=1.0 feature(t@-3_&_u@-2_&_d@-1)=1.0 feature(y_&_,@1_&_c@2)=1.0 feature(u@-2_&_d@-1_&_y)=1.0 feature(y_&_,@1)=1.0 feature(d@-1_&_y)=1.0 feature(,@1)=1.0 feature(y)=1.0  span[78..79]
+Token#66:, feature(c@1_&_h@2_&_a@3)=1.0 feature(u@-3_&_d@-2_&_y@-1)=1.0 feature(,_&_c@1_&_h@2)=1.0 feature(d@-2_&_y@-1_&_,)=1.0 feature(,_&_c@1)=1.0 feature(y@-1_&_,)=1.0 feature(c@1)=1.0 feature(,)=1.0  span[79..80]
+Token#67:c feature(h@1_&_a@2_&_n@3)=1.0 feature(d@-3_&_y@-2_&_,@-1)=1.0 feature(c_&_h@1_&_a@2)=1.0 feature(y@-2_&_,@-1_&_c)=1.0 feature(c_&_h@1)=1.0 feature(,@-1_&_c)=1.0 feature(h@1)=1.0 feature(c)=1.0  span[81..82]
+Token#68:h feature(a@1_&_n@2_&_g@3)=1.0 feature(y@-3_&_,@-2_&_c@-1)=1.0 feature(h_&_a@1_&_n@2)=1.0 feature(,@-2_&_c@-1_&_h)=1.0 feature(h_&_a@1)=1.0 feature(c@-1_&_h)=1.0 feature(a@1)=1.0 feature(h)=1.0  span[82..83]
+Token#69:a feature(n@1_&_g@2_&_e@3)=1.0 feature(,@-3_&_c@-2_&_h@-1)=1.0 feature(a_&_n@1_&_g@2)=1.0 feature(c@-2_&_h@-1_&_a)=1.0 feature(a_&_n@1)=1.0 feature(h@-1_&_a)=1.0 feature(n@1)=1.0 feature(a)=1.0  span[83..84]
+Token#70:n feature(g@1_&_e@2_&_a@3)=1.0 feature(c@-3_&_h@-2_&_a@-1)=1.0 feature(n_&_g@1_&_e@2)=1.0 feature(h@-2_&_a@-1_&_n)=1.0 feature(n_&_g@1)=1.0 feature(a@-1_&_n)=1.0 feature(g@1)=1.0 feature(n)=1.0  span[84..85]
+Token#71:g feature(e@1_&_a@2_&_n@3)=1.0 feature(h@-3_&_a@-2_&_n@-1)=1.0 feature(g_&_e@1_&_a@2)=1.0 feature(a@-2_&_n@-1_&_g)=1.0 feature(g_&_e@1)=1.0 feature(n@-1_&_g)=1.0 feature(e@1)=1.0 feature(g)=1.0  span[85..86]
+Token#72:e feature(a@1_&_n@2_&_d@3)=1.0 feature(a@-3_&_n@-2_&_g@-1)=1.0 feature(e_&_a@1_&_n@2)=1.0 feature(n@-2_&_g@-1_&_e)=1.0 feature(e_&_a@1)=1.0 feature(g@-1_&_e)=1.0 feature(a@1)=1.0 feature(e)=1.0  span[86..87]
+Token#73:a feature(n@1_&_d@2_&_i@3)=1.0 feature(n@-3_&_g@-2_&_e@-1)=1.0 feature(a_&_n@1_&_d@2)=1.0 feature(g@-2_&_e@-1_&_a)=1.0 feature(a_&_n@1)=1.0 feature(e@-1_&_a)=1.0 feature(n@1)=1.0 feature(a)=1.0  span[88..89]
+Token#74:n feature(d@1_&_i@2_&_m@3)=1.0 feature(g@-3_&_e@-2_&_a@-1)=1.0 feature(n_&_d@1_&_i@2)=1.0 feature(e@-2_&_a@-1_&_n)=1.0 feature(n_&_d@1)=1.0 feature(a@-1_&_n)=1.0 feature(d@1)=1.0 feature(n)=1.0  span[89..90]
+Token#75:d feature(i@1_&_m@2_&_p@3)=1.0 feature(e@-3_&_a@-2_&_n@-1)=1.0 feature(d_&_i@1_&_m@2)=1.0 feature(a@-2_&_n@-1_&_d)=1.0 feature(d_&_i@1)=1.0 feature(n@-1_&_d)=1.0 feature(i@1)=1.0 feature(d)=1.0  span[90..91]
+Token#76:i feature(m@1_&_p@2_&_r@3)=1.0 feature(a@-3_&_n@-2_&_d@-1)=1.0 feature(i_&_m@1_&_p@2)=1.0 feature(n@-2_&_d@-1_&_i)=1.0 feature(i_&_m@1)=1.0 feature(d@-1_&_i)=1.0 feature(m@1)=1.0 feature(i)=1.0  span[92..93]
+Token#77:m feature(p@1_&_r@2_&_o@3)=1.0 feature(n@-3_&_d@-2_&_i@-1)=1.0 feature(m_&_p@1_&_r@2)=1.0 feature(d@-2_&_i@-1_&_m)=1.0 feature(m_&_p@1)=1.0 feature(i@-1_&_m)=1.0 feature(p@1)=1.0 feature(m)=1.0  span[93..94]
+Token#78:p feature(r@1_&_o@2_&_v@3)=1.0 feature(d@-3_&_i@-2_&_m@-1)=1.0 feature(p_&_r@1_&_o@2)=1.0 feature(i@-2_&_m@-1_&_p)=1.0 feature(p_&_r@1)=1.0 feature(m@-1_&_p)=1.0 feature(r@1)=1.0 feature(p)=1.0  span[94..95]
+Token#79:r feature(o@1_&_v@2_&_e@3)=1.0 feature(i@-3_&_m@-2_&_p@-1)=1.0 feature(r_&_o@1_&_v@2)=1.0 feature(m@-2_&_p@-1_&_r)=1.0 feature(r_&_o@1)=1.0 feature(p@-1_&_r)=1.0 feature(o@1)=1.0 feature(r)=1.0  span[95..96]
+Token#80:o feature(v@1_&_e@2_&_t@3)=1.0 feature(m@-3_&_p@-2_&_r@-1)=1.0 feature(o_&_v@1_&_e@2)=1.0 feature(p@-2_&_r@-1_&_o)=1.0 feature(o_&_v@1)=1.0 feature(r@-1_&_o)=1.0 feature(v@1)=1.0 feature(o)=1.0  span[96..97]
+Token#81:v feature(e@1_&_t@2_&_h@3)=1.0 feature(p@-3_&_r@-2_&_o@-1)=1.0 feature(v_&_e@1_&_t@2)=1.0 feature(r@-2_&_o@-1_&_v)=1.0 feature(v_&_e@1)=1.0 feature(o@-1_&_v)=1.0 feature(e@1)=1.0 feature(v)=1.0  span[97..98]
+Token#82:e feature(t@1_&_h@2_&_e@3)=1.0 feature(r@-3_&_o@-2_&_v@-1)=1.0 feature(e_&_t@1_&_h@2)=1.0 feature(o@-2_&_v@-1_&_e)=1.0 feature(e_&_t@1)=1.0 feature(v@-1_&_e)=1.0 feature(t@1)=1.0 feature(e)=1.0  span[98..99]
+Token#83:t feature(h@1_&_e@2_&_s@3)=1.0 feature(o@-3_&_v@-2_&_e@-1)=1.0 feature(t_&_h@1_&_e@2)=1.0 feature(v@-2_&_e@-1_&_t)=1.0 feature(t_&_h@1)=1.0 feature(e@-1_&_t)=1.0 feature(h@1)=1.0 feature(t)=1.0  span[100..101]
+Token#84:h feature(e@1_&_s@2_&_o@3)=1.0 feature(v@-3_&_e@-2_&_t@-1)=1.0 feature(h_&_e@1_&_s@2)=1.0 feature(e@-2_&_t@-1_&_h)=1.0 feature(h_&_e@1)=1.0 feature(t@-1_&_h)=1.0 feature(e@1)=1.0 feature(h)=1.0  span[101..102]
+Token#85:e feature(s@1_&_o@2_&_f@3)=1.0 feature(e@-3_&_t@-2_&_h@-1)=1.0 feature(e_&_s@1_&_o@2)=1.0 feature(t@-2_&_h@-1_&_e)=1.0 feature(e_&_s@1)=1.0 feature(h@-1_&_e)=1.0 feature(s@1)=1.0 feature(e)=1.0  span[102..103]
+Token#86:s feature(o@1_&_f@2_&_t@3)=1.0 feature(t@-3_&_h@-2_&_e@-1)=1.0 feature(s_&_o@1_&_f@2)=1.0 feature(h@-2_&_e@-1_&_s)=1.0 feature(s_&_o@1)=1.0 feature(e@-1_&_s)=1.0 feature(o@1)=1.0 feature(s)=1.0  span[104..105]
+Token#87:o feature(f@1_&_t@2_&_w@3)=1.0 feature(h@-3_&_e@-2_&_s@-1)=1.0 feature(o_&_f@1_&_t@2)=1.0 feature(e@-2_&_s@-1_&_o)=1.0 feature(o_&_f@1)=1.0 feature(s@-1_&_o)=1.0 feature(f@1)=1.0 feature(o)=1.0  span[105..106]
+Token#88:f feature(t@1_&_w@2_&_a@3)=1.0 feature(e@-3_&_s@-2_&_o@-1)=1.0 feature(f_&_t@1_&_w@2)=1.0 feature(s@-2_&_o@-1_&_f)=1.0 feature(f_&_t@1)=1.0 feature(o@-1_&_f)=1.0 feature(t@1)=1.0 feature(f)=1.0  span[106..107]
+Token#89:t feature(w@1_&_a@2_&_r@3)=1.0 feature(s@-3_&_o@-2_&_f@-1)=1.0 feature(t_&_w@1_&_a@2)=1.0 feature(o@-2_&_f@-1_&_t)=1.0 feature(t_&_w@1)=1.0 feature(f@-1_&_t)=1.0 feature(w@1)=1.0 feature(t)=1.0  span[107..108]
+Token#90:w feature(a@1_&_r@2_&_e@3)=1.0 feature(o@-3_&_f@-2_&_t@-1)=1.0 feature(w_&_a@1_&_r@2)=1.0 feature(f@-2_&_t@-1_&_w)=1.0 feature(w_&_a@1)=1.0 feature(t@-1_&_w)=1.0 feature(a@1)=1.0 feature(w)=1.0  span[108..109]
+Token#91:a feature(r@1_&_e@2_&_.@3)=1.0 feature(f@-3_&_t@-2_&_w@-1)=1.0 feature(a_&_r@1_&_e@2)=1.0 feature(t@-2_&_w@-1_&_a)=1.0 feature(a_&_r@1)=1.0 feature(w@-1_&_a)=1.0 feature(r@1)=1.0 feature(a)=1.0  span[109..110]
+Token#92:r feature(e@1_&_.@2_&_m@3)=1.0 feature(t@-3_&_w@-2_&_a@-1)=1.0 feature(r_&_e@1_&_.@2)=1.0 feature(w@-2_&_a@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(a@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0  span[110..111]
+Token#93:e feature(.@1_&_m@2_&_o@3)=1.0 feature(w@-3_&_a@-2_&_r@-1)=1.0 feature(e_&_.@1_&_m@2)=1.0 feature(a@-2_&_r@-1_&_e)=1.0 feature(e_&_.@1)=1.0 feature(r@-1_&_e)=1.0 feature(.@1)=1.0 feature(e)=1.0  span[111..112]
+Token#94:. feature(m@1_&_o@2_&_r@3)=1.0 feature(a@-3_&_r@-2_&_e@-1)=1.0 feature(._&_m@1_&_o@2)=1.0 feature(r@-2_&_e@-1_&_.)=1.0 feature(._&_m@1)=1.0 feature(e@-1_&_.)=1.0 feature(m@1)=1.0 feature(.)=1.0  span[112..113]
+Token#95:m feature(o@1_&_r@2_&_e@3)=1.0 feature(r@-3_&_e@-2_&_.@-1)=1.0 feature(m_&_o@1_&_r@2)=1.0 feature(e@-2_&_.@-1_&_m)=1.0 feature(m_&_o@1)=1.0 feature(.@-1_&_m)=1.0 feature(o@1)=1.0 feature(m)=1.0  span[114..115]
+Token#96:o feature(r@1_&_e@2_&_p@3)=1.0 feature(e@-3_&_.@-2_&_m@-1)=1.0 feature(o_&_r@1_&_e@2)=1.0 feature(.@-2_&_m@-1_&_o)=1.0 feature(o_&_r@1)=1.0 feature(m@-1_&_o)=1.0 feature(r@1)=1.0 feature(o)=1.0  span[115..116]
+Token#97:r feature(e@1_&_p@2_&_r@3)=1.0 feature(.@-3_&_m@-2_&_o@-1)=1.0 feature(r_&_e@1_&_p@2)=1.0 feature(m@-2_&_o@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(o@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0  span[116..117]
+Token#98:e feature(p@1_&_r@2_&_e@3)=1.0 feature(m@-3_&_o@-2_&_r@-1)=1.0 feature(e_&_p@1_&_r@2)=1.0 feature(o@-2_&_r@-1_&_e)=1.0 feature(e_&_p@1)=1.0 feature(r@-1_&_e)=1.0 feature(p@1)=1.0 feature(e)=1.0  span[117..118]
+Token#99:p feature(r@1_&_e@2_&_c@3)=1.0 feature(o@-3_&_r@-2_&_e@-1)=1.0 feature(p_&_r@1_&_e@2)=1.0 feature(r@-2_&_e@-1_&_p)=1.0 feature(p_&_r@1)=1.0 feature(e@-1_&_p)=1.0 feature(r@1)=1.0 feature(p)=1.0  span[119..120]
+Token#100:r feature(e@1_&_c@2_&_i@3)=1.0 feature(r@-3_&_e@-2_&_p@-1)=1.0 feature(r_&_e@1_&_c@2)=1.0 feature(e@-2_&_p@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(p@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0  span[120..121]
+Token#101:e feature(c@1_&_i@2_&_s@3)=1.0 feature(e@-3_&_p@-2_&_r@-1)=1.0 feature(e_&_c@1_&_i@2)=1.0 feature(p@-2_&_r@-1_&_e)=1.0 feature(e_&_c@1)=1.0 feature(r@-1_&_e)=1.0 feature(c@1)=1.0 feature(e)=1.0  span[121..122]
+Token#102:c feature(i@1_&_s@2_&_e@3)=1.0 feature(p@-3_&_r@-2_&_e@-1)=1.0 feature(c_&_i@1_&_s@2)=1.0 feature(r@-2_&_e@-1_&_c)=1.0 feature(c_&_i@1)=1.0 feature(e@-1_&_c)=1.0 feature(i@1)=1.0 feature(c)=1.0  span[122..123]
+Token#103:i feature(s@1_&_e@2_&_l@3)=1.0 feature(r@-3_&_e@-2_&_c@-1)=1.0 feature(i_&_s@1_&_e@2)=1.0 feature(e@-2_&_c@-1_&_i)=1.0 feature(i_&_s@1)=1.0 feature(c@-1_&_i)=1.0 feature(s@1)=1.0 feature(i)=1.0  span[123..124]
+Token#104:s feature(e@1_&_l@2_&_y@3)=1.0 feature(e@-3_&_c@-2_&_i@-1)=1.0 feature(s_&_e@1_&_l@2)=1.0 feature(c@-2_&_i@-1_&_s)=1.0 feature(s_&_e@1)=1.0 feature(i@-1_&_s)=1.0 feature(e@1)=1.0 feature(s)=1.0  span[124..125]
+Token#105:e feature(l@1_&_y@2_&_,@3)=1.0 feature(c@-3_&_i@-2_&_s@-1)=1.0 feature(e_&_l@1_&_y@2)=1.0 feature(i@-2_&_s@-1_&_e)=1.0 feature(e_&_l@1)=1.0 feature(s@-1_&_e)=1.0 feature(l@1)=1.0 feature(e)=1.0  span[125..126]
+Token#106:l feature(y@1_&_,@2_&_i@3)=1.0 feature(i@-3_&_s@-2_&_e@-1)=1.0 feature(l_&_y@1_&_,@2)=1.0 feature(s@-2_&_e@-1_&_l)=1.0 feature(l_&_y@1)=1.0 feature(e@-1_&_l)=1.0 feature(y@1)=1.0 feature(l)=1.0  span[126..127]
+Token#107:y feature(,@1_&_i@2_&_t@3)=1.0 feature(s@-3_&_e@-2_&_l@-1)=1.0 feature(y_&_,@1_&_i@2)=1.0 feature(e@-2_&_l@-1_&_y)=1.0 feature(y_&_,@1)=1.0 feature(l@-1_&_y)=1.0 feature(,@1)=1.0 feature(y)=1.0  span[127..128]
+Token#108:, feature(i@1_&_t@2_&_r@3)=1.0 feature(e@-3_&_l@-2_&_y@-1)=1.0 feature(,_&_i@1_&_t@2)=1.0 feature(l@-2_&_y@-1_&_,)=1.0 feature(,_&_i@1)=1.0 feature(y@-1_&_,)=1.0 feature(i@1)=1.0 feature(,)=1.0  span[128..129]
+Token#109:i feature(t@1_&_r@2_&_e@3)=1.0 feature(l@-3_&_y@-2_&_,@-1)=1.0 feature(i_&_t@1_&_r@2)=1.0 feature(y@-2_&_,@-1_&_i)=1.0 feature(i_&_t@1)=1.0 feature(,@-1_&_i)=1.0 feature(t@1)=1.0 feature(i)=1.0  span[130..131]
+Token#110:t feature(r@1_&_e@2_&_f@3)=1.0 feature(y@-3_&_,@-2_&_i@-1)=1.0 feature(t_&_r@1_&_e@2)=1.0 feature(,@-2_&_i@-1_&_t)=1.0 feature(t_&_r@1)=1.0 feature(i@-1_&_t)=1.0 feature(r@1)=1.0 feature(t)=1.0  span[131..132]
+Token#111:r feature(e@1_&_f@2_&_e@3)=1.0 feature(,@-3_&_i@-2_&_t@-1)=1.0 feature(r_&_e@1_&_f@2)=1.0 feature(i@-2_&_t@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(t@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0  span[133..134]
+Token#112:e feature(f@1_&_e@2_&_r@3)=1.0 feature(i@-3_&_t@-2_&_r@-1)=1.0 feature(e_&_f@1_&_e@2)=1.0 feature(t@-2_&_r@-1_&_e)=1.0 feature(e_&_f@1)=1.0 feature(r@-1_&_e)=1.0 feature(f@1)=1.0 feature(e)=1.0  span[134..135]
+Token#113:f feature(e@1_&_r@2_&_s@3)=1.0 feature(t@-3_&_r@-2_&_e@-1)=1.0 feature(f_&_e@1_&_r@2)=1.0 feature(r@-2_&_e@-1_&_f)=1.0 feature(f_&_e@1)=1.0 feature(e@-1_&_f)=1.0 feature(e@1)=1.0 feature(f)=1.0  span[135..136]
+Token#114:e feature(r@1_&_s@2_&_t@3)=1.0 feature(r@-3_&_e@-2_&_f@-1)=1.0 feature(e_&_r@1_&_s@2)=1.0 feature(e@-2_&_f@-1_&_e)=1.0 feature(e_&_r@1)=1.0 feature(f@-1_&_e)=1.0 feature(r@1)=1.0 feature(e)=1.0  span[136..137]
+Token#115:r feature(s@1_&_t@2_&_o@3)=1.0 feature(e@-3_&_f@-2_&_e@-1)=1.0 feature(r_&_s@1_&_t@2)=1.0 feature(f@-2_&_e@-1_&_r)=1.0 feature(r_&_s@1)=1.0 feature(e@-1_&_r)=1.0 feature(s@1)=1.0 feature(r)=1.0  span[137..138]
+Token#116:s feature(t@1_&_o@2_&_f@3)=1.0 feature(f@-3_&_e@-2_&_r@-1)=1.0 feature(s_&_t@1_&_o@2)=1.0 feature(e@-2_&_r@-1_&_s)=1.0 feature(s_&_t@1)=1.0 feature(r@-1_&_s)=1.0 feature(t@1)=1.0 feature(s)=1.0  span[138..139]
+Token#117:t feature(o@1_&_f@2_&_o@3)=1.0 feature(e@-3_&_r@-2_&_s@-1)=1.0 feature(t_&_o@1_&_f@2)=1.0 feature(r@-2_&_s@-1_&_t)=1.0 feature(t_&_o@1)=1.0 feature(s@-1_&_t)=1.0 feature(o@1)=1.0 feature(t)=1.0  span[140..141]
+Token#118:o feature(f@1_&_o@2_&_u@3)=1.0 feature(r@-3_&_s@-2_&_t@-1)=1.0 feature(o_&_f@1_&_o@2)=1.0 feature(s@-2_&_t@-1_&_o)=1.0 feature(o_&_f@1)=1.0 feature(t@-1_&_o)=1.0 feature(f@1)=1.0 feature(o)=1.0  span[141..142]
+Token#119:f feature(o@1_&_u@2_&_r@3)=1.0 feature(s@-3_&_t@-2_&_o@-1)=1.0 feature(f_&_o@1_&_u@2)=1.0 feature(t@-2_&_o@-1_&_f)=1.0 feature(f_&_o@1)=1.0 feature(o@-1_&_f)=1.0 feature(o@1)=1.0 feature(f)=1.0  span[143..144]
+Token#120:o feature(u@1_&_r@2_&_k@3)=1.0 feature(t@-3_&_o@-2_&_f@-1)=1.0 feature(o_&_u@1_&_r@2)=1.0 feature(o@-2_&_f@-1_&_o)=1.0 feature(o_&_u@1)=1.0 feature(f@-1_&_o)=1.0 feature(u@1)=1.0 feature(o)=1.0  span[144..145]
+Token#121:u feature(r@1_&_k@2_&_i@3)=1.0 feature(o@-3_&_f@-2_&_o@-1)=1.0 feature(u_&_r@1_&_k@2)=1.0 feature(f@-2_&_o@-1_&_u)=1.0 feature(u_&_r@1)=1.0 feature(o@-1_&_u)=1.0 feature(r@1)=1.0 feature(u)=1.0  span[145..146]
+Token#122:r feature(k@1_&_i@2_&_n@3)=1.0 feature(f@-3_&_o@-2_&_u@-1)=1.0 feature(r_&_k@1_&_i@2)=1.0 feature(o@-2_&_u@-1_&_r)=1.0 feature(r_&_k@1)=1.0 feature(u@-1_&_r)=1.0 feature(k@1)=1.0 feature(r)=1.0  span[146..147]
+Token#123:k feature(i@1_&_n@2_&_d@3)=1.0 feature(o@-3_&_u@-2_&_r@-1)=1.0 feature(k_&_i@1_&_n@2)=1.0 feature(u@-2_&_r@-1_&_k)=1.0 feature(k_&_i@1)=1.0 feature(r@-1_&_k)=1.0 feature(i@1)=1.0 feature(k)=1.0  span[148..149]
+Token#124:i feature(n@1_&_d@2_&_s@3)=1.0 feature(u@-3_&_r@-2_&_k@-1)=1.0 feature(i_&_n@1_&_d@2)=1.0 feature(r@-2_&_k@-1_&_i)=1.0 feature(i_&_n@1)=1.0 feature(k@-1_&_i)=1.0 feature(n@1)=1.0 feature(i)=1.0  span[149..150]
+Token#125:n feature(d@1_&_s@2_&_o@3)=1.0 feature(r@-3_&_k@-2_&_i@-1)=1.0 feature(n_&_d@1_&_s@2)=1.0 feature(k@-2_&_i@-1_&_n)=1.0 feature(n_&_d@1)=1.0 feature(i@-1_&_n)=1.0 feature(d@1)=1.0 feature(n)=1.0  span[150..151]
+Token#126:d feature(s@1_&_o@2_&_f@3)=1.0 feature(k@-3_&_i@-2_&_n@-1)=1.0 feature(d_&_s@1_&_o@2)=1.0 feature(i@-2_&_n@-1_&_d)=1.0 feature(d_&_s@1)=1.0 feature(n@-1_&_d)=1.0 feature(s@1)=1.0 feature(d)=1.0  span[151..152]
+Token#127:s feature(o@1_&_f@2_&_f@3)=1.0 feature(i@-3_&_n@-2_&_d@-1)=1.0 feature(s_&_o@1_&_f@2)=1.0 feature(n@-2_&_d@-1_&_s)=1.0 feature(s_&_o@1)=1.0 feature(d@-1_&_s)=1.0 feature(o@1)=1.0 feature(s)=1.0  span[152..153]
+Token#128:o feature(f@1_&_f@2_&_r@3)=1.0 feature(n@-3_&_d@-2_&_s@-1)=1.0 feature(o_&_f@1_&_f@2)=1.0 feature(d@-2_&_s@-1_&_o)=1.0 feature(o_&_f@1)=1.0 feature(s@-1_&_o)=1.0 feature(f@1)=1.0 feature(o)=1.0  span[154..155]
+Token#129:f feature(f@1_&_r@2_&_e@3)=1.0 feature(d@-3_&_s@-2_&_o@-1)=1.0 feature(f_&_f@1_&_r@2)=1.0 feature(s@-2_&_o@-1_&_f)=1.0 feature(f_&_f@1)=1.0 feature(o@-1_&_f)=1.0 feature(f@1)=1.0 feature(f)=1.0  span[155..156]
+Token#130:f feature(r@1_&_e@2_&_e@3)=1.0 feature(s@-3_&_o@-2_&_f@-1)=1.0 feature(f_&_r@1_&_e@2)=1.0 feature(o@-2_&_f@-1_&_f)=1.0 feature(f_&_r@1)=1.0 feature(f@-1_&_f)=1.0 feature(r@1)=1.0 feature(f)=1.0  span[157..158]
+Token#131:r feature(e@1_&_e@2_&_d@3)=1.0 feature(o@-3_&_f@-2_&_f@-1)=1.0 feature(r_&_e@1_&_e@2)=1.0 feature(f@-2_&_f@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(f@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0  span[158..159]
+Token#132:e feature(e@1_&_d@2_&_o@3)=1.0 feature(f@-3_&_f@-2_&_r@-1)=1.0 feature(e_&_e@1_&_d@2)=1.0 feature(f@-2_&_r@-1_&_e)=1.0 feature(e_&_e@1)=1.0 feature(r@-1_&_e)=1.0 feature(e@1)=1.0 feature(e)=1.0  span[159..160]
+Token#133:e feature(d@1_&_o@2_&_m@3)=1.0 feature(f@-3_&_r@-2_&_e@-1)=1.0 feature(e_&_d@1_&_o@2)=1.0 feature(r@-2_&_e@-1_&_e)=1.0 feature(e_&_d@1)=1.0 feature(e@-1_&_e)=1.0 feature(d@1)=1.0 feature(e)=1.0  span[160..161]
+Token#134:d feature(o@1_&_m@2_&_,@3)=1.0 feature(r@-3_&_e@-2_&_e@-1)=1.0 feature(d_&_o@1_&_m@2)=1.0 feature(e@-2_&_e@-1_&_d)=1.0 feature(d_&_o@1)=1.0 feature(e@-1_&_d)=1.0 feature(o@1)=1.0 feature(d)=1.0  span[161..162]
+Token#135:o feature(m@1_&_,@2_&_f@3)=1.0 feature(e@-3_&_e@-2_&_d@-1)=1.0 feature(o_&_m@1_&_,@2)=1.0 feature(e@-2_&_d@-1_&_o)=1.0 feature(o_&_m@1)=1.0 feature(d@-1_&_o)=1.0 feature(m@1)=1.0 feature(o)=1.0  span[162..163]
+Token#136:m feature(,@1_&_f@2_&_o@3)=1.0 feature(e@-3_&_d@-2_&_o@-1)=1.0 feature(m_&_,@1_&_f@2)=1.0 feature(d@-2_&_o@-1_&_m)=1.0 feature(m_&_,@1)=1.0 feature(o@-1_&_m)=1.0 feature(,@1)=1.0 feature(m)=1.0  span[163..164]
+Token#137:, feature(f@1_&_o@2_&_r@3)=1.0 feature(d@-3_&_o@-2_&_m@-1)=1.0 feature(,_&_f@1_&_o@2)=1.0 feature(o@-2_&_m@-1_&_,)=1.0 feature(,_&_f@1)=1.0 feature(m@-1_&_,)=1.0 feature(f@1)=1.0 feature(,)=1.0  span[164..165]
+Token#138:f feature(o@1_&_r@2_&_t@3)=1.0 feature(o@-3_&_m@-2_&_,@-1)=1.0 feature(f_&_o@1_&_r@2)=1.0 feature(m@-2_&_,@-1_&_f)=1.0 feature(f_&_o@1)=1.0 feature(,@-1_&_f)=1.0 feature(o@1)=1.0 feature(f)=1.0  span[166..167]
+Token#139:o feature(r@1_&_t@2_&_h@3)=1.0 feature(m@-3_&_,@-2_&_f@-1)=1.0 feature(o_&_r@1_&_t@2)=1.0 feature(,@-2_&_f@-1_&_o)=1.0 feature(o_&_r@1)=1.0 feature(f@-1_&_o)=1.0 feature(r@1)=1.0 feature(o)=1.0  span[167..168]
+Token#140:r feature(t@1_&_h@2_&_e@3)=1.0 feature(,@-3_&_f@-2_&_o@-1)=1.0 feature(r_&_t@1_&_h@2)=1.0 feature(f@-2_&_o@-1_&_r)=1.0 feature(r_&_t@1)=1.0 feature(o@-1_&_r)=1.0 feature(t@1)=1.0 feature(r)=1.0  span[168..169]
+Token#141:t feature(h@1_&_e@2_&_u@3)=1.0 feature(f@-3_&_o@-2_&_r@-1)=1.0 feature(t_&_h@1_&_e@2)=1.0 feature(o@-2_&_r@-1_&_t)=1.0 feature(t_&_h@1)=1.0 feature(r@-1_&_t)=1.0 feature(h@1)=1.0 feature(t)=1.0  span[170..171]
+Token#142:h feature(e@1_&_u@2_&_s@3)=1.0 feature(o@-3_&_r@-2_&_t@-1)=1.0 feature(h_&_e@1_&_u@2)=1.0 feature(r@-2_&_t@-1_&_h)=1.0 feature(h_&_e@1)=1.0 feature(t@-1_&_h)=1.0 feature(e@1)=1.0 feature(h)=1.0  span[171..172]
+Token#143:e feature(u@1_&_s@2_&_e@3)=1.0 feature(r@-3_&_t@-2_&_h@-1)=1.0 feature(e_&_u@1_&_s@2)=1.0 feature(t@-2_&_h@-1_&_e)=1.0 feature(e_&_u@1)=1.0 feature(h@-1_&_e)=1.0 feature(u@1)=1.0 feature(e)=1.0  span[172..173]
+Token#144:u feature(s@1_&_e@2_&_r@3)=1.0 feature(t@-3_&_h@-2_&_e@-1)=1.0 feature(u_&_s@1_&_e@2)=1.0 feature(h@-2_&_e@-1_&_u)=1.0 feature(u_&_s@1)=1.0 feature(e@-1_&_u)=1.0 feature(s@1)=1.0 feature(u)=1.0  span[174..175]
+Token#145:s feature(e@1_&_r@2_&_s@3)=1.0 feature(h@-3_&_e@-2_&_u@-1)=1.0 feature(s_&_e@1_&_r@2)=1.0 feature(e@-2_&_u@-1_&_s)=1.0 feature(s_&_e@1)=1.0 feature(u@-1_&_s)=1.0 feature(e@1)=1.0 feature(s)=1.0  span[175..176]
+Token#146:e feature(r@1_&_s@2_&_o@3)=1.0 feature(e@-3_&_u@-2_&_s@-1)=1.0 feature(e_&_r@1_&_s@2)=1.0 feature(u@-2_&_s@-1_&_e)=1.0 feature(e_&_r@1)=1.0 feature(s@-1_&_e)=1.0 feature(r@1)=1.0 feature(e)=1.0  span[176..177]
+Token#147:r feature(s@1_&_o@2_&_f@3)=1.0 feature(u@-3_&_s@-2_&_e@-1)=1.0 feature(r_&_s@1_&_o@2)=1.0 feature(s@-2_&_e@-1_&_r)=1.0 feature(r_&_s@1)=1.0 feature(e@-1_&_r)=1.0 feature(s@1)=1.0 feature(r)=1.0  span[177..178]
+Token#148:s feature(o@1_&_f@2_&_t@3)=1.0 feature(s@-3_&_e@-2_&_r@-1)=1.0 feature(s_&_o@1_&_f@2)=1.0 feature(e@-2_&_r@-1_&_s)=1.0 feature(s_&_o@1)=1.0 feature(r@-1_&_s)=1.0 feature(o@1)=1.0 feature(s)=1.0  span[178..179]
+Token#149:o feature(f@1_&_t@2_&_h@3)=1.0 feature(e@-3_&_r@-2_&_s@-1)=1.0 feature(o_&_f@1_&_t@2)=1.0 feature(r@-2_&_s@-1_&_o)=1.0 feature(o_&_f@1)=1.0 feature(s@-1_&_o)=1.0 feature(f@1)=1.0 feature(o)=1.0  span[180..181]
+Token#150:f feature(t@1_&_h@2_&_e@3)=1.0 feature(r@-3_&_s@-2_&_o@-1)=1.0 feature(f_&_t@1_&_h@2)=1.0 feature(s@-2_&_o@-1_&_f)=1.0 feature(f_&_t@1)=1.0 feature(o@-1_&_f)=1.0 feature(t@1)=1.0 feature(f)=1.0  span[181..182]
+Token#151:t feature(h@1_&_e@2_&_s@3)=1.0 feature(s@-3_&_o@-2_&_f@-1)=1.0 feature(t_&_h@1_&_e@2)=1.0 feature(o@-2_&_f@-1_&_t)=1.0 feature(t_&_h@1)=1.0 feature(f@-1_&_t)=1.0 feature(h@1)=1.0 feature(t)=1.0  span[183..184]
+Token#152:h feature(e@1_&_s@2_&_o@3)=1.0 feature(o@-3_&_f@-2_&_t@-1)=1.0 feature(h_&_e@1_&_s@2)=1.0 feature(f@-2_&_t@-1_&_h)=1.0 feature(h_&_e@1)=1.0 feature(t@-1_&_h)=1.0 feature(e@1)=1.0 feature(h)=1.0  span[184..185]
+Token#153:e feature(s@1_&_o@2_&_f@3)=1.0 feature(f@-3_&_t@-2_&_h@-1)=1.0 feature(e_&_s@1_&_o@2)=1.0 feature(t@-2_&_h@-1_&_e)=1.0 feature(e_&_s@1)=1.0 feature(h@-1_&_e)=1.0 feature(s@1)=1.0 feature(e)=1.0  span[185..186]
+Token#154:s feature(o@1_&_f@2_&_t@3)=1.0 feature(t@-3_&_h@-2_&_e@-1)=1.0 feature(s_&_o@1_&_f@2)=1.0 feature(h@-2_&_e@-1_&_s)=1.0 feature(s_&_o@1)=1.0 feature(e@-1_&_s)=1.0 feature(o@1)=1.0 feature(s)=1.0  span[187..188]
+Token#155:o feature(f@1_&_t@2_&_w@3)=1.0 feature(h@-3_&_e@-2_&_s@-1)=1.0 feature(o_&_f@1_&_t@2)=1.0 feature(e@-2_&_s@-1_&_o)=1.0 feature(o_&_f@1)=1.0 feature(s@-1_&_o)=1.0 feature(f@1)=1.0 feature(o)=1.0  span[188..189]
+Token#156:f feature(t@1_&_w@2_&_a@3)=1.0 feature(e@-3_&_s@-2_&_o@-1)=1.0 feature(f_&_t@1_&_w@2)=1.0 feature(s@-2_&_o@-1_&_f)=1.0 feature(f_&_t@1)=1.0 feature(o@-1_&_f)=1.0 feature(t@1)=1.0 feature(f)=1.0  span[189..190]
+Token#157:t feature(w@1_&_a@2_&_r@3)=1.0 feature(s@-3_&_o@-2_&_f@-1)=1.0 feature(t_&_w@1_&_a@2)=1.0 feature(o@-2_&_f@-1_&_t)=1.0 feature(t_&_w@1)=1.0 feature(f@-1_&_t)=1.0 feature(w@1)=1.0 feature(t)=1.0  span[190..191]
+Token#158:w feature(a@1_&_r@2_&_e@3)=1.0 feature(o@-3_&_f@-2_&_t@-1)=1.0 feature(w_&_a@1_&_r@2)=1.0 feature(f@-2_&_t@-1_&_w)=1.0 feature(w_&_a@1)=1.0 feature(t@-1_&_w)=1.0 feature(a@1)=1.0 feature(w)=1.0  span[191..192]
+Token#159:a feature(r@1_&_e@2_&_.@3)=1.0 feature(f@-3_&_t@-2_&_w@-1)=1.0 feature(a_&_r@1_&_e@2)=1.0 feature(t@-2_&_w@-1_&_a)=1.0 feature(a_&_r@1)=1.0 feature(w@-1_&_a)=1.0 feature(r@1)=1.0 feature(a)=1.0  span[192..193]
+Token#160:r feature(e@1_&_.@2_&_<END0>@3)=1.0 feature(t@-3_&_w@-2_&_a@-1)=1.0 feature(r_&_e@1_&_.@2)=1.0 feature(w@-2_&_a@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(a@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0  span[193..194]
+Token#161:e feature(.@1_&_<END0>@2_&_<END1>@3)=1.0 feature(w@-3_&_a@-2_&_r@-1)=1.0 feature(e_&_.@1_&_<END0>@2)=1.0 feature(a@-2_&_r@-1_&_e)=1.0 feature(e_&_.@1)=1.0 feature(r@-1_&_e)=1.0 feature(.@1)=1.0 feature(e)=1.0  span[194..195]
+Token#162:. feature(<END0>@1_&_<END1>@2_&_<END2>@3)=1.0 feature(a@-3_&_r@-2_&_e@-1)=1.0 feature(._&_<END0>@1_&_<END1>@2)=1.0 feature(r@-2_&_e@-1_&_.)=1.0 feature(._&_<END0>@1)=1.0 feature(e@-1_&_.)=1.0 feature(<END0>@1)=1.0 feature(.)=1.0  span[195..196]
+
+name: array:1
+target: 0: start (0)
+1: notstart (1)
+2: notstart (1)
+3: start (0)
+4: notstart (1)
+5: notstart (1)
+6: notstart (1)
+7: notstart (1)
+8: notstart (1)
+9: notstart (1)
+10: start (0)
+11: notstart (1)
+12: start (0)
+13: notstart (1)
+14: notstart (1)
+15: start (0)
+16: notstart (1)
+17: notstart (1)
+18: start (0)
+19: notstart (1)
+20: notstart (1)
+21: notstart (1)
+22: notstart (1)
+23: notstart (1)
+24: notstart (1)
+25: notstart (1)
+26: start (0)
+27: notstart (1)
+28: notstart (1)
+29: start (0)
+30: notstart (1)
+31: notstart (1)
+32: start (0)
+33: notstart (1)
+34: notstart (1)
+35: notstart (1)
+36: notstart (1)
+37: notstart (1)
+38: notstart (1)
+39: notstart (1)
+
+input: TokenSequence [t feature(h@1_&_e@2_&_f@3)=1.0 feature(<START2>@-3_&_<START1>@-2_&_<START0>@-1)=1.0 feature(t_&_h@1_&_e@2)=1.0 feature(<START1>@-2_&_<START0>@-1_&_t)=1.0 feature(t_&_h@1)=1.0 feature(<START0>@-1_&_t)=1.0 feature(h@1)=1.0 feature(t)=1.0  span[0..1], h feature(e@1_&_f@2_&_r@3)=1.0 feature(<START1>@-3_&_<START0>@-2_&_t@-1)=1.0 feature(h_&_e@1_&_f@2)=1.0 feature(<START0>@-2_&_t@-1_&_h)=1.0 feature(h_&_e@1)=1.0 feature(t@-1_&_h)=1.0 feature(e@1)=1.0 feature(h)=1.0  span[1..2], e feature(f@1_&_r@2_&_e@3)=1.0 feature(<START0>@-3_&_t@-2_&_h@-1)=1.0 feature(e_&_f@1_&_r@2)=1.0 feature(t@-2_&_h@-1_&_e)=1.0 feature(e_&_f@1)=1.0 feature(h@-1_&_e)=1.0 feature(f@1)=1.0 feature(e)=1.0  span[2..3], f feature(r@1_&_e@2_&_e@3)=1.0 feature(t@-3_&_h@-2_&_e@-1)=1.0 feature(f_&_r@1_&_e@2)=1.0 feature(h@-2_&_e@-1_&_f)=1.0 feature(f_&_r@1)=1.0 feature(e@-1_&_f)=1.0 feature(r@1)=1.0 feature(f)=1.0  span[4..5], r feature(e@1_&_e@2_&_d@3)=1.0 feature(h@-3_&_e@-2_&_f@-1)=1.0 feature(r_&_e@1_&_e@2)=1.0 feature(e@-2_&_f@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(f@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0  span[5..6], e feature(e@1_&_d@2_&_o@3)=1.0 feature(e@-3_&_f@-2_&_r@-1)=1.0 feature(e_&_e@1_&_d@2)=1.0 feature(f@-2_&_r@-1_&_e)=1.0 feature(e_&_e@1)=1.0 feature(r@-1_&_e)=1.0 feature(e@1)=1.0 feature(e)=1.0  span[6..7], e feature(d@1_&_o@2_&_m@3)=1.0 feature(f@-3_&_r@-2_&_e@-1)=1.0 feature(e_&_d@1_&_o@2)=1.0 feature(r@-2_&_e@-1_&_e)=1.0 feature(e_&_d@1)=1.0 feature(e@-1_&_e)=1.0 feature(d@1)=1.0 feature(e)=1.0  span[7..8], d feature(o@1_&_m@2_&_t@3)=1.0 feature(r@-3_&_e@-2_&_e@-1)=1.0 feature(d_&_o@1_&_m@2)=1.0 feature(e@-2_&_e@-1_&_d)=1.0 feature(d_&_o@1)=1.0 feature(e@-1_&_d)=1.0 feature(o@1)=1.0 feature(d)=1.0  span[8..9], o feature(m@1_&_t@2_&_o@3)=1.0 feature(e@-3_&_e@-2_&_d@-1)=1.0 feature(o_&_m@1_&_t@2)=1.0 feature(e@-2_&_d@-1_&_o)=1.0 feature(o_&_m@1)=1.0 feature(d@-1_&_o)=1.0 feature(m@1)=1.0 feature(o)=1.0  span[9..10], m feature(t@1_&_o@2_&_r@3)=1.0 feature(e@-3_&_d@-2_&_o@-1)=1.0 feature(m_&_t@1_&_o@2)=1.0 feature(d@-2_&_o@-1_&_m)=1.0 feature(m_&_t@1)=1.0 feature(o@-1_&_m)=1.0 feature(t@1)=1.0 feature(m)=1.0  span[10..11], t feature(o@1_&_r@2_&_u@3)=1.0 feature(d@-3_&_o@-2_&_m@-1)=1.0 feature(t_&_o@1_&_r@2)=1.0 feature(o@-2_&_m@-1_&_t)=1.0 feature(t_&_o@1)=1.0 feature(m@-1_&_t)=1.0 feature(o@1)=1.0 feature(t)=1.0  span[12..13], o feature(r@1_&_u@2_&_n@3)=1.0 feature(o@-3_&_m@-2_&_t@-1)=1.0 feature(o_&_r@1_&_u@2)=1.0 feature(m@-2_&_t@-1_&_o)=1.0 feature(o_&_r@1)=1.0 feature(t@-1_&_o)=1.0 feature(r@1)=1.0 feature(o)=1.0  span[13..14], r feature(u@1_&_n@2_&_t@3)=1.0 feature(m@-3_&_t@-2_&_o@-1)=1.0 feature(r_&_u@1_&_n@2)=1.0 feature(t@-2_&_o@-1_&_r)=1.0 feature(r_&_u@1)=1.0 feature(o@-1_&_r)=1.0 feature(u@1)=1.0 feature(r)=1.0  span[15..16], u feature(n@1_&_t@2_&_h@3)=1.0 feature(t@-3_&_o@-2_&_r@-1)=1.0 feature(u_&_n@1_&_t@2)=1.0 feature(o@-2_&_r@-1_&_u)=1.0 feature(u_&_n@1)=1.0 feature(r@-1_&_u)=1.0 feature(n@1)=1.0 feature(u)=1.0  span[16..17], n feature(t@1_&_h@2_&_e@3)=1.0 feature(o@-3_&_r@-2_&_u@-1)=1.0 feature(n_&_t@1_&_h@2)=1.0 feature(r@-2_&_u@-1_&_n)=1.0 feature(n_&_t@1)=1.0 feature(u@-1_&_n)=1.0 feature(t@1)=1.0 feature(n)=1.0  span[17..18], t feature(h@1_&_e@2_&_p@3)=1.0 feature(r@-3_&_u@-2_&_n@-1)=1.0 feature(t_&_h@1_&_e@2)=1.0 feature(u@-2_&_n@-1_&_t)=1.0 feature(t_&_h@1)=1.0 feature(n@-1_&_t)=1.0 feature(h@1)=1.0 feature(t)=1.0  span[19..20], h feature(e@1_&_p@2_&_r@3)=1.0 feature(u@-3_&_n@-2_&_t@-1)=1.0 feature(h_&_e@1_&_p@2)=1.0 feature(n@-2_&_t@-1_&_h)=1.0 feature(h_&_e@1)=1.0 feature(t@-1_&_h)=1.0 feature(e@1)=1.0 feature(h)=1.0  span[20..21], e feature(p@1_&_r@2_&_o@3)=1.0 feature(n@-3_&_t@-2_&_h@-1)=1.0 feature(e_&_p@1_&_r@2)=1.0 feature(t@-2_&_h@-1_&_e)=1.0 feature(e_&_p@1)=1.0 feature(h@-1_&_e)=1.0 feature(p@1)=1.0 feature(e)=1.0  span[21..22], p feature(r@1_&_o@2_&_g@3)=1.0 feature(t@-3_&_h@-2_&_e@-1)=1.0 feature(p_&_r@1_&_o@2)=1.0 feature(h@-2_&_e@-1_&_p)=1.0 feature(p_&_r@1)=1.0 feature(e@-1_&_p)=1.0 feature(r@1)=1.0 feature(p)=1.0  span[23..24], r feature(o@1_&_g@2_&_r@3)=1.0 feature(h@-3_&_e@-2_&_p@-1)=1.0 feature(r_&_o@1_&_g@2)=1.0 feature(e@-2_&_p@-1_&_r)=1.0 feature(r_&_o@1)=1.0 feature(p@-1_&_r)=1.0 feature(o@1)=1.0 feature(r)=1.0  span[24..25], o feature(g@1_&_r@2_&_a@3)=1.0 feature(e@-3_&_p@-2_&_r@-1)=1.0 feature(o_&_g@1_&_r@2)=1.0 feature(p@-2_&_r@-1_&_o)=1.0 feature(o_&_g@1)=1.0 feature(r@-1_&_o)=1.0 feature(g@1)=1.0 feature(o)=1.0  span[25..26], g feature(r@1_&_a@2_&_m@3)=1.0 feature(p@-3_&_r@-2_&_o@-1)=1.0 feature(g_&_r@1_&_a@2)=1.0 feature(r@-2_&_o@-1_&_g)=1.0 feature(g_&_r@1)=1.0 feature(o@-1_&_g)=1.0 feature(r@1)=1.0 feature(g)=1.0  span[26..27], r feature(a@1_&_m@2_&_,@3)=1.0 feature(r@-3_&_o@-2_&_g@-1)=1.0 feature(r_&_a@1_&_m@2)=1.0 feature(o@-2_&_g@-1_&_r)=1.0 feature(r_&_a@1)=1.0 feature(g@-1_&_r)=1.0 feature(a@1)=1.0 feature(r)=1.0  span[27..28], a feature(m@1_&_,@2_&_f@3)=1.0 feature(o@-3_&_g@-2_&_r@-1)=1.0 feature(a_&_m@1_&_,@2)=1.0 feature(g@-2_&_r@-1_&_a)=1.0 feature(a_&_m@1)=1.0 feature(r@-1_&_a)=1.0 feature(m@1)=1.0 feature(a)=1.0  span[28..29], m feature(,@1_&_f@2_&_o@3)=1.0 feature(g@-3_&_r@-2_&_a@-1)=1.0 feature(m_&_,@1_&_f@2)=1.0 feature(r@-2_&_a@-1_&_m)=1.0 feature(m_&_,@1)=1.0 feature(a@-1_&_m)=1.0 feature(,@1)=1.0 feature(m)=1.0  span[29..30], , feature(f@1_&_o@2_&_r@3)=1.0 feature(r@-3_&_a@-2_&_m@-1)=1.0 feature(,_&_f@1_&_o@2)=1.0 feature(a@-2_&_m@-1_&_,)=1.0 feature(,_&_f@1)=1.0 feature(m@-1_&_,)=1.0 feature(f@1)=1.0 feature(,)=1.0  span[30..31], f feature(o@1_&_r@2_&_a@3)=1.0 feature(a@-3_&_m@-2_&_,@-1)=1.0 feature(f_&_o@1_&_r@2)=1.0 feature(m@-2_&_,@-1_&_f)=1.0 feature(f_&_o@1)=1.0 feature(,@-1_&_f)=1.0 feature(o@1)=1.0 feature(f)=1.0  span[32..33], o feature(r@1_&_a@2_&_n@3)=1.0 feature(m@-3_&_,@-2_&_f@-1)=1.0 feature(o_&_r@1_&_a@2)=1.0 feature(,@-2_&_f@-1_&_o)=1.0 feature(o_&_r@1)=1.0 feature(f@-1_&_o)=1.0 feature(r@1)=1.0 feature(o)=1.0  span[33..34], r feature(a@1_&_n@2_&_y@3)=1.0 feature(,@-3_&_f@-2_&_o@-1)=1.0 feature(r_&_a@1_&_n@2)=1.0 feature(f@-2_&_o@-1_&_r)=1.0 feature(r_&_a@1)=1.0 feature(o@-1_&_r)=1.0 feature(a@1)=1.0 feature(r)=1.0  span[34..35], a feature(n@1_&_y@2_&_p@3)=1.0 feature(f@-3_&_o@-2_&_r@-1)=1.0 feature(a_&_n@1_&_y@2)=1.0 feature(o@-2_&_r@-1_&_a)=1.0 feature(a_&_n@1)=1.0 feature(r@-1_&_a)=1.0 feature(n@1)=1.0 feature(a)=1.0  span[36..37], n feature(y@1_&_p@2_&_u@3)=1.0 feature(o@-3_&_r@-2_&_a@-1)=1.0 feature(n_&_y@1_&_p@2)=1.0 feature(r@-2_&_a@-1_&_n)=1.0 feature(n_&_y@1)=1.0 feature(a@-1_&_n)=1.0 feature(y@1)=1.0 feature(n)=1.0  span[37..38], y feature(p@1_&_u@2_&_r@3)=1.0 feature(r@-3_&_a@-2_&_n@-1)=1.0 feature(y_&_p@1_&_u@2)=1.0 feature(a@-2_&_n@-1_&_y)=1.0 feature(y_&_p@1)=1.0 feature(n@-1_&_y)=1.0 feature(p@1)=1.0 feature(y)=1.0  span[38..39], p feature(u@1_&_r@2_&_p@3)=1.0 feature(a@-3_&_n@-2_&_y@-1)=1.0 feature(p_&_u@1_&_r@2)=1.0 feature(n@-2_&_y@-1_&_p)=1.0 feature(p_&_u@1)=1.0 feature(y@-1_&_p)=1.0 feature(u@1)=1.0 feature(p)=1.0  span[40..41], u feature(r@1_&_p@2_&_o@3)=1.0 feature(n@-3_&_y@-2_&_p@-1)=1.0 feature(u_&_r@1_&_p@2)=1.0 feature(y@-2_&_p@-1_&_u)=1.0 feature(u_&_r@1)=1.0 feature(p@-1_&_u)=1.0 feature(r@1)=1.0 feature(u)=1.0  span[41..42], r feature(p@1_&_o@2_&_s@3)=1.0 feature(y@-3_&_p@-2_&_u@-1)=1.0 feature(r_&_p@1_&_o@2)=1.0 feature(p@-2_&_u@-1_&_r)=1.0 feature(r_&_p@1)=1.0 feature(u@-1_&_r)=1.0 feature(p@1)=1.0 feature(r)=1.0  span[42..43], p feature(o@1_&_s@2_&_e@3)=1.0 feature(p@-3_&_u@-2_&_r@-1)=1.0 feature(p_&_o@1_&_s@2)=1.0 feature(u@-2_&_r@-1_&_p)=1.0 feature(p_&_o@1)=1.0 feature(r@-1_&_p)=1.0 feature(o@1)=1.0 feature(p)=1.0  span[43..44], o feature(s@1_&_e@2_&_.@3)=1.0 feature(u@-3_&_r@-2_&_p@-1)=1.0 feature(o_&_s@1_&_e@2)=1.0 feature(r@-2_&_p@-1_&_o)=1.0 feature(o_&_s@1)=1.0 feature(p@-1_&_o)=1.0 feature(s@1)=1.0 feature(o)=1.0  span[44..45], s feature(e@1_&_.@2_&_<END0>@3)=1.0 feature(r@-3_&_p@-2_&_o@-1)=1.0 feature(s_&_e@1_&_.@2)=1.0 feature(p@-2_&_o@-1_&_s)=1.0 feature(s_&_e@1)=1.0 feature(o@-1_&_s)=1.0 feature(e@1)=1.0 feature(s)=1.0  span[45..46], e feature(.@1_&_<END0>@2_&_<END1>@3)=1.0 feature(p@-3_&_o@-2_&_s@-1)=1.0 feature(e_&_.@1_&_<END0>@2)=1.0 feature(o@-2_&_s@-1_&_e)=1.0 feature(e_&_.@1)=1.0 feature(s@-1_&_e)=1.0 feature(.@1)=1.0 feature(e)=1.0  span[46..47], . feature(<END0>@1_&_<END1>@2_&_<END2>@3)=1.0 feature(o@-3_&_s@-2_&_e@-1)=1.0 feature(._&_<END0>@1_&_<END1>@2)=1.0 feature(s@-2_&_e@-1_&_.)=1.0 feature(._&_<END0>@1)=1.0 feature(e@-1_&_.)=1.0 feature(<END0>@1)=1.0 feature(.)=1.0  span[47..48]]
+Token#0:t feature(h@1_&_e@2_&_f@3)=1.0 feature(<START2>@-3_&_<START1>@-2_&_<START0>@-1)=1.0 feature(t_&_h@1_&_e@2)=1.0 feature(<START1>@-2_&_<START0>@-1_&_t)=1.0 feature(t_&_h@1)=1.0 feature(<START0>@-1_&_t)=1.0 feature(h@1)=1.0 feature(t)=1.0  span[0..1]
+Token#1:h feature(e@1_&_f@2_&_r@3)=1.0 feature(<START1>@-3_&_<START0>@-2_&_t@-1)=1.0 feature(h_&_e@1_&_f@2)=1.0 feature(<START0>@-2_&_t@-1_&_h)=1.0 feature(h_&_e@1)=1.0 feature(t@-1_&_h)=1.0 feature(e@1)=1.0 feature(h)=1.0  span[1..2]
+Token#2:e feature(f@1_&_r@2_&_e@3)=1.0 feature(<START0>@-3_&_t@-2_&_h@-1)=1.0 feature(e_&_f@1_&_r@2)=1.0 feature(t@-2_&_h@-1_&_e)=1.0 feature(e_&_f@1)=1.0 feature(h@-1_&_e)=1.0 feature(f@1)=1.0 feature(e)=1.0  span[2..3]
+Token#3:f feature(r@1_&_e@2_&_e@3)=1.0 feature(t@-3_&_h@-2_&_e@-1)=1.0 feature(f_&_r@1_&_e@2)=1.0 feature(h@-2_&_e@-1_&_f)=1.0 feature(f_&_r@1)=1.0 feature(e@-1_&_f)=1.0 feature(r@1)=1.0 feature(f)=1.0  span[4..5]
+Token#4:r feature(e@1_&_e@2_&_d@3)=1.0 feature(h@-3_&_e@-2_&_f@-1)=1.0 feature(r_&_e@1_&_e@2)=1.0 feature(e@-2_&_f@-1_&_r)=1.0 feature(r_&_e@1)=1.0 feature(f@-1_&_r)=1.0 feature(e@1)=1.0 feature(r)=1.0  span[5..6]
+Token#5:e feature(e@1_&_d@2_&_o@3)=1.0 feature(e@-3_&_f@-2_&_r@-1)=1.0 feature(e_&_e@1_&_d@2)=1.0 feature(f@-2_&_r@-1_&_e)=1.0 feature(e_&_e@1)=1.0 feature(r@-1_&_e)=1.0 feature(e@1)=1.0 feature(e)=1.0  span[6..7]
+Token#6:e feature(d@1_&_o@2_&_m@3)=1.0 feature(f@-3_&_r@-2_&_e@-1)=1.0 feature(e_&_d@1_&_o@2)=1.0 feature(r@-2_&_e@-1_&_e)=1.0 feature(e_&_d@1)=1.0 feature(e@-1_&_e)=1.0 feature(d@1)=1.0 feature(e)=1.0  span[7..8]
+Token#7:d feature(o@1_&_m@2_&_t@3)=1.0 feature(r@-3_&_e@-2_&_e@-1)=1.0 feature(d_&_o@1_&_m@2)=1.0 feature(e@-2_&_e@-1_&_d)=1.0 feature(d_&_o@1)=1.0 feature(e@-1_&_d)=1.0 feature(o@1)=1.0 feature(d)=1.0  span[8..9]
+Token#8:o feature(m@1_&_t@2_&_o@3)=1.0 feature(e@-3_&_e@-2_&_d@-1)=1.0 feature(o_&_m@1_&_t@2)=1.0 feature(e@-2_&_d@-1_&_o)=1.0 feature(o_&_m@1)=1.0 feature(d@-1_&_o)=1.0 feature(m@1)=1.0 feature(o)=1.0  span[9..10]
+Token#9:m feature(t@1_&_o@2_&_r@3)=1.0 feature(e@-3_&_d@-2_&_o@-1)=1.0 feature(m_&_t@1_&_o@2)=1.0 feature(d@-2_&_o@-1_&_m)=1.0 feature(m_&_t@1)=1.0 feature(o@-1_&_m)=1.0 feature(t@1)=1.0 feature(m)=1.0  span[10..11]
+Token#10:t feature(o@1_&_r@2_&_u@3)=1.0 feature(d@-3_&_o@-2_&_m@-1)=1.0 feature(t_&_o@1_&_r@2)=1.0 feature(o@-2_&_m@-1_&_t)=1.0 feature(t_&_o@1)=1.0 feature(m@-1_&_t)=1.0 feature(o@1)=1.0 feature(t)=1.0  span[12..13]
+Token#11:o feature(r@1_&_u@2_&_n@3)=1.0 feature(o@-3_&_m@-2_&_t@-1)=1.0 feature(o_&_r@1_&_u@2)=1.0 feature(m@-2_&_t@-1_&_o)=1.0 feature(o_&_r@1)=1.0 feature(t@-1_&_o)=1.0 feature(r@1)=1.0 feature(o)=1.0  span[13..14]
+Token#12:r feature(u@1_&_n@2_&_t@3)=1.0 feature(m@-3_&_t@-2_&_o@-1)=1.0 feature(r_&_u@1_&_n@2)=1.0 feature(t@-2_&_o@-1_&_r)=1.0 feature(r_&_u@1)=1.0 feature(o@-1_&_r)=1.0 feature(u@1)=1.0 feature(r)=1.0  span[15..16]
+Token#13:u feature(n@1_&_t@2_&_h@3)=1.0 feature(t@-3_&_o@-2_&_r@-1)=1.0 feature(u_&_n@1_&_t@2)=1.0 feature(o@-2_&_r@-1_&_u)=1.0 feature(u_&_n@1)=1.0 feature(r@-1_&_u)=1.0 feature(n@1)=1.0 feature(u)=1.0  span[16..17]
+Token#14:n feature(t@1_&_h@2_&_e@3)=1.0 feature(o@-3_&_r@-2_&_u@-1)=1.0 feature(n_&_t@1_&_h@2)=1.0 feature(r@-2_&_u@-1_&_n)=1.0 feature(n_&_t@1)=1.0 feature(u@-1_&_n)=1.0 feature(t@1)=1.0 feature(n)=1.0  span[17..18]
+Token#15:t feature(h@1_&_e@2_&_p@3)=1.0 feature(r@-3_&_u@-2_&_n@-1)=1.0 feature(t_&_h@1_&_e@2)=1.0 feature(u@-2_&_n@-1_&_t)=1.0 feature(t_&_h@1)=1.0 feature(n@-1_&_t)=1.0 feature(h@1)=1.0 feature(t)=1.0  span[19..20]
+Token#16:h feature(e@1_&_p@2_&_r@3)=1.0 feature(u@-3_&_n@-2_&_t@-1)=1.0 feature(h_&_e@1_&_p@2)=1.0 feature(n@-2_&_t@-1_&_h)=1.0 feature(h_&_e@1)=1.0 feature(t@-1_&_h)=1.0 feature(e@1)=1.0 feature(h)=1.0  span[20..21]
+Token#17:e feature(p@1_&_r@2_&_o@3)=1.0 feature(n@-3_&_t@-2_&_h@-1)=1.0 feature(e_&_p@1_&_r@2)=1.0 feature(t@-2_&_h@-1_&_e)=1.0 feature(e_&_p@1)=1.0 feature(h@-1_&_e)=1.0 feature(p@1)=1.0 feature(e)=1.0  span[21..22]
+Token#18:p feature(r@1_&_o@2_&_g@3)=1.0 feature(t@-3_&_h@-2_&_e@-1)=1.0 feature(p_&_r@1_&_o@2)=1.0 feature(h@-2_&_e@-1_&_p)=1.0 feature(p_&_r@1)=1.0 feature(e@-1_&_p)=1.0 feature(r@1)=1.0 feature(p)=1.0  span[23..24]
+Token#19:r feature(o@1_&_g@2_&_r@3)=1.0 feature(h@-3_&_e@-2_&_p@-1)=1.0 feature(r_&_o@1_&_g@2)=1.0 feature(e@-2_&_p@-1_&_r)=1.0 feature(r_&_o@1)=1.0 feature(p@-1_&_r)=1.0 feature(o@1)=1.0 feature(r)=1.0  span[24..25]
+Token#20:o feature(g@1_&_r@2_&_a@3)=1.0 feature(e@-3_&_p@-2_&_r@-1)=1.0 feature(o_&_g@1_&_r@2)=1.0 feature(p@-2_&_r@-1_&_o)=1.0 feature(o_&_g@1)=1.0 feature(r@-1_&_o)=1.0 feature(g@1)=1.0 feature(o)=1.0  span[25..26]
+Token#21:g feature(r@1_&_a@2_&_m@3)=1.0 feature(p@-3_&_r@-2_&_o@-1)=1.0 feature(g_&_r@1_&_a@2)=1.0 feature(r@-2_&_o@-1_&_g)=1.0 feature(g_&_r@1)=1.0 feature(o@-1_&_g)=1.0 feature(r@1)=1.0 feature(g)=1.0  span[26..27]
+Token#22:r feature(a@1_&_m@2_&_,@3)=1.0 feature(r@-3_&_o@-2_&_g@-1)=1.0 feature(r_&_a@1_&_m@2)=1.0 feature(o@-2_&_g@-1_&_r)=1.0 feature(r_&_a@1)=1.0 feature(g@-1_&_r)=1.0 feature(a@1)=1.0 feature(r)=1.0  span[27..28]
+Token#23:a feature(m@1_&_,@2_&_f@3)=1.0 feature(o@-3_&_g@-2_&_r@-1)=1.0 feature(a_&_m@1_&_,@2)=1.0 feature(g@-2_&_r@-1_&_a)=1.0 feature(a_&_m@1)=1.0 feature(r@-1_&_a)=1.0 feature(m@1)=1.0 feature(a)=1.0  span[28..29]
+Token#24:m feature(,@1_&_f@2_&_o@3)=1.0 feature(g@-3_&_r@-2_&_a@-1)=1.0 feature(m_&_,@1_&_f@2)=1.0 feature(r@-2_&_a@-1_&_m)=1.0 feature(m_&_,@1)=1.0 feature(a@-1_&_m)=1.0 feature(,@1)=1.0 feature(m)=1.0  span[29..30]
+Token#25:, feature(f@1_&_o@2_&_r@3)=1.0 feature(r@-3_&_a@-2_&_m@-1)=1.0 feature(,_&_f@1_&_o@2)=1.0 feature(a@-2_&_m@-1_&_,)=1.0 feature(,_&_f@1)=1.0 feature(m@-1_&_,)=1.0 feature(f@1)=1.0 feature(,)=1.0  span[30..31]
+Token#26:f feature(o@1_&_r@2_&_a@3)=1.0 feature(a@-3_&_m@-2_&_,@-1)=1.0 feature(f_&_o@1_&_r@2)=1.0 feature(m@-2_&_,@-1_&_f)=1.0 feature(f_&_o@1)=1.0 feature(,@-1_&_f)=1.0 feature(o@1)=1.0 feature(f)=1.0  span[32..33]
+Token#27:o feature(r@1_&_a@2_&_n@3)=1.0 feature(m@-3_&_,@-2_&_f@-1)=1.0 feature(o_&_r@1_&_a@2)=1.0 feature(,@-2_&_f@-1_&_o)=1.0 feature(o_&_r@1)=1.0 feature(f@-1_&_o)=1.0 feature(r@1)=1.0 feature(o)=1.0  span[33..34]
+Token#28:r feature(a@1_&_n@2_&_y@3)=1.0 feature(,@-3_&_f@-2_&_o@-1)=1.0 feature(r_&_a@1_&_n@2)=1.0 feature(f@-2_&_o@-1_&_r)=1.0 feature(r_&_a@1)=1.0 feature(o@-1_&_r)=1.0 feature(a@1)=1.0 feature(r)=1.0  span[34..35]
+Token#29:a feature(n@1_&_y@2_&_p@3)=1.0 feature(f@-3_&_o@-2_&_r@-1)=1.0 feature(a_&_n@1_&_y@2)=1.0 feature(o@-2_&_r@-1_&_a)=1.0 feature(a_&_n@1)=1.0 feature(r@-1_&_a)=1.0 feature(n@1)=1.0 feature(a)=1.0  span[36..37]
+Token#30:n feature(y@1_&_p@2_&_u@3)=1.0 feature(o@-3_&_r@-2_&_a@-1)=1.0 feature(n_&_y@1_&_p@2)=1.0 feature(r@-2_&_a@-1_&_n)=1.0 feature(n_&_y@1)=1.0 feature(a@-1_&_n)=1.0 feature(y@1)=1.0 feature(n)=1.0  span[37..38]
+Token#31:y feature(p@1_&_u@2_&_r@3)=1.0 feature(r@-3_&_a@-2_&_n@-1)=1.0 feature(y_&_p@1_&_u@2)=1.0 feature(a@-2_&_n@-1_&_y)=1.0 feature(y_&_p@1)=1.0 feature(n@-1_&_y)=1.0 feature(p@1)=1.0 feature(y)=1.0  span[38..39]
+Token#32:p feature(u@1_&_r@2_&_p@3)=1.0 feature(a@-3_&_n@-2_&_y@-1)=1.0 feature(p_&_u@1_&_r@2)=1.0 feature(n@-2_&_y@-1_&_p)=1.0 feature(p_&_u@1)=1.0 feature(y@-1_&_p)=1.0 feature(u@1)=1.0 feature(p)=1.0  span[40..41]
+Token#33:u feature(r@1_&_p@2_&_o@3)=1.0 feature(n@-3_&_y@-2_&_p@-1)=1.0 feature(u_&_r@1_&_p@2)=1.0 feature(y@-2_&_p@-1_&_u)=1.0 feature(u_&_r@1)=1.0 feature(p@-1_&_u)=1.0 feature(r@1)=1.0 feature(u)=1.0  span[41..42]
+Token#34:r feature(p@1_&_o@2_&_s@3)=1.0 feature(y@-3_&_p@-2_&_u@-1)=1.0 feature(r_&_p@1_&_o@2)=1.0 feature(p@-2_&_u@-1_&_r)=1.0 feature(r_&_p@1)=1.0 feature(u@-1_&_r)=1.0 feature(p@1)=1.0 feature(r)=1.0  span[42..43]
+Token#35:p feature(o@1_&_s@2_&_e@3)=1.0 feature(p@-3_&_u@-2_&_r@-1)=1.0 feature(p_&_o@1_&_s@2)=1.0 feature(u@-2_&_r@-1_&_p)=1.0 feature(p_&_o@1)=1.0 feature(r@-1_&_p)=1.0 feature(o@1)=1.0 feature(p)=1.0  span[43..44]
+Token#36:o feature(s@1_&_e@2_&_.@3)=1.0 feature(u@-3_&_r@-2_&_p@-1)=1.0 feature(o_&_s@1_&_e@2)=1.0 feature(r@-2_&_p@-1_&_o)=1.0 feature(o_&_s@1)=1.0 feature(p@-1_&_o)=1.0 feature(s@1)=1.0 feature(o)=1.0  span[44..45]
+Token#37:s feature(e@1_&_.@2_&_<END0>@3)=1.0 feature(r@-3_&_p@-2_&_o@-1)=1.0 feature(s_&_e@1_&_.@2)=1.0 feature(p@-2_&_o@-1_&_s)=1.0 feature(s_&_e@1)=1.0 feature(o@-1_&_s)=1.0 feature(e@1)=1.0 feature(s)=1.0  span[45..46]
+Token#38:e feature(.@1_&_<END0>@2_&_<END1>@3)=1.0 feature(p@-3_&_o@-2_&_s@-1)=1.0 feature(e_&_.@1_&_<END0>@2)=1.0 feature(o@-2_&_s@-1_&_e)=1.0 feature(e_&_.@1)=1.0 feature(s@-1_&_e)=1.0 feature(.@1)=1.0 feature(e)=1.0  span[46..47]
+Token#39:. feature(<END0>@1_&_<END1>@2_&_<END2>@3)=1.0 feature(o@-3_&_s@-2_&_e@-1)=1.0 feature(._&_<END0>@1_&_<END1>@2)=1.0 feature(s@-2_&_e@-1_&_.)=1.0 feature(._&_<END0>@1)=1.0 feature(e@-1_&_.)=1.0 feature(<END0>@1)=1.0 feature(.)=1.0  span[47..48]
+]
+>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at cc.mallet.pipe.tests.TestSpacePipe.testSpacePipe(TestSpacePipe.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+

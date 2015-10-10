@@ -1,0 +1,5 @@
+package gro
+
+class UserInfo {
+
+}

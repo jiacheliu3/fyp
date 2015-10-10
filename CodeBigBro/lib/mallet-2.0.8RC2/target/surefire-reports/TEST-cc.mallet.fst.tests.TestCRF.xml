@@ -1,0 +1,2258 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="4" time="117.029" errors="1" skipped="0" tests="23" name="cc.mallet.fst.tests.TestCRF">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\bin"/>
+    <property name="java.vm.version" value="24.65-b04"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Tassadar\eclipse\CodeBigBro\lib\mallet-2.0.8RC2"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Tassadar\eclipse\CodeBigBro\lib\mallet-2.0.8RC2"/>
+    <property name="java.runtime.version" value="1.7.0_67-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\Users\Tassadar\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="F:\Eclipse 3.4.2\Eclipse_CS3343\apache-maven-3.3.3-bin\apache-maven-3.3.3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:\Database\product\11.2.0\dbhome_2\bin;c:\Program Files (x86)\AMD APP\bin\x86_64;c:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;;C:\Program Files (x86)\GNU\GnuPG\pub;%java_home%\bin;C:\Program Files (x86)\Skype\Phone\;C:\Users\Tassadar\AppData\Local\Programs\Python\Python35-32\Scripts\;C:\Users\Tassadar\AppData\Local\Programs\Python\Python35-32\;C:\ProgramData\Oracle\Java\javapath;F:\Database\product\11.2.0\dbhome_2\bin;c:\Program Files (x86)\AMD APP\bin\x86_64;c:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;;C:\Program Files (x86)\GNU\GnuPG\pub;C:\Program Files (x86)\Skype\Phone\;F:\Eclipse 3.4.2\grails-2.5.0\bin;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\bin;F:\Eclipse 3.4.2\Eclipse_CS3343\apache-maven-3.3.3-bin\apache-maven-3.3.3\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Tassadar"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="Tassadar"/>
+    <property name="java.class.path" value="F:\Eclipse 3.4.2\Eclipse_CS3343\apache-maven-3.3.3-bin\apache-maven-3.3.3\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.7.0_67"/>
+    <property name="java.ext.dirs" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\resources.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\rt.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\sunrsasign.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\jsse.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\jce.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\charsets.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\jfr.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="F:\Eclipse 3.4.2\Eclipse_CS3343\apache-maven-3.3.3-bin\apache-maven-3.3.3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase time="0.003" classname="cc.mallet.fst.tests.TestCRF" name="testGetSetParameters"/>
+  <testcase time="2.908" classname="cc.mallet.fst.tests.TestCRF" name="testTrainStochasticGradient"/>
+  <testcase time="94.292" classname="cc.mallet.fst.tests.TestCRF" name="testSumLatticeImplementations"/>
+  <testcase time="0.58" classname="cc.mallet.fst.tests.TestCRF" name="testDenseSerialization"/>
+  <testcase time="0.009" classname="cc.mallet.fst.tests.TestCRF" name="testCopyStatesAndWeights"/>
+  <testcase time="0.116" classname="cc.mallet.fst.tests.TestCRF" name="testDenseFeatureSelection"/>
+  <testcase time="0.044" classname="cc.mallet.fst.tests.TestCRF" name="testCost">
+    <failure message="Value should be 35770 but is-335344.0" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Value should be 35770 but is-335344.0
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at cc.mallet.fst.tests.TestCRF.doTestCost(TestCRF.java:368)
+	at cc.mallet.fst.tests.TestCRF.testCost(TestCRF.java:374)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>State #0 &quot;state0&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=5
+-&gt; state0
+-&gt; state1
+-&gt; state2
+-&gt; state3
+-&gt; state4
+State #1 &quot;state1&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=5
+-&gt; state0
+-&gt; state1
+-&gt; state2
+-&gt; state3
+-&gt; state4
+State #2 &quot;state2&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=5
+-&gt; state0
+-&gt; state1
+-&gt; state2
+-&gt; state3
+-&gt; state4
+State #3 &quot;state3&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=5
+-&gt; state0
+-&gt; state1
+-&gt; state2
+-&gt; state3
+-&gt; state4
+State #4 &quot;state4&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=5
+-&gt; state0
+-&gt; state1
+-&gt; state2
+-&gt; state3
+-&gt; state4
+parameters 0 0 0: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 0 1: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 0 2: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 0 3: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 1 0: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 1 1: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 1 2: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 1 3: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 2 0: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 2 1: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 2 2: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 2 3: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 3 0: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 3 1: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 3 2: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 3 3: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 4 0: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 4 1: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 4 2: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 4 3: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 1 0 0: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 1 0 1: unconstrainedWeight =8.843878927072648 constrainedWeight =2.4326529029917916 optimizableValue =-8.411226024080857 gradientNorm =-2.000000000000029
+parameters 1 0 2: unconstrainedWeight =18.718526105235064 constrainedWeight =8.001340951034765 optimizableValue =-30.7171851542003 gradientNorm =-7.999999999999924
+parameters 1 0 3: unconstrainedWeight =42.70805026568504 constrainedWeight =20.000000008244612 optimizableValue =-114.70805025744042 gradientNorm =-19.999999999999716
+parameters 1 1 0: unconstrainedWeight =42.70805026568504 constrainedWeight =20.000000008244612 optimizableValue =-116.70805025744042 gradientNorm =-21.999999999999716
+parameters 1 1 1: unconstrainedWeight =46.70930028714725 constrainedWeight =20.000000008244612 optimizableValue =-138.70930027890265 gradientNorm =-28.000000000000043
+parameters 1 1 2: unconstrainedWeight =74.12692836955216 constrainedWeight =20.000000008244612 optimizableValue =-238.12692836130753 gradientNorm =-40.000000000000426
+parameters 1 1 3: unconstrainedWeight =152.00000001522997 constrainedWeight =20.000000008244612 optimizableValue =-516.0000000069854 gradientNorm =-60.0
+parameters 1 2 0: unconstrainedWeight =152.00000001522997 constrainedWeight =20.000000008244612 optimizableValue =-534.0000000069854 gradientNorm =-66.0
+parameters 1 2 1: unconstrainedWeight =152.0000000152351 constrainedWeight =32.00000000824461 optimizableValue =-594.0000000069905 gradientNorm =-78.0
+parameters 1 2 2: unconstrainedWeight =152.00247570033005 constrainedWeight =52.00000000824461 optimizableValue =-774.0024756920855 gradientNorm =-97.99999999999997
+parameters 1 2 3: unconstrainedWeight =176.0000016630938 constrainedWeight =82.00000000824461 optimizableValue =-1218.0000016548493 gradientNorm =-128.00000000000023
+parameters 1 3 0: unconstrainedWeight =176.0000016630938 constrainedWeight =82.00000000824461 optimizableValue =-1290.0000016548493 gradientNorm =-140.00000000000023
+parameters 1 3 1: unconstrainedWeight =176.0000016630938 constrainedWeight =82.00000000824461 optimizableValue =-1490.0000016548493 gradientNorm =-160.00000000000023
+parameters 1 3 2: unconstrainedWeight =176.0000078072975 constrainedWeight =82.00000000824461 optimizableValue =-1940.0000077990528 gradientNorm =-190.0000000000005
+parameters 1 3 3: unconstrainedWeight =222.69314723682768 constrainedWeight =82.00000000824461 optimizableValue =-2868.6931472285833 gradientNorm =-232.00000000000085
+parameters 1 4 0: unconstrainedWeight =222.69314723682768 constrainedWeight =82.00000000824461 optimizableValue =-3068.6931472285833 gradientNorm =-252.00000000000085
+parameters 1 4 1: unconstrainedWeight =222.69314723682768 constrainedWeight =82.00000000824461 optimizableValue =-3518.6931472285833 gradientNorm =-282.00000000000085
+parameters 1 4 2: unconstrainedWeight =222.69314724095 constrainedWeight =82.00000000824461 optimizableValue =-4400.693147232705 gradientNorm =-324.0000000000007
+parameters 1 4 3: unconstrainedWeight =294.69314718055995 constrainedWeight =82.00000000824461 optimizableValue =-6040.693147172316 gradientNorm =-380.0000000000001
+parameters 2 0 0: unconstrainedWeight =294.69314718055995 constrainedWeight =82.00000000824461 optimizableValue =-6040.693147172316 gradientNorm =-380.0000000000001
+parameters 2 0 1: unconstrainedWeight =294.69314718055995 constrainedWeight =82.00000083771184 optimizableValue =-6058.693146342848 gradientNorm =-386.0000000000001
+parameters 2 0 2: unconstrainedWeight =294.69314718055995 constrainedWeight =84.12692801178005 optimizableValue =-6184.56621916878 gradientNorm =-402.0000000000001
+parameters 2 0 3: unconstrainedWeight =294.69314718055995 constrainedWeight =114.00000000000001 optimizableValue =-6604.69314718056 gradientNorm =-432.0000000000001
+parameters 2 1 0: unconstrainedWeight =294.69314718055995 constrainedWeight =114.00000000000001 optimizableValue =-6622.69314718056 gradientNorm =-438.0000000000001
+parameters 2 1 1: unconstrainedWeight =294.6931471808389 constrainedWeight =114.00000000000001 optimizableValue =-6750.693147180838 gradientNorm =-454.0000000000002
+parameters 2 1 2: unconstrainedWeight =302.6934825879638 constrainedWeight =114.00000000000001 optimizableValue =-7208.693482587963 gradientNorm =-483.99999999999955
+parameters 2 1 3: unconstrainedWeight =378.00000000000136 constrainedWeight =114.00000000000001 optimizableValue =-8436.000000000002 gradientNorm =-531.9999999999998
+parameters 2 2 0: unconstrainedWeight =378.00000000000136 constrainedWeight =114.00000000000001 optimizableValue =-8564.000000000002 gradientNorm =-547.9999999999998
+parameters 2 2 1: unconstrainedWeight =378.00000000000136 constrainedWeight =114.00000000000001 optimizableValue =-9014.000000000002 gradientNorm =-577.9999999999998
+parameters 2 2 2: unconstrainedWeight =378.69314723682817 constrainedWeight =114.00000000000001 optimizableValue =-10166.693147236829 gradientNorm =-626.0
+parameters 2 2 3: unconstrainedWeight =592.0 constrainedWeight =114.00000000000001 optimizableValue =-12830.0 gradientNorm =-695.9999999999997
+parameters 2 3 0: unconstrainedWeight =592.0 constrainedWeight =114.00000000000001 optimizableValue =-13280.0 gradientNorm =-725.9999999999997
+parameters 2 3 1: unconstrainedWeight =592.0 constrainedWeight =162.0 optimizableValue =-14384.0 gradientNorm =-773.9999999999997
+parameters 2 3 2: unconstrainedWeight =592.0000000000001 constrainedWeight =232.0 optimizableValue =-16764.0 gradientNorm =-843.9999999999997
+parameters 2 3 3: unconstrainedWeight =658.0 constrainedWeight =328.0 optimizableValue =-21342.0 gradientNorm =-939.9999999999997
+parameters 2 4 0: unconstrainedWeight =658.0 constrainedWeight =328.0 optimizableValue =-22494.0 gradientNorm =-987.9999999999997
+parameters 2 4 1: unconstrainedWeight =658.0 constrainedWeight =328.0 optimizableValue =-24944.0 gradientNorm =-1057.9999999999995
+parameters 2 4 2: unconstrainedWeight =658.0 constrainedWeight =328.0 optimizableValue =-29552.0 gradientNorm =-1153.9999999999995
+parameters 2 4 3: unconstrainedWeight =736.0359762997482 constrainedWeight =328.0 optimizableValue =-37568.03597629975 gradientNorm =-1279.9999999999993
+parameters 3 0 0: unconstrainedWeight =736.0359762997482 constrainedWeight =328.0 optimizableValue =-37568.03597629975 gradientNorm =-1279.9999999999993
+parameters 3 0 1: unconstrainedWeight =736.0359762997482 constrainedWeight =328.0 optimizableValue =-37640.03597629975 gradientNorm =-1291.9999999999993
+parameters 3 0 2: unconstrainedWeight =736.0359762997482 constrainedWeight =328.00004539889926 optimizableValue =-38090.03593090085 gradientNorm =-1321.9999999999993
+parameters 3 0 3: unconstrainedWeight =736.0359762997482 constrainedWeight =372.0 optimizableValue =-39504.03597629975 gradientNorm =-1375.9999999999993
+parameters 3 1 0: unconstrainedWeight =736.0359762997482 constrainedWeight =372.0 optimizableValue =-39576.03597629975 gradientNorm =-1387.9999999999993
+parameters 3 1 1: unconstrainedWeight =736.0359762997482 constrainedWeight =372.0 optimizableValue =-40026.03597629975 gradientNorm =-1417.9999999999993
+parameters 3 1 2: unconstrainedWeight =736.0359762997482 constrainedWeight =372.0 optimizableValue =-41484.03597629975 gradientNorm =-1471.9999999999993
+parameters 3 1 3: unconstrainedWeight =736.7112971084778 constrainedWeight =372.0 optimizableValue =-45012.71129710848 gradientNorm =-1555.9999999999998
+parameters 3 2 0: unconstrainedWeight =736.7112971084778 constrainedWeight =372.0 optimizableValue =-45462.71129710848 gradientNorm =-1585.9999999999998
+parameters 3 2 1: unconstrainedWeight =736.7112971084784 constrainedWeight =372.0 optimizableValue =-46920.71129710848 gradientNorm =-1640.0
+parameters 3 2 2: unconstrainedWeight =792.6931698802672 constrainedWeight =372.0 optimizableValue =-50504.693169880265 gradientNorm =-1723.9999999999995
+parameters 3 2 3: unconstrainedWeight =1022.0 constrainedWeight =372.0 optimizableValue =-57934.0 gradientNorm =-1843.9999999999995
+parameters 3 3 0: unconstrainedWeight =1022.0 constrainedWeight =372.0 optimizableValue =-59392.0 gradientNorm =-1897.9999999999995
+parameters 3 3 1: unconstrainedWeight =1022.0 constrainedWeight =372.0 optimizableValue =-62920.0 gradientNorm =-1981.9999999999995
+parameters 3 3 2: unconstrainedWeight =1022.0 constrainedWeight =372.0 optimizableValue =-70120.0 gradientNorm =-2102.0000000000005
+parameters 3 3 3: unconstrainedWeight =1464.0 constrainedWeight =372.0 optimizableValue =-83684.0 gradientNorm =-2264.0000000000005
+parameters 3 4 0: unconstrainedWeight =1464.0 constrainedWeight =372.0 optimizableValue =-87212.0 gradientNorm =-2348.0000000000005
+parameters 3 4 1: unconstrainedWeight =1464.0 constrainedWeight =372.0 optimizableValue =-94412.0 gradientNorm =-2468.0000000000005
+parameters 3 4 2: unconstrainedWeight =1464.0 constrainedWeight =372.0 optimizableValue =-107534.0 gradientNorm =-2630.0000000000005
+parameters 3 4 3: unconstrainedWeight =1590.0 constrainedWeight =372.0 optimizableValue =-129710.0 gradientNorm =-2840.0000000000005
+parameters 4 0 0: unconstrainedWeight =1590.0 constrainedWeight =372.0 optimizableValue =-129710.0 gradientNorm =-2840.0000000000005
+parameters 4 0 1: unconstrainedWeight =1590.0 constrainedWeight =372.0 optimizableValue =-129910.0 gradientNorm =-2860.0000000000005
+parameters 4 0 2: unconstrainedWeight =1590.0 constrainedWeight =372.0000000000007 optimizableValue =-131062.0 gradientNorm =-2908.0000000000005
+parameters 4 0 3: unconstrainedWeight =1590.0 constrainedWeight =428.0 optimizableValue =-134534.0 gradientNorm =-2992.0000000000005
+parameters 4 1 0: unconstrainedWeight =1590.0 constrainedWeight =428.0 optimizableValue =-134734.0 gradientNorm =-3012.0000000000005
+parameters 4 1 1: unconstrainedWeight =1590.0 constrainedWeight =428.0 optimizableValue =-135886.0 gradientNorm =-3060.0000000000005
+parameters 4 1 2: unconstrainedWeight =1590.0 constrainedWeight =428.0 optimizableValue =-139414.0 gradientNorm =-3144.0000000000005
+parameters 4 1 3: unconstrainedWeight =1590.0 constrainedWeight =428.0 optimizableValue =-147606.0 gradientNorm =-3272.0000000000005
+parameters 4 2 0: unconstrainedWeight =1590.0 constrainedWeight =428.0 optimizableValue =-148758.0 gradientNorm =-3320.0000000000005
+parameters 4 2 1: unconstrainedWeight =1590.0 constrainedWeight =428.0 optimizableValue =-152286.0 gradientNorm =-3404.0000000000005
+parameters 4 2 2: unconstrainedWeight =1590.0 constrainedWeight =428.0 optimizableValue =-160478.0 gradientNorm =-3532.0000000000005
+parameters 4 2 3: unconstrainedWeight =1616.0000000000102 constrainedWeight =428.0 optimizableValue =-176704.0 gradientNorm =-3711.999999999999
+parameters 4 3 0: unconstrainedWeight =1616.0000000000102 constrainedWeight =428.0 optimizableValue =-180232.0 gradientNorm =-3795.999999999999
+parameters 4 3 1: unconstrainedWeight =1616.0000000000102 constrainedWeight =428.0 optimizableValue =-188424.0 gradientNorm =-3923.999999999999
+parameters 4 3 2: unconstrainedWeight =1684.0000000000102 constrainedWeight =428.0 optimizableValue =-204692.0 gradientNorm =-4104.000000000001
+parameters 4 3 3: unconstrainedWeight =2080.69314718056 constrainedWeight =428.0 optimizableValue =-233888.69314718057 gradientNorm =-4343.999999999997
+parameters 4 4 0: unconstrainedWeight =2080.69314718056 constrainedWeight =428.0 optimizableValue =-242080.69314718057 gradientNorm =-4471.999999999997
+parameters 4 4 1: unconstrainedWeight =2080.69314718056 constrainedWeight =428.0 optimizableValue =-258280.69314718057 gradientNorm =-4651.999999999997
+parameters 4 4 2: unconstrainedWeight =2080.69314718056 constrainedWeight =428.0 optimizableValue =-287080.69314718054 gradientNorm =-4891.999999999997
+parameters 4 4 3: unconstrainedWeight =2912.0 constrainedWeight =428.0 optimizableValue =-335344.0 gradientNorm =-5200.0
+</system-out>
+    <system-err>十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRF &lt;init&gt;
+信息: CRF input dictionary size = 4
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRF setWeightsDimensionDensely
+信息: CRF using dense weights, num input features = 4
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRF setWeightsDimensionDensely
+信息: Number of weights = 125
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -8.411226024080857
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -30.7171851542003
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -114.70805025744042
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -116.70805025744042
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -138.70930027890265
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -238.12692836130753
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -516.0000000069854
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -534.0000000069854
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -594.0000000069905
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -774.0024756920855
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -1218.0000016548493
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -1290.0000016548493
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -1490.0000016548493
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -1940.0000077990528
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -2868.6931472285833
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -3068.6931472285833
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -3518.6931472285833
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -4400.693147232705
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6040.693147172316
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6040.693147172316
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6058.693146342848
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6184.56621916878
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6604.69314718056
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6622.69314718056
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6750.693147180838
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -7208.693482587963
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -8436.000000000002
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -8564.000000000002
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -9014.000000000002
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -10166.693147236829
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -12830.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -13280.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -14384.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -16764.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -21342.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -22494.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -24944.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -29552.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -37568.03597629975
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -37568.03597629975
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -37640.03597629975
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -38090.03593090085
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -39504.03597629975
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -39576.03597629975
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -40026.03597629975
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -41484.03597629975
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -45012.71129710848
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -45462.71129710848
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -46920.71129710848
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -50504.693169880265
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -57934.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -59392.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -62920.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -70120.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -83684.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -87212.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -94412.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -107534.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -129710.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -129710.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -129910.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -131062.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -134534.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -134734.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -135886.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -139414.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -147606.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -148758.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -152286.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -160478.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -176704.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -180232.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -188424.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -204692.0
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -233888.69314718057
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -242080.69314718057
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -258280.69314718057
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -287080.69314718054
+十月 01, 2015 4:28:06 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -335344.0
+</system-err>
+  </testcase>
+  <testcase time="0" classname="cc.mallet.fst.tests.TestCRF" name="testIncrement"/>
+  <testcase time="0.508" classname="cc.mallet.fst.tests.TestCRF" name="testTrain"/>
+  <testcase time="0.003" classname="cc.mallet.fst.tests.TestCRF" name="testPrint"/>
+  <testcase time="0.227" classname="cc.mallet.fst.tests.TestCRF" name="testXis"/>
+  <testcase time="0" classname="cc.mallet.fst.tests.TestCRF" name="testSumLogProb"/>
+  <testcase time="0.001" classname="cc.mallet.fst.tests.TestCRF" name="testSumLattice"/>
+  <testcase time="0.001" classname="cc.mallet.fst.tests.TestCRF" name="testMaxLattice"/>
+  <testcase time="0.328" classname="cc.mallet.fst.tests.TestCRF" name="testCostSerialized">
+    <failure message="Value should be 35770 but is-335344.0" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Value should be 35770 but is-335344.0
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at cc.mallet.fst.tests.TestCRF.doTestCost(TestCRF.java:368)
+	at cc.mallet.fst.tests.TestCRF.testCostSerialized(TestCRF.java:378)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>State #0 &quot;state0&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=5
+-&gt; state0
+-&gt; state1
+-&gt; state2
+-&gt; state3
+-&gt; state4
+State #1 &quot;state1&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=5
+-&gt; state0
+-&gt; state1
+-&gt; state2
+-&gt; state3
+-&gt; state4
+State #2 &quot;state2&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=5
+-&gt; state0
+-&gt; state1
+-&gt; state2
+-&gt; state3
+-&gt; state4
+State #3 &quot;state3&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=5
+-&gt; state0
+-&gt; state1
+-&gt; state2
+-&gt; state3
+-&gt; state4
+State #4 &quot;state4&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=5
+-&gt; state0
+-&gt; state1
+-&gt; state2
+-&gt; state3
+-&gt; state4
+parameters 0 0 0: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 0 1: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 0 2: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 0 3: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 1 0: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 1 1: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 1 2: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 1 3: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 2 0: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 2 1: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 2 2: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 2 3: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 3 0: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 3 1: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 3 2: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 3 3: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 4 0: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 4 1: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 4 2: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 0 4 3: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 1 0 0: unconstrainedWeight =8.047189562170502 constrainedWeight =1.6094379124341003 optimizableValue =-6.437751649736401 gradientNorm =-5.162537064506978E-15
+parameters 1 0 1: unconstrainedWeight =8.843878927072648 constrainedWeight =2.4326529029917916 optimizableValue =-8.411226024080857 gradientNorm =-2.000000000000029
+parameters 1 0 2: unconstrainedWeight =18.718526105235064 constrainedWeight =8.001340951034765 optimizableValue =-30.7171851542003 gradientNorm =-7.999999999999924
+parameters 1 0 3: unconstrainedWeight =42.70805026568504 constrainedWeight =20.000000008244612 optimizableValue =-114.70805025744042 gradientNorm =-19.999999999999716
+parameters 1 1 0: unconstrainedWeight =42.70805026568504 constrainedWeight =20.000000008244612 optimizableValue =-116.70805025744042 gradientNorm =-21.999999999999716
+parameters 1 1 1: unconstrainedWeight =46.70930028714725 constrainedWeight =20.000000008244612 optimizableValue =-138.70930027890265 gradientNorm =-28.000000000000043
+parameters 1 1 2: unconstrainedWeight =74.12692836955216 constrainedWeight =20.000000008244612 optimizableValue =-238.12692836130753 gradientNorm =-40.000000000000426
+parameters 1 1 3: unconstrainedWeight =152.00000001522997 constrainedWeight =20.000000008244612 optimizableValue =-516.0000000069854 gradientNorm =-60.0
+parameters 1 2 0: unconstrainedWeight =152.00000001522997 constrainedWeight =20.000000008244612 optimizableValue =-534.0000000069854 gradientNorm =-66.0
+parameters 1 2 1: unconstrainedWeight =152.0000000152351 constrainedWeight =32.00000000824461 optimizableValue =-594.0000000069905 gradientNorm =-78.0
+parameters 1 2 2: unconstrainedWeight =152.00247570033005 constrainedWeight =52.00000000824461 optimizableValue =-774.0024756920855 gradientNorm =-97.99999999999997
+parameters 1 2 3: unconstrainedWeight =176.0000016630938 constrainedWeight =82.00000000824461 optimizableValue =-1218.0000016548493 gradientNorm =-128.00000000000023
+parameters 1 3 0: unconstrainedWeight =176.0000016630938 constrainedWeight =82.00000000824461 optimizableValue =-1290.0000016548493 gradientNorm =-140.00000000000023
+parameters 1 3 1: unconstrainedWeight =176.0000016630938 constrainedWeight =82.00000000824461 optimizableValue =-1490.0000016548493 gradientNorm =-160.00000000000023
+parameters 1 3 2: unconstrainedWeight =176.0000078072975 constrainedWeight =82.00000000824461 optimizableValue =-1940.0000077990528 gradientNorm =-190.0000000000005
+parameters 1 3 3: unconstrainedWeight =222.69314723682768 constrainedWeight =82.00000000824461 optimizableValue =-2868.6931472285833 gradientNorm =-232.00000000000085
+parameters 1 4 0: unconstrainedWeight =222.69314723682768 constrainedWeight =82.00000000824461 optimizableValue =-3068.6931472285833 gradientNorm =-252.00000000000085
+parameters 1 4 1: unconstrainedWeight =222.69314723682768 constrainedWeight =82.00000000824461 optimizableValue =-3518.6931472285833 gradientNorm =-282.00000000000085
+parameters 1 4 2: unconstrainedWeight =222.69314724095 constrainedWeight =82.00000000824461 optimizableValue =-4400.693147232705 gradientNorm =-324.0000000000007
+parameters 1 4 3: unconstrainedWeight =294.69314718055995 constrainedWeight =82.00000000824461 optimizableValue =-6040.693147172316 gradientNorm =-380.0000000000001
+parameters 2 0 0: unconstrainedWeight =294.69314718055995 constrainedWeight =82.00000000824461 optimizableValue =-6040.693147172316 gradientNorm =-380.0000000000001
+parameters 2 0 1: unconstrainedWeight =294.69314718055995 constrainedWeight =82.00000083771184 optimizableValue =-6058.693146342848 gradientNorm =-386.0000000000001
+parameters 2 0 2: unconstrainedWeight =294.69314718055995 constrainedWeight =84.12692801178005 optimizableValue =-6184.56621916878 gradientNorm =-402.0000000000001
+parameters 2 0 3: unconstrainedWeight =294.69314718055995 constrainedWeight =114.00000000000001 optimizableValue =-6604.69314718056 gradientNorm =-432.0000000000001
+parameters 2 1 0: unconstrainedWeight =294.69314718055995 constrainedWeight =114.00000000000001 optimizableValue =-6622.69314718056 gradientNorm =-438.0000000000001
+parameters 2 1 1: unconstrainedWeight =294.6931471808389 constrainedWeight =114.00000000000001 optimizableValue =-6750.693147180838 gradientNorm =-454.0000000000002
+parameters 2 1 2: unconstrainedWeight =302.6934825879638 constrainedWeight =114.00000000000001 optimizableValue =-7208.693482587963 gradientNorm =-483.99999999999955
+parameters 2 1 3: unconstrainedWeight =378.00000000000136 constrainedWeight =114.00000000000001 optimizableValue =-8436.000000000002 gradientNorm =-531.9999999999998
+parameters 2 2 0: unconstrainedWeight =378.00000000000136 constrainedWeight =114.00000000000001 optimizableValue =-8564.000000000002 gradientNorm =-547.9999999999998
+parameters 2 2 1: unconstrainedWeight =378.00000000000136 constrainedWeight =114.00000000000001 optimizableValue =-9014.000000000002 gradientNorm =-577.9999999999998
+parameters 2 2 2: unconstrainedWeight =378.69314723682817 constrainedWeight =114.00000000000001 optimizableValue =-10166.693147236829 gradientNorm =-626.0
+parameters 2 2 3: unconstrainedWeight =592.0 constrainedWeight =114.00000000000001 optimizableValue =-12830.0 gradientNorm =-695.9999999999997
+parameters 2 3 0: unconstrainedWeight =592.0 constrainedWeight =114.00000000000001 optimizableValue =-13280.0 gradientNorm =-725.9999999999997
+parameters 2 3 1: unconstrainedWeight =592.0 constrainedWeight =162.0 optimizableValue =-14384.0 gradientNorm =-773.9999999999997
+parameters 2 3 2: unconstrainedWeight =592.0000000000001 constrainedWeight =232.0 optimizableValue =-16764.0 gradientNorm =-843.9999999999997
+parameters 2 3 3: unconstrainedWeight =658.0 constrainedWeight =328.0 optimizableValue =-21342.0 gradientNorm =-939.9999999999997
+parameters 2 4 0: unconstrainedWeight =658.0 constrainedWeight =328.0 optimizableValue =-22494.0 gradientNorm =-987.9999999999997
+parameters 2 4 1: unconstrainedWeight =658.0 constrainedWeight =328.0 optimizableValue =-24944.0 gradientNorm =-1057.9999999999995
+parameters 2 4 2: unconstrainedWeight =658.0 constrainedWeight =328.0 optimizableValue =-29552.0 gradientNorm =-1153.9999999999995
+parameters 2 4 3: unconstrainedWeight =736.0359762997482 constrainedWeight =328.0 optimizableValue =-37568.03597629975 gradientNorm =-1279.9999999999993
+parameters 3 0 0: unconstrainedWeight =736.0359762997482 constrainedWeight =328.0 optimizableValue =-37568.03597629975 gradientNorm =-1279.9999999999993
+parameters 3 0 1: unconstrainedWeight =736.0359762997482 constrainedWeight =328.0 optimizableValue =-37640.03597629975 gradientNorm =-1291.9999999999993
+parameters 3 0 2: unconstrainedWeight =736.0359762997482 constrainedWeight =328.00004539889926 optimizableValue =-38090.03593090085 gradientNorm =-1321.9999999999993
+parameters 3 0 3: unconstrainedWeight =736.0359762997482 constrainedWeight =372.0 optimizableValue =-39504.03597629975 gradientNorm =-1375.9999999999993
+parameters 3 1 0: unconstrainedWeight =736.0359762997482 constrainedWeight =372.0 optimizableValue =-39576.03597629975 gradientNorm =-1387.9999999999993
+parameters 3 1 1: unconstrainedWeight =736.0359762997482 constrainedWeight =372.0 optimizableValue =-40026.03597629975 gradientNorm =-1417.9999999999993
+parameters 3 1 2: unconstrainedWeight =736.0359762997482 constrainedWeight =372.0 optimizableValue =-41484.03597629975 gradientNorm =-1471.9999999999993
+parameters 3 1 3: unconstrainedWeight =736.7112971084778 constrainedWeight =372.0 optimizableValue =-45012.71129710848 gradientNorm =-1555.9999999999998
+parameters 3 2 0: unconstrainedWeight =736.7112971084778 constrainedWeight =372.0 optimizableValue =-45462.71129710848 gradientNorm =-1585.9999999999998
+parameters 3 2 1: unconstrainedWeight =736.7112971084784 constrainedWeight =372.0 optimizableValue =-46920.71129710848 gradientNorm =-1640.0
+parameters 3 2 2: unconstrainedWeight =792.6931698802672 constrainedWeight =372.0 optimizableValue =-50504.693169880265 gradientNorm =-1723.9999999999995
+parameters 3 2 3: unconstrainedWeight =1022.0 constrainedWeight =372.0 optimizableValue =-57934.0 gradientNorm =-1843.9999999999995
+parameters 3 3 0: unconstrainedWeight =1022.0 constrainedWeight =372.0 optimizableValue =-59392.0 gradientNorm =-1897.9999999999995
+parameters 3 3 1: unconstrainedWeight =1022.0 constrainedWeight =372.0 optimizableValue =-62920.0 gradientNorm =-1981.9999999999995
+parameters 3 3 2: unconstrainedWeight =1022.0 constrainedWeight =372.0 optimizableValue =-70120.0 gradientNorm =-2102.0000000000005
+parameters 3 3 3: unconstrainedWeight =1464.0 constrainedWeight =372.0 optimizableValue =-83684.0 gradientNorm =-2264.0000000000005
+parameters 3 4 0: unconstrainedWeight =1464.0 constrainedWeight =372.0 optimizableValue =-87212.0 gradientNorm =-2348.0000000000005
+parameters 3 4 1: unconstrainedWeight =1464.0 constrainedWeight =372.0 optimizableValue =-94412.0 gradientNorm =-2468.0000000000005
+parameters 3 4 2: unconstrainedWeight =1464.0 constrainedWeight =372.0 optimizableValue =-107534.0 gradientNorm =-2630.0000000000005
+parameters 3 4 3: unconstrainedWeight =1590.0 constrainedWeight =372.0 optimizableValue =-129710.0 gradientNorm =-2840.0000000000005
+parameters 4 0 0: unconstrainedWeight =1590.0 constrainedWeight =372.0 optimizableValue =-129710.0 gradientNorm =-2840.0000000000005
+parameters 4 0 1: unconstrainedWeight =1590.0 constrainedWeight =372.0 optimizableValue =-129910.0 gradientNorm =-2860.0000000000005
+parameters 4 0 2: unconstrainedWeight =1590.0 constrainedWeight =372.0000000000007 optimizableValue =-131062.0 gradientNorm =-2908.0000000000005
+parameters 4 0 3: unconstrainedWeight =1590.0 constrainedWeight =428.0 optimizableValue =-134534.0 gradientNorm =-2992.0000000000005
+parameters 4 1 0: unconstrainedWeight =1590.0 constrainedWeight =428.0 optimizableValue =-134734.0 gradientNorm =-3012.0000000000005
+parameters 4 1 1: unconstrainedWeight =1590.0 constrainedWeight =428.0 optimizableValue =-135886.0 gradientNorm =-3060.0000000000005
+parameters 4 1 2: unconstrainedWeight =1590.0 constrainedWeight =428.0 optimizableValue =-139414.0 gradientNorm =-3144.0000000000005
+parameters 4 1 3: unconstrainedWeight =1590.0 constrainedWeight =428.0 optimizableValue =-147606.0 gradientNorm =-3272.0000000000005
+parameters 4 2 0: unconstrainedWeight =1590.0 constrainedWeight =428.0 optimizableValue =-148758.0 gradientNorm =-3320.0000000000005
+parameters 4 2 1: unconstrainedWeight =1590.0 constrainedWeight =428.0 optimizableValue =-152286.0 gradientNorm =-3404.0000000000005
+parameters 4 2 2: unconstrainedWeight =1590.0 constrainedWeight =428.0 optimizableValue =-160478.0 gradientNorm =-3532.0000000000005
+parameters 4 2 3: unconstrainedWeight =1616.0000000000102 constrainedWeight =428.0 optimizableValue =-176704.0 gradientNorm =-3711.999999999999
+parameters 4 3 0: unconstrainedWeight =1616.0000000000102 constrainedWeight =428.0 optimizableValue =-180232.0 gradientNorm =-3795.999999999999
+parameters 4 3 1: unconstrainedWeight =1616.0000000000102 constrainedWeight =428.0 optimizableValue =-188424.0 gradientNorm =-3923.999999999999
+parameters 4 3 2: unconstrainedWeight =1684.0000000000102 constrainedWeight =428.0 optimizableValue =-204692.0 gradientNorm =-4104.000000000001
+parameters 4 3 3: unconstrainedWeight =2080.69314718056 constrainedWeight =428.0 optimizableValue =-233888.69314718057 gradientNorm =-4343.999999999997
+parameters 4 4 0: unconstrainedWeight =2080.69314718056 constrainedWeight =428.0 optimizableValue =-242080.69314718057 gradientNorm =-4471.999999999997
+parameters 4 4 1: unconstrainedWeight =2080.69314718056 constrainedWeight =428.0 optimizableValue =-258280.69314718057 gradientNorm =-4651.999999999997
+parameters 4 4 2: unconstrainedWeight =2080.69314718056 constrainedWeight =428.0 optimizableValue =-287080.69314718054 gradientNorm =-4891.999999999997
+parameters 4 4 3: unconstrainedWeight =2912.0 constrainedWeight =428.0 optimizableValue =-335344.0 gradientNorm =-5200.0
+</system-out>
+    <system-err>十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRF &lt;init&gt;
+信息: CRF input dictionary size = 4
+Wrote out CRF
+CRF parameters. hyperbolicPriorSlope: 0.2. hyperbolicPriorSharpness: 10.0. gaussianPriorVariance: 1.0
+Read in CRF.
+CRF parameters. hyperbolicPriorSlope: 0.2. hyperbolicPriorSharpness: 10.0. gaussianPriorVariance: 1.0
+Wrote out CRF
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRF setWeightsDimensionDensely
+信息: CRF using dense weights, num input features = 4
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRF setWeightsDimensionDensely
+信息: Number of weights = 125
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6.437751649736401
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -8.411226024080857
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -30.7171851542003
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -114.70805025744042
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -116.70805025744042
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -138.70930027890265
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -238.12692836130753
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -516.0000000069854
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -534.0000000069854
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -594.0000000069905
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -774.0024756920855
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -1218.0000016548493
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -1290.0000016548493
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -1490.0000016548493
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -1940.0000077990528
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -2868.6931472285833
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -3068.6931472285833
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -3518.6931472285833
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -4400.693147232705
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6040.693147172316
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6040.693147172316
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6058.693146342848
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6184.56621916878
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6604.69314718056
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6622.69314718056
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -6750.693147180838
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -7208.693482587963
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -8436.000000000002
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -8564.000000000002
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -9014.000000000002
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -10166.693147236829
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -12830.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -13280.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -14384.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -16764.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -21342.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -22494.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -24944.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -29552.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -37568.03597629975
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -37568.03597629975
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -37640.03597629975
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -38090.03593090085
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -39504.03597629975
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -39576.03597629975
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -40026.03597629975
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -41484.03597629975
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -45012.71129710848
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -45462.71129710848
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -46920.71129710848
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -50504.693169880265
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -57934.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -59392.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -62920.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -70120.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -83684.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -87212.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -94412.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -107534.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -129710.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -129710.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -129910.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -131062.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -134534.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -134734.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -135886.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -139414.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -147606.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -148758.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -152286.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -160478.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -176704.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -180232.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -188424.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -204692.0
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -233888.69314718057
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -242080.69314718057
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -258280.69314718057
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -287080.69314718054
+十月 01, 2015 4:28:07 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -335344.0
+</system-err>
+  </testcase>
+  <testcase time="11.699" classname="cc.mallet.fst.tests.TestCRF" name="testValueGradient"/>
+  <testcase time="2.679" classname="cc.mallet.fst.tests.TestCRF" name="testAddOrderNStates">
+    <failure message="expected:&lt;-167.2234457483949&gt; but was:&lt;-363.62387563108734&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;-167.2234457483949&gt; but was:&lt;-363.62387563108734&gt;
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:102)
+	at junit.framework.Assert.assertEquals(Assert.java:109)
+	at cc.mallet.fst.tests.TestCRF.testAddOrderNStates(TestCRF.java:669)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>State #0 &quot;start&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=2
+-&gt; start
+-&gt; notstart
+State #1 &quot;notstart&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=2
+-&gt; start
+-&gt; notstart
+State #2 &quot;START&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=3
+-&gt; start
+-&gt; notstart
+-&gt; START
+State #0 &quot;start,start&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=2
+-&gt; start,start
+-&gt; start,notstart
+State #1 &quot;start,notstart&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=2
+-&gt; notstart,start
+-&gt; notstart,notstart
+State #2 &quot;start,START&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=3
+-&gt; START,start
+-&gt; START,notstart
+-&gt; START,START
+State #3 &quot;notstart,start&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=2
+-&gt; start,start
+-&gt; start,notstart
+State #4 &quot;notstart,notstart&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=2
+-&gt; notstart,start
+-&gt; notstart,notstart
+State #5 &quot;notstart,START&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=3
+-&gt; START,start
+-&gt; START,notstart
+-&gt; START,START
+State #6 &quot;START,start&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=2
+-&gt; start,start
+-&gt; start,notstart
+State #7 &quot;START,notstart&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=2
+-&gt; notstart,start
+-&gt; notstart,notstart
+State #8 &quot;START,START&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=3
+-&gt; START,start
+-&gt; START,notstart
+-&gt; START,START
+State #0 &quot;start,start&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=2
+-&gt; start,start
+-&gt; start,notstart
+State #1 &quot;start,notstart&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=2
+-&gt; notstart,start
+-&gt; notstart,notstart
+State #2 &quot;start,START&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=3
+-&gt; START,start
+-&gt; START,notstart
+-&gt; START,START
+State #3 &quot;notstart,start&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=2
+-&gt; start,start
+-&gt; start,notstart
+State #4 &quot;notstart,notstart&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=2
+-&gt; notstart,start
+-&gt; notstart,notstart
+State #5 &quot;notstart,START&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=3
+-&gt; START,start
+-&gt; START,notstart
+-&gt; START,START
+State #6 &quot;START,start&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=2
+-&gt; start,start
+-&gt; start,notstart
+State #7 &quot;START,notstart&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=2
+-&gt; notstart,start
+-&gt; notstart,notstart
+State #8 &quot;START,START&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=3
+-&gt; START,start
+-&gt; START,notstart
+-&gt; START,START
+CRF1 likelihood -363.62387563108734
+</system-out>
+    <system-err>十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF &lt;init&gt;
+信息: CRF input dictionary size = 483
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: Preparing start
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: start-&gt;start(start) start,start
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: start-&gt;notstart(notstart) start,notstart
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: Preparing notstart
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: notstart-&gt;start(start) notstart,start
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: notstart-&gt;notstart(notstart) notstart,notstart
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: Preparing START
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: START-&gt;start(start) START,start
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: START-&gt;notstart(notstart) START,notstart
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: START-&gt;START(START) START,START
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,start] num features = 24
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,notstart] num features = 127
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,start] num features = 194
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,notstart] num features = 292
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,start] num features = 12
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,notstart] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,START] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: Number of weights = 656
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF about to train with 2147483647 iterations
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -1195.2077543232824
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -881.0952465796344
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -814.2955065616185
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -751.6865347379523
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=1
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -688.0682834371269
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=2
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -624.9986034687546
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=3
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -564.7978051043717
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=4
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -517.4895197294456
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=5
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -478.6579107448572
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=6
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -479.07278213447375
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -465.31680656836227
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=7
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -441.8483791015502
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=8
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -430.46877184257903
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=9
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -410.61194129520965
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=10
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -393.07065556363136
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=11
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -511.62511751542837
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -391.30605152889757
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=12
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -386.9491795468122
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=13
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -385.16957364418863
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=14
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -383.97478618079197
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=15
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -378.1653642954208
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=16
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -374.3361907030662
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=17
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -375.2433702055236
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -372.7231417445722
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=18
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -372.3457002971447
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=19
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -370.47843563075315
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=20
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -367.52013282641343
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=21
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -368.250358961644
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -366.8024984439312
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=22
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -366.4079758222726
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=23
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -366.2509666629692
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=24
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -365.77018248483836
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=25
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -365.5731205053038
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=26
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -365.162357325435
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=27
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -364.89669793907404
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=28
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -364.68510445028573
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=29
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -366.07838621181855
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -364.5391076431523
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=30
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -364.4118500350238
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=31
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -364.10905779468584
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=32
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -363.8644980003323
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=33
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -363.79983256035536
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=34
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -363.6279796241506
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=35
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -368.2830659369862
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -363.62387563108734
+十月 01, 2015 4:28:19 下午 cc.mallet.optimize.LimitedMemoryBFGS optimize
+信息: Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -363.6279796241506 newValue: -363.62387563108734
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=36
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF training has converged, i=36
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF &lt;init&gt;
+信息: CRF input dictionary size = 483
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: Preparing start,start
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: start,start-&gt;start,start(start) start,start start,start,start
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: start,start-&gt;start,notstart(notstart) start,notstart start,start,notstart
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: Preparing start,notstart
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: start,notstart-&gt;notstart,start(start) notstart,start start,notstart,start
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: start,notstart-&gt;notstart,notstart(notstart) notstart,notstart start,notstart,notstart
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: Preparing start,START
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: start,START-&gt;START,start(start) START,start start,START,start
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: start,START-&gt;START,notstart(notstart) START,notstart start,START,notstart
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: start,START-&gt;START,START(START) START,START start,START,START
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: Preparing notstart,start
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: notstart,start-&gt;start,start(start) start,start notstart,start,start
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: notstart,start-&gt;start,notstart(notstart) start,notstart notstart,start,notstart
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: Preparing notstart,notstart
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: notstart,notstart-&gt;notstart,start(start) notstart,start notstart,notstart,start
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: notstart,notstart-&gt;notstart,notstart(notstart) notstart,notstart notstart,notstart,notstart
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: Preparing notstart,START
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: notstart,START-&gt;START,start(start) START,start notstart,START,start
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: notstart,START-&gt;START,notstart(notstart) START,notstart notstart,START,notstart
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: notstart,START-&gt;START,START(START) START,START notstart,START,START
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: Preparing START,start
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: START,start-&gt;start,start(start) start,start START,start,start
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: START,start-&gt;start,notstart(notstart) start,notstart START,start,notstart
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: Preparing START,notstart
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: START,notstart-&gt;notstart,start(start) notstart,start START,notstart,start
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: START,notstart-&gt;notstart,notstart(notstart) notstart,notstart START,notstart,notstart
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: Preparing START,START
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: START,START-&gt;START,start(start) START,start START,START,start
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: START,START-&gt;START,notstart(notstart) START,notstart START,START,notstart
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF addOrderNStates
+信息: START,START-&gt;START,START(START) START,START START,START,START
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,start,start] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,start,notstart] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,start] num features = 24
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,notstart] num features = 127
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,notstart,start] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,notstart,notstart] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,start] num features = 194
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,notstart] num features = 292
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,START,start] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,START,notstart] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,START,START] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,start] num features = 12
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,notstart] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,START] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,start,start] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,start,notstart] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,notstart,start] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,notstart,notstart] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,START,start] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,START,notstart] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,START,START] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,start,start] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,start,notstart] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,notstart,start] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,notstart,notstart] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,START,start] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,START,notstart] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,START,START] num features = 0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: Number of weights = 677
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF about to train with 2147483647 iterations
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -1195.2077543232824
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -1038.5129392585143
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -820.1875666223144
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=0
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -788.780169984874
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=1
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -746.0592732131707
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=2
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -690.0089901231922
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=3
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -625.818360777414
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=4
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -572.799867214665
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=5
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -543.2544353227972
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=6
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -1199.0184017749903
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -537.1962979412257
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=7
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -518.5019865617165
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=8
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -498.8846567589709
+十月 01, 2015 4:28:19 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=9
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -475.4369096521303
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=10
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -457.5025601364012
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=11
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -439.63313093007594
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=12
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -458.0363253479488
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -432.4001742262259
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=13
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -424.02882749092174
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=14
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -405.22595948350136
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=15
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -391.12439521059866
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=16
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -387.07476051429
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=17
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -384.9188277683917
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=18
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -384.3467440396928
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=19
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -379.7214667500521
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=20
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -376.10219925785316
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=21
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -372.3624514745919
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=22
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -373.3924914138728
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -371.41312317951696
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=23
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -370.0236506003476
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=24
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -368.52915538688836
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=25
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -367.8466717554579
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=26
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -367.069284341086
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=27
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -365.7033954022464
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=28
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -366.75166924205814
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -365.01859425203867
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=29
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -364.44154020912225
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=30
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -363.38311681865565
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=31
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -363.0331180030633
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=32
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -362.86296951466403
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=33
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -362.73610330466215
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=34
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -362.70122515779343
+十月 01, 2015 4:28:20 下午 cc.mallet.optimize.LimitedMemoryBFGS optimize
+信息: Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -362.73610330466215 newValue: -362.70122515779343
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=35
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF training has converged, i=35
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF &lt;init&gt;
+信息: CRF input dictionary size = 483
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: Preparing start,start
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: start,start-&gt;start,start(start) start,start start,start,start
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: start,start-&gt;start,notstart(notstart) start,notstart start,start,notstart
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: Preparing start,notstart
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: start,notstart-&gt;notstart,start(start) notstart,start start,notstart,start
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: start,notstart-&gt;notstart,notstart(notstart) notstart,notstart start,notstart,notstart
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: Preparing start,START
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: start,START-&gt;START,start(start) START,start start,START,start
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: start,START-&gt;START,notstart(notstart) START,notstart start,START,notstart
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: start,START-&gt;START,START(START) START,START start,START,START
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: Preparing notstart,start
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: notstart,start-&gt;start,start(start) start,start notstart,start,start
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: notstart,start-&gt;start,notstart(notstart) start,notstart notstart,start,notstart
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: Preparing notstart,notstart
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: notstart,notstart-&gt;notstart,start(start) notstart,start notstart,notstart,start
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: notstart,notstart-&gt;notstart,notstart(notstart) notstart,notstart notstart,notstart,notstart
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: Preparing notstart,START
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: notstart,START-&gt;START,start(start) START,start notstart,START,start
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: notstart,START-&gt;START,notstart(notstart) START,notstart notstart,START,notstart
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: notstart,START-&gt;START,START(START) START,START notstart,START,START
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: Preparing START,start
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: START,start-&gt;start,start(start) start,start START,start,start
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: START,start-&gt;start,notstart(notstart) start,notstart START,start,notstart
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: Preparing START,notstart
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: START,notstart-&gt;notstart,start(start) notstart,start START,notstart,start
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: START,notstart-&gt;notstart,notstart(notstart) notstart,notstart START,notstart,notstart
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: Preparing START,START
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: START,START-&gt;START,start(start) START,start START,START,start
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: START,START-&gt;START,notstart(notstart) START,notstart START,START,notstart
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF addOrderNStates
+信息: START,START-&gt;START,START(START) START,START START,START,START
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,start] num features = 24
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,start,start] num features = 12
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,notstart] num features = 127
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,start,notstart] num features = 24
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,start] num features = 194
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,notstart,start] num features = 86
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,notstart] num features = 292
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,notstart,notstart] num features = 140
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,start] num features = 12
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,START,start] num features = 12
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,notstart] num features = 0
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,START,notstart] num features = 0
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,START] num features = 0
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,START,START] num features = 0
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,start,start] num features = 24
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,start,notstart] num features = 127
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,notstart,start] num features = 166
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,notstart,notstart] num features = 256
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,START,start] num features = 12
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,START,notstart] num features = 0
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,START,START] num features = 0
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,start,start] num features = 12
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,start,notstart] num features = 12
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,notstart,start] num features = 12
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,notstart,notstart] num features = 0
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,START,start] num features = 12
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,START,notstart] num features = 0
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,START,START] num features = 0
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: Number of weights = 1584
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF about to train with 2147483647 iterations
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -1195.2077543232824
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -1037.066362718855
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -795.5584624325777
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=0
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -750.6275420323144
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=1
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -695.3168024473017
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=2
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -629.0886057612669
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=3
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -546.4256303188133
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=4
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -465.8630059695393
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=5
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -425.83834000607055
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=6
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -1703.30066935216
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -418.6120963961234
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=7
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -392.7593268681773
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=8
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -380.9726124761314
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=9
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -359.2012580418371
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=10
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -324.3037756684847
+十月 01, 2015 4:28:20 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=11
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -300.09818288206645
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=12
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -447.02962258723477
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -293.8288963665248
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=13
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -288.3006954305308
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=14
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -276.2600367325802
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=15
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -268.2266227767728
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=16
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -259.97796875354993
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=17
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -258.33831377761334
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=18
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -254.972155733867
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=19
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -251.87586743687456
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=20
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -251.57412970465765
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=21
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -250.3686139243521
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=22
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -248.98019106348863
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=23
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -248.54637142215523
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=24
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -245.83295640842994
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=25
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -245.54158875761073
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=26
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -244.84510630791885
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=27
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -244.57714809952307
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=28
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -242.93888288728465
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=29
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -243.7419069779857
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -242.85167230447905
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=30
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -242.66069459551653
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=31
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -242.2262066216917
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=32
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -241.8323619331473
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=33
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -241.46583092700467
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=34
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -241.6942949839716
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -241.34194641020684
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=35
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -241.1557511311239
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=36
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -241.07459151619787
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=37
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -241.03031084946772
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=38
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -240.96678828945687
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=39
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -240.9023789693753
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=40
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -240.89295384533358
+十月 01, 2015 4:28:21 下午 cc.mallet.optimize.LimitedMemoryBFGS optimize
+信息: Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -240.9023789693753 newValue: -240.89295384533358
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=41
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF training has converged, i=41
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF: Incremental training detected.  Adding weights for some unsupported features...
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,start] num features = 24
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,notstart] num features = 155
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,start] num features = 237
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,notstart] num features = 359
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,start] num features = 12
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,notstart] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,START] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: Number of weights = 794
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -363.62387563108734
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF: Incremental training detected.  Adding weights for some unsupported features...
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,start,start] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,start,notstart] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,start] num features = 24
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,notstart] num features = 152
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,notstart,start] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,notstart,notstart] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,start] num features = 228
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,notstart] num features = 354
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,START,start] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,START,notstart] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,START,START] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,start] num features = 12
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,notstart] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,START] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,start,start] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,start,notstart] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,notstart,start] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,notstart,notstart] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,START,start] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,START,notstart] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,START,START] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,start,start] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,start,notstart] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,notstart,start] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,notstart,notstart] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,START,start] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,START,notstart] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,START,START] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: Number of weights = 798
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -362.70122515779343
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF: Incremental training detected.  Adding weights for some unsupported features...
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,start] num features = 24
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,start,start] num features = 12
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,notstart] num features = 136
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,start,notstart] num features = 24
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,start] num features = 212
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,notstart,start] num features = 93
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,notstart] num features = 332
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,notstart,notstart] num features = 158
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,start] num features = 12
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,START,start] num features = 12
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,notstart] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,START,notstart] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,START] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start,START,START] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,start,start] num features = 24
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,start,notstart] num features = 136
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,notstart,start] num features = 187
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,notstart,notstart] num features = 307
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,START,start] num features = 12
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,START,notstart] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart,START,START] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,start,start] num features = 12
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,start,notstart] num features = 12
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,notstart,start] num features = 12
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,notstart,notstart] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,START,start] num features = 12
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,START,notstart] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[START,START,START] num features = 0
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: Number of weights = 1757
+十月 01, 2015 4:28:21 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -240.89295384533358
+</system-err>
+  </testcase>
+  <testcase time="1.468" classname="cc.mallet.fst.tests.TestCRF" name="testFrozenWeights"/>
+  <testcase time="0.394" classname="cc.mallet.fst.tests.TestCRF" name="testDenseTrain"/>
+  <testcase time="0.349" classname="cc.mallet.fst.tests.TestCRF" name="testSerialization"/>
+  <testcase time="0.59" classname="cc.mallet.fst.tests.TestCRF" name="testTokenAccuracy">
+    <failure message="expected:&lt;0.9409&gt; but was:&lt;0.9101497504159733&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;0.9409&gt; but was:&lt;0.9101497504159733&gt;
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:102)
+	at junit.framework.Assert.assertEquals(Assert.java:109)
+	at cc.mallet.fst.tests.TestCRF.testTokenAccuracy(TestCRF.java:869)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>State #0 &quot;start&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=2
+-&gt; start
+-&gt; notstart
+State #1 &quot;notstart&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=2
+-&gt; start
+-&gt; notstart
+</system-out>
+    <system-err>十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRF &lt;init&gt;
+信息: CRF input dictionary size = 483
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRF addFullyConnectedStatesForLabels
+信息: CRF: outputAlphabet.lookup class = java.lang.String
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRF addFullyConnectedStatesForLabels
+信息: CRF: outputAlphabet.lookup class = java.lang.String
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start-&gt;start:start] num features = 34
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start-&gt;notstart:notstart] num features = 136
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart-&gt;start:start] num features = 220
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart-&gt;notstart:notstart] num features = 294
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: Number of weights = 688
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF about to train with 2147483647 iterations
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -1955.3681963596096
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -1463.4333132858242
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -1355.2306922478876
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=0
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -1272.0289615693591
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=1
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -1172.1832791824597
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=2
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -1076.4169799577246
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=3
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -965.4238752663546
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=4
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -877.9267809948597
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=5
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -816.8186203071515
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=6
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -823.2335780580562
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -796.4068830073012
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=7
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -756.0406287580097
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=8
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -736.6162462457635
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=9
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -703.0917495756984
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=10
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -663.0854821855525
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=11
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -706.8678767077906
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -655.9199888320665
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=12
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -644.8240098867524
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=13
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -641.1767743314496
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=14
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -632.5130251946662
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=15
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -617.935764094052
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=16
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -601.5376821646846
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=17
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -619.4927799210471
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -595.690992985543
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=18
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -592.3449812754552
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=19
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -589.3877441456415
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=20
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -585.5440467288911
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=21
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -585.5589483306205
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -583.9276344479016
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=22
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -583.841924174413
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=23
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -581.9452601815119
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=24
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -581.3326164853703
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=25
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -580.5866698062006
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=26
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -579.1764790993917
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=27
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -576.1397415439698
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=28
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -589.5268012335291
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -575.8956668993719
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=29
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -574.9026025185631
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=30
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -574.6619538705431
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=31
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -574.4972470484747
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=32
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -574.176749504905
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=33
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -573.6882043129953
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=34
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -573.616547289547
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=35
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -573.2659195287838
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=36
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -573.1610391974525
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=37
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -572.8835540756309
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=38
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -572.6309425625758
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=39
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -572.5574049111677
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=40
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -572.4714206096697
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=41
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -572.4587076501446
+十月 01, 2015 4:28:24 下午 cc.mallet.optimize.LimitedMemoryBFGS optimize
+信息: Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -572.4714206096697 newValue: -572.4587076501446
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=42
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF training has converged, i=42
+十月 01, 2015 4:28:24 下午 cc.mallet.fst.TokenAccuracyEvaluator evaluateInstanceList
+信息: Test accuracy=0.9101497504159733
+</system-err>
+  </testcase>
+  <testcase time="0.015" classname="cc.mallet.fst.tests.TestCRF" name="testStartState">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at cc.mallet.fst.CRF.setWeightsDimensionAsIn(CRF.java:1249)
+	at cc.mallet.fst.CRFTrainerByLabelLikelihood.getOptimizableCRF(CRFTrainerByLabelLikelihood.java:101)
+	at cc.mallet.fst.tests.TestCRF.testStartState(TestCRF.java:958)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>name: linegroup0
+target: 
+input: cc.mallet.types.FeatureVectorSequence@f02e1b
+0: A a
+B b
+C c
+D d
+B b
+C c
+ c C b B d D a A 
+
+*** CRF STATES ***
+
+
+*** NO WEIGHTS ***
+State #0 &quot;&lt;START&gt;&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=0
+</system-out>
+    <system-err>十月 01, 2015 4:28:24 下午 cc.mallet.pipe.TokenSequenceMatchDataAndTarget pipe
+警告: Skipping token: No match of ^(\S+) (.*) at token #0 with text A a
+B b
+C c
+D d
+B b
+C c
+
+</system-err>
+  </testcase>
+  <testcase time="0.815" classname="cc.mallet.fst.tests.TestCRF" name="testStateAddWeights"/>
+</testsuite>

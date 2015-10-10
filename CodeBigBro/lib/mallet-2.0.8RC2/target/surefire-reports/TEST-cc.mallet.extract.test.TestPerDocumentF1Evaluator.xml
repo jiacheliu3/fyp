@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="4" time="0.019" errors="0" skipped="0" tests="5" name="cc.mallet.extract.test.TestPerDocumentF1Evaluator">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\bin"/>
+    <property name="java.vm.version" value="24.65-b04"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Tassadar\eclipse\CodeBigBro\lib\mallet-2.0.8RC2"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Tassadar\eclipse\CodeBigBro\lib\mallet-2.0.8RC2"/>
+    <property name="java.runtime.version" value="1.7.0_67-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\Users\Tassadar\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="F:\Eclipse 3.4.2\Eclipse_CS3343\apache-maven-3.3.3-bin\apache-maven-3.3.3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:\Database\product\11.2.0\dbhome_2\bin;c:\Program Files (x86)\AMD APP\bin\x86_64;c:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;;C:\Program Files (x86)\GNU\GnuPG\pub;%java_home%\bin;C:\Program Files (x86)\Skype\Phone\;C:\Users\Tassadar\AppData\Local\Programs\Python\Python35-32\Scripts\;C:\Users\Tassadar\AppData\Local\Programs\Python\Python35-32\;C:\ProgramData\Oracle\Java\javapath;F:\Database\product\11.2.0\dbhome_2\bin;c:\Program Files (x86)\AMD APP\bin\x86_64;c:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;;C:\Program Files (x86)\GNU\GnuPG\pub;C:\Program Files (x86)\Skype\Phone\;F:\Eclipse 3.4.2\grails-2.5.0\bin;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\bin;F:\Eclipse 3.4.2\Eclipse_CS3343\apache-maven-3.3.3-bin\apache-maven-3.3.3\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Tassadar"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="Tassadar"/>
+    <property name="java.class.path" value="F:\Eclipse 3.4.2\Eclipse_CS3343\apache-maven-3.3.3-bin\apache-maven-3.3.3\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.7.0_67"/>
+    <property name="java.ext.dirs" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\resources.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\rt.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\sunrsasign.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\jsse.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\jce.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\charsets.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\jfr.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="F:\Eclipse 3.4.2\Eclipse_CS3343\apache-maven-3.3.3-bin\apache-maven-3.3.3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase time="0.008" classname="cc.mallet.extract.test.TestPerDocumentF1Evaluator" name="testPerDocEval">
+    <failure message="expected:&lt;...ting per-document F1[
+Name	P	R	F1
+eater	0.6667	0.5	0.5714
+O	0	1	0
+meal	0.25	0.3333	0.2857
+OVERALL (micro-averaged) P=0.4286 R=0.4286 F1=0.4286
+OVERALL (macro-averaged) F1=0.4286
+]
+&gt; but was:&lt;...ting per-document F1[
+Name	P	R	F1
+eater	0.6667	0.5	0.5714
+O	0	1	0
+meal	0.25	0.3333	0.2857
+OVERALL (micro-averaged) P=0.4286 R=0.4286 F1=0.4286
+OVERALL (macro-averaged) F1=0.4286
+]
+&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: expected:&lt;...ting per-document F1[
+Name	P	R	F1
+eater	0.6667	0.5	0.5714
+O	0	1	0
+meal	0.25	0.3333	0.2857
+OVERALL (micro-averaged) P=0.4286 R=0.4286 F1=0.4286
+OVERALL (macro-averaged) F1=0.4286
+]
+&gt; but was:&lt;...ting per-document F1[
+Name	P	R	F1
+eater	0.6667	0.5	0.5714
+O	0	1	0
+meal	0.25	0.3333	0.2857
+OVERALL (micro-averaged) P=0.4286 R=0.4286 F1=0.4286
+OVERALL (macro-averaged) F1=0.4286
+]
+&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at cc.mallet.extract.test.TestPerDocumentF1Evaluator.testPerDocEval(TestPerDocumentF1Evaluator.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>name: array:0
+target: 0: eater (0)
+1: eater (0)
+2: eater (0)
+3: eater (0)
+4: O (1)
+5: O (1)
+
+input: TokenSequence [the  span[7..10], big  span[11..14], red  span[15..18], fox  span[19..22], did  span[31..34], it  span[35..37]]
+Token#0:the  span[7..10]
+Token#1:big  span[11..14]
+Token#2:red  span[15..18]
+Token#3:fox  span[19..22]
+Token#4:did  span[31..34]
+Token#5:it  span[35..37]
+
+name: array:1
+target: 0: O (1)
+1: O (1)
+2: O (1)
+3: O (1)
+4: meal (2)
+5: meal (2)
+
+input: TokenSequence [it  span[0..2], was  span[3..6], done  span[7..11], by  span[12..14], the  span[21..24], dog  span[25..28]]
+Token#0:it  span[0..2]
+Token#1:was  span[3..6]
+Token#2:done  span[7..11]
+Token#3:by  span[12..14]
+Token#4:the  span[21..24]
+Token#5:dog  span[25..28]
+
+name: array:2
+target: 0: eater (0)
+1: eater (0)
+2: O (1)
+3: O (1)
+4: meal (2)
+
+input: TokenSequence [the  span[7..10], cat  span[11..14], ate  span[23..26], the  span[27..30], canary  span[37..43]]
+Token#0:the  span[7..10]
+Token#1:cat  span[11..14]
+Token#2:ate  span[23..26]
+Token#3:the  span[27..30]
+Token#4:canary  span[37..43]
+
+name: array:3
+target: 0: meal (2)
+1: meal (2)
+2: O (1)
+3: O (1)
+4: O (1)
+5: O (1)
+6: O (1)
+
+input: TokenSequence [the  span[6..9], hamburger  span[10..19], was  span[27..30], eaten  span[31..36], by  span[37..39], the  span[40..43], kid  span[44..47]]
+Token#0:the  span[6..9]
+Token#1:hamburger  span[10..19]
+Token#2:was  span[27..30]
+Token#3:eaten  span[31..36]
+Token#4:by  span[37..39]
+Token#5:the  span[40..43]
+Token#6:kid  span[44..47]
+
+name: array:4
+target: 0: eater (0)
+1: eater (0)
+2: O (1)
+3: O (1)
+4: O (1)
+5: O (1)
+
+input: TokenSequence [the  span[7..10], dog  span[11..14], was  span[23..26], eaten  span[27..32], with  span[33..37], zest  span[38..42]]
+Token#0:the  span[7..10]
+Token#1:dog  span[11..14]
+Token#2:was  span[23..26]
+Token#3:eaten  span[27..32]
+Token#4:with  span[33..37]
+Token#5:zest  span[38..42]
+
+name: array:5
+target: 0: O (1)
+1: O (1)
+2: O (1)
+3: O (1)
+4: O (1)
+5: meal (2)
+
+input: TokenSequence [four  span[0..4], score  span[5..10], and  span[11..14], seven  span[15..20], years  span[21..26], ago  span[33..36]]
+Token#0:four  span[0..4]
+Token#1:score  span[5..10]
+Token#2:and  span[11..14]
+Token#3:seven  span[15..20]
+Token#4:years  span[21..26]
+Token#5:ago  span[33..36]
+
+name: array:0
+target: 0: eater (0)
+1: eater (0)
+2: eater (0)
+3: eater (0)
+4: O (1)
+5: O (1)
+
+input: TokenSequence [the  span[7..10], big  span[11..14], red  span[15..18], fox  span[19..22], did  span[31..34], it  span[35..37]]
+Token#0:the  span[7..10]
+Token#1:big  span[11..14]
+Token#2:red  span[15..18]
+Token#3:fox  span[19..22]
+Token#4:did  span[31..34]
+Token#5:it  span[35..37]
+
+name: array:1
+target: 0: O (1)
+1: O (1)
+2: O (1)
+3: O (1)
+4: eater (0)
+5: eater (0)
+
+input: TokenSequence [it  span[0..2], was  span[3..6], done  span[7..11], by  span[12..14], the  span[22..25], dog  span[26..29]]
+Token#0:it  span[0..2]
+Token#1:was  span[3..6]
+Token#2:done  span[7..11]
+Token#3:by  span[12..14]
+Token#4:the  span[22..25]
+Token#5:dog  span[26..29]
+
+name: array:2
+target: 0: eater (0)
+1: eater (0)
+2: O (1)
+3: meal (2)
+4: meal (2)
+
+input: TokenSequence [the  span[7..10], cat  span[11..14], ate  span[23..26], the  span[33..36], canary  span[37..43]]
+Token#0:the  span[7..10]
+Token#1:cat  span[11..14]
+Token#2:ate  span[23..26]
+Token#3:the  span[33..36]
+Token#4:canary  span[37..43]
+
+name: array:3
+target: 0: meal (2)
+1: meal (2)
+2: O (1)
+3: O (1)
+4: O (1)
+5: eater (0)
+6: eater (0)
+
+input: TokenSequence [the  span[6..9], hamburger  span[10..19], was  span[27..30], eaten  span[31..36], by  span[37..39], the  span[47..50], kid  span[51..54]]
+Token#0:the  span[6..9]
+Token#1:hamburger  span[10..19]
+Token#2:was  span[27..30]
+Token#3:eaten  span[31..36]
+Token#4:by  span[37..39]
+Token#5:the  span[47..50]
+Token#6:kid  span[51..54]
+
+name: array:4
+target: 0: meal (2)
+1: meal (2)
+2: O (1)
+3: O (1)
+4: O (1)
+5: O (1)
+
+input: TokenSequence [the  span[6..9], dog  span[10..13], was  span[21..24], eaten  span[25..30], with  span[31..35], zest  span[36..40]]
+Token#0:the  span[6..9]
+Token#1:dog  span[10..13]
+Token#2:was  span[21..24]
+Token#3:eaten  span[25..30]
+Token#4:with  span[31..35]
+Token#5:zest  span[36..40]
+
+name: array:5
+target: 0: O (1)
+1: O (1)
+2: O (1)
+3: O (1)
+4: O (1)
+5: O (1)
+
+input: TokenSequence [four  span[0..4], score  span[5..10], and  span[11..14], seven  span[15..20], years  span[21..26], ago  span[27..30]]
+Token#0:four  span[0..4]
+Token#1:score  span[5..10]
+Token#2:and  span[11..14]
+Token#3:seven  span[15..20]
+Token#4:years  span[21..26]
+Token#5:ago  span[27..30]
+
+Error in extraction! Document TEST1
+Predicted FIELD NAME: meal
+FILLER:the dog
+
+True null
+
+Error in extraction! Document TEST2
+Predicted FIELD NAME: meal
+FILLER:canary
+
+True FIELD NAME: meal
+FILLER:the &lt;meal&gt;canary
+
+
+Error in extraction! Document TEST4
+Predicted FIELD NAME: eater
+FILLER:the dog
+
+True null
+
+Error in extraction! Document TEST5
+Predicted FIELD NAME: meal
+FILLER:ago
+
+True null
+
+</system-out>
+  </testcase>
+  <testcase time="0.003" classname="cc.mallet.extract.test.TestPerDocumentF1Evaluator" name="testPerFieldEval">
+    <failure message="expected:&lt;...sting SEGMENT counts[
+Name	Correct	Pred	Target
+title	2	4	5
+O	0	0	0
+author	3	4	5
+
+Testing per-field F1
+Name	P	R	F1
+title	0.5	0.4	0.4444
+O	0	1	0
+author	0.75	0.6	0.6667
+OVERALL (micro-averaged) P=0.625 R=0.5 F1=0.5556
+OVERALL (macro-averaged) F1=0.5556
+]
+&gt; but was:&lt;...sting SEGMENT counts[
+Name	Correct	Pred	Target
+title	2	4	5
+O	0	0	0
+author	3	4	5
+
+Testing per-field F1
+Name	P	R	F1
+title	0.5	0.4	0.4444
+O	0	1	0
+author	0.75	0.6	0.6667
+OVERALL (micro-averaged) P=0.625 R=0.5 F1=0.5556
+OVERALL (macro-averaged) F1=0.5556
+]
+&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: expected:&lt;...sting SEGMENT counts[
+Name	Correct	Pred	Target
+title	2	4	5
+O	0	0	0
+author	3	4	5
+
+Testing per-field F1
+Name	P	R	F1
+title	0.5	0.4	0.4444
+O	0	1	0
+author	0.75	0.6	0.6667
+OVERALL (micro-averaged) P=0.625 R=0.5 F1=0.5556
+OVERALL (macro-averaged) F1=0.5556
+]
+&gt; but was:&lt;...sting SEGMENT counts[
+Name	Correct	Pred	Target
+title	2	4	5
+O	0	0	0
+author	3	4	5
+
+Testing per-field F1
+Name	P	R	F1
+title	0.5	0.4	0.4444
+O	0	1	0
+author	0.75	0.6	0.6667
+OVERALL (micro-averaged) P=0.625 R=0.5 F1=0.5556
+OVERALL (macro-averaged) F1=0.5556
+]
+&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at cc.mallet.extract.test.TestPerDocumentF1Evaluator.testPerFieldEval(TestPerDocumentF1Evaluator.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>name: array:0
+target: 0: title (0)
+1: title (0)
+2: title (0)
+3: O (1)
+4: author (2)
+5: author (2)
+6: O (1)
+7: author (2)
+8: author (2)
+
+input: TokenSequence [Wizard  span[7..13], of  span[14..16], Oz  span[17..19], by  span[28..30], John  span[39..43], Smith  span[44..49], and  span[59..62], Adam  span[71..75], Felber  span[76..82]]
+Token#0:Wizard  span[7..13]
+Token#1:of  span[14..16]
+Token#2:Oz  span[17..19]
+Token#3:by  span[28..30]
+Token#4:John  span[39..43]
+Token#5:Smith  span[44..49]
+Token#6:and  span[59..62]
+Token#7:Adam  span[71..75]
+Token#8:Felber  span[76..82]
+
+name: array:1
+target: 0: title (0)
+1: title (0)
+2: title (0)
+3: title (0)
+4: O (1)
+5: O (1)
+6: title (0)
+7: title (0)
+8: title (0)
+9: title (0)
+10: O (1)
+11: author (2)
+12: author (2)
+
+input: TokenSequence [Jisp  span[7..11], Boo  span[12..15], Fuzz  span[16..20], by  span[21..23], the  span[32..35], estimable  span[36..45], Rich  span[53..57], Q  span[58..59], .  span[59..60], Doe  span[61..64], and  span[73..76], Frank  span[85..90], Wilson  span[91..97]]
+Token#0:Jisp  span[7..11]
+Token#1:Boo  span[12..15]
+Token#2:Fuzz  span[16..20]
+Token#3:by  span[21..23]
+Token#4:the  span[32..35]
+Token#5:estimable  span[36..45]
+Token#6:Rich  span[53..57]
+Token#7:Q  span[58..59]
+Token#8:.  span[59..60]
+Token#9:Doe  span[61..64]
+Token#10:and  span[73..76]
+Token#11:Frank  span[85..90]
+Token#12:Wilson  span[91..97]
+
+name: array:2
+target: 0: title (0)
+1: title (0)
+2: O (1)
+3: O (1)
+4: O (1)
+5: O (1)
+6: O (1)
+7: O (1)
+8: O (1)
+9: O (1)
+10: author (2)
+11: author (2)
+12: author (2)
+13: author (2)
+14: author (2)
+
+input: TokenSequence [Howdy  span[7..12], Doody  span[13..18], if  span[27..29], you  span[30..33], think  span[34..39], this  span[40..44], is  span[45..47], Mr  span[48..50], .  span[50..51], nonsense  span[52..60], don  span[69..72], &apos;  span[72..73], t  span[73..74], you  span[75..78], huh  span[79..82]]
+Token#0:Howdy  span[7..12]
+Token#1:Doody  span[13..18]
+Token#2:if  span[27..29]
+Token#3:you  span[30..33]
+Token#4:think  span[34..39]
+Token#5:this  span[40..44]
+Token#6:is  span[45..47]
+Token#7:Mr  span[48..50]
+Token#8:.  span[50..51]
+Token#9:nonsense  span[52..60]
+Token#10:don  span[69..72]
+Token#11:&apos;  span[72..73]
+Token#12:t  span[73..74]
+Token#13:you  span[75..78]
+Token#14:huh  span[79..82]
+
+name: array:0
+target: 0: title (0)
+1: title (0)
+2: title (0)
+3: O (1)
+4: author (2)
+5: author (2)
+6: O (1)
+7: author (2)
+8: author (2)
+
+input: TokenSequence [Wizard  span[7..13], of  span[14..16], Oz  span[17..19], by  span[28..30], John  span[39..43], Smith  span[44..49], and  span[59..62], Adam  span[71..75], Felber  span[76..82]]
+Token#0:Wizard  span[7..13]
+Token#1:of  span[14..16]
+Token#2:Oz  span[17..19]
+Token#3:by  span[28..30]
+Token#4:John  span[39..43]
+Token#5:Smith  span[44..49]
+Token#6:and  span[59..62]
+Token#7:Adam  span[71..75]
+Token#8:Felber  span[76..82]
+
+name: array:1
+target: 0: title (0)
+1: title (0)
+2: title (0)
+3: O (1)
+4: O (1)
+5: O (1)
+6: author (2)
+7: author (2)
+8: author (2)
+9: author (2)
+10: O (1)
+11: author (2)
+12: author (2)
+
+input: TokenSequence [Jisp  span[7..11], Boo  span[12..15], Fuzz  span[16..20], by  span[29..31], the  span[32..35], estimable  span[36..45], Rich  span[54..58], Q  span[59..60], .  span[60..61], Doe  span[62..65], and  span[75..78], Frank  span[87..92], Wilson  span[93..99]]
+Token#0:Jisp  span[7..11]
+Token#1:Boo  span[12..15]
+Token#2:Fuzz  span[16..20]
+Token#3:by  span[29..31]
+Token#4:the  span[32..35]
+Token#5:estimable  span[36..45]
+Token#6:Rich  span[54..58]
+Token#7:Q  span[59..60]
+Token#8:.  span[60..61]
+Token#9:Doe  span[62..65]
+Token#10:and  span[75..78]
+Token#11:Frank  span[87..92]
+Token#12:Wilson  span[93..99]
+
+name: array:2
+target: 0: title (0)
+1: title (0)
+2: O (1)
+3: title (0)
+4: O (1)
+5: O (1)
+6: O (1)
+7: title (0)
+8: title (0)
+9: author (2)
+10: author (2)
+11: author (2)
+12: author (2)
+13: author (2)
+14: author (2)
+
+input: TokenSequence [Howdy  span[7..12], Doody  span[13..18], if  span[27..29], you  span[37..40], think  span[49..54], this  span[55..59], is  span[60..62], Mr  span[70..72], .  span[72..73], nonsense  span[91..99], don  span[100..103], &apos;  span[103..104], t  span[104..105], you  span[106..109], huh  span[110..113]]
+Token#0:Howdy  span[7..12]
+Token#1:Doody  span[13..18]
+Token#2:if  span[27..29]
+Token#3:you  span[37..40]
+Token#4:think  span[49..54]
+Token#5:this  span[55..59]
+Token#6:is  span[60..62]
+Token#7:Mr  span[70..72]
+Token#8:.  span[72..73]
+Token#9:nonsense  span[91..99]
+Token#10:don  span[100..103]
+Token#11:&apos;  span[103..104]
+Token#12:t  span[104..105]
+Token#13:you  span[106..109]
+Token#14:huh  span[110..113]
+
+</system-out>
+  </testcase>
+  <testcase time="0.003" classname="cc.mallet.extract.test.TestPerDocumentF1Evaluator" name="testFieldCleaning">
+    <failure message="expected:&lt;...sting SEGMENT counts[
+Name	Correct	Pred	Target
+title	2	4	5
+O	0	0	0
+author	3	4	5
+
+Testing per-field F1
+Name	P	R	F1
+title	0.5	0.4	0.4444
+O	0	1	0
+author	0.75	0.6	0.6667
+OVERALL (micro-averaged) P=0.625 R=0.5 F1=0.5556
+OVERALL (macro-averaged) F1=0.5556
+]
+&gt; but was:&lt;...sting SEGMENT counts[
+Name	Correct	Pred	Target
+title	2	4	5
+O	0	0	0
+author	3	4	5
+
+Testing per-field F1
+Name	P	R	F1
+title	0.5	0.4	0.4444
+O	0	1	0
+author	0.75	0.6	0.6667
+OVERALL (micro-averaged) P=0.625 R=0.5 F1=0.5556
+OVERALL (macro-averaged) F1=0.5556
+]
+&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: expected:&lt;...sting SEGMENT counts[
+Name	Correct	Pred	Target
+title	2	4	5
+O	0	0	0
+author	3	4	5
+
+Testing per-field F1
+Name	P	R	F1
+title	0.5	0.4	0.4444
+O	0	1	0
+author	0.75	0.6	0.6667
+OVERALL (micro-averaged) P=0.625 R=0.5 F1=0.5556
+OVERALL (macro-averaged) F1=0.5556
+]
+&gt; but was:&lt;...sting SEGMENT counts[
+Name	Correct	Pred	Target
+title	2	4	5
+O	0	0	0
+author	3	4	5
+
+Testing per-field F1
+Name	P	R	F1
+title	0.5	0.4	0.4444
+O	0	1	0
+author	0.75	0.6	0.6667
+OVERALL (micro-averaged) P=0.625 R=0.5 F1=0.5556
+OVERALL (macro-averaged) F1=0.5556
+]
+&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at cc.mallet.extract.test.TestPerDocumentF1Evaluator.testFieldCleaning(TestPerDocumentF1Evaluator.java:192)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>name: array:0
+target: 0: title (0)
+1: title (0)
+2: title (0)
+3: title (0)
+4: O (1)
+5: author (2)
+6: author (2)
+7: O (1)
+8: author (2)
+9: author (2)
+
+input: TokenSequence [Wizard  span[7..13], of  span[14..16], Oz  span[17..19], ,  span[19..20], by  span[29..31], John  span[40..44], Smith  span[45..50], and  span[60..63], Adam  span[72..76], Felber  span[77..83]]
+Token#0:Wizard  span[7..13]
+Token#1:of  span[14..16]
+Token#2:Oz  span[17..19]
+Token#3:,  span[19..20]
+Token#4:by  span[29..31]
+Token#5:John  span[40..44]
+Token#6:Smith  span[45..50]
+Token#7:and  span[60..63]
+Token#8:Adam  span[72..76]
+Token#9:Felber  span[77..83]
+
+name: array:1
+target: 0: title (0)
+1: title (0)
+2: title (0)
+3: title (0)
+4: O (1)
+5: O (1)
+6: title (0)
+7: title (0)
+8: title (0)
+9: title (0)
+10: O (1)
+11: author (2)
+12: author (2)
+
+input: TokenSequence [Jisp  span[7..11], Boo  span[12..15], Fuzz  span[16..20], by  span[21..23], the  span[32..35], estimable  span[36..45], Rich  span[53..57], Q  span[58..59], .  span[59..60], Doe  span[61..64], and  span[73..76], Frank  span[85..90], Wilson  span[91..97]]
+Token#0:Jisp  span[7..11]
+Token#1:Boo  span[12..15]
+Token#2:Fuzz  span[16..20]
+Token#3:by  span[21..23]
+Token#4:the  span[32..35]
+Token#5:estimable  span[36..45]
+Token#6:Rich  span[53..57]
+Token#7:Q  span[58..59]
+Token#8:.  span[59..60]
+Token#9:Doe  span[61..64]
+Token#10:and  span[73..76]
+Token#11:Frank  span[85..90]
+Token#12:Wilson  span[91..97]
+
+name: array:2
+target: 0: title (0)
+1: title (0)
+2: O (1)
+3: O (1)
+4: O (1)
+5: O (1)
+6: O (1)
+7: O (1)
+8: O (1)
+9: O (1)
+10: O (1)
+11: O (1)
+12: author (2)
+13: author (2)
+14: author (2)
+15: author (2)
+16: author (2)
+
+input: TokenSequence [Howdy  span[7..12], Doody  span[13..18], !  span[26..27], ,  span[27..28], if  span[29..31], you  span[32..35], think  span[36..41], this  span[42..46], is  span[47..49], Mr  span[50..52], .  span[52..53], nonsense  span[54..62], don  span[71..74], &apos;  span[74..75], t  span[75..76], you  span[77..80], huh  span[81..84]]
+Token#0:Howdy  span[7..12]
+Token#1:Doody  span[13..18]
+Token#2:!  span[26..27]
+Token#3:,  span[27..28]
+Token#4:if  span[29..31]
+Token#5:you  span[32..35]
+Token#6:think  span[36..41]
+Token#7:this  span[42..46]
+Token#8:is  span[47..49]
+Token#9:Mr  span[50..52]
+Token#10:.  span[52..53]
+Token#11:nonsense  span[54..62]
+Token#12:don  span[71..74]
+Token#13:&apos;  span[74..75]
+Token#14:t  span[75..76]
+Token#15:you  span[77..80]
+Token#16:huh  span[81..84]
+
+name: array:0
+target: 0: title (0)
+1: title (0)
+2: title (0)
+3: O (1)
+4: O (1)
+5: author (2)
+6: author (2)
+7: O (1)
+8: author (2)
+9: author (2)
+
+input: TokenSequence [Wizard  span[7..13], of  span[14..16], Oz  span[17..19], ,  span[27..28], by  span[29..31], John  span[40..44], Smith  span[45..50], and  span[60..63], Adam  span[72..76], Felber  span[77..83]]
+Token#0:Wizard  span[7..13]
+Token#1:of  span[14..16]
+Token#2:Oz  span[17..19]
+Token#3:,  span[27..28]
+Token#4:by  span[29..31]
+Token#5:John  span[40..44]
+Token#6:Smith  span[45..50]
+Token#7:and  span[60..63]
+Token#8:Adam  span[72..76]
+Token#9:Felber  span[77..83]
+
+name: array:1
+target: 0: title (0)
+1: title (0)
+2: title (0)
+3: O (1)
+4: O (1)
+5: O (1)
+6: author (2)
+7: author (2)
+8: author (2)
+9: author (2)
+10: O (1)
+11: author (2)
+12: author (2)
+
+input: TokenSequence [Jisp  span[7..11], Boo  span[12..15], Fuzz  span[16..20], by  span[29..31], the  span[32..35], estimable  span[36..45], Rich  span[54..58], Q  span[59..60], .  span[60..61], Doe  span[62..65], and  span[75..78], Frank  span[87..92], Wilson  span[93..99]]
+Token#0:Jisp  span[7..11]
+Token#1:Boo  span[12..15]
+Token#2:Fuzz  span[16..20]
+Token#3:by  span[29..31]
+Token#4:the  span[32..35]
+Token#5:estimable  span[36..45]
+Token#6:Rich  span[54..58]
+Token#7:Q  span[59..60]
+Token#8:.  span[60..61]
+Token#9:Doe  span[62..65]
+Token#10:and  span[75..78]
+Token#11:Frank  span[87..92]
+Token#12:Wilson  span[93..99]
+
+name: array:2
+target: 0: title (0)
+1: title (0)
+2: title (0)
+3: O (1)
+4: O (1)
+5: title (0)
+6: O (1)
+7: O (1)
+8: O (1)
+9: title (0)
+10: title (0)
+11: author (2)
+12: author (2)
+13: author (2)
+14: author (2)
+15: author (2)
+16: author (2)
+
+input: TokenSequence [Howdy  span[7..12], Doody  span[13..18], !  span[18..19], ,  span[27..28], if  span[29..31], you  span[39..42], think  span[51..56], this  span[57..61], is  span[62..64], Mr  span[72..74], .  span[74..75], nonsense  span[93..101], don  span[102..105], &apos;  span[105..106], t  span[106..107], you  span[108..111], huh  span[112..115]]
+Token#0:Howdy  span[7..12]
+Token#1:Doody  span[13..18]
+Token#2:!  span[18..19]
+Token#3:,  span[27..28]
+Token#4:if  span[29..31]
+Token#5:you  span[39..42]
+Token#6:think  span[51..56]
+Token#7:this  span[57..61]
+Token#8:is  span[62..64]
+Token#9:Mr  span[72..74]
+Token#10:.  span[74..75]
+Token#11:nonsense  span[93..101]
+Token#12:don  span[102..105]
+Token#13:&apos;  span[105..106]
+Token#14:t  span[106..107]
+Token#15:you  span[108..111]
+Token#16:huh  span[112..115]
+
+</system-out>
+  </testcase>
+  <testcase time="0.003" classname="cc.mallet.extract.test.TestPerDocumentF1Evaluator" name="testPunctuationIgnoringEvaluator">
+    <failure message="expected:&lt;...sting SEGMENT counts[
+Name	Correct	Pred	Target
+title	2	4	5
+O	0	0	0
+author	3	4	5
+
+Testing per-field F1
+Name	P	R	F1
+title	0.5	0.4	0.4444
+O	0	1	0
+author	0.75	0.6	0.6667
+OVERALL (micro-averaged) P=0.625 R=0.5 F1=0.5556
+OVERALL (macro-averaged) F1=0.5556
+]
+&gt; but was:&lt;...sting SEGMENT counts[
+Name	Correct	Pred	Target
+title	1	4	5
+O	0	0	0
+author	3	4	5
+
+Testing per-field F1
+Name	P	R	F1
+title	0.25	0.2	0.2222
+O	0	1	0
+author	0.75	0.6	0.6667
+OVERALL (micro-averaged) P=0.5 R=0.4 F1=0.4444
+OVERALL (macro-averaged) F1=0.4444
+]
+&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: expected:&lt;...sting SEGMENT counts[
+Name	Correct	Pred	Target
+title	2	4	5
+O	0	0	0
+author	3	4	5
+
+Testing per-field F1
+Name	P	R	F1
+title	0.5	0.4	0.4444
+O	0	1	0
+author	0.75	0.6	0.6667
+OVERALL (micro-averaged) P=0.625 R=0.5 F1=0.5556
+OVERALL (macro-averaged) F1=0.5556
+]
+&gt; but was:&lt;...sting SEGMENT counts[
+Name	Correct	Pred	Target
+title	1	4	5
+O	0	0	0
+author	3	4	5
+
+Testing per-field F1
+Name	P	R	F1
+title	0.25	0.2	0.2222
+O	0	1	0
+author	0.75	0.6	0.6667
+OVERALL (micro-averaged) P=0.5 R=0.4 F1=0.4444
+OVERALL (macro-averaged) F1=0.4444
+]
+&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at cc.mallet.extract.test.TestPerDocumentF1Evaluator.testPunctuationIgnoringEvaluator(TestPerDocumentF1Evaluator.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>name: array:0
+target: 0: title (0)
+1: title (0)
+2: title (0)
+3: title (0)
+4: O (1)
+5: author (2)
+6: author (2)
+7: O (1)
+8: author (2)
+9: author (2)
+
+input: TokenSequence [Wizard  span[7..13], of  span[14..16], Oz  span[17..19], ,  span[19..20], by  span[29..31], John  span[40..44], Smith  span[45..50], and  span[60..63], Adam  span[72..76], Felber  span[77..83]]
+Token#0:Wizard  span[7..13]
+Token#1:of  span[14..16]
+Token#2:Oz  span[17..19]
+Token#3:,  span[19..20]
+Token#4:by  span[29..31]
+Token#5:John  span[40..44]
+Token#6:Smith  span[45..50]
+Token#7:and  span[60..63]
+Token#8:Adam  span[72..76]
+Token#9:Felber  span[77..83]
+
+name: array:1
+target: 0: title (0)
+1: title (0)
+2: title (0)
+3: title (0)
+4: O (1)
+5: O (1)
+6: title (0)
+7: title (0)
+8: title (0)
+9: title (0)
+10: O (1)
+11: author (2)
+12: author (2)
+
+input: TokenSequence [Jisp  span[7..11], Boo  span[12..15], Fuzz  span[16..20], by  span[21..23], the  span[32..35], estimable  span[36..45], Rich  span[53..57], Q  span[58..59], .  span[59..60], Doe  span[61..64], and  span[73..76], Frank  span[85..90], Wilson  span[91..97]]
+Token#0:Jisp  span[7..11]
+Token#1:Boo  span[12..15]
+Token#2:Fuzz  span[16..20]
+Token#3:by  span[21..23]
+Token#4:the  span[32..35]
+Token#5:estimable  span[36..45]
+Token#6:Rich  span[53..57]
+Token#7:Q  span[58..59]
+Token#8:.  span[59..60]
+Token#9:Doe  span[61..64]
+Token#10:and  span[73..76]
+Token#11:Frank  span[85..90]
+Token#12:Wilson  span[91..97]
+
+name: array:2
+target: 0: title (0)
+1: title (0)
+2: O (1)
+3: O (1)
+4: O (1)
+5: O (1)
+6: O (1)
+7: O (1)
+8: O (1)
+9: O (1)
+10: O (1)
+11: O (1)
+12: author (2)
+13: author (2)
+14: author (2)
+15: author (2)
+16: author (2)
+
+input: TokenSequence [Howdy  span[7..12], Doody  span[13..18], !  span[26..27], ,  span[27..28], if  span[29..31], you  span[32..35], think  span[36..41], this  span[42..46], is  span[47..49], Mr  span[50..52], .  span[52..53], nonsense  span[54..62], don  span[71..74], &apos;  span[74..75], t  span[75..76], you  span[77..80], huh  span[81..84]]
+Token#0:Howdy  span[7..12]
+Token#1:Doody  span[13..18]
+Token#2:!  span[26..27]
+Token#3:,  span[27..28]
+Token#4:if  span[29..31]
+Token#5:you  span[32..35]
+Token#6:think  span[36..41]
+Token#7:this  span[42..46]
+Token#8:is  span[47..49]
+Token#9:Mr  span[50..52]
+Token#10:.  span[52..53]
+Token#11:nonsense  span[54..62]
+Token#12:don  span[71..74]
+Token#13:&apos;  span[74..75]
+Token#14:t  span[75..76]
+Token#15:you  span[77..80]
+Token#16:huh  span[81..84]
+
+name: array:0
+target: 0: title (0)
+1: title (0)
+2: title (0)
+3: O (1)
+4: O (1)
+5: author (2)
+6: author (2)
+7: O (1)
+8: author (2)
+9: author (2)
+
+input: TokenSequence [Wizard  span[7..13], of  span[14..16], Oz  span[17..19], ,  span[27..28], by  span[29..31], John  span[40..44], Smith  span[45..50], and  span[60..63], Adam  span[72..76], Felber  span[77..83]]
+Token#0:Wizard  span[7..13]
+Token#1:of  span[14..16]
+Token#2:Oz  span[17..19]
+Token#3:,  span[27..28]
+Token#4:by  span[29..31]
+Token#5:John  span[40..44]
+Token#6:Smith  span[45..50]
+Token#7:and  span[60..63]
+Token#8:Adam  span[72..76]
+Token#9:Felber  span[77..83]
+
+name: array:1
+target: 0: title (0)
+1: title (0)
+2: title (0)
+3: O (1)
+4: O (1)
+5: O (1)
+6: author (2)
+7: author (2)
+8: author (2)
+9: author (2)
+10: O (1)
+11: author (2)
+12: author (2)
+
+input: TokenSequence [Jisp  span[7..11], Boo  span[12..15], Fuzz  span[16..20], by  span[29..31], the  span[32..35], estimable  span[36..45], Rich  span[54..58], Q  span[59..60], .  span[60..61], Doe  span[62..65], and  span[75..78], Frank  span[87..92], Wilson  span[93..99]]
+Token#0:Jisp  span[7..11]
+Token#1:Boo  span[12..15]
+Token#2:Fuzz  span[16..20]
+Token#3:by  span[29..31]
+Token#4:the  span[32..35]
+Token#5:estimable  span[36..45]
+Token#6:Rich  span[54..58]
+Token#7:Q  span[59..60]
+Token#8:.  span[60..61]
+Token#9:Doe  span[62..65]
+Token#10:and  span[75..78]
+Token#11:Frank  span[87..92]
+Token#12:Wilson  span[93..99]
+
+name: array:2
+target: 0: title (0)
+1: title (0)
+2: title (0)
+3: O (1)
+4: O (1)
+5: title (0)
+6: O (1)
+7: O (1)
+8: O (1)
+9: title (0)
+10: title (0)
+11: author (2)
+12: author (2)
+13: author (2)
+14: author (2)
+15: author (2)
+16: author (2)
+
+input: TokenSequence [Howdy  span[7..12], Doody  span[13..18], !  span[18..19], ,  span[27..28], if  span[29..31], you  span[39..42], think  span[51..56], this  span[57..61], is  span[62..64], Mr  span[72..74], .  span[74..75], nonsense  span[93..101], don  span[102..105], &apos;  span[105..106], t  span[106..107], you  span[108..111], huh  span[112..115]]
+Token#0:Howdy  span[7..12]
+Token#1:Doody  span[13..18]
+Token#2:!  span[18..19]
+Token#3:,  span[27..28]
+Token#4:if  span[29..31]
+Token#5:you  span[39..42]
+Token#6:think  span[51..56]
+Token#7:this  span[57..61]
+Token#8:is  span[62..64]
+Token#9:Mr  span[72..74]
+Token#10:.  span[74..75]
+Token#11:nonsense  span[93..101]
+Token#12:don  span[102..105]
+Token#13:&apos;  span[105..106]
+Token#14:t  span[106..107]
+Token#15:you  span[108..111]
+Token#16:huh  span[112..115]
+
+Error in extraction!
+Predicted FIELD NAME: title
+FILLER:Jisp Boo Fuzz by
+FILLER:Rich Q. Doe
+
+True FIELD NAME: title
+FILLER:Jisp Boo Fuzz
+
+
+Error in extraction!
+Predicted FIELD NAME: title
+FILLER:Jisp Boo Fuzz by
+FILLER:Rich Q. Doe
+
+True FIELD NAME: title
+FILLER:Jisp Boo Fuzz
+
+
+Error in extraction!
+Predicted FIELD NAME: author
+FILLER:don&apos;t you huh
+
+True FIELD NAME: author
+FILLER:nonsense &lt;author&gt;don&apos;t you huh
+
+
+Error in extraction!
+Predicted FIELD NAME: title
+FILLER:Howdy Doody
+
+True FIELD NAME: title
+FILLER:Howdy Doody&lt;/title&gt;!
+FILLER:you
+FILLER:Mr.
+
+
+</system-out>
+  </testcase>
+  <testcase time="0.002" classname="cc.mallet.extract.test.TestPerDocumentF1Evaluator" name="testToStdout"/>
+</testsuite>

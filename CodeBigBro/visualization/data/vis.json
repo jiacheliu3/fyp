@@ -1,0 +1,4594 @@
+{
+"nodes":[
+{
+					"name":"天",	
+					"artist":"天",
+					"match":0.72,
+					"id":"天",
+					"playcount":1595
+					}
+,
+{
+					"name":"现在",	
+					"artist":"现在",
+					"match":0.063,
+					"id":"现在",
+					"playcount":1595
+					}
+,
+{
+					"name":"都是",	
+					"artist":"都是",
+					"match":0.395,
+					"id":"都是",
+					"playcount":1595
+					}
+,
+{
+					"name":"为什么",	
+					"artist":"为什么",
+					"match":0.08,
+					"id":"为什么",
+					"playcount":1595
+					}
+,
+{
+					"name":"百姓",	
+					"artist":"百姓",
+					"match":0.664,
+					"id":"百姓",
+					"playcount":1595
+					}
+,
+{
+					"name":"怎么",	
+					"artist":"怎么",
+					"match":0.761,
+					"id":"怎么",
+					"playcount":1595
+					}
+,
+{
+					"name":"你们",	
+					"artist":"你们",
+					"match":0.416,
+					"id":"你们",
+					"playcount":1595
+					}
+,
+{
+					"name":"还是",	
+					"artist":"还是",
+					"match":0.826,
+					"id":"还是",
+					"playcount":1595
+					}
+,
+{
+					"name":"事",	
+					"artist":"事",
+					"match":0.199,
+					"id":"事",
+					"playcount":1595
+					}
+,
+{
+					"name":"1",	
+					"artist":"1",
+					"match":0.197,
+					"id":"1",
+					"playcount":1583
+					}
+,
+{
+					"name":"我们",	
+					"artist":"我们",
+					"match":0.128,
+					"id":"我们",
+					"playcount":1583
+					}
+,
+{
+					"name":"微博",	
+					"artist":"微博",
+					"match":0.443,
+					"id":"微博",
+					"playcount":1583
+					}
+,
+{
+					"name":"荒唐",	
+					"artist":"荒唐",
+					"match":0.945,
+					"id":"荒唐",
+					"playcount":1583
+					}
+,
+{
+					"name":"少",	
+					"artist":"少",
+					"match":0.639,
+					"id":"少",
+					"playcount":1583
+					}
+,
+{
+					"name":"胡",	
+					"artist":"胡",
+					"match":0.389,
+					"id":"胡",
+					"playcount":1583
+					}
+,
+{
+					"name":"做",	
+					"artist":"做",
+					"match":0.353,
+					"id":"做",
+					"playcount":1583
+					}
+,
+{
+					"name":"就是",	
+					"artist":"就是",
+					"match":0.412,
+					"id":"就是",
+					"playcount":1583
+					}
+,
+{
+					"name":"官",	
+					"artist":"官",
+					"match":0.317,
+					"id":"官",
+					"playcount":1583
+					}
+,
+{
+					"name":"政府",	
+					"artist":"政府",
+					"match":0.929,
+					"id":"政府",
+					"playcount":1583
+					}
+,
+{
+					"name":"贪腐",	
+					"artist":"贪腐",
+					"match":0.132,
+					"id":"贪腐",
+					"playcount":1583
+					}
+,
+{
+					"name":"部长",	
+					"artist":"部长",
+					"match":0.16,
+					"id":"部长",
+					"playcount":1583
+					}
+,
+{
+					"name":"执政",	
+					"artist":"执政",
+					"match":0.648,
+					"id":"执政",
+					"playcount":1583
+					}
+,
+{
+					"name":"官员",	
+					"artist":"官员",
+					"match":0.936,
+					"id":"官员",
+					"playcount":1583
+					}
+,
+{
+					"name":"大家",	
+					"artist":"大家",
+					"match":0.818,
+					"id":"大家",
+					"playcount":1583
+					}
+,
+{
+					"name":"户",	
+					"artist":"户",
+					"match":0.621,
+					"id":"户",
+					"playcount":1583
+					}
+,
+{
+					"name":"钱",	
+					"artist":"钱",
+					"match":0.185,
+					"id":"钱",
+					"playcount":1583
+					}
+,
+{
+					"name":"都",	
+					"artist":"都",
+					"match":0.237,
+					"id":"都",
+					"playcount":1583
+					}
+,
+{
+					"name":"为了",	
+					"artist":"为了",
+					"match":0.303,
+					"id":"为了",
+					"playcount":1583
+					}
+,
+{
+					"name":"局",	
+					"artist":"局",
+					"match":0.587,
+					"id":"局",
+					"playcount":1583
+					}
+,
+{
+					"name":"查",	
+					"artist":"查",
+					"match":0.498,
+					"id":"查",
+					"playcount":1583
+					}
+],
+
+"links": [
+{
+						"source":"我们",
+						"target":"天"
+}
+,
+{
+						"source":"我们",
+						"target":"现在"
+}
+,
+{
+						"source":"我们",
+						"target":"都是"
+}
+,
+{
+						"source":"我们",
+						"target":"为什么"
+}
+,
+{
+						"source":"我们",
+						"target":"百姓"
+}
+,
+{
+						"source":"我们",
+						"target":"怎么"
+}
+,
+{
+						"source":"我们",
+						"target":"你们"
+}
+,
+{
+						"source":"我们",
+						"target":"还是"
+}
+,
+{
+						"source":"我们",
+						"target":"事"
+}
+,
+{
+						"source":"我们",
+						"target":"1"
+}
+,
+{
+						"source":"我们",
+						"target":"微博"
+}
+,
+{
+						"source":"我们",
+						"target":"荒唐"
+}
+,
+{
+						"source":"我们",
+						"target":"少"
+}
+,
+{
+						"source":"我们",
+						"target":"胡"
+}
+,
+{
+						"source":"我们",
+						"target":"做"
+}
+,
+{
+						"source":"我们",
+						"target":"就是"
+}
+,
+{
+						"source":"我们",
+						"target":"官"
+}
+,
+{
+						"source":"我们",
+						"target":"政府"
+}
+,
+{
+						"source":"我们",
+						"target":"贪腐"
+}
+,
+{
+						"source":"我们",
+						"target":"部长"
+}
+,
+{
+						"source":"我们",
+						"target":"执政"
+}
+,
+{
+						"source":"我们",
+						"target":"官员"
+}
+,
+{
+						"source":"我们",
+						"target":"大家"
+}
+,
+{
+						"source":"我们",
+						"target":"户"
+}
+,
+{
+						"source":"我们",
+						"target":"钱"
+}
+,
+{
+						"source":"我们",
+						"target":"都"
+}
+,
+{
+						"source":"我们",
+						"target":"为了"
+}
+,
+{
+						"source":"我们",
+						"target":"局"
+}
+,
+{
+						"source":"我们",
+						"target":"查"
+}
+,
+{
+						"source":"贪腐",
+						"target":"天"
+}
+,
+{
+						"source":"贪腐",
+						"target":"现在"
+}
+,
+{
+						"source":"贪腐",
+						"target":"都是"
+}
+,
+{
+						"source":"贪腐",
+						"target":"为什么"
+}
+,
+{
+						"source":"贪腐",
+						"target":"百姓"
+}
+,
+{
+						"source":"贪腐",
+						"target":"怎么"
+}
+,
+{
+						"source":"贪腐",
+						"target":"你们"
+}
+,
+{
+						"source":"贪腐",
+						"target":"还是"
+}
+,
+{
+						"source":"贪腐",
+						"target":"事"
+}
+,
+{
+						"source":"贪腐",
+						"target":"1"
+}
+,
+{
+						"source":"贪腐",
+						"target":"我们"
+}
+,
+{
+						"source":"贪腐",
+						"target":"微博"
+}
+,
+{
+						"source":"贪腐",
+						"target":"荒唐"
+}
+,
+{
+						"source":"贪腐",
+						"target":"少"
+}
+,
+{
+						"source":"贪腐",
+						"target":"胡"
+}
+,
+{
+						"source":"贪腐",
+						"target":"做"
+}
+,
+{
+						"source":"贪腐",
+						"target":"就是"
+}
+,
+{
+						"source":"贪腐",
+						"target":"官"
+}
+,
+{
+						"source":"贪腐",
+						"target":"政府"
+}
+,
+{
+						"source":"贪腐",
+						"target":"部长"
+}
+,
+{
+						"source":"贪腐",
+						"target":"执政"
+}
+,
+{
+						"source":"贪腐",
+						"target":"官员"
+}
+,
+{
+						"source":"贪腐",
+						"target":"大家"
+}
+,
+{
+						"source":"贪腐",
+						"target":"户"
+}
+,
+{
+						"source":"贪腐",
+						"target":"钱"
+}
+,
+{
+						"source":"贪腐",
+						"target":"都"
+}
+,
+{
+						"source":"贪腐",
+						"target":"为了"
+}
+,
+{
+						"source":"贪腐",
+						"target":"局"
+}
+,
+{
+						"source":"贪腐",
+						"target":"查"
+}
+,
+{
+						"source":"天",
+						"target":"现在"
+}
+,
+{
+						"source":"天",
+						"target":"都是"
+}
+,
+{
+						"source":"天",
+						"target":"为什么"
+}
+,
+{
+						"source":"天",
+						"target":"百姓"
+}
+,
+{
+						"source":"天",
+						"target":"怎么"
+}
+,
+{
+						"source":"天",
+						"target":"你们"
+}
+,
+{
+						"source":"天",
+						"target":"还是"
+}
+,
+{
+						"source":"天",
+						"target":"事"
+}
+,
+{
+						"source":"天",
+						"target":"1"
+}
+,
+{
+						"source":"天",
+						"target":"我们"
+}
+,
+{
+						"source":"天",
+						"target":"微博"
+}
+,
+{
+						"source":"天",
+						"target":"荒唐"
+}
+,
+{
+						"source":"天",
+						"target":"少"
+}
+,
+{
+						"source":"天",
+						"target":"胡"
+}
+,
+{
+						"source":"天",
+						"target":"做"
+}
+,
+{
+						"source":"天",
+						"target":"就是"
+}
+,
+{
+						"source":"天",
+						"target":"官"
+}
+,
+{
+						"source":"天",
+						"target":"政府"
+}
+,
+{
+						"source":"天",
+						"target":"贪腐"
+}
+,
+{
+						"source":"天",
+						"target":"部长"
+}
+,
+{
+						"source":"天",
+						"target":"执政"
+}
+,
+{
+						"source":"天",
+						"target":"官员"
+}
+,
+{
+						"source":"天",
+						"target":"大家"
+}
+,
+{
+						"source":"天",
+						"target":"户"
+}
+,
+{
+						"source":"天",
+						"target":"钱"
+}
+,
+{
+						"source":"天",
+						"target":"都"
+}
+,
+{
+						"source":"天",
+						"target":"为了"
+}
+,
+{
+						"source":"天",
+						"target":"局"
+}
+,
+{
+						"source":"天",
+						"target":"查"
+}
+,
+{
+						"source":"就是",
+						"target":"天"
+}
+,
+{
+						"source":"就是",
+						"target":"现在"
+}
+,
+{
+						"source":"就是",
+						"target":"都是"
+}
+,
+{
+						"source":"就是",
+						"target":"为什么"
+}
+,
+{
+						"source":"就是",
+						"target":"百姓"
+}
+,
+{
+						"source":"就是",
+						"target":"怎么"
+}
+,
+{
+						"source":"就是",
+						"target":"你们"
+}
+,
+{
+						"source":"就是",
+						"target":"还是"
+}
+,
+{
+						"source":"就是",
+						"target":"事"
+}
+,
+{
+						"source":"就是",
+						"target":"1"
+}
+,
+{
+						"source":"就是",
+						"target":"我们"
+}
+,
+{
+						"source":"就是",
+						"target":"微博"
+}
+,
+{
+						"source":"就是",
+						"target":"荒唐"
+}
+,
+{
+						"source":"就是",
+						"target":"少"
+}
+,
+{
+						"source":"就是",
+						"target":"胡"
+}
+,
+{
+						"source":"就是",
+						"target":"做"
+}
+,
+{
+						"source":"就是",
+						"target":"官"
+}
+,
+{
+						"source":"就是",
+						"target":"政府"
+}
+,
+{
+						"source":"就是",
+						"target":"贪腐"
+}
+,
+{
+						"source":"就是",
+						"target":"部长"
+}
+,
+{
+						"source":"就是",
+						"target":"执政"
+}
+,
+{
+						"source":"就是",
+						"target":"官员"
+}
+,
+{
+						"source":"就是",
+						"target":"大家"
+}
+,
+{
+						"source":"就是",
+						"target":"户"
+}
+,
+{
+						"source":"就是",
+						"target":"钱"
+}
+,
+{
+						"source":"就是",
+						"target":"都"
+}
+,
+{
+						"source":"就是",
+						"target":"为了"
+}
+,
+{
+						"source":"就是",
+						"target":"局"
+}
+,
+{
+						"source":"就是",
+						"target":"查"
+}
+,
+{
+						"source":"查",
+						"target":"天"
+}
+,
+{
+						"source":"查",
+						"target":"现在"
+}
+,
+{
+						"source":"查",
+						"target":"都是"
+}
+,
+{
+						"source":"查",
+						"target":"为什么"
+}
+,
+{
+						"source":"查",
+						"target":"百姓"
+}
+,
+{
+						"source":"查",
+						"target":"怎么"
+}
+,
+{
+						"source":"查",
+						"target":"你们"
+}
+,
+{
+						"source":"查",
+						"target":"还是"
+}
+,
+{
+						"source":"查",
+						"target":"事"
+}
+,
+{
+						"source":"查",
+						"target":"1"
+}
+,
+{
+						"source":"查",
+						"target":"我们"
+}
+,
+{
+						"source":"查",
+						"target":"微博"
+}
+,
+{
+						"source":"查",
+						"target":"荒唐"
+}
+,
+{
+						"source":"查",
+						"target":"少"
+}
+,
+{
+						"source":"查",
+						"target":"胡"
+}
+,
+{
+						"source":"查",
+						"target":"做"
+}
+,
+{
+						"source":"查",
+						"target":"就是"
+}
+,
+{
+						"source":"查",
+						"target":"官"
+}
+,
+{
+						"source":"查",
+						"target":"政府"
+}
+,
+{
+						"source":"查",
+						"target":"贪腐"
+}
+,
+{
+						"source":"查",
+						"target":"部长"
+}
+,
+{
+						"source":"查",
+						"target":"执政"
+}
+,
+{
+						"source":"查",
+						"target":"官员"
+}
+,
+{
+						"source":"查",
+						"target":"大家"
+}
+,
+{
+						"source":"查",
+						"target":"户"
+}
+,
+{
+						"source":"查",
+						"target":"钱"
+}
+,
+{
+						"source":"查",
+						"target":"都"
+}
+,
+{
+						"source":"查",
+						"target":"为了"
+}
+,
+{
+						"source":"查",
+						"target":"局"
+}
+,
+{
+						"source":"官",
+						"target":"天"
+}
+,
+{
+						"source":"官",
+						"target":"现在"
+}
+,
+{
+						"source":"官",
+						"target":"都是"
+}
+,
+{
+						"source":"官",
+						"target":"为什么"
+}
+,
+{
+						"source":"官",
+						"target":"百姓"
+}
+,
+{
+						"source":"官",
+						"target":"怎么"
+}
+,
+{
+						"source":"官",
+						"target":"你们"
+}
+,
+{
+						"source":"官",
+						"target":"还是"
+}
+,
+{
+						"source":"官",
+						"target":"事"
+}
+,
+{
+						"source":"官",
+						"target":"1"
+}
+,
+{
+						"source":"官",
+						"target":"我们"
+}
+,
+{
+						"source":"官",
+						"target":"微博"
+}
+,
+{
+						"source":"官",
+						"target":"荒唐"
+}
+,
+{
+						"source":"官",
+						"target":"少"
+}
+,
+{
+						"source":"官",
+						"target":"胡"
+}
+,
+{
+						"source":"官",
+						"target":"做"
+}
+,
+{
+						"source":"官",
+						"target":"就是"
+}
+,
+{
+						"source":"官",
+						"target":"政府"
+}
+,
+{
+						"source":"官",
+						"target":"贪腐"
+}
+,
+{
+						"source":"官",
+						"target":"部长"
+}
+,
+{
+						"source":"官",
+						"target":"执政"
+}
+,
+{
+						"source":"官",
+						"target":"官员"
+}
+,
+{
+						"source":"官",
+						"target":"大家"
+}
+,
+{
+						"source":"官",
+						"target":"户"
+}
+,
+{
+						"source":"官",
+						"target":"钱"
+}
+,
+{
+						"source":"官",
+						"target":"都"
+}
+,
+{
+						"source":"官",
+						"target":"为了"
+}
+,
+{
+						"source":"官",
+						"target":"局"
+}
+,
+{
+						"source":"官",
+						"target":"查"
+}
+,
+{
+						"source":"执政",
+						"target":"天"
+}
+,
+{
+						"source":"执政",
+						"target":"现在"
+}
+,
+{
+						"source":"执政",
+						"target":"都是"
+}
+,
+{
+						"source":"执政",
+						"target":"为什么"
+}
+,
+{
+						"source":"执政",
+						"target":"百姓"
+}
+,
+{
+						"source":"执政",
+						"target":"怎么"
+}
+,
+{
+						"source":"执政",
+						"target":"你们"
+}
+,
+{
+						"source":"执政",
+						"target":"还是"
+}
+,
+{
+						"source":"执政",
+						"target":"事"
+}
+,
+{
+						"source":"执政",
+						"target":"1"
+}
+,
+{
+						"source":"执政",
+						"target":"我们"
+}
+,
+{
+						"source":"执政",
+						"target":"微博"
+}
+,
+{
+						"source":"执政",
+						"target":"荒唐"
+}
+,
+{
+						"source":"执政",
+						"target":"少"
+}
+,
+{
+						"source":"执政",
+						"target":"胡"
+}
+,
+{
+						"source":"执政",
+						"target":"做"
+}
+,
+{
+						"source":"执政",
+						"target":"就是"
+}
+,
+{
+						"source":"执政",
+						"target":"官"
+}
+,
+{
+						"source":"执政",
+						"target":"政府"
+}
+,
+{
+						"source":"执政",
+						"target":"贪腐"
+}
+,
+{
+						"source":"执政",
+						"target":"部长"
+}
+,
+{
+						"source":"执政",
+						"target":"官员"
+}
+,
+{
+						"source":"执政",
+						"target":"大家"
+}
+,
+{
+						"source":"执政",
+						"target":"户"
+}
+,
+{
+						"source":"执政",
+						"target":"钱"
+}
+,
+{
+						"source":"执政",
+						"target":"都"
+}
+,
+{
+						"source":"执政",
+						"target":"为了"
+}
+,
+{
+						"source":"执政",
+						"target":"局"
+}
+,
+{
+						"source":"执政",
+						"target":"查"
+}
+,
+{
+						"source":"户",
+						"target":"天"
+}
+,
+{
+						"source":"户",
+						"target":"现在"
+}
+,
+{
+						"source":"户",
+						"target":"都是"
+}
+,
+{
+						"source":"户",
+						"target":"为什么"
+}
+,
+{
+						"source":"户",
+						"target":"百姓"
+}
+,
+{
+						"source":"户",
+						"target":"怎么"
+}
+,
+{
+						"source":"户",
+						"target":"你们"
+}
+,
+{
+						"source":"户",
+						"target":"还是"
+}
+,
+{
+						"source":"户",
+						"target":"事"
+}
+,
+{
+						"source":"户",
+						"target":"1"
+}
+,
+{
+						"source":"户",
+						"target":"我们"
+}
+,
+{
+						"source":"户",
+						"target":"微博"
+}
+,
+{
+						"source":"户",
+						"target":"荒唐"
+}
+,
+{
+						"source":"户",
+						"target":"少"
+}
+,
+{
+						"source":"户",
+						"target":"胡"
+}
+,
+{
+						"source":"户",
+						"target":"做"
+}
+,
+{
+						"source":"户",
+						"target":"就是"
+}
+,
+{
+						"source":"户",
+						"target":"官"
+}
+,
+{
+						"source":"户",
+						"target":"政府"
+}
+,
+{
+						"source":"户",
+						"target":"贪腐"
+}
+,
+{
+						"source":"户",
+						"target":"部长"
+}
+,
+{
+						"source":"户",
+						"target":"执政"
+}
+,
+{
+						"source":"户",
+						"target":"官员"
+}
+,
+{
+						"source":"户",
+						"target":"大家"
+}
+,
+{
+						"source":"户",
+						"target":"钱"
+}
+,
+{
+						"source":"户",
+						"target":"都"
+}
+,
+{
+						"source":"户",
+						"target":"为了"
+}
+,
+{
+						"source":"户",
+						"target":"局"
+}
+,
+{
+						"source":"户",
+						"target":"查"
+}
+,
+{
+						"source":"官员",
+						"target":"天"
+}
+,
+{
+						"source":"官员",
+						"target":"现在"
+}
+,
+{
+						"source":"官员",
+						"target":"都是"
+}
+,
+{
+						"source":"官员",
+						"target":"为什么"
+}
+,
+{
+						"source":"官员",
+						"target":"百姓"
+}
+,
+{
+						"source":"官员",
+						"target":"怎么"
+}
+,
+{
+						"source":"官员",
+						"target":"你们"
+}
+,
+{
+						"source":"官员",
+						"target":"还是"
+}
+,
+{
+						"source":"官员",
+						"target":"事"
+}
+,
+{
+						"source":"官员",
+						"target":"1"
+}
+,
+{
+						"source":"官员",
+						"target":"我们"
+}
+,
+{
+						"source":"官员",
+						"target":"微博"
+}
+,
+{
+						"source":"官员",
+						"target":"荒唐"
+}
+,
+{
+						"source":"官员",
+						"target":"少"
+}
+,
+{
+						"source":"官员",
+						"target":"胡"
+}
+,
+{
+						"source":"官员",
+						"target":"做"
+}
+,
+{
+						"source":"官员",
+						"target":"就是"
+}
+,
+{
+						"source":"官员",
+						"target":"官"
+}
+,
+{
+						"source":"官员",
+						"target":"政府"
+}
+,
+{
+						"source":"官员",
+						"target":"贪腐"
+}
+,
+{
+						"source":"官员",
+						"target":"部长"
+}
+,
+{
+						"source":"官员",
+						"target":"执政"
+}
+,
+{
+						"source":"官员",
+						"target":"大家"
+}
+,
+{
+						"source":"官员",
+						"target":"户"
+}
+,
+{
+						"source":"官员",
+						"target":"钱"
+}
+,
+{
+						"source":"官员",
+						"target":"都"
+}
+,
+{
+						"source":"官员",
+						"target":"为了"
+}
+,
+{
+						"source":"官员",
+						"target":"局"
+}
+,
+{
+						"source":"官员",
+						"target":"查"
+}
+,
+{
+						"source":"都",
+						"target":"天"
+}
+,
+{
+						"source":"都",
+						"target":"现在"
+}
+,
+{
+						"source":"都",
+						"target":"都是"
+}
+,
+{
+						"source":"都",
+						"target":"为什么"
+}
+,
+{
+						"source":"都",
+						"target":"百姓"
+}
+,
+{
+						"source":"都",
+						"target":"怎么"
+}
+,
+{
+						"source":"都",
+						"target":"你们"
+}
+,
+{
+						"source":"都",
+						"target":"还是"
+}
+,
+{
+						"source":"都",
+						"target":"事"
+}
+,
+{
+						"source":"都",
+						"target":"1"
+}
+,
+{
+						"source":"都",
+						"target":"我们"
+}
+,
+{
+						"source":"都",
+						"target":"微博"
+}
+,
+{
+						"source":"都",
+						"target":"荒唐"
+}
+,
+{
+						"source":"都",
+						"target":"少"
+}
+,
+{
+						"source":"都",
+						"target":"胡"
+}
+,
+{
+						"source":"都",
+						"target":"做"
+}
+,
+{
+						"source":"都",
+						"target":"就是"
+}
+,
+{
+						"source":"都",
+						"target":"官"
+}
+,
+{
+						"source":"都",
+						"target":"政府"
+}
+,
+{
+						"source":"都",
+						"target":"贪腐"
+}
+,
+{
+						"source":"都",
+						"target":"部长"
+}
+,
+{
+						"source":"都",
+						"target":"执政"
+}
+,
+{
+						"source":"都",
+						"target":"官员"
+}
+,
+{
+						"source":"都",
+						"target":"大家"
+}
+,
+{
+						"source":"都",
+						"target":"户"
+}
+,
+{
+						"source":"都",
+						"target":"钱"
+}
+,
+{
+						"source":"都",
+						"target":"为了"
+}
+,
+{
+						"source":"都",
+						"target":"局"
+}
+,
+{
+						"source":"都",
+						"target":"查"
+}
+,
+{
+						"source":"钱",
+						"target":"天"
+}
+,
+{
+						"source":"钱",
+						"target":"现在"
+}
+,
+{
+						"source":"钱",
+						"target":"都是"
+}
+,
+{
+						"source":"钱",
+						"target":"为什么"
+}
+,
+{
+						"source":"钱",
+						"target":"百姓"
+}
+,
+{
+						"source":"钱",
+						"target":"怎么"
+}
+,
+{
+						"source":"钱",
+						"target":"你们"
+}
+,
+{
+						"source":"钱",
+						"target":"还是"
+}
+,
+{
+						"source":"钱",
+						"target":"事"
+}
+,
+{
+						"source":"钱",
+						"target":"1"
+}
+,
+{
+						"source":"钱",
+						"target":"我们"
+}
+,
+{
+						"source":"钱",
+						"target":"微博"
+}
+,
+{
+						"source":"钱",
+						"target":"荒唐"
+}
+,
+{
+						"source":"钱",
+						"target":"少"
+}
+,
+{
+						"source":"钱",
+						"target":"胡"
+}
+,
+{
+						"source":"钱",
+						"target":"做"
+}
+,
+{
+						"source":"钱",
+						"target":"就是"
+}
+,
+{
+						"source":"钱",
+						"target":"官"
+}
+,
+{
+						"source":"钱",
+						"target":"政府"
+}
+,
+{
+						"source":"钱",
+						"target":"贪腐"
+}
+,
+{
+						"source":"钱",
+						"target":"部长"
+}
+,
+{
+						"source":"钱",
+						"target":"执政"
+}
+,
+{
+						"source":"钱",
+						"target":"官员"
+}
+,
+{
+						"source":"钱",
+						"target":"大家"
+}
+,
+{
+						"source":"钱",
+						"target":"户"
+}
+,
+{
+						"source":"钱",
+						"target":"都"
+}
+,
+{
+						"source":"钱",
+						"target":"为了"
+}
+,
+{
+						"source":"钱",
+						"target":"局"
+}
+,
+{
+						"source":"钱",
+						"target":"查"
+}
+,
+{
+						"source":"微博",
+						"target":"天"
+}
+,
+{
+						"source":"微博",
+						"target":"现在"
+}
+,
+{
+						"source":"微博",
+						"target":"都是"
+}
+,
+{
+						"source":"微博",
+						"target":"为什么"
+}
+,
+{
+						"source":"微博",
+						"target":"百姓"
+}
+,
+{
+						"source":"微博",
+						"target":"怎么"
+}
+,
+{
+						"source":"微博",
+						"target":"你们"
+}
+,
+{
+						"source":"微博",
+						"target":"还是"
+}
+,
+{
+						"source":"微博",
+						"target":"事"
+}
+,
+{
+						"source":"微博",
+						"target":"1"
+}
+,
+{
+						"source":"微博",
+						"target":"我们"
+}
+,
+{
+						"source":"微博",
+						"target":"荒唐"
+}
+,
+{
+						"source":"微博",
+						"target":"少"
+}
+,
+{
+						"source":"微博",
+						"target":"胡"
+}
+,
+{
+						"source":"微博",
+						"target":"做"
+}
+,
+{
+						"source":"微博",
+						"target":"就是"
+}
+,
+{
+						"source":"微博",
+						"target":"官"
+}
+,
+{
+						"source":"微博",
+						"target":"政府"
+}
+,
+{
+						"source":"微博",
+						"target":"贪腐"
+}
+,
+{
+						"source":"微博",
+						"target":"部长"
+}
+,
+{
+						"source":"微博",
+						"target":"执政"
+}
+,
+{
+						"source":"微博",
+						"target":"官员"
+}
+,
+{
+						"source":"微博",
+						"target":"大家"
+}
+,
+{
+						"source":"微博",
+						"target":"户"
+}
+,
+{
+						"source":"微博",
+						"target":"钱"
+}
+,
+{
+						"source":"微博",
+						"target":"都"
+}
+,
+{
+						"source":"微博",
+						"target":"为了"
+}
+,
+{
+						"source":"微博",
+						"target":"局"
+}
+,
+{
+						"source":"微博",
+						"target":"查"
+}
+,
+{
+						"source":"百姓",
+						"target":"天"
+}
+,
+{
+						"source":"百姓",
+						"target":"现在"
+}
+,
+{
+						"source":"百姓",
+						"target":"都是"
+}
+,
+{
+						"source":"百姓",
+						"target":"为什么"
+}
+,
+{
+						"source":"百姓",
+						"target":"怎么"
+}
+,
+{
+						"source":"百姓",
+						"target":"你们"
+}
+,
+{
+						"source":"百姓",
+						"target":"还是"
+}
+,
+{
+						"source":"百姓",
+						"target":"事"
+}
+,
+{
+						"source":"百姓",
+						"target":"1"
+}
+,
+{
+						"source":"百姓",
+						"target":"我们"
+}
+,
+{
+						"source":"百姓",
+						"target":"微博"
+}
+,
+{
+						"source":"百姓",
+						"target":"荒唐"
+}
+,
+{
+						"source":"百姓",
+						"target":"少"
+}
+,
+{
+						"source":"百姓",
+						"target":"胡"
+}
+,
+{
+						"source":"百姓",
+						"target":"做"
+}
+,
+{
+						"source":"百姓",
+						"target":"就是"
+}
+,
+{
+						"source":"百姓",
+						"target":"官"
+}
+,
+{
+						"source":"百姓",
+						"target":"政府"
+}
+,
+{
+						"source":"百姓",
+						"target":"贪腐"
+}
+,
+{
+						"source":"百姓",
+						"target":"部长"
+}
+,
+{
+						"source":"百姓",
+						"target":"执政"
+}
+,
+{
+						"source":"百姓",
+						"target":"官员"
+}
+,
+{
+						"source":"百姓",
+						"target":"大家"
+}
+,
+{
+						"source":"百姓",
+						"target":"户"
+}
+,
+{
+						"source":"百姓",
+						"target":"钱"
+}
+,
+{
+						"source":"百姓",
+						"target":"都"
+}
+,
+{
+						"source":"百姓",
+						"target":"为了"
+}
+,
+{
+						"source":"百姓",
+						"target":"局"
+}
+,
+{
+						"source":"百姓",
+						"target":"查"
+}
+,
+{
+						"source":"为什么",
+						"target":"天"
+}
+,
+{
+						"source":"为什么",
+						"target":"现在"
+}
+,
+{
+						"source":"为什么",
+						"target":"都是"
+}
+,
+{
+						"source":"为什么",
+						"target":"百姓"
+}
+,
+{
+						"source":"为什么",
+						"target":"怎么"
+}
+,
+{
+						"source":"为什么",
+						"target":"你们"
+}
+,
+{
+						"source":"为什么",
+						"target":"还是"
+}
+,
+{
+						"source":"为什么",
+						"target":"事"
+}
+,
+{
+						"source":"为什么",
+						"target":"1"
+}
+,
+{
+						"source":"为什么",
+						"target":"我们"
+}
+,
+{
+						"source":"为什么",
+						"target":"微博"
+}
+,
+{
+						"source":"为什么",
+						"target":"荒唐"
+}
+,
+{
+						"source":"为什么",
+						"target":"少"
+}
+,
+{
+						"source":"为什么",
+						"target":"胡"
+}
+,
+{
+						"source":"为什么",
+						"target":"做"
+}
+,
+{
+						"source":"为什么",
+						"target":"就是"
+}
+,
+{
+						"source":"为什么",
+						"target":"官"
+}
+,
+{
+						"source":"为什么",
+						"target":"政府"
+}
+,
+{
+						"source":"为什么",
+						"target":"贪腐"
+}
+,
+{
+						"source":"为什么",
+						"target":"部长"
+}
+,
+{
+						"source":"为什么",
+						"target":"执政"
+}
+,
+{
+						"source":"为什么",
+						"target":"官员"
+}
+,
+{
+						"source":"为什么",
+						"target":"大家"
+}
+,
+{
+						"source":"为什么",
+						"target":"户"
+}
+,
+{
+						"source":"为什么",
+						"target":"钱"
+}
+,
+{
+						"source":"为什么",
+						"target":"都"
+}
+,
+{
+						"source":"为什么",
+						"target":"为了"
+}
+,
+{
+						"source":"为什么",
+						"target":"局"
+}
+,
+{
+						"source":"为什么",
+						"target":"查"
+}
+,
+{
+						"source":"荒唐",
+						"target":"天"
+}
+,
+{
+						"source":"荒唐",
+						"target":"现在"
+}
+,
+{
+						"source":"荒唐",
+						"target":"都是"
+}
+,
+{
+						"source":"荒唐",
+						"target":"为什么"
+}
+,
+{
+						"source":"荒唐",
+						"target":"百姓"
+}
+,
+{
+						"source":"荒唐",
+						"target":"怎么"
+}
+,
+{
+						"source":"荒唐",
+						"target":"你们"
+}
+,
+{
+						"source":"荒唐",
+						"target":"还是"
+}
+,
+{
+						"source":"荒唐",
+						"target":"事"
+}
+,
+{
+						"source":"荒唐",
+						"target":"1"
+}
+,
+{
+						"source":"荒唐",
+						"target":"我们"
+}
+,
+{
+						"source":"荒唐",
+						"target":"微博"
+}
+,
+{
+						"source":"荒唐",
+						"target":"少"
+}
+,
+{
+						"source":"荒唐",
+						"target":"胡"
+}
+,
+{
+						"source":"荒唐",
+						"target":"做"
+}
+,
+{
+						"source":"荒唐",
+						"target":"就是"
+}
+,
+{
+						"source":"荒唐",
+						"target":"官"
+}
+,
+{
+						"source":"荒唐",
+						"target":"政府"
+}
+,
+{
+						"source":"荒唐",
+						"target":"贪腐"
+}
+,
+{
+						"source":"荒唐",
+						"target":"部长"
+}
+,
+{
+						"source":"荒唐",
+						"target":"执政"
+}
+,
+{
+						"source":"荒唐",
+						"target":"官员"
+}
+,
+{
+						"source":"荒唐",
+						"target":"大家"
+}
+,
+{
+						"source":"荒唐",
+						"target":"户"
+}
+,
+{
+						"source":"荒唐",
+						"target":"钱"
+}
+,
+{
+						"source":"荒唐",
+						"target":"都"
+}
+,
+{
+						"source":"荒唐",
+						"target":"为了"
+}
+,
+{
+						"source":"荒唐",
+						"target":"局"
+}
+,
+{
+						"source":"荒唐",
+						"target":"查"
+}
+,
+{
+						"source":"胡",
+						"target":"天"
+}
+,
+{
+						"source":"胡",
+						"target":"现在"
+}
+,
+{
+						"source":"胡",
+						"target":"都是"
+}
+,
+{
+						"source":"胡",
+						"target":"为什么"
+}
+,
+{
+						"source":"胡",
+						"target":"百姓"
+}
+,
+{
+						"source":"胡",
+						"target":"怎么"
+}
+,
+{
+						"source":"胡",
+						"target":"你们"
+}
+,
+{
+						"source":"胡",
+						"target":"还是"
+}
+,
+{
+						"source":"胡",
+						"target":"事"
+}
+,
+{
+						"source":"胡",
+						"target":"1"
+}
+,
+{
+						"source":"胡",
+						"target":"我们"
+}
+,
+{
+						"source":"胡",
+						"target":"微博"
+}
+,
+{
+						"source":"胡",
+						"target":"荒唐"
+}
+,
+{
+						"source":"胡",
+						"target":"少"
+}
+,
+{
+						"source":"胡",
+						"target":"做"
+}
+,
+{
+						"source":"胡",
+						"target":"就是"
+}
+,
+{
+						"source":"胡",
+						"target":"官"
+}
+,
+{
+						"source":"胡",
+						"target":"政府"
+}
+,
+{
+						"source":"胡",
+						"target":"贪腐"
+}
+,
+{
+						"source":"胡",
+						"target":"部长"
+}
+,
+{
+						"source":"胡",
+						"target":"执政"
+}
+,
+{
+						"source":"胡",
+						"target":"官员"
+}
+,
+{
+						"source":"胡",
+						"target":"大家"
+}
+,
+{
+						"source":"胡",
+						"target":"户"
+}
+,
+{
+						"source":"胡",
+						"target":"钱"
+}
+,
+{
+						"source":"胡",
+						"target":"都"
+}
+,
+{
+						"source":"胡",
+						"target":"为了"
+}
+,
+{
+						"source":"胡",
+						"target":"局"
+}
+,
+{
+						"source":"胡",
+						"target":"查"
+}
+,
+{
+						"source":"政府",
+						"target":"天"
+}
+,
+{
+						"source":"政府",
+						"target":"现在"
+}
+,
+{
+						"source":"政府",
+						"target":"都是"
+}
+,
+{
+						"source":"政府",
+						"target":"为什么"
+}
+,
+{
+						"source":"政府",
+						"target":"百姓"
+}
+,
+{
+						"source":"政府",
+						"target":"怎么"
+}
+,
+{
+						"source":"政府",
+						"target":"你们"
+}
+,
+{
+						"source":"政府",
+						"target":"还是"
+}
+,
+{
+						"source":"政府",
+						"target":"事"
+}
+,
+{
+						"source":"政府",
+						"target":"1"
+}
+,
+{
+						"source":"政府",
+						"target":"我们"
+}
+,
+{
+						"source":"政府",
+						"target":"微博"
+}
+,
+{
+						"source":"政府",
+						"target":"荒唐"
+}
+,
+{
+						"source":"政府",
+						"target":"少"
+}
+,
+{
+						"source":"政府",
+						"target":"胡"
+}
+,
+{
+						"source":"政府",
+						"target":"做"
+}
+,
+{
+						"source":"政府",
+						"target":"就是"
+}
+,
+{
+						"source":"政府",
+						"target":"官"
+}
+,
+{
+						"source":"政府",
+						"target":"贪腐"
+}
+,
+{
+						"source":"政府",
+						"target":"部长"
+}
+,
+{
+						"source":"政府",
+						"target":"执政"
+}
+,
+{
+						"source":"政府",
+						"target":"官员"
+}
+,
+{
+						"source":"政府",
+						"target":"大家"
+}
+,
+{
+						"source":"政府",
+						"target":"户"
+}
+,
+{
+						"source":"政府",
+						"target":"钱"
+}
+,
+{
+						"source":"政府",
+						"target":"都"
+}
+,
+{
+						"source":"政府",
+						"target":"为了"
+}
+,
+{
+						"source":"政府",
+						"target":"局"
+}
+,
+{
+						"source":"政府",
+						"target":"查"
+}
+,
+{
+						"source":"少",
+						"target":"天"
+}
+,
+{
+						"source":"少",
+						"target":"现在"
+}
+,
+{
+						"source":"少",
+						"target":"都是"
+}
+,
+{
+						"source":"少",
+						"target":"为什么"
+}
+,
+{
+						"source":"少",
+						"target":"百姓"
+}
+,
+{
+						"source":"少",
+						"target":"怎么"
+}
+,
+{
+						"source":"少",
+						"target":"你们"
+}
+,
+{
+						"source":"少",
+						"target":"还是"
+}
+,
+{
+						"source":"少",
+						"target":"事"
+}
+,
+{
+						"source":"少",
+						"target":"1"
+}
+,
+{
+						"source":"少",
+						"target":"我们"
+}
+,
+{
+						"source":"少",
+						"target":"微博"
+}
+,
+{
+						"source":"少",
+						"target":"荒唐"
+}
+,
+{
+						"source":"少",
+						"target":"胡"
+}
+,
+{
+						"source":"少",
+						"target":"做"
+}
+,
+{
+						"source":"少",
+						"target":"就是"
+}
+,
+{
+						"source":"少",
+						"target":"官"
+}
+,
+{
+						"source":"少",
+						"target":"政府"
+}
+,
+{
+						"source":"少",
+						"target":"贪腐"
+}
+,
+{
+						"source":"少",
+						"target":"部长"
+}
+,
+{
+						"source":"少",
+						"target":"执政"
+}
+,
+{
+						"source":"少",
+						"target":"官员"
+}
+,
+{
+						"source":"少",
+						"target":"大家"
+}
+,
+{
+						"source":"少",
+						"target":"户"
+}
+,
+{
+						"source":"少",
+						"target":"钱"
+}
+,
+{
+						"source":"少",
+						"target":"都"
+}
+,
+{
+						"source":"少",
+						"target":"为了"
+}
+,
+{
+						"source":"少",
+						"target":"局"
+}
+,
+{
+						"source":"少",
+						"target":"查"
+}
+,
+{
+						"source":"怎么",
+						"target":"天"
+}
+,
+{
+						"source":"怎么",
+						"target":"现在"
+}
+,
+{
+						"source":"怎么",
+						"target":"都是"
+}
+,
+{
+						"source":"怎么",
+						"target":"为什么"
+}
+,
+{
+						"source":"怎么",
+						"target":"百姓"
+}
+,
+{
+						"source":"怎么",
+						"target":"你们"
+}
+,
+{
+						"source":"怎么",
+						"target":"还是"
+}
+,
+{
+						"source":"怎么",
+						"target":"事"
+}
+,
+{
+						"source":"怎么",
+						"target":"1"
+}
+,
+{
+						"source":"怎么",
+						"target":"我们"
+}
+,
+{
+						"source":"怎么",
+						"target":"微博"
+}
+,
+{
+						"source":"怎么",
+						"target":"荒唐"
+}
+,
+{
+						"source":"怎么",
+						"target":"少"
+}
+,
+{
+						"source":"怎么",
+						"target":"胡"
+}
+,
+{
+						"source":"怎么",
+						"target":"做"
+}
+,
+{
+						"source":"怎么",
+						"target":"就是"
+}
+,
+{
+						"source":"怎么",
+						"target":"官"
+}
+,
+{
+						"source":"怎么",
+						"target":"政府"
+}
+,
+{
+						"source":"怎么",
+						"target":"贪腐"
+}
+,
+{
+						"source":"怎么",
+						"target":"部长"
+}
+,
+{
+						"source":"怎么",
+						"target":"执政"
+}
+,
+{
+						"source":"怎么",
+						"target":"官员"
+}
+,
+{
+						"source":"怎么",
+						"target":"大家"
+}
+,
+{
+						"source":"怎么",
+						"target":"户"
+}
+,
+{
+						"source":"怎么",
+						"target":"钱"
+}
+,
+{
+						"source":"怎么",
+						"target":"都"
+}
+,
+{
+						"source":"怎么",
+						"target":"为了"
+}
+,
+{
+						"source":"怎么",
+						"target":"局"
+}
+,
+{
+						"source":"怎么",
+						"target":"查"
+}
+,
+{
+						"source":"为了",
+						"target":"天"
+}
+,
+{
+						"source":"为了",
+						"target":"现在"
+}
+,
+{
+						"source":"为了",
+						"target":"都是"
+}
+,
+{
+						"source":"为了",
+						"target":"为什么"
+}
+,
+{
+						"source":"为了",
+						"target":"百姓"
+}
+,
+{
+						"source":"为了",
+						"target":"怎么"
+}
+,
+{
+						"source":"为了",
+						"target":"你们"
+}
+,
+{
+						"source":"为了",
+						"target":"还是"
+}
+,
+{
+						"source":"为了",
+						"target":"事"
+}
+,
+{
+						"source":"为了",
+						"target":"1"
+}
+,
+{
+						"source":"为了",
+						"target":"我们"
+}
+,
+{
+						"source":"为了",
+						"target":"微博"
+}
+,
+{
+						"source":"为了",
+						"target":"荒唐"
+}
+,
+{
+						"source":"为了",
+						"target":"少"
+}
+,
+{
+						"source":"为了",
+						"target":"胡"
+}
+,
+{
+						"source":"为了",
+						"target":"做"
+}
+,
+{
+						"source":"为了",
+						"target":"就是"
+}
+,
+{
+						"source":"为了",
+						"target":"官"
+}
+,
+{
+						"source":"为了",
+						"target":"政府"
+}
+,
+{
+						"source":"为了",
+						"target":"贪腐"
+}
+,
+{
+						"source":"为了",
+						"target":"部长"
+}
+,
+{
+						"source":"为了",
+						"target":"执政"
+}
+,
+{
+						"source":"为了",
+						"target":"官员"
+}
+,
+{
+						"source":"为了",
+						"target":"大家"
+}
+,
+{
+						"source":"为了",
+						"target":"户"
+}
+,
+{
+						"source":"为了",
+						"target":"钱"
+}
+,
+{
+						"source":"为了",
+						"target":"都"
+}
+,
+{
+						"source":"为了",
+						"target":"局"
+}
+,
+{
+						"source":"为了",
+						"target":"查"
+}
+,
+{
+						"source":"还是",
+						"target":"天"
+}
+,
+{
+						"source":"还是",
+						"target":"现在"
+}
+,
+{
+						"source":"还是",
+						"target":"都是"
+}
+,
+{
+						"source":"还是",
+						"target":"为什么"
+}
+,
+{
+						"source":"还是",
+						"target":"百姓"
+}
+,
+{
+						"source":"还是",
+						"target":"怎么"
+}
+,
+{
+						"source":"还是",
+						"target":"你们"
+}
+,
+{
+						"source":"还是",
+						"target":"事"
+}
+,
+{
+						"source":"还是",
+						"target":"1"
+}
+,
+{
+						"source":"还是",
+						"target":"我们"
+}
+,
+{
+						"source":"还是",
+						"target":"微博"
+}
+,
+{
+						"source":"还是",
+						"target":"荒唐"
+}
+,
+{
+						"source":"还是",
+						"target":"少"
+}
+,
+{
+						"source":"还是",
+						"target":"胡"
+}
+,
+{
+						"source":"还是",
+						"target":"做"
+}
+,
+{
+						"source":"还是",
+						"target":"就是"
+}
+,
+{
+						"source":"还是",
+						"target":"官"
+}
+,
+{
+						"source":"还是",
+						"target":"政府"
+}
+,
+{
+						"source":"还是",
+						"target":"贪腐"
+}
+,
+{
+						"source":"还是",
+						"target":"部长"
+}
+,
+{
+						"source":"还是",
+						"target":"执政"
+}
+,
+{
+						"source":"还是",
+						"target":"官员"
+}
+,
+{
+						"source":"还是",
+						"target":"大家"
+}
+,
+{
+						"source":"还是",
+						"target":"户"
+}
+,
+{
+						"source":"还是",
+						"target":"钱"
+}
+,
+{
+						"source":"还是",
+						"target":"都"
+}
+,
+{
+						"source":"还是",
+						"target":"为了"
+}
+,
+{
+						"source":"还是",
+						"target":"局"
+}
+,
+{
+						"source":"还是",
+						"target":"查"
+}
+,
+{
+						"source":"大家",
+						"target":"天"
+}
+,
+{
+						"source":"大家",
+						"target":"现在"
+}
+,
+{
+						"source":"大家",
+						"target":"都是"
+}
+,
+{
+						"source":"大家",
+						"target":"为什么"
+}
+,
+{
+						"source":"大家",
+						"target":"百姓"
+}
+,
+{
+						"source":"大家",
+						"target":"怎么"
+}
+,
+{
+						"source":"大家",
+						"target":"你们"
+}
+,
+{
+						"source":"大家",
+						"target":"还是"
+}
+,
+{
+						"source":"大家",
+						"target":"事"
+}
+,
+{
+						"source":"大家",
+						"target":"1"
+}
+,
+{
+						"source":"大家",
+						"target":"我们"
+}
+,
+{
+						"source":"大家",
+						"target":"微博"
+}
+,
+{
+						"source":"大家",
+						"target":"荒唐"
+}
+,
+{
+						"source":"大家",
+						"target":"少"
+}
+,
+{
+						"source":"大家",
+						"target":"胡"
+}
+,
+{
+						"source":"大家",
+						"target":"做"
+}
+,
+{
+						"source":"大家",
+						"target":"就是"
+}
+,
+{
+						"source":"大家",
+						"target":"官"
+}
+,
+{
+						"source":"大家",
+						"target":"政府"
+}
+,
+{
+						"source":"大家",
+						"target":"贪腐"
+}
+,
+{
+						"source":"大家",
+						"target":"部长"
+}
+,
+{
+						"source":"大家",
+						"target":"执政"
+}
+,
+{
+						"source":"大家",
+						"target":"官员"
+}
+,
+{
+						"source":"大家",
+						"target":"户"
+}
+,
+{
+						"source":"大家",
+						"target":"钱"
+}
+,
+{
+						"source":"大家",
+						"target":"都"
+}
+,
+{
+						"source":"大家",
+						"target":"为了"
+}
+,
+{
+						"source":"大家",
+						"target":"局"
+}
+,
+{
+						"source":"大家",
+						"target":"查"
+}
+,
+{
+						"source":"1",
+						"target":"天"
+}
+,
+{
+						"source":"1",
+						"target":"现在"
+}
+,
+{
+						"source":"1",
+						"target":"都是"
+}
+,
+{
+						"source":"1",
+						"target":"为什么"
+}
+,
+{
+						"source":"1",
+						"target":"百姓"
+}
+,
+{
+						"source":"1",
+						"target":"怎么"
+}
+,
+{
+						"source":"1",
+						"target":"你们"
+}
+,
+{
+						"source":"1",
+						"target":"还是"
+}
+,
+{
+						"source":"1",
+						"target":"事"
+}
+,
+{
+						"source":"1",
+						"target":"我们"
+}
+,
+{
+						"source":"1",
+						"target":"微博"
+}
+,
+{
+						"source":"1",
+						"target":"荒唐"
+}
+,
+{
+						"source":"1",
+						"target":"少"
+}
+,
+{
+						"source":"1",
+						"target":"胡"
+}
+,
+{
+						"source":"1",
+						"target":"做"
+}
+,
+{
+						"source":"1",
+						"target":"就是"
+}
+,
+{
+						"source":"1",
+						"target":"官"
+}
+,
+{
+						"source":"1",
+						"target":"政府"
+}
+,
+{
+						"source":"1",
+						"target":"贪腐"
+}
+,
+{
+						"source":"1",
+						"target":"部长"
+}
+,
+{
+						"source":"1",
+						"target":"执政"
+}
+,
+{
+						"source":"1",
+						"target":"官员"
+}
+,
+{
+						"source":"1",
+						"target":"大家"
+}
+,
+{
+						"source":"1",
+						"target":"户"
+}
+,
+{
+						"source":"1",
+						"target":"钱"
+}
+,
+{
+						"source":"1",
+						"target":"都"
+}
+,
+{
+						"source":"1",
+						"target":"为了"
+}
+,
+{
+						"source":"1",
+						"target":"局"
+}
+,
+{
+						"source":"1",
+						"target":"查"
+}
+,
+{
+						"source":"你们",
+						"target":"天"
+}
+,
+{
+						"source":"你们",
+						"target":"现在"
+}
+,
+{
+						"source":"你们",
+						"target":"都是"
+}
+,
+{
+						"source":"你们",
+						"target":"为什么"
+}
+,
+{
+						"source":"你们",
+						"target":"百姓"
+}
+,
+{
+						"source":"你们",
+						"target":"怎么"
+}
+,
+{
+						"source":"你们",
+						"target":"还是"
+}
+,
+{
+						"source":"你们",
+						"target":"事"
+}
+,
+{
+						"source":"你们",
+						"target":"1"
+}
+,
+{
+						"source":"你们",
+						"target":"我们"
+}
+,
+{
+						"source":"你们",
+						"target":"微博"
+}
+,
+{
+						"source":"你们",
+						"target":"荒唐"
+}
+,
+{
+						"source":"你们",
+						"target":"少"
+}
+,
+{
+						"source":"你们",
+						"target":"胡"
+}
+,
+{
+						"source":"你们",
+						"target":"做"
+}
+,
+{
+						"source":"你们",
+						"target":"就是"
+}
+,
+{
+						"source":"你们",
+						"target":"官"
+}
+,
+{
+						"source":"你们",
+						"target":"政府"
+}
+,
+{
+						"source":"你们",
+						"target":"贪腐"
+}
+,
+{
+						"source":"你们",
+						"target":"部长"
+}
+,
+{
+						"source":"你们",
+						"target":"执政"
+}
+,
+{
+						"source":"你们",
+						"target":"官员"
+}
+,
+{
+						"source":"你们",
+						"target":"大家"
+}
+,
+{
+						"source":"你们",
+						"target":"户"
+}
+,
+{
+						"source":"你们",
+						"target":"钱"
+}
+,
+{
+						"source":"你们",
+						"target":"都"
+}
+,
+{
+						"source":"你们",
+						"target":"为了"
+}
+,
+{
+						"source":"你们",
+						"target":"局"
+}
+,
+{
+						"source":"你们",
+						"target":"查"
+}
+,
+{
+						"source":"现在",
+						"target":"天"
+}
+,
+{
+						"source":"现在",
+						"target":"都是"
+}
+,
+{
+						"source":"现在",
+						"target":"为什么"
+}
+,
+{
+						"source":"现在",
+						"target":"百姓"
+}
+,
+{
+						"source":"现在",
+						"target":"怎么"
+}
+,
+{
+						"source":"现在",
+						"target":"你们"
+}
+,
+{
+						"source":"现在",
+						"target":"还是"
+}
+,
+{
+						"source":"现在",
+						"target":"事"
+}
+,
+{
+						"source":"现在",
+						"target":"1"
+}
+,
+{
+						"source":"现在",
+						"target":"我们"
+}
+,
+{
+						"source":"现在",
+						"target":"微博"
+}
+,
+{
+						"source":"现在",
+						"target":"荒唐"
+}
+,
+{
+						"source":"现在",
+						"target":"少"
+}
+,
+{
+						"source":"现在",
+						"target":"胡"
+}
+,
+{
+						"source":"现在",
+						"target":"做"
+}
+,
+{
+						"source":"现在",
+						"target":"就是"
+}
+,
+{
+						"source":"现在",
+						"target":"官"
+}
+,
+{
+						"source":"现在",
+						"target":"政府"
+}
+,
+{
+						"source":"现在",
+						"target":"贪腐"
+}
+,
+{
+						"source":"现在",
+						"target":"部长"
+}
+,
+{
+						"source":"现在",
+						"target":"执政"
+}
+,
+{
+						"source":"现在",
+						"target":"官员"
+}
+,
+{
+						"source":"现在",
+						"target":"大家"
+}
+,
+{
+						"source":"现在",
+						"target":"户"
+}
+,
+{
+						"source":"现在",
+						"target":"钱"
+}
+,
+{
+						"source":"现在",
+						"target":"都"
+}
+,
+{
+						"source":"现在",
+						"target":"为了"
+}
+,
+{
+						"source":"现在",
+						"target":"局"
+}
+,
+{
+						"source":"现在",
+						"target":"查"
+}
+,
+{
+						"source":"局",
+						"target":"天"
+}
+,
+{
+						"source":"局",
+						"target":"现在"
+}
+,
+{
+						"source":"局",
+						"target":"都是"
+}
+,
+{
+						"source":"局",
+						"target":"为什么"
+}
+,
+{
+						"source":"局",
+						"target":"百姓"
+}
+,
+{
+						"source":"局",
+						"target":"怎么"
+}
+,
+{
+						"source":"局",
+						"target":"你们"
+}
+,
+{
+						"source":"局",
+						"target":"还是"
+}
+,
+{
+						"source":"局",
+						"target":"事"
+}
+,
+{
+						"source":"局",
+						"target":"1"
+}
+,
+{
+						"source":"局",
+						"target":"我们"
+}
+,
+{
+						"source":"局",
+						"target":"微博"
+}
+,
+{
+						"source":"局",
+						"target":"荒唐"
+}
+,
+{
+						"source":"局",
+						"target":"少"
+}
+,
+{
+						"source":"局",
+						"target":"胡"
+}
+,
+{
+						"source":"局",
+						"target":"做"
+}
+,
+{
+						"source":"局",
+						"target":"就是"
+}
+,
+{
+						"source":"局",
+						"target":"官"
+}
+,
+{
+						"source":"局",
+						"target":"政府"
+}
+,
+{
+						"source":"局",
+						"target":"贪腐"
+}
+,
+{
+						"source":"局",
+						"target":"部长"
+}
+,
+{
+						"source":"局",
+						"target":"执政"
+}
+,
+{
+						"source":"局",
+						"target":"官员"
+}
+,
+{
+						"source":"局",
+						"target":"大家"
+}
+,
+{
+						"source":"局",
+						"target":"户"
+}
+,
+{
+						"source":"局",
+						"target":"钱"
+}
+,
+{
+						"source":"局",
+						"target":"都"
+}
+,
+{
+						"source":"局",
+						"target":"为了"
+}
+,
+{
+						"source":"局",
+						"target":"查"
+}
+,
+{
+						"source":"事",
+						"target":"天"
+}
+,
+{
+						"source":"事",
+						"target":"现在"
+}
+,
+{
+						"source":"事",
+						"target":"都是"
+}
+,
+{
+						"source":"事",
+						"target":"为什么"
+}
+,
+{
+						"source":"事",
+						"target":"百姓"
+}
+,
+{
+						"source":"事",
+						"target":"怎么"
+}
+,
+{
+						"source":"事",
+						"target":"你们"
+}
+,
+{
+						"source":"事",
+						"target":"还是"
+}
+,
+{
+						"source":"事",
+						"target":"1"
+}
+,
+{
+						"source":"事",
+						"target":"我们"
+}
+,
+{
+						"source":"事",
+						"target":"微博"
+}
+,
+{
+						"source":"事",
+						"target":"荒唐"
+}
+,
+{
+						"source":"事",
+						"target":"少"
+}
+,
+{
+						"source":"事",
+						"target":"胡"
+}
+,
+{
+						"source":"事",
+						"target":"做"
+}
+,
+{
+						"source":"事",
+						"target":"就是"
+}
+,
+{
+						"source":"事",
+						"target":"官"
+}
+,
+{
+						"source":"事",
+						"target":"政府"
+}
+,
+{
+						"source":"事",
+						"target":"贪腐"
+}
+,
+{
+						"source":"事",
+						"target":"部长"
+}
+,
+{
+						"source":"事",
+						"target":"执政"
+}
+,
+{
+						"source":"事",
+						"target":"官员"
+}
+,
+{
+						"source":"事",
+						"target":"大家"
+}
+,
+{
+						"source":"事",
+						"target":"户"
+}
+,
+{
+						"source":"事",
+						"target":"钱"
+}
+,
+{
+						"source":"事",
+						"target":"都"
+}
+,
+{
+						"source":"事",
+						"target":"为了"
+}
+,
+{
+						"source":"事",
+						"target":"局"
+}
+,
+{
+						"source":"事",
+						"target":"查"
+}
+,
+{
+						"source":"做",
+						"target":"天"
+}
+,
+{
+						"source":"做",
+						"target":"现在"
+}
+,
+{
+						"source":"做",
+						"target":"都是"
+}
+,
+{
+						"source":"做",
+						"target":"为什么"
+}
+,
+{
+						"source":"做",
+						"target":"百姓"
+}
+,
+{
+						"source":"做",
+						"target":"怎么"
+}
+,
+{
+						"source":"做",
+						"target":"你们"
+}
+,
+{
+						"source":"做",
+						"target":"还是"
+}
+,
+{
+						"source":"做",
+						"target":"事"
+}
+,
+{
+						"source":"做",
+						"target":"1"
+}
+,
+{
+						"source":"做",
+						"target":"我们"
+}
+,
+{
+						"source":"做",
+						"target":"微博"
+}
+,
+{
+						"source":"做",
+						"target":"荒唐"
+}
+,
+{
+						"source":"做",
+						"target":"少"
+}
+,
+{
+						"source":"做",
+						"target":"胡"
+}
+,
+{
+						"source":"做",
+						"target":"就是"
+}
+,
+{
+						"source":"做",
+						"target":"官"
+}
+,
+{
+						"source":"做",
+						"target":"政府"
+}
+,
+{
+						"source":"做",
+						"target":"贪腐"
+}
+,
+{
+						"source":"做",
+						"target":"部长"
+}
+,
+{
+						"source":"做",
+						"target":"执政"
+}
+,
+{
+						"source":"做",
+						"target":"官员"
+}
+,
+{
+						"source":"做",
+						"target":"大家"
+}
+,
+{
+						"source":"做",
+						"target":"户"
+}
+,
+{
+						"source":"做",
+						"target":"钱"
+}
+,
+{
+						"source":"做",
+						"target":"都"
+}
+,
+{
+						"source":"做",
+						"target":"为了"
+}
+,
+{
+						"source":"做",
+						"target":"局"
+}
+,
+{
+						"source":"做",
+						"target":"查"
+}
+,
+{
+						"source":"都是",
+						"target":"天"
+}
+,
+{
+						"source":"都是",
+						"target":"现在"
+}
+,
+{
+						"source":"都是",
+						"target":"为什么"
+}
+,
+{
+						"source":"都是",
+						"target":"百姓"
+}
+,
+{
+						"source":"都是",
+						"target":"怎么"
+}
+,
+{
+						"source":"都是",
+						"target":"你们"
+}
+,
+{
+						"source":"都是",
+						"target":"还是"
+}
+,
+{
+						"source":"都是",
+						"target":"事"
+}
+,
+{
+						"source":"都是",
+						"target":"1"
+}
+,
+{
+						"source":"都是",
+						"target":"我们"
+}
+,
+{
+						"source":"都是",
+						"target":"微博"
+}
+,
+{
+						"source":"都是",
+						"target":"荒唐"
+}
+,
+{
+						"source":"都是",
+						"target":"少"
+}
+,
+{
+						"source":"都是",
+						"target":"胡"
+}
+,
+{
+						"source":"都是",
+						"target":"做"
+}
+,
+{
+						"source":"都是",
+						"target":"就是"
+}
+,
+{
+						"source":"都是",
+						"target":"官"
+}
+,
+{
+						"source":"都是",
+						"target":"政府"
+}
+,
+{
+						"source":"都是",
+						"target":"贪腐"
+}
+,
+{
+						"source":"都是",
+						"target":"部长"
+}
+,
+{
+						"source":"都是",
+						"target":"执政"
+}
+,
+{
+						"source":"都是",
+						"target":"官员"
+}
+,
+{
+						"source":"都是",
+						"target":"大家"
+}
+,
+{
+						"source":"都是",
+						"target":"户"
+}
+,
+{
+						"source":"都是",
+						"target":"钱"
+}
+,
+{
+						"source":"都是",
+						"target":"都"
+}
+,
+{
+						"source":"都是",
+						"target":"为了"
+}
+,
+{
+						"source":"都是",
+						"target":"局"
+}
+,
+{
+						"source":"都是",
+						"target":"查"
+}
+{
+						"source":"部长",
+						"target":"天"
+}
+,
+{
+						"source":"部长",
+						"target":"现在"
+}
+,
+{
+						"source":"部长",
+						"target":"都是"
+}
+,
+{
+						"source":"部长",
+						"target":"为什么"
+}
+,
+{
+						"source":"部长",
+						"target":"百姓"
+}
+,
+{
+						"source":"部长",
+						"target":"怎么"
+}
+,
+{
+						"source":"部长",
+						"target":"你们"
+}
+,
+{
+						"source":"部长",
+						"target":"还是"
+}
+,
+{
+						"source":"部长",
+						"target":"事"
+}
+,
+{
+						"source":"部长",
+						"target":"1"
+}
+,
+{
+						"source":"部长",
+						"target":"我们"
+}
+,
+{
+						"source":"部长",
+						"target":"微博"
+}
+,
+{
+						"source":"部长",
+						"target":"荒唐"
+}
+,
+{
+						"source":"部长",
+						"target":"少"
+}
+,
+{
+						"source":"部长",
+						"target":"胡"
+}
+,
+{
+						"source":"部长",
+						"target":"做"
+}
+,
+{
+						"source":"部长",
+						"target":"就是"
+}
+,
+{
+						"source":"部长",
+						"target":"官"
+}
+,
+{
+						"source":"部长",
+						"target":"政府"
+}
+,
+{
+						"source":"部长",
+						"target":"贪腐"
+}
+,
+{
+						"source":"部长",
+						"target":"执政"
+}
+,
+{
+						"source":"部长",
+						"target":"官员"
+}
+,
+{
+						"source":"部长",
+						"target":"大家"
+}
+,
+{
+						"source":"部长",
+						"target":"户"
+}
+,
+{
+						"source":"部长",
+						"target":"钱"
+}
+,
+{
+						"source":"部长",
+						"target":"都"
+}
+,
+{
+						"source":"部长",
+						"target":"为了"
+}
+,
+{
+						"source":"部长",
+						"target":"局"
+}
+,
+{
+						"source":"部长",
+						"target":"查"
+}
+]
+}

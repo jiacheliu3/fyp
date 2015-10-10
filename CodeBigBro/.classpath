@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry exported="true" kind="con" path="GROOVY_SUPPORT"/>
+	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/src/external/jcseg/jcseg-analyzer-1.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/src/external/jcseg/jcseg-core-1.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/src/external/jcseg/jcseg-solr-1.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/src/external/Jama-1.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/Desktop/Course/weibo/gephi-toolkit-0.8.7-all/gephi-toolkit.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/lib/fnlp-core-2.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/lib/fnlp-app-2.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/lib/fnlp-demo-2.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/lib/fnlp-dev-2.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/lib/fnlp-train-2.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/lib/fnlp-master/libs/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/lib/fnlp-master/libs/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/lib/fnlp-master/libs/trove4j-3.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/lib/ansj_seg-3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/lib/tree_split-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/lib/nlp-lang-1.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/lib/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/lib/je-5.0.73.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/lib/json-20140107.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/lib/jsoup-1.7.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/lib/juniversalchardet-1.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/lib/WebCollector-2.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/lib/WebCollector-master/webcollector-2.12-bin/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/lib/WebCollector-master/webcollector-2.12-bin/slf4j-api-1.7.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/lib/WebCollector-master/webcollector-2.12-bin/slf4j-log4j12-1.7.9.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tassadar/eclipse/CodeBigBro/WebContent/WEB-INF/lib/standard-1.1.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

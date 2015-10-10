@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="1" time="0.003" errors="0" skipped="0" tests="1" name="cc.mallet.types.tests.TestPagedInstanceList">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\bin"/>
+    <property name="java.vm.version" value="24.65-b04"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Tassadar\eclipse\CodeBigBro\lib\mallet-2.0.8RC2"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Tassadar\eclipse\CodeBigBro\lib\mallet-2.0.8RC2"/>
+    <property name="java.runtime.version" value="1.7.0_67-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\Users\Tassadar\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="F:\Eclipse 3.4.2\Eclipse_CS3343\apache-maven-3.3.3-bin\apache-maven-3.3.3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:\Database\product\11.2.0\dbhome_2\bin;c:\Program Files (x86)\AMD APP\bin\x86_64;c:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;;C:\Program Files (x86)\GNU\GnuPG\pub;%java_home%\bin;C:\Program Files (x86)\Skype\Phone\;C:\Users\Tassadar\AppData\Local\Programs\Python\Python35-32\Scripts\;C:\Users\Tassadar\AppData\Local\Programs\Python\Python35-32\;C:\ProgramData\Oracle\Java\javapath;F:\Database\product\11.2.0\dbhome_2\bin;c:\Program Files (x86)\AMD APP\bin\x86_64;c:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;;C:\Program Files (x86)\GNU\GnuPG\pub;C:\Program Files (x86)\Skype\Phone\;F:\Eclipse 3.4.2\grails-2.5.0\bin;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\bin;F:\Eclipse 3.4.2\Eclipse_CS3343\apache-maven-3.3.3-bin\apache-maven-3.3.3\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Tassadar"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="Tassadar"/>
+    <property name="java.class.path" value="F:\Eclipse 3.4.2\Eclipse_CS3343\apache-maven-3.3.3-bin\apache-maven-3.3.3\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.7.0_67"/>
+    <property name="java.ext.dirs" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\resources.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\rt.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\sunrsasign.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\jsse.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\jce.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\charsets.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\jfr.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="F:\Eclipse 3.4.2\Eclipse_CS3343\apache-maven-3.3.3-bin\apache-maven-3.3.3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase time="0.003" classname="cc.mallet.types.tests.TestPagedInstanceList" name="testRandomTrained">
+    <failure message="expected:&lt;0.40852575488454707&gt; but was:&lt;0.3428063943161634&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;0.40852575488454707&gt; but was:&lt;0.3428063943161634&gt;
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:102)
+	at junit.framework.Assert.assertEquals(Assert.java:109)
+	at cc.mallet.types.tests.TestPagedInstanceList.testRandomTrained(TestPagedInstanceList.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>Training set size = 582
+Testing set size = 563
+Accuracy on training set:
+cc.mallet.classify.MaxEnt: 0.8831615120274914
+Accuracy on testing set:
+cc.mallet.classify.MaxEnt: 0.40852575488454707
+Training set size = 582
+Testing set size = 563
+Accuracy on training set:
+cc.mallet.classify.MaxEnt: NaN
+Accuracy on testing set:
+cc.mallet.classify.MaxEnt: 0.3428063943161634
+</system-out>
+    <system-err>十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=639.3923520048452 prior=0.0) loglikelihood = -639.3923520048452
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=201.2744541031641 prior=0.49999999999999994) loglikelihood = -201.7744541031641
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=209.78199276728415 prior=0.6099183107313737) loglikelihood = -210.39191107801554
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=192.6634933541764 prior=0.5413348828046249) loglikelihood = -193.20482823698103
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=182.2518981858894 prior=0.6238067236619661) loglikelihood = -182.87570490955136
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=166.31513523433307 prior=0.9229313477743905) loglikelihood = -167.23806658210745
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=162.98104344532857 prior=1.1136103736114193) loglikelihood = -164.09465381893997
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=160.631758907782 prior=1.3382679067844971) loglikelihood = -161.9700268145665
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=162.7623474538171 prior=1.7729397283515558) loglikelihood = -164.53528718216867
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=159.96019606358598 prior=1.4602780739444166) loglikelihood = -161.4204741375304
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=158.55874118166125 prior=1.6951160653170678) loglikelihood = -160.25385724697833
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=157.25536181735868 prior=1.9670747379797142) loglikelihood = -159.2224365553384
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=156.0925369642565 prior=2.2651736222401535) loglikelihood = -158.35771058649667
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=154.90446210671902 prior=2.63736385308953) loglikelihood = -157.54182595980856
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=155.09005039480724 prior=3.3668864146372086) loglikelihood = -158.45693680944444
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=154.41919603881485 prior=2.8592776978900036) loglikelihood = -157.27847373670485
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=154.2709685172413 prior=2.851795599580444) loglikelihood = -157.12276411682174
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=153.69754481540502 prior=3.271409732194324) loglikelihood = -156.96895454759934
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=153.82192193336232 prior=2.9984660874610847) loglikelihood = -156.8203880208234
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=153.8479089248929 prior=2.971250045612187) loglikelihood = -156.81915897050507
+十月 01, 2015 4:29:19 下午 cc.mallet.optimize.LimitedMemoryBFGS optimize
+信息: Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -156.8203880208234 newValue: -156.81915897050507
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=207.93626662694942 prior=3.07438641028695) loglikelihood = -211.01065303723638
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=154.48948217773736 prior=2.9365636820796635) loglikelihood = -157.426045859817
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=154.01242306327666 prior=2.9526568638459247) loglikelihood = -156.9650799271226
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=153.8902372947484 prior=2.9616409547290563) loglikelihood = -156.85187824947747
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=153.85897940115822 prior=2.9663673751706217) loglikelihood = -156.82534677632884
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=153.8509065469498 prior=2.968789179141404) loglikelihood = -156.8196957260912
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=153.8487715428521 prior=2.970014729564295) loglikelihood = -156.8187862724164
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=153.84890130514202 prior=2.969275126570707) loglikelihood = -156.81817643171271
+十月 01, 2015 4:29:19 下午 cc.mallet.optimize.LimitedMemoryBFGS optimize
+信息: Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -156.8187862724164 newValue: -156.81817643171271
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: 
+
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: Value (labelProb=0.0 prior=0.0) loglikelihood = -0.0
+十月 01, 2015 4:29:19 下午 cc.mallet.optimize.LimitedMemoryBFGS optimize
+信息: L-BFGS initial gradient is zero; saying converged
+十月 01, 2015 4:29:19 下午 cc.mallet.optimize.LimitedMemoryBFGS optimize
+信息: L-BFGS initial gradient is zero; saying converged
+十月 01, 2015 4:29:19 下午 cc.mallet.util.MalletProgressMessageLogger log
+信息: 
+
+</system-err>
+  </testcase>
+</testsuite>

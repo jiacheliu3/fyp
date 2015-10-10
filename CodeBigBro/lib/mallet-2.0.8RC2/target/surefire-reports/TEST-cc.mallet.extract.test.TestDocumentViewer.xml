@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0.058" errors="1" skipped="0" tests="1" name="cc.mallet.extract.test.TestDocumentViewer">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\bin"/>
+    <property name="java.vm.version" value="24.65-b04"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Tassadar\eclipse\CodeBigBro\lib\mallet-2.0.8RC2"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Tassadar\eclipse\CodeBigBro\lib\mallet-2.0.8RC2"/>
+    <property name="java.runtime.version" value="1.7.0_67-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\Users\Tassadar\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="F:\Eclipse 3.4.2\Eclipse_CS3343\apache-maven-3.3.3-bin\apache-maven-3.3.3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:\Database\product\11.2.0\dbhome_2\bin;c:\Program Files (x86)\AMD APP\bin\x86_64;c:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;;C:\Program Files (x86)\GNU\GnuPG\pub;%java_home%\bin;C:\Program Files (x86)\Skype\Phone\;C:\Users\Tassadar\AppData\Local\Programs\Python\Python35-32\Scripts\;C:\Users\Tassadar\AppData\Local\Programs\Python\Python35-32\;C:\ProgramData\Oracle\Java\javapath;F:\Database\product\11.2.0\dbhome_2\bin;c:\Program Files (x86)\AMD APP\bin\x86_64;c:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;;C:\Program Files (x86)\GNU\GnuPG\pub;C:\Program Files (x86)\Skype\Phone\;F:\Eclipse 3.4.2\grails-2.5.0\bin;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\bin;F:\Eclipse 3.4.2\Eclipse_CS3343\apache-maven-3.3.3-bin\apache-maven-3.3.3\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Tassadar"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="Tassadar"/>
+    <property name="java.class.path" value="F:\Eclipse 3.4.2\Eclipse_CS3343\apache-maven-3.3.3-bin\apache-maven-3.3.3\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.7.0_67"/>
+    <property name="java.ext.dirs" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\resources.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\rt.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\sunrsasign.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\jsse.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\jce.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\charsets.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\lib\jfr.jar;F:\Eclipse 3.4.2\Eclipse_CS3343\jdk1.7.0_67\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="F:\Eclipse 3.4.2\Eclipse_CS3343\apache-maven-3.3.3-bin\apache-maven-3.3.3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase time="0.058" classname="cc.mallet.extract.test.TestDocumentViewer" name="testSpaceViewer">
+    <error message="cc.mallet.extract.StringTokenization cannot be cast to java.lang.CharSequence" type="java.lang.ClassCastException">java.lang.ClassCastException: cc.mallet.extract.StringTokenization cannot be cast to java.lang.CharSequence
+	at cc.mallet.pipe.CharSequence2TokenSequence.pipe(CharSequence2TokenSequence.java:63)
+	at cc.mallet.pipe.Pipe$SimplePipeInstanceIterator.next(Pipe.java:295)
+	at cc.mallet.pipe.Pipe$SimplePipeInstanceIterator.next(Pipe.java:283)
+	at cc.mallet.pipe.Pipe$SimplePipeInstanceIterator.next(Pipe.java:291)
+	at cc.mallet.pipe.Pipe$SimplePipeInstanceIterator.next(Pipe.java:283)
+	at cc.mallet.types.InstanceList.addThruPipe(InstanceList.java:267)
+	at cc.mallet.extract.CRFExtractor.extract(CRFExtractor.java:151)
+	at cc.mallet.extract.test.TestDocumentViewer.testSpaceViewer(TestDocumentViewer.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>State #0 &quot;start&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=2
+-&gt; start
+-&gt; notstart
+State #1 &quot;notstart&quot;
+initialWeight=0.0, finalWeight=0.0
+#destinations=2
+-&gt; start
+-&gt; notstart
+</system-out>
+    <system-err>十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRF addFullyConnectedStatesForLabels
+信息: CRF: outputAlphabet.lookup class = java.lang.String
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRF addFullyConnectedStatesForLabels
+信息: CRF: outputAlphabet.lookup class = java.lang.String
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start-&gt;start:start] num features = 8
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[start-&gt;notstart:notstart] num features = 63
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart-&gt;start:start] num features = 72
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: CRF weights[notstart-&gt;notstart:notstart] num features = 169
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRF setWeightsDimensionAsIn
+信息: Number of weights = 316
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF about to train with 2147483647 iterations
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -112.98299043127126
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -81.68791364037904
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -72.25848457068977
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=0
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -57.76106918226742
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=1
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -50.73945185400652
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=2
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -39.30337445643808
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=3
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -35.161876870420066
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=4
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -34.211076083992936
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=5
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -36.60891431308333
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -34.02027365761046
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=6
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -33.7974604204141
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=7
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -33.50950938337477
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=8
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -33.4339063515656
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=9
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -33.38752110199027
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=10
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -33.35934572861555
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=11
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -33.362444418863575
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFOptimizableByLabelLikelihood getValue
+信息: getValue() (loglikelihood, optimizable by label likelihood) = -33.35666064458722
+十月 01, 2015 4:26:28 下午 cc.mallet.optimize.LimitedMemoryBFGS optimize
+信息: Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -33.35934572861555 newValue: -33.35666064458722
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF finished one iteration of maximizer, i=12
+十月 01, 2015 4:26:28 下午 cc.mallet.fst.CRFTrainerByLabelLikelihood train
+信息: CRF training has converged, i=12
+</system-err>
+  </testcase>
+</testsuite>
