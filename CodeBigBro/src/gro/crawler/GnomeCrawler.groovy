@@ -15,6 +15,7 @@ import java.math.RoundingMode;
 
 public class GnomeCrawler extends BreadthCrawler{
 
+	static String base="C:\\Users\\jiacheliu3\\git\\projects\\CodeBigBro\\data\\";
 	int counter=0;
 	File inputFile;
 	File outputFile;
@@ -65,7 +66,7 @@ public class GnomeCrawler extends BreadthCrawler{
 	}
 
 	public void initStopWords(){
-		File sw=new File("C:\\Users\\Tassadar\\Desktop\\Course\\weibo\\crawler\\stopwords.txt");
+		File sw=new File(base+"stopwords.txt");
 		String[] words=sw.readLines();
 
 		if(stopwords==null)
@@ -108,9 +109,30 @@ public class GnomeCrawler extends BreadthCrawler{
 		System.out.println("URL:\n" + url);
 		System.out.println("title:\n" + title);
 		System.out.println("content:\n" + raw);
-		outputFile.append(url+"\n");
-		outputFile.append(raw+"\n");
-
+		
+		if(outputFile.isDirectory()){
+			println "Output crawling result to txt.";
+			
+			String fileName=url.replaceAll("http[s]?://","");
+			fileName=fileName.replaceAll("[/\\:*><?\"\'| .]","");
+			try{
+				
+			String p=outputFile.absolutePath+"\\${fileName}.txt";
+			File newFile=new File(p);
+			newFile.append(raw);
+			}
+			catch(Exception e){
+				println "Error when outputing crawl result";
+				e.printStackTrace();
+			}
+			println "Output complete to ${newFile.canonicalPath}";
+		}
+		else{
+			
+			outputFile.append(url+"\n");
+			outputFile.append(raw+"\n");
+	
+		}
 		/*If you want to add urls to crawl,add them to nextLinks*/
 		/*WebCollector automatically filters links that have been fetched before*/
 		/*If autoParse is true and the link you add to nextLinks does not match the regex rules,the link will also been filtered.*/
@@ -162,7 +184,7 @@ public class GnomeCrawler extends BreadthCrawler{
 			println "Empty string."
 			return true;//since empty string has no use, each code is valid
 		}
-			
+
 		try{
 
 
@@ -174,7 +196,7 @@ public class GnomeCrawler extends BreadthCrawler{
 			}
 			//if no meaningful char found in the first part of the string, deem the string as incorrectly decoded
 			BigDecimal result=count.divide(part.length(), 4,RoundingMode.HALF_UP);
-			
+
 			if(result<0.6){
 				println "Only ${count} meaningful char in the string, failed to decode."
 				return false;
@@ -252,7 +274,7 @@ public class GnomeCrawler extends BreadthCrawler{
 				match+=it.length();
 		}
 
-		double coverage=match/content.length();
+		def coverage=Math.round(match/content.length());
 		println "Coverage is ${coverage}";
 		return coverage>=threshold;
 	}
@@ -260,8 +282,8 @@ public class GnomeCrawler extends BreadthCrawler{
 		def queue=["八卦", "体育", "影视", "游戏", "政治", "综艺"];
 
 		queue.each{
-			File input=new File("C:\\Users\\Tassadar\\Desktop\\Course\\weibo\\crawler\\${it}train.txt");
-			File output=new File("C:\\Users\\Tassadar\\Desktop\\Course\\weibo\\crawler\\${it}inspector.txt");
+			File input=new File(base+"${it}train.txt");
+			File output=new File(base+"${it}inspector.txt");
 			GnomeCrawler crawler=new GnomeCrawler("crawl",true,it,input);
 			crawler.outputFile=output;
 
@@ -276,6 +298,23 @@ public class GnomeCrawler extends BreadthCrawler{
 		}
 
 
+	}
+	public void extractFeatures(){
+		String source=base+"resources\\${name}\\";
+		println "Start to extract features for type ${name}";
+		//use all files under the folder as source
+		File sourceDir=new File(source);
+		Type type= new Type(name:name);
+		TypeRepo.types.add(type);
+		sourceDir.eachFile {
+			println "Processing file ${it.name}";
+			ArrayList<String> content=it.readLines();
+			ArrayList<String> segments=SepManager.getSepManager().segment(content);
+			HashSet<String> words=new HashSet<>();
+			words.addAll(segments);
+			type.record(it.name,words);
+		}
+		TypeRepo.startCompute();
 	}
 }
 

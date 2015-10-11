@@ -5,15 +5,18 @@ import gro.*;
 class CrawlerManager {
 	static ArrayList<GnomeCrawler> crawlerPool;
 	static crawlerNamelist;
-	static String base="C:\\Users\\Tassadar\\Desktop\\Course\\weibo\\crawler\\";
+	static String base="C:\\Users\\jiacheliu3\\git\\projects\\CodeBigBro\\data\\";
+	
+	static String resultOutput=base+"resources\\";
 
 	public static void init(){
 		crawlerPool=new ArrayList<>();
 
-		crawlerNamelist=["八卦","体育","影视","游戏","政治","综艺"];
+		//crawlerNamelist=["情感","宗教","宠物","摄影","美食","动漫","音乐","创业","健康","体育","旅游","财经","贷款","彩票","股票","住房","社会","时评","公益"];
+		crawlerNamelist=["宠物","财经"];
 		crawlerNamelist.each{
-			File input=new File("C:\\Users\\Tassadar\\Desktop\\Course\\weibo\\crawler\\${it}train.txt");
-			File output=new File("C:\\Users\\Tassadar\\Desktop\\Course\\weibo\\crawler\\test\\${it}inspector.txt");
+			File input=new File(base+"${it}train.txt");
+			File output=new File(base+"${it}inspector.txt");
 			GnomeCrawler crawler=new GnomeCrawler("crawl",true,it,input);
 			crawler.outputFile=output;
 
@@ -28,19 +31,19 @@ class CrawlerManager {
 	public static void read(){
 		crawlerPool.each{
 
-			File input=new File("C:\\Users\\Tassadar\\Desktop\\Course\\weibo\\crawler\\${it.name}inspector.txt");
+			File input=new File(base+"${it.name}inspector.txt");
 			ArrayList<String> contents=input.readLines();
 			ArrayList<String> keywords=SepManager.getSepManager().mash(contents);
 			it.addKeywords(keywords);
 			
-			File output=new File("C:\\Users\\Tassadar\\Desktop\\Course\\weibo\\crawler\\${it.name}keywords.txt");
+			File output=new File(base+"${it.name}keywords.txt");
 			output.append(keywords);
 			println "Keywords output to file.";
 		}
 
 	}
 	public static void main(String[] args){
-		File log=new File("C:\\Users\\Tassadar\\Desktop\\Course\\weibo\\crawler\\log");
+		File log=new File(base+"log");
 		def out=System.out;
 		System.setOut(new PrintStream(new FileOutputStream(log)));
 		
@@ -54,16 +57,26 @@ class CrawlerManager {
 		//extractKeywords();
 
 		/*2 stage training*/
-		//read seed website urls and crawl away
+		//read seed website urls and crawl away, output the doc
 		crawlerPool.each{
 			println "Crawling out for ${it.name}";
-			
-			it.outputFile=new File("C:\\Users\\Tassadar\\Desktop\\Course\\weibo\\crawler\\${it.name}crawlResult.txt");
-			it.start(4);
+			//output to corresponding folder
+			String outputPath=resultOutput+it.name;
+			File folder=new File(outputPath);
+			if(!folder.exists())
+				folder.mkdirs();
+			it.outputFile=new File(outputPath+"\\");
+			it.start(10);
 		}
 		
-		//keyword extraction
+		//extract features from doc
+		crawlerPool.each{
+			it.extractFeatures();
+		}
+		
+		
 
 		System.setOut(out);
 	}
+	
 }

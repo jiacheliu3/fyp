@@ -1,6 +1,7 @@
 package gro
 
 import jav.*;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Scanner;
@@ -13,14 +14,15 @@ public class Bootstrap {
 	static StringBuilder itemHolder=new StringBuilder();
 	//store the list of target users
 	static ArrayList<String> targetUsers=new ArrayList<>();
+	static String base="C:\\Users\\jiacheliu3\\git\\projects\\CodeBigBro\\";
 	//data path
-	static String dirPath="C:/Users/Tassadar/Desktop/Course/weibo/userFiles";
+	static String dirPath=base+"userFiles";
 	//static String path = "C:/Users/Tassadar/Desktop/Course/weibo/test5.txt";
-	static String path = "C:/Users/Tassadar/Desktop/Course/weibo/UserWeibos201201";
+	static String path = "C:/Users/jiacheliu3/Desktop/Course/weibo/UserWeibos201201";
 	//static String path = "C:/Users/Tassadar/Desktop/Course/weibo/UserWeibos201502";
 	static int exitState=-1;
 	//static String output="C:/Users/Tassadar/eclipse/CodeBigBro/visualization/data/vis.json";
-	static String output="C:/Users/Tassadar/eclipse/CodeBigBro/visualization/data/vis.gexf";
+	static String output=base+"visualization\\data\\vis.gexf";
 
 	
 	public static void main(String[] args) {
@@ -35,7 +37,7 @@ public class Bootstrap {
 	public static start(String option){
 
 		//set output to a file as log
-		String logPath="C:/Users/Tassadar/Desktop/Course/weibo/logs/";
+		String logPath=base+"logs\\";
 		def folder=new File(logPath);
 		if(!folder.exists())
 			folder.mkdir();
@@ -338,7 +340,7 @@ public class Bootstrap {
 		println("Writing to "+ userName);
 
 		// Create a File object representing the folder 'A/B'
-		def folder = new File( 'C:/Users/Tassadar/Desktop/Course/weibo/userFiles' )
+		def folder = new File( base+'userFiles' )
 
 		// If it doesn't exist
 		if( !folder.exists() ) {

@@ -29,7 +29,8 @@ class SepManager {
 	//Singleton
 	private static SepManager manager;
 
-	String uselessWordPath=/C:\Users\Tassadar\eclipse\CodeBigBro\StopWords.txt/;
+	static String base="C:\\Users\\jiacheliu3\\git\\projects\\CodeBigBro\\";
+	String uselessWordPath=base+"StopWords.txt";
 	TreeSet<String> uselessWords=new TreeSet<>();
 
 	HashSet<String> toDelete=new HashSet<>();
@@ -44,8 +45,8 @@ class SepManager {
 		//use jcseg to segment sentences
 		prepareJcseg();
 		
-		pyInput="C:\\Users\\Tassadar\\Desktop\\Course\\weibo\\temp\\tempInput.txt";
-		pyOutput="C:\\Users\\Tassadar\\Desktop\\Course\\weibo\\temp\\tempOutput.txt";
+		pyInput=base+"temp\\tempInput.txt";
+		pyOutput=base+"temp\\tempOutput.txt";
 
 		keywordOdds=new LinkedHashMap<>();
 		
@@ -83,7 +84,7 @@ class SepManager {
 		File input=new File(pyInput);
 		input.withPrintWriter {w-> w<<s; }
 		//output to another log file for temp reason
-		File temp=new File("C:\\Users\\Tassadar\\Desktop\\Course\\weibo\\temp\\tempRecord.txt");
+		File temp=new File(base+"temp\\tempRecord.txt");
 		temp.append(s);
 		temp.append("&end&\n");
 		//pass to python script
@@ -92,17 +93,17 @@ class SepManager {
 
 
 
-		File jiebaTDIFD=new File("C:\\Users\\Tassadar\\Desktop\\Course\\weibo\\temp\\jiebaTDIFD.txt");
+		File jiebaTDIFD=new File(base+"temp\\jiebaTDIFD.txt");
 		jiebaTDIFD.readLines().each {
 			callIncrement(it,0.483);
 		}
-		File jiebaTextrank=new File("C:\\Users\\Tassadar\\Desktop\\Course\\weibo\\temp\\jiebaTextRank.txt");
+		File jiebaTextrank=new File(base+"temp\\jiebaTextRank.txt");
 		jiebaTextrank.readLines().each{
 			callIncrement(it,0.506);
 		}
 
 
-		File snowNLP=new File("C:\\Users\\Tassadar\\Desktop\\Course\\weibo\\temp\\snowOutput.txt");
+		File snowNLP=new File(base+"temp\\snowOutput.txt");
 		snowNLP.readLines().each{
 			callIncrement(it,0.345);
 		}
@@ -111,7 +112,7 @@ class SepManager {
 		//fnlp is good at detecting new words with length>2 but not so at short words
 		//so add only 0.3 to short ones and 0.6 to longer ones
 		ArrayList<String> r=FnlpManager.separate(s);
-		String fnlpOutput="C:\\Users\\Tassadar\\Desktop\\Course\\weibo\\temp\\fnlpOutput.txt";
+		String fnlpOutput=base+"temp\\fnlpOutput.txt";
 		File fOut=new File(fnlpOutput);
 		fOut.append(r+"\n");
 		r.each {
@@ -415,7 +416,7 @@ class SepManager {
 	
 	//obsoleted with jcseg
 		public void prepareJcseg(){
-			configPath="C:/Users/Tassadar/eclipse/CodeBigBro/conf/jcseg.properties";
+			configPath=base+"conf/jcseg.properties";
 			config = new JcsegTaskConfig(configPath);
 			dic = DictionaryFactory.createDefaultDictionary(config);
 			seg = SegmentFactory.createJcseg(JcsegTaskConfig.COMPLEX_MODE, config, dic);
@@ -460,11 +461,11 @@ class SepManager {
 		//		def manager=new SepManager();
 		//		manager.separate(target);
 		//		return;
-		File ts=new File("C:\\Users\\Tassadar\\Desktop\\Course\\weibo\\temp\\sampleSet.txt");
+		File ts=new File(base+"temp\\sampleSet.txt");
 		SepManager sep=new SepManager();
 		Gson gson=new Gson();
 
-		File output=new File("C:\\Users\\Tassadar\\Desktop\\Course\\weibo\\temp\\sampleResult.json");
+		File output=new File(base+"temp\\sampleResult.json");
 		if(output.exists())
 			output.write("");
 		def set=ts.readLines();
